@@ -1,0 +1,114 @@
+name: Build and Deploy Mikro ERP Documentation
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: 📦 Install Dependencies
+      run: |
+        npm install --only=dev
+        echo "Dependencies installed successfully"
+
+    - name: 🏗️ Run Build Process
+      run: |
+        echo "Starting build process..."
+        node build.js
+        echo "Build completed successfully"
+      env:
+        NODE_ENV: production
+        BUILD_NUMBER: ${{ github.run_number }}
+
+    - name: 🔍 Validate Build
+      run: |
+        echo "Validating build output..."
+        ls -la dist/
+        echo "Checking required files..."
+        test -f dist/index.html || (echo "Missing index.html" && exit 1)
+        test -f dist/sitemap.xml || (echo "Missing sitemap.xml" && exit 1)
+        test -f dist/robots.txt || (echo "Missing robots.txt" && exit 1)
+        test -f dist/build-info.json || (echo "Missing build-info.json" && exit 1)
+        echo "All files validated successfully"
+
+    - name: 📊 Build Statistics
+      run: |
+        echo "📊 Build Statistics:"
+        echo "Build Number: ${{ github.run_number }}"
+        echo "Git SHA: ${{ github.sha }}"
+        echo "Build Date: $(date)"
+        echo ""
+        echo "📁 File Counts:"
+        echo "Total files: $(find dist/ -type f | wc -l)"
+        echo "HTML files: $(find dist/ -name '*.html' | wc -l)"
+        echo "CSS files: $(find dist/ -name '*.css' | wc -l)"
+        echo ""
+        echo "📦 Directory Sizes:"
+        du -sh dist/ || echo "Size calculation not available"
+        echo ""
+        echo "🏗️ Build Info:"
+        cat dist/build-info.json || echo "Build info not available"
+
+    - name: 📄 Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: 🗂️ Upload Artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist
+
+    - name: 🚀 Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
+    - name: ✅ Deployment Success
+      run: |
+        echo "🎉 Deployment completed successfully!"
+        echo "🌐 Site URL: ${{ steps.deployment.outputs.page_url }}"
+        echo "📝 Build completed at: $(date)"
+        
+        # Build başarı durumunu kaydet
+        echo "BUILD_SUCCESS=true" >> $GITHUB_OUTPUT
+        echo "DEPLOYMENT_URL=${{ steps.deployment.outputs.page_url }}" >> $GITHUB_OUTPUT
+
+  notify:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+    - name: 📢 Build Status Notification
+      run: |
+        if [ "${{ needs.build-and-deploy.result }}" == "success" ]; then
+          echo "✅ Build ve deployment başarılı!"
+          echo "🌐 Site: https://tansuozcelebi.github.io/MikroERPTablo/"
+        else
+          echo "❌ Build veya deployment başarısız!"
+          echo "⚠️ Lütfen logları kontrol edin."
+        fi

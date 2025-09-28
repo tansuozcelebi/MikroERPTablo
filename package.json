@@ -1,0 +1,59 @@
+{
+  "name": "mikro-erp-dokumentasyon",
+  "version": "1.0.0",
+  "description": "Mikro ERP Veritabanı Dokümantasyonu - v16 ve v17 tablo yapıları ve API referansları",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run minify && npm run optimize",
+    "minify": "npm run minify-html && npm run minify-css",
+    "minify-html": "html-minifier --collapse-whitespace --remove-comments --minify-css --minify-js --input-dir ./ --output-dir ./dist/ --file-ext html",
+    "minify-css": "cleancss -o ./dist/styles.min.css ./styles/*.css",
+    "optimize": "npm run compress-images",
+    "compress-images": "imagemin ./**/*.{png,jpg,jpeg,gif} --out-dir=./dist/images",
+    "serve": "http-server ./ -p 8080",
+    "dev": "live-server ./ --port=8080",
+    "lint": "htmlhint ./**/*.html",
+    "validate": "html-validate ./**/*.html",
+    "test": "npm run lint && npm run validate",
+    "deploy": "gh-pages -d ./",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "postbuild": "npm run test",
+    "start": "npm run serve"
+  },
+  "keywords": [
+    "mikro-erp",
+    "veritabanı",
+    "tablo-yapısı",
+    "api",
+    "dokümantasyon",
+    "v16",
+    "v17",
+    "myedb",
+    "sdk"
+  ],
+  "author": "Tansu Özçelebi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tansuozcelebi/MikroERPTablo.git"
+  },
+  "homepage": "https://tansuozcelebi.github.io/MikroERPTablo/",
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "clean-css-cli": "^5.6.2",
+    "imagemin": "^8.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-mozjpeg": "^10.0.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "htmlhint": "^1.1.4",
+    "html-validate": "^8.7.4",
+    "gh-pages": "^6.0.0",
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
