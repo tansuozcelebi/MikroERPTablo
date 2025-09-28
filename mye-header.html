@@ -1,4 +1,4 @@
-<!-- MYE Modern Header Bar -->
+﻿<!-- MYE Modern Header Bar -->
 <div class="mye-header-bar">
     <div class="mye-header-content">
         <a href="../../../index.html" class="mye-header-brand">
@@ -15,7 +15,6 @@
         </nav>
     </div>
 </div>
-
 <!-- About Modal -->
 <div id="aboutModal" class="mye-modal">
     <div class="mye-modal-content">
@@ -59,25 +58,21 @@
         </div>
     </div>
 </div>
-
 <script>
 function openAboutModal() {
     document.getElementById('aboutModal').classList.add('active');
     document.body.style.overflow = 'hidden';
 }
-
 function closeAboutModal() {
     document.getElementById('aboutModal').classList.remove('active');
     document.body.style.overflow = 'auto';
 }
-
 // Modal dışına tıklanınca kapatma
 document.getElementById('aboutModal').addEventListener('click', function(e) {
     if (e.target === this) {
         closeAboutModal();
     }
 });
-
 // ESC tuşu ile kapatma
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && document.getElementById('aboutModal').classList.contains('active')) {

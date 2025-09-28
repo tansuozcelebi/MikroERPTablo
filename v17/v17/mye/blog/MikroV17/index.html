@@ -1,7 +1,5 @@
-<html>
+﻿<html>
 
-
-<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:19:02 GMT -->
 <head>
 <meta http-equiv="Content-Language" content="tr">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
@@ -22,7 +20,6 @@
     backdrop-filter: blur(10px);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
-
 .mye-header-content {
     display: flex;
     justify-content: space-between;
@@ -31,7 +28,6 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .mye-header-brand {
     display: flex;
     align-items: center;
@@ -40,13 +36,11 @@
     font-size: 1.2rem;
     text-decoration: none;
 }
-
 .mye-header-brand:hover {
     color: white;
     text-decoration: none;
     opacity: 0.9;
 }
-
 .mye-header-brand .logo {
     width: 32px;
     height: 32px;
@@ -59,13 +53,11 @@
     font-weight: bold;
     font-size: 1rem;
 }
-
 .mye-header-nav {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-
 .mye-header-btn {
     display: inline-flex;
     align-items: center;
@@ -81,7 +73,6 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
-
 .mye-header-btn:hover {
     background: rgba(255, 255, 255, 0.25);
     color: white;
@@ -89,19 +80,16 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 .mye-header-btn.primary {
     background: rgba(255, 255, 255, 0.9);
     color: #667eea;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .mye-header-btn.primary:hover {
     background: white;
     color: #667eea;
     text-decoration: none;
 }
-
 /* Modal Styles */
 .mye-modal {
     display: none;
@@ -115,14 +103,12 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-
 .mye-modal.active {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
-
 .mye-modal-content {
     background: white;
     border-radius: 20px;
@@ -132,7 +118,6 @@
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
     animation: modalSlideIn 0.3s ease-out;
 }
-
 @keyframes modalSlideIn {
     from {
         opacity: 0;
@@ -143,21 +128,18 @@
         transform: scale(1) translateY(0);
     }
 }
-
 .mye-modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
-
 .mye-modal-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: #333;
     margin: 0;
 }
-
 .mye-modal-close {
     background: none;
     border: none;
@@ -168,30 +150,24 @@
     line-height: 1;
     transition: color 0.3s ease;
 }
-
 .mye-modal-close:hover {
     color: #666;
 }
-
 .mye-modal-body {
     color: #666;
     line-height: 1.6;
 }
-
 .mye-modal-body h3 {
     color: #333;
     margin: 20px 0 10px 0;
 }
-
 .mye-modal-body p {
     margin-bottom: 15px;
 }
-
 /* Body margin for fixed header */
 body {
     margin-top: 70px !important;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
     .mye-header-content {
@@ -220,7 +196,6 @@ body {
 </style>
 <LINK rel="stylesheet" type="text/css" href="../../library.html">
 </head>
-
 <body>
 <!-- MYE Modern Header Bar -->
 <div class="mye-header-bar">
@@ -239,7 +214,6 @@ body {
         </nav>
     </div>
 </div>
-
 <!-- About Modal -->
 <div id="aboutModal" class="mye-modal">
     <div class="mye-modal-content">
@@ -283,25 +257,21 @@ body {
         </div>
     </div>
 </div>
-
 <script>
 function openAboutModal() {
     document.getElementById('aboutModal').classList.add('active');
     document.body.style.overflow = 'hidden';
 }
-
 function closeAboutModal() {
     document.getElementById('aboutModal').classList.remove('active');
     document.body.style.overflow = 'auto';
 }
-
 // Modal dışına tıklanınca kapatma
 document.getElementById('aboutModal').addEventListener('click', function(e) {
     if (e.target === this) {
         closeAboutModal();
     }
 });
-
 // ESC tuşu ile kapatma
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && document.getElementById('aboutModal').classList.contains('active')) {
@@ -309,9 +279,7 @@ document.addEventListener('keydown', function(e) {
     }
 });
 </script>
-
 <p class="Caption"><i><a href="index-2.html">Database Yapısı</a></i></p>
-
 	<h2>Mikro Versiyon 17 Veritabanı Yapısı</h2>
 	<p>Mikro V17 database'ine (veri tabanına) bilgi giriş ve çıkışı Import/Export özelliği sayesinde 
 	yapılabilir. Bunun için ASCII ya da XML formatı kullanılabilir. Bu döküman size
@@ -332,9 +300,6 @@ document.addEventListener('keydown', function(e) {
 	  basarak gelen pencerede ASCII Import/Export ya da XML Import/Export tuşlarını 
 	  takip edebilirsiniz.<br>
 	</ul>
-
 	<hr> 
 
-
-<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:19:03 GMT -->
 </html>
