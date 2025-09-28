@@ -1,0 +1,68 @@
+# GitHub Pages SEO Configuration
+title: "Mikro ERP Veritabanı Dokümantasyonu"
+description: "Mikro ERP v16 ve v17 veritabanı tablo yapıları, API referansları ve kapsamlı geliştirici dokümantasyonu"
+url: "https://tansuozcelebi.github.io"
+baseurl: "/MikroERPTablo"
+author: "Tansu Özçelebi"
+lang: "tr-TR"
+
+# SEO settings
+google_analytics: # Google Analytics tracking ID (if you have one)
+google_site_verification: # Google Search Console verification code
+
+# Social media
+github_username: tansuozcelebi
+twitter_username: tansuozcelebi
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Include files in processing
+include:
+  - _pages
+  - robots.txt
+  - sitemap.xml
+  - .htaccess
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Default values for YAML front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      author: "Tansu Özçelebi"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Jekyll SEO Tag settings
+seo:
+  name: "Mikro ERP Dokümantasyonu"
+  type: "WebSite"
+  links:
+    - "https://github.com/tansuozcelebi/MikroERPTablo"
