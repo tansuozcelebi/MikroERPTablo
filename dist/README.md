@@ -1,9 +1,9 @@
 # Mikro ERP Dokümantasyon Build
 
 **Sürüm:** 1.0.0  
-**Build Tarihi:** 29.09.2025 00:18:46  
-**Git Commit:** 0b069a8  
-**Build Numarası:** 1759094326  
+**Build Tarihi:** 29.09.2025 00:46:11  
+**Git Commit:** 0e540a1  
+**Build Numarası:** 20250929004611  
 
 ## Dosya İstatistikleri
 - Toplam dosya: 1083
@@ -12,6 +12,6 @@
 - Görsel dosyaları: 8
 
 ## Build Süreci
-Build süresi: 508ms
+Build süresi: 531ms
 
 Bu build GitHub Actions tarafından otomatik olarak oluşturulmuştur.

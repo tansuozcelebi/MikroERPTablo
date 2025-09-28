@@ -1,13 +1,32 @@
 ﻿<html>
 
 <head>
+    <link rel="stylesheet" href="../../../mye-header.css">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Tablo Alanlar�</title>
 <LINK rel="stylesheet" type="text/css" href="../../../library.html">
 </head>
-<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<body>
+    <!-- MYE Modern Header Bar -->
+    <div class="mye-header-bar">
+        <div class="mye-header-content">
+            <a href="../../../index.html" class="mye-header-brand">
+                <div class="logo">M</div>
+                <span>Mikro Terminal</span>
+            </a>
+            <nav class="mye-header-nav">
+                <a href="../../../index.html" class="mye-header-btn">
+                    <span>🏠</span> Başa Dön
+                </a>
+                <button onclick="openAboutModal()" class="mye-header-btn primary">
+                    <span>ℹ️</span> Hakkında
+                </button>
+            </nav>
+        </div>
+    </div>
+<style>body { padding-top: 70px !important; }</style><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
 <center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
 <p><b>Tablo No : 134</b></p>
 <table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
@@ -330,6 +349,81 @@
 <td>Op_Aciklama</td>
 </tr>
 </table>
-<hr>G�ncellenme Tarihi : 24.11.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+<hr>G�ncellenme Tarihi : 24.11.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font>
+<!-- About Modal -->
+<div id="aboutModal" class="mye-modal">
+    <div class="mye-modal-content">
+        <div class="mye-modal-header">
+            <h2 class="mye-modal-title">Fabus Firması Hakkında</h2>
+            <button class="mye-modal-close" onclick="closeAboutModal()">&times;</button>
+        </div>
+        <div class="mye-modal-body">
+            <h3>🏢 Fabus Yazılım ve Danışmanlık</h3>
+            <p>
+                <strong>Fabus</strong>, 1995 yılından beri Türkiye'nin önde gelen yazılım şirketlerinden biri olarak 
+                işletmelere yenilikçi teknoloji çözümleri sunmaktadır.
+            </p>
+            
+            <h3>🎯 Misyonumuz</h3>
+            <p>
+                İşletmelerin dijital dönüşüm süreçlerinde güvenilir partner olmak, kullanıcı dostu 
+                yazılımlar geliştirerek müşterilerimizin iş süreçlerini optimize etmek.
+            </p>
+            
+            <h3>💼 Hizmetlerimiz</h3>
+            <p>
+                • <strong>Mikro Terminal:</strong> Comprehensive database management solutions<br>
+                • <strong>ERP Sistemleri:</strong> Kurumsal kaynak planlaması<br>
+                • <strong>Muhasebe Yazılımları:</strong> Mali işlem yönetimi<br>
+                • <strong>Stok ve Satış Takibi:</strong> Envanter yönetimi<br>
+                • <strong>İK Sistemleri:</strong> İnsan kaynakları yönetimi
+            </p>
+            
+            <h3>🌟 Değerlerimiz</h3>
+            <p>
+                <strong>Güvenilirlik</strong> - <strong>Yenilikçilik</strong> - <strong>Müşteri Odaklılık</strong> - <strong>Sürekli Gelişim</strong>
+            </p>
+            
+            <h3>📞 İletişim</h3>
+            <p>
+                <strong>Telefon:</strong> +90 (212) 555-0123<br>
+                <strong>E-posta:</strong> info@fabus.com.tr<br>
+                <strong>Web:</strong> <a href="https://www.fabus.com.tr" target="_blank" rel="noopener">www.fabus.com.tr</a><br>
+                <strong>Adres:</strong> İstanbul, Türkiye
+            </p>
+        </div>
+        <div class="mye-modal-footer">
+            <button onclick="closeAboutModal()" class="mye-modal-btn">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openAboutModal() {
+        document.getElementById('aboutModal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeAboutModal() {
+        document.getElementById('aboutModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Click outside modal to close
+    window.onclick = function(event) {
+        const modal = document.getElementById('aboutModal');
+        if (event.target === modal) {
+            closeAboutModal();
+        }
+    }
+    
+    // ESC key to close modal
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeAboutModal();
+        }
+    });
+</script>
+</body>
 
 </html>
