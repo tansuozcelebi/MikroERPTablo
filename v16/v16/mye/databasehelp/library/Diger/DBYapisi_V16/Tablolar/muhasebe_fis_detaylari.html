@@ -1,0 +1,418 @@
+<html>
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/Tablolar/muhasebe_fis_detaylari.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:18:01 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 243</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : MUHASEBE_FIS_DETAYLARI</b></td>
+    <td width="50%"><b>Tablo : Muhasebe Fi� Detaylar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>mfd_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>mfd_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>mfd_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>mfd_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>mfd_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>mfd_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>mfd_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>mfd_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>mfd_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>mfd_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>mfd_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>mfd_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>mfd_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>mfd_special1</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>mfd_special2</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>mfd_special3</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>mfd_ticari_tip</td>
+  <td>Tinyint</td>
+  <td>Ticari Tip</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>mfd_evraktip</td>
+  <td>Tinyint</td>
+  <td>Evrak Tipi</td>
+  <td>0:Tan�ms�z 1:Sat�� Belgesi 2:Al�� Belgesi 3:Tahsilat Belgesi 4:�deme Belgesi 5:Virman 6:Dahili Hareket 7:Personel Bordro 8:Amortisman 9:SMM Hareket</td>
+ </tr>
+  <tr>
+  <td>18</td>
+  <td>mfd_evrak_seri</td>
+  <td>dbo.evrakseri_str</td>
+  <td>Evrak Seri No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>mfd_evrak_sira</td>
+  <td>Integer</td>
+  <td>Evrak S�ra No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>mfd_cariunvan</td>
+  <td>Nvarchar(127)</td>
+  <td>Cari �nvan�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>mfd_carivergidaireadi</td>
+  <td>Nvarchar(50)</td>
+  <td>Cari Vergi Daire Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>mfd_carivergidaireno</td>
+  <td>Nvarchar(15)</td>
+  <td>Cari Vergi Daire No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>mfd_bsbakonututar</td>
+  <td>Float</td>
+  <td>Bs-Ba Konu Tutar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>mfd_bsbatabii</td>
+  <td>Tinyint</td>
+  <td>Bs-Ba Tabi Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>mfd_cariulkekodno</td>
+  <td>Nvarchar(4)</td>
+  <td>Cari �lke Kod No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>mfd_belgetarihi</td>
+  <td>DateTime</td>
+  <td>Belge Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>mfd_tutarnereden</td>
+  <td>Tinyint</td>
+  <td>Ba-Bs'ye Tabi Tutar Nas�l Olu�tu ?</td>
+  <td>0:Tan�ms�z 1:Manuel 2:Oto Kdv'den 3:Sihirbazdan 4:Oto Hesaptan 5:Ticari Entegreden 6:Smm Entegreden</td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>mfd_caritipi</td>
+  <td>Tinyint</td>
+  <td>Cari Tipi</td>
+  <td>0:Tan�ms�z 1:Muhasebe Hesab� 2:Cari Hesap 3:Firma</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>mfd_carikodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>mfd_carimuhkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>mfd_belgeno</td>
+  <td>dbo.belgeno_str</td>
+  <td>Belge No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>mfd_kdvid</td>
+  <td>Tinyint</td>
+  <td>Kdv Id</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>mfd_kdvtutar</td>
+  <td>Float</td>
+  <td>Kdv Tutar</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>mfd_malhizmetkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Mal Hizmet Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>mfd_malhizmetcinsi</td>
+  <td>Nvarchar(120)</td>
+  <td>Mal Hizmet Cinsi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>mfd_malhizmetmiktari</td>
+  <td>Float</td>
+  <td>Mal Hizmet Miktar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>mfd_malhizmetbirim</td>
+  <td>Nvarchar(10)</td>
+  <td>Mal Hizmet Birimi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>mfd_ggb_gcb_no</td>
+  <td>Nvarchar(30)</td>
+  <td>GGB-G�B No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>mfd_aracivergidaireadi</td>
+  <td>Nvarchar(50)</td>
+  <td>Arac� Vergi Dairesi Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td>mfd_aracivergidaireno</td>
+  <td>Nvarchar(15)</td>
+  <td>Arac� Vergi Daire No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>mfd_eximulkekodu</td>
+  <td>Nvarchar(4)</td>
+  <td>Exim �lke Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td>mfd_bsbakonuufrstutar</td>
+  <td>Float</td>
+  <td>Ba-Bs'ye Tabi Ufrs Tutar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td>mfd_aciklama</td>
+  <td>Nvarchar(127)</td>
+  <td>A��klama</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>mfd_caritutar</td>
+  <td>Float</td>
+  <td>Cari Tutar</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>mfd_kisaevraktipi</td>
+  <td>Tinyint</td>
+  <td>K�sa Evrak Tipi</td>
+  <td>0:Tan�ms�z 1:Sat�� Belgesi 2:Al�� Belgesi 3:Tahsilat Belgesi 4:�deme Belgesi 5:Virman 6:Dahili Hareket 7:Personel Bordro 8:Amortisman 9:SMM Hareket</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td>mfd_satistipi</td>
+  <td>Tinyint</td>
+  <td>Sat�� Tipi</td>
+  <td>0:Fatura 1:SMM Makbuzu 2:Z Raporu 3:Perakende Fi�i 4:Bilet 5:Poli�e 6:Fon 7:Di�er 8:Navlun</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>mfd_alistipi</td>
+  <td>Tinyint</td>
+  <td>Al�� Tipi</td>
+  <td>0:Fatura 1:SMM Makbuzu 2:Gider Makbuzu 3:Gider Pusulas� 4:Z Raporu 5:Perakende Fi�i 6:Bilet 7:Poli�e 8:Fon 9:M�stahsil Makbuzu 10:Di�er 11:Navlun</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td>mfd_tahtedtipi</td>
+  <td>Tinyint</td>
+  <td>Tahsil Tediye Tipi</td>
+  <td>0:Nakit 1:�ek 2:Senet 3:Banka 4:Kredi Kart� 5:Di�er 6:Teminat Mektubu 7:Depozito �eki 8:Depozito Senedi</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>mfd_digerevrakadi</td>
+  <td>Nvarchar(50)</td>
+  <td>Di�er Evrak Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>mfd_evraktur</td>
+  <td>Tinyint</td>
+  <td>Evrak T�r�</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_MUHASEBE_FIS_DETAYLARI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>mfd_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_MUHASEBE_FIS_DETAYLARI_02</td>
+<td>UNIQUE</td>
+<td>mfd_ticari_tip, mfd_evraktip, mfd_evrak_seri, mfd_evrak_sira</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 04.01.2018 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2018 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/Tablolar/muhasebe_fis_detaylari.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:18:01 GMT -->
+</html>

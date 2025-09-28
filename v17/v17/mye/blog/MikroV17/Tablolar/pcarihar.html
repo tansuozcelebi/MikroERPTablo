@@ -1,0 +1,2680 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/pcarihar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:39 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1003</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : PCARIHAR</b></td>
+    <td width="50%"><b>Tablo : Pos �demeleri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>po_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>po_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>po_SpecRECno</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>po_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>po_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>po_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>po_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>po_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>po_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>po_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>po_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>po_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>po_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>po_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>po_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>po_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>po_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>po_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>po_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>po_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>po_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>po_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>po_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>po_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>po_firmano</td>
+<td>Integer</td>
+<td width="328">Firma No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>po_subeno</td>
+<td>Integer</td>
+<td width="328">�ube No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>po_KasaKodu</td>
+<td>Nvarchar(4)</td>
+<td width="328">Kasa Kodu</td>
+<td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td>po_BelgeNo</td>
+<td>Integer</td>
+<td width="328">Belge No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>po_MyeZNo</td>
+<td>Integer</td>
+<td width="328">Z Raporu Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>po_KasiyerKodu</td>
+<td>Nvarchar(6)</td>
+<td width="328">Kasiyer Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>po_BelgeTarihi</td>
+<td>DateTime</td>
+<td width="328">Belge Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>po_BelgeToplam</td>
+<td>Float</td>
+<td width="328">Belge Toplam�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>po_VerMtrh0</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>po_VerMtrh1</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>po_VerMtrh2</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>po_VerMtrh3</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>po_VerMtrh4</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>po_VerMtrh5</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>po_VerMtrh6</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>po_VerMtrh7</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>po_VerMtrh8</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>po_VerMtrh9</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>po_VerMtrh10</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>po_VerMtrh11</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>po_VerMtrh12</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>po_VerMtrh13</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>po_VerMtrh14</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>po_VerMtrh15</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>po_VerMtrh16</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>po_VerMtrh17</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>po_VerMtrh18</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>po_VerMtrh19</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>po_VerMtrh20</td>
+<td>Float</td>
+<td>Vergi Matrah�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>po_Vergi1</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>54</td>
+<td>po_Vergi2</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>55</td>
+<td>po_Vergi3</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>po_Vergi4</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>57</td>
+<td>po_Vergi5</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>58</td>
+<td>po_Vergi6</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>po_Vergi7</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>po_Vergi8</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>po_Vergi9</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>62</td>
+<td>po_Vergi10</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>po_Vergi11</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>po_Vergi12</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>po_Vergi13</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>po_Vergi14</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>po_Vergi15</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>po_Vergi16</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>po_Vergi17</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>70</td>
+<td>po_Vergi18</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>po_Vergi19</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>po_Vergi20</td>
+<td>Float</td>
+<td>Vergi Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>po_Fisfatura</td>
+<td>Tinyint</td>
+<td width="328">Fi� / Fatura?</td>
+<td>0:Fi� 1:Fatura</td>
+</tr>
+<tr>
+<td>74</td>
+<td>po_Pozisyon</td>
+<td>Tinyint</td>
+<td>Pozisyon</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>75</td>
+<td>po_CariKodu</td>
+<td>Nvarchar(25)</td>
+<td>Cari Kodu</td>
+<td>Bkz. <a href="cari_hesaplar-2.html">CARI_HESAPLAR</a></td>
+</tr>
+<tr>
+<td>76</td>
+<td>po_Yuvarlama</td>
+<td>Float</td>
+<td>Yuvarlama</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>77</td>
+<td>po_Odm_AnaDtut1</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>78</td>
+<td>po_Odm_OrjDtut1</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>79</td>
+<td>po_Odm_AnaDtut2</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>80</td>
+<td>po_Odm_OrjDtut2</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>81</td>
+<td>po_Odm_AnaDtut3</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>82</td>
+<td>po_Odm_OrjDtut3</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>83</td>
+<td>po_Odm_AnaDtut4</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>84</td>
+<td>po_Odm_OrjDtut4</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>85</td>
+<td>po_Odm_AnaDtut5</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>86</td>
+<td>po_Odm_OrjDtut5</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>87</td>
+<td>po_Odm_AnaDtut6</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>88</td>
+<td>po_Odm_OrjDtut6</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>89</td>
+<td>po_Odm_AnaDtut7</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>90</td>
+<td>po_Odm_OrjDtut7</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>91</td>
+<td>po_Odm_AnaDtut8</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>92</td>
+<td>po_Odm_OrjDtut8</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>93</td>
+<td>po_Odm_AnaDtut9</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>94</td>
+<td>po_Odm_OrjDtut9</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>95</td>
+<td>po_Odm_AnaDtut10</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>96</td>
+<td>po_Odm_OrjDtut10</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>97</td>
+<td>po_Odm_AnaDtut11</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>98</td>
+<td>po_Odm_OrjDtut11</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>99</td>
+<td>po_Odm_AnaDtut12</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>100</td>
+<td>po_Odm_OrjDtut12</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>101</td>
+<td>po_Odm_AnaDtut13</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>102</td>
+<td>po_Odm_OrjDtut13</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>103</td>
+<td>po_Odm_AnaDtut14</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>104</td>
+<td>po_Odm_OrjDtut14</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>105</td>
+<td>po_Odm_AnaDtut15</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>106</td>
+<td>po_Odm_OrjDtut15</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>107</td>
+<td>po_Odm_AnaDtut16</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>108</td>
+<td>po_Odm_OrjDtut16</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>109</td>
+<td>po_Odm_AnaDtut17</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>110</td>
+<td>po_Odm_OrjDtut17</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>111</td>
+<td>po_Odm_AnaDtut18</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>112</td>
+<td>po_Odm_OrjDtut18</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>113</td>
+<td>po_Odm_AnaDtut19</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>114</td>
+<td>po_Odm_OrjDtut19</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>115</td>
+<td>po_Odm_AnaDtut20</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>116</td>
+<td>po_Odm_OrjDtut20</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>117</td>
+<td>po_Odm_AnaDtut21</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>118</td>
+<td>po_Odm_OrjDtut21</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>119</td>
+<td>po_Odm_AnaDtut22</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>120</td>
+<td>po_Odm_OrjDtut22</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>121</td>
+<td>po_Odm_AnaDtut23</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>122</td>
+<td>po_Odm_OrjDtut23</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>123</td>
+<td>po_Odm_AnaDtut24</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>124</td>
+<td>po_Odm_OrjDtut24</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>125</td>
+<td>po_Odm_AnaDtut25</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>126</td>
+<td>po_Odm_OrjDtut25</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>127</td>
+<td>po_Odm_AnaDtut26</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>128</td>
+<td>po_Odm_OrjDtut26</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>129</td>
+<td>po_Odm_AnaDtut27</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>130</td>
+<td>po_Odm_OrjDtut27</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>131</td>
+<td>po_Odm_AnaDtut28</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>132</td>
+<td>po_Odm_OrjDtut28</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>133</td>
+<td>po_Odm_AnaDtut29</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>134</td>
+<td>po_Odm_OrjDtut29</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>135</td>
+<td>po_Odm_AnaDtut30</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>136</td>
+<td>po_Odm_OrjDtut30</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>137</td>
+<td>po_Odm_AnaDtut31</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>138</td>
+<td>po_Odm_OrjDtut31</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>139</td>
+<td>po_Odm_AnaDtut32</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>140</td>
+<td>po_Odm_OrjDtut32</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>141</td>
+<td>po_Odm_AnaDtut33</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>142</td>
+<td>po_Odm_OrjDtut33</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>143</td>
+<td>po_Odm_AnaDtut34</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>144</td>
+<td>po_Odm_OrjDtut34</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>145</td>
+<td>po_Odm_AnaDtut35</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>146</td>
+<td>po_Odm_OrjDtut35</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>147</td>
+<td>po_Odm_AnaDtut36</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>148</td>
+<td>po_Odm_OrjDtut36</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>149</td>
+<td>po_Odm_AnaDtut37</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>150</td>
+<td>po_Odm_OrjDtut37</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>151</td>
+<td>po_Odm_AnaDtut38</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>152</td>
+<td>po_Odm_OrjDtut38</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>153</td>
+<td>po_Odm_AnaDtut39</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>154</td>
+<td>po_Odm_OrjDtut39</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>155</td>
+<td>po_Odm_AnaDtut40</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>156</td>
+<td>po_Odm_OrjDtut40</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>157</td>
+<td>po_Odm_AnaDtut41</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>158</td>
+<td>po_Odm_OrjDtut41</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>159</td>
+<td>po_Odm_AnaDtut42</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>160</td>
+<td>po_Odm_OrjDtut42</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>161</td>
+<td>po_Odm_AnaDtut43</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>162</td>
+<td>po_Odm_OrjDtut43</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>163</td>
+<td>po_Odm_AnaDtut44</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>164</td>
+<td>po_Odm_OrjDtut44</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>165</td>
+<td>po_Odm_AnaDtut45</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>166</td>
+<td>po_Odm_OrjDtut45</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>167</td>
+<td>po_Odm_AnaDtut46</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>168</td>
+<td>po_Odm_OrjDtut46</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>169</td>
+<td>po_Odm_AnaDtut47</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>170</td>
+<td>po_Odm_OrjDtut47</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>171</td>
+<td>po_Odm_AnaDtut48</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>172</td>
+<td>po_Odm_OrjDtut48</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>173</td>
+<td>po_Odm_AnaDtut49</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>174</td>
+<td>po_Odm_OrjDtut49</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>175</td>
+<td>po_Odm_AnaDtut50</td>
+<td>Float</td>
+<td>�deme Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>176</td>
+<td>po_Odm_OrjDtut50</td>
+<td>Float</td>
+<td>�deme Orijinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>177</td>
+<td>po_Vadeler_OdemeTipi1</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>0:Nakit 1:Kredi kart� 2:Hediye �eki 3:Taksitli sat�� 4:A��k sat��</td>
+</tr>
+<tr>
+<td>178</td>
+<td>po_Vadeler_vade1</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>179</td>
+<td>po_Vadeler_Tutar1</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>180</td>
+<td>po_Vadeler_OdemeTipi2</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>181</td>
+<td>po_Vadeler_vade2</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>182</td>
+<td>po_Vadeler_Tutar2</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>183</td>
+<td>po_Vadeler_OdemeTipi3</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>184</td>
+<td>po_Vadeler_vade3</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>185</td>
+<td>po_Vadeler_Tutar3</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>186</td>
+<td>po_Vadeler_OdemeTipi4</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>187</td>
+<td>po_Vadeler_vade4</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>188</td>
+<td>po_Vadeler_Tutar4</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>189</td>
+<td>po_Vadeler_OdemeTipi5</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>190</td>
+<td>po_Vadeler_vade5</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>191</td>
+<td>po_Vadeler_Tutar5</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>192</td>
+<td>po_Vadeler_OdemeTipi6</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>193</td>
+<td>po_Vadeler_vade6</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>194</td>
+<td>po_Vadeler_Tutar6</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>195</td>
+<td>po_Vadeler_OdemeTipi7</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>196</td>
+<td>po_Vadeler_vade7</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>197</td>
+<td>po_Vadeler_Tutar7</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>198</td>
+<td>po_Vadeler_OdemeTipi8</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>199</td>
+<td>po_Vadeler_vade8</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>200</td>
+<td>po_Vadeler_Tutar8</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>201</td>
+<td>po_Vadeler_OdemeTipi9</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>202</td>
+<td>po_Vadeler_vade9</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>203</td>
+<td>po_Vadeler_Tutar9</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>204</td>
+<td>po_Vadeler_OdemeTipi10</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>205</td>
+<td>po_Vadeler_vade10</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>206</td>
+<td>po_Vadeler_Tutar10</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>207</td>
+<td>po_Vadeler_OdemeTipi11</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>208</td>
+<td>po_Vadeler_vade11</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>209</td>
+<td>po_Vadeler_Tutar11</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>210</td>
+<td>po_Vadeler_OdemeTipi12</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>211</td>
+<td>po_Vadeler_vade12</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>212</td>
+<td>po_Vadeler_Tutar12</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>213</td>
+<td>po_Vadeler_OdemeTipi13</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>214</td>
+<td>po_Vadeler_vade13</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>215</td>
+<td>po_Vadeler_Tutar13</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>216</td>
+<td>po_Vadeler_OdemeTipi14</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>217</td>
+<td>po_Vadeler_vade14</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>218</td>
+<td>po_Vadeler_Tutar14</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>219</td>
+<td>po_Vadeler_OdemeTipi15</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>220</td>
+<td>po_Vadeler_vade15</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>221</td>
+<td>po_Vadeler_Tutar15</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>222</td>
+<td>po_Vadeler_OdemeTipi16</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>223</td>
+<td>po_Vadeler_vade16</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>224</td>
+<td>po_Vadeler_Tutar16</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>225</td>
+<td>po_Vadeler_OdemeTipi17</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>226</td>
+<td>po_Vadeler_vade17</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>227</td>
+<td>po_Vadeler_Tutar17</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>228</td>
+<td>po_Vadeler_OdemeTipi18</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>229</td>
+<td>po_Vadeler_vade18</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>230</td>
+<td>po_Vadeler_Tutar18</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>231</td>
+<td>po_Vadeler_OdemeTipi19</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>232</td>
+<td>po_Vadeler_vade19</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>233</td>
+<td>po_Vadeler_Tutar19</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>234</td>
+<td>po_Vadeler_OdemeTipi20</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>235</td>
+<td>po_Vadeler_vade20</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>236</td>
+<td>po_Vadeler_Tutar20</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>237</td>
+<td>po_Vadeler_OdemeTipi21</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>238</td>
+<td>po_Vadeler_vade21</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>239</td>
+<td>po_Vadeler_Tutar21</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>240</td>
+<td>po_Vadeler_OdemeTipi22</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>241</td>
+<td>po_Vadeler_vade22</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>242</td>
+<td>po_Vadeler_Tutar22</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>243</td>
+<td>po_Vadeler_OdemeTipi23</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>244</td>
+<td>po_Vadeler_vade23</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>245</td>
+<td>po_Vadeler_Tutar23</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>246</td>
+<td>po_Vadeler_OdemeTipi24</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>247</td>
+<td>po_Vadeler_vade24</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>248</td>
+<td>po_Vadeler_Tutar24</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>249</td>
+<td>po_Vadeler_OdemeTipi25</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>250</td>
+<td>po_Vadeler_vade25</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>251</td>
+<td>po_Vadeler_Tutar25</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>252</td>
+<td>po_Vadeler_OdemeTipi26</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>253</td>
+<td>po_Vadeler_vade26</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>254</td>
+<td>po_Vadeler_Tutar26</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>255</td>
+<td>po_Vadeler_OdemeTipi27</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>256</td>
+<td>po_Vadeler_vade27</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>257</td>
+<td>po_Vadeler_Tutar27</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>258</td>
+<td>po_Vadeler_OdemeTipi28</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>259</td>
+<td>po_Vadeler_vade28</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>260</td>
+<td>po_Vadeler_Tutar28</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>261</td>
+<td>po_Vadeler_OdemeTipi29</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>262</td>
+<td>po_Vadeler_vade29</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>263</td>
+<td>po_Vadeler_Tutar29</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>264</td>
+<td>po_Vadeler_OdemeTipi30</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>265</td>
+<td>po_Vadeler_vade30</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>266</td>
+<td>po_Vadeler_Tutar30</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>267</td>
+<td>po_Vadeler_OdemeTipi31</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>268</td>
+<td>po_Vadeler_vade31</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>269</td>
+<td>po_Vadeler_Tutar31</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>270</td>
+<td>po_Vadeler_OdemeTipi32</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>271</td>
+<td>po_Vadeler_vade32</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>272</td>
+<td>po_Vadeler_Tutar32</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>273</td>
+<td>po_Vadeler_OdemeTipi33</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>274</td>
+<td>po_Vadeler_vade33</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>275</td>
+<td>po_Vadeler_Tutar33</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>276</td>
+<td>po_Vadeler_OdemeTipi34</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>277</td>
+<td>po_Vadeler_vade34</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>278</td>
+<td>po_Vadeler_Tutar34</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>279</td>
+<td>po_Vadeler_OdemeTipi35</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>280</td>
+<td>po_Vadeler_vade35</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>281</td>
+<td>po_Vadeler_Tutar35</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>282</td>
+<td>po_Vadeler_OdemeTipi36</td>
+<td>Tinyint</td>
+<td>�deme Tipi</td>
+<td>Yukardakiyle ayn�</td>
+</tr>
+<tr>
+<td>283</td>
+<td>po_Vadeler_vade36</td>
+<td>DateTime</td>
+<td>Vade</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>284</td>
+<td>po_Vadeler_Tutar36</td>
+<td>Float</td>
+<td>Tutar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>285</td>
+<td>po_Tks_Satis</td>
+<td>Bit</td>
+<td>Taksitli Sat��</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>286</td>
+<td>po_Tks_Satis_Tutar</td>
+<td>Float</td>
+<td>Taksitli Sat�� Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>287</td>
+<td>po_Odm_TaksitTipi1</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>288</td>
+<td>po_Odm_TaksitTipi2</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>289</td>
+<td>po_Odm_TaksitTipi3</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>290</td>
+<td>po_Odm_TaksitTipi4</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>291</td>
+<td>po_Odm_TaksitTipi5</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>292</td>
+<td>po_Odm_TaksitTipi6</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>293</td>
+<td>po_Odm_TaksitTipi7</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>294</td>
+<td>po_Odm_TaksitTipi8</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>295</td>
+<td>po_Odm_TaksitTipi9</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>296</td>
+<td>po_Odm_TaksitTipi10</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>297</td>
+<td>po_Odm_TaksitTipi11</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>298</td>
+<td>po_Odm_TaksitTipi12</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>299</td>
+<td>po_Odm_TaksitTipi13</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>300</td>
+<td>po_Odm_TaksitTipi14</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>301</td>
+<td>po_Odm_TaksitTipi15</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>302</td>
+<td>po_Odm_TaksitTipi16</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>303</td>
+<td>po_Odm_TaksitTipi17</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>304</td>
+<td>po_Odm_TaksitTipi18</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>305</td>
+<td>po_Odm_TaksitTipi19</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>306</td>
+<td>po_Odm_TaksitTipi20</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>307</td>
+<td>po_Odm_TaksitTipi21</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>308</td>
+<td>po_Odm_TaksitTipi22</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>309</td>
+<td>po_Odm_TaksitTipi23</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>310</td>
+<td>po_Odm_TaksitTipi24</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>311</td>
+<td>po_Odm_TaksitTipi25</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>312</td>
+<td>po_Odm_TaksitTipi26</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>313</td>
+<td>po_Odm_TaksitTipi27</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>314</td>
+<td>po_Odm_TaksitTipi28</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>315</td>
+<td>po_Odm_TaksitTipi29</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>316</td>
+<td>po_Odm_TaksitTipi30</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>317</td>
+<td>po_Odm_TaksitTipi31</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>318</td>
+<td>po_Odm_TaksitTipi32</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>319</td>
+<td>po_Odm_TaksitTipi33</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>320</td>
+<td>po_Odm_TaksitTipi34</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>321</td>
+<td>po_Odm_TaksitTipi35</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>322</td>
+<td>po_Odm_TaksitTipi36</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>323</td>
+<td>po_Odm_TaksitTipi37</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>324</td>
+<td>po_Odm_TaksitTipi38</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>325</td>
+<td>po_Odm_TaksitTipi39</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>326</td>
+<td>po_Odm_TaksitTipi40</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>327</td>
+<td>po_Odm_TaksitTipi41</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>328</td>
+<td>po_Odm_TaksitTipi42</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>329</td>
+<td>po_Odm_TaksitTipi43</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>330</td>
+<td>po_Odm_TaksitTipi44</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>331</td>
+<td>po_Odm_TaksitTipi45</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>332</td>
+<td>po_Odm_TaksitTipi46</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>333</td>
+<td>po_Odm_TaksitTipi47</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>334</td>
+<td>po_Odm_TaksitTipi48</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>335</td>
+<td>po_Odm_TaksitTipi49</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>336</td>
+<td>po_Odm_TaksitTipi50</td>
+<td>Tinyint</td>
+<td>�deme Taksit Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>337</td>
+<td>po_OdemeNo1</td>
+<td>Tinyint</td>
+<td>�deme No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>338</td>
+<td>po_ProvizyonKodu1</td>
+<td>Nvarchar(10)</td>
+<td>Provizyon Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>339</td>
+<td>po_ProvizyonTutari1</td>
+<td>Float</td>
+<td>Provizyon Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>340</td>
+<td>po_OdemeNo2</td>
+<td>Tinyint</td>
+<td>�deme No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>341</td>
+<td>po_ProvizyonKodu2</td>
+<td>Nvarchar(10)</td>
+<td>Provizyon Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>342</td>
+<td>po_ProvizyonTutari2</td>
+<td>Float</td>
+<td>Provizyon Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>343</td>
+<td>po_OdemeNo3</td>
+<td>Tinyint</td>
+<td>�deme No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>344</td>
+<td>po_ProvizyonKodu3</td>
+<td>Nvarchar(10)</td>
+<td>Provizyon Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>345</td>
+<td>po_ProvizyonTutari3</td>
+<td>Float</td>
+<td>Provizyon Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>346</td>
+<td>po_OdemeNo4</td>
+<td>Tinyint</td>
+<td>�deme No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>347</td>
+<td>po_ProvizyonKodu4</td>
+<td>Nvarchar(10)</td>
+<td>Provizyon Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>348</td>
+<td>po_ProvizyonTutari4</td>
+<td>Float</td>
+<td>Provizyon Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>349</td>
+<td>po_OdemeNo5</td>
+<td>Tinyint</td>
+<td>�deme No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>350</td>
+<td>po_ProvizyonKodu5</td>
+<td>Nvarchar(10)</td>
+<td>Provizyon Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>351</td>
+<td>po_ProvizyonTutari5</td>
+<td>Float</td>
+<td>Provizyon Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>352</td>
+<td>po_OdemeNo6</td>
+<td>Tinyint</td>
+<td>�deme No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>353</td>
+<td>po_ProvizyonKodu6</td>
+<td>Nvarchar(10)</td>
+<td>Provizyon Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>354</td>
+<td>po_ProvizyonTutari6</td>
+<td>Float</td>
+<td>Provizyon Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>355</td>
+<td>po_Tahsilat_evrakno_seri</td>
+<td>dbo.evrakseri_str</td>
+<td>Tahsilat Evrak Seri No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>356</td>
+<td>po_Tahsilat_evrakno_sira</td>
+<td>Integer</td>
+<td>Tahsilat Evrak S�ra No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>357</td>
+<td>po_Tahsilat_Tutari</td>
+<td>Float</td>
+<td>Tahsilat Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>358</td>
+<td>po_ParaUstuOdemeTipi</td>
+<td>Tinyint</td>
+<td>Para �st� �deme Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>359</td>
+<td>po_ParaUstuAnaDtut</td>
+<td>Float</td>
+<td>Para �st� Ana D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>360</td>
+<td>po_ParaUstuOrjDtut</td>
+<td>Float</td>
+<td>Para �st� Orjinal D�viz Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>361</td>
+<td>po_EvrakID</td>
+<td>Nvarchar(40)</td>
+<td>Evrak ID</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>362</td>
+<td>po_AdresNo</td>
+<td>Int</td>
+<td>Adres No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>363</td>
+<td>po_EArsivSeri</td>
+<td>Nvarchar(7)</td>
+<td>e-Ar�iv Seri Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>364</td>
+<td>po_EArsivSira</td>
+<td>Int</td>
+<td>e-Ar�iv S�ra Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>365</td>
+<td>po_ZNo</td>
+<td>Int</td>
+<td>Z No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>366</td>
+<td>po_FNo</td>
+<td>Int</td>
+<td>F No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>367</td>
+<td>po_EJNo</td>
+<td>Int</td>
+<td>EJ No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>368</td>
+<td>po_OKCEvrakID</td>
+<td>Nvarchar(40)</td>
+<td>OKC Evrak Id</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>369</td>
+<td>po_YolcuBeraberKod</td>
+<td>Nvarchar(25)</td>
+<td>Yolcu Beraber Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>370</td>
+<td>po_YolcuBeraberIstisnaKodu</td>
+<td>Nvarchar(5)</td>
+<td>Yolcu Beraber �stisna Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>371</td>
+<td>po_YolcuBeraberAraciKurumKodu</td>
+<td>Nvarchar(25)</td>
+<td>Yolcu Beraber Arac� Kurum Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>372</td>
+<td>po_GibeGonderildiFl</td>
+<td>Bit</td>
+<td>G�B'e G�nderildi Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>373</td>
+<td>po_KayitSiraNo</td>
+<td>Integer Identity</td>
+<td>Kay�t S�ra Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_PCARIHAR_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>po_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_PCARIHAR_02</td>
+<td>UNIQUE</td>
+<td>po_KasaKodu, po_BelgeNo</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 21.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/pcarihar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:39 GMT -->
+</html>

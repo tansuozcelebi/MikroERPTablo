@@ -1,0 +1,357 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/stok_hareketleri_ozet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:41 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1180</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : STOK_HAREKETLERI_OZET</b></td>
+    <td width="50%"><b>Tablo : Stok Hareket �zeti</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>sho_RECno</td>
+  <td>Integer IDENTITY</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>sho_firmano</td>
+  <td>Integer</td>
+  <td>Firma No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>sho_subeno</td>
+  <td>Integer</td>
+  <td>�ube No</td>
+  <td>&nbsp;</td>
+ </tr>
+  <tr>
+  <td>3</td>
+  <td>sho_StokKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>sho_SrmMerkezi</td>
+  <td>Nvarchar(25)</td>
+  <td>Sorumluluk Merkezi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>sho_ProjeKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Proje Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>sho_Depo</td>
+  <td>Integer</td>
+  <td>Depo</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>sho_MaliYil</td>
+  <td>Integer</td>
+  <td>Mali Y�l</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>sho_Donem</td>
+  <td>Tinyint</td>
+  <td>D�nem</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>sho_HareketCins</td>
+  <td>Tinyint</td>
+  <td>Hareket Cinsi</td>
+  <td>0:Toptan 1:Perakende 2:D�� Ticaret 3:Stok Virman 4:Fire 5:Sarf 
+  6:Transfer 7:�retim 8:Fason 9:De�er Fark� 10:Say�m 11:Stok A��l�� 
+  12:�thalat-�hracat 13:Hal 14:M�stahsil 15:M�stahsil De�er Fark� 14:Kabz�mal 15:Gider Pusulas�</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>sho_GirisNormal</td>
+  <td>Float</td>
+  <td>Giri� Normal</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>sho_GirisIade</td>
+  <td>Float</td>
+  <td>Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>sho_CikisNormal</td>
+  <td>Float</td>
+  <td>��k�� Normal</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>sho_CikisIade</td>
+  <td>Float</td>
+  <td>��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>sho_GirisNormal_2</td>
+  <td>Float</td>
+  <td>Giri� Normal</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>sho_GirisIade_2</td>
+  <td>Float</td>
+  <td>Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>sho_CikisNormal_2</td>
+  <td>Float</td>
+  <td>��k�� Normal</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>sho_CikisIade_2</td>
+  <td>Float</td>
+  <td>��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>sho_Maliyet_Ana_Giris</td>
+  <td>Float</td>
+  <td>Maliyet Ana Dvz. Giri�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>sho_Maliyet_Ana_GirisIade</td>
+  <td>Float</td>
+  <td>Maliyet Ana Dvz. Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr> 
+  <tr>
+  <td>20</td>
+  <td>sho_Maliyet_Ana_Cikis</td>
+  <td>Float</td>
+  <td>Maliyet Ana Dvz. ��k��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>sho_Maliyet_Ana_CikisIade</td>
+  <td>Float</td>
+  <td>Maliyet Ana Dvz. ��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>sho_Maliyet_Alt_Giris</td>
+  <td>Float</td>
+  <td>Maliyet Alternatif Dvz. Giri�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>sho_Maliyet_Alt_GirisIade</td>
+  <td>Float</td>
+  <td>Maliyet Alternatif Dvz. Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr> 
+  <tr>
+  <td>24</td>
+  <td>sho_Maliyet_Alt_Cikis</td>
+  <td>Float</td>
+  <td>Maliyet Alternatif Dvz. ��k��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>sho_Maliyet_Alt_CikisIade</td>
+  <td>Float</td>
+  <td>Maliyet Alternatif Dvz. ��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>sho_Maliyet_Orj_Giris</td>
+  <td>Float</td>
+  <td>Maliyet Orjinal Dvz. Giri�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>sho_Maliyet_Orj_GirisIade</td>
+  <td>Float</td>
+  <td>Maliyet Orjinal Dvz. Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr> 
+  <tr>
+  <td>28</td>
+  <td>sho_Maliyet_Orj_Cikis</td>
+  <td>Float</td>
+  <td>Maliyet Orjinal Dvz. ��k��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>sho_Maliyet_Orj_CikisIade</td>
+  <td>Float</td>
+  <td>Maliyet Orjinal Dvz. ��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>sho_Belge_Ana_Giris</td>
+  <td>Float</td>
+  <td>Belge Ana Dvz. Giri�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>sho_Belge_Ana_GirisIade</td>
+  <td>Float</td>
+  <td>Belge Ana Dvz. Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr> 
+  <tr>
+  <td>32</td>
+  <td>sho_Belge_Ana_Cikis</td>
+  <td>Float</td>
+  <td>Belge Ana Dvz. ��k��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>sho_Belge_Ana_CikisIade</td>
+  <td>Float</td>
+  <td>Belge Ana Dvz. ��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>sho_Belge_Alt_Giris</td>
+  <td>Float</td>
+  <td>Belge Alternatif Dvz. Giri�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>sho_Belge_Alt_GirisIade</td>
+  <td>Float</td>
+  <td>Belge Alternatif Dvz. Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr> 
+  <tr>
+  <td>36</td>
+  <td>sho_Belge_Alt_Cikis</td>
+  <td>Float</td>
+  <td>Belge Alternatif Dvz. ��k��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>sho_Belge_Alt_CikisIade</td>
+  <td>Float</td>
+  <td>Belge Alternatif Dvz. ��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>sho_Belge_Orj_Giris</td>
+  <td>Float</td>
+  <td>Belge Orjinal Dvz. Giri�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>sho_Belge_Orj_GirisIade</td>
+  <td>Float</td>
+  <td>Belge Orjinal Dvz. Giri� �ade</td>
+  <td>&nbsp;</td>
+  </tr> 
+  <tr>
+  <td>40</td>
+  <td>sho_Belge_Orj_Cikis</td>
+  <td>Float</td>
+  <td>Belge Orjinal Dvz. ��k��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>sho_Belge_Orj_CikisIade</td>
+  <td>Float</td>
+  <td>Belge Orjinal Dvz. ��k�� �ade</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOK_HAREKETLERI_OZET_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>sho_RECno</td>
+</tr>
+<tr>
+<td>NDX_STOK_HAREKETLERI_OZET_01</td>
+<td>UNIQUE</td>
+<td>sho_StokKodu, sho_Depo, sho_MaliYil, sho_Donem, sho_HareketCins, sho_SrmMerkezi, sho_ProjeKodu, sho_firmano, sho_subeno</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 31.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/stok_hareketleri_ozet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:41 GMT -->
+</html>

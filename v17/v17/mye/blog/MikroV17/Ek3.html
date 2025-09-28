@@ -1,0 +1,227 @@
+<html>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Ek3.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>EK 3: FrmMain.cs</title>
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+</head>
+
+<body><p class="Caption"><i><a href="index-2.html">Database Yap�s�</a></i></p>
+
+	<h2>Ek 3: FrmMain.cs</h2>
+	using System;</br>
+	using System.Collections.Generic;</br>
+	using System.ComponentModel;</br>
+	using System.Data;</br>
+	using System.Data.SqlClient;</br>
+	using System.Drawing;</br>
+	using System.Xml;</br>
+	using System.Windows.Forms;</br>
+	<br>
+	namespace MikroSDK <br>
+{<br>
+    public partial class FrmMain : Form<br>
+    {   private myeDB.myeMainClass _myeMain;<br>
+        private bool _dbConnectionOk;<br>
+        private string _connectionString = "";<br>
+		<br>
+	public FrmMain()<br>
+        { InitializeComponent();<br>
+            _myeMain = new myeDB.myeMainClass(); }</br>
+		<br>
+	private void FrmMain_Shown(object sender, EventArgs e)<br>
+        {  loginToolStripMenuItem_Click(null, EventArgs.Empty); }</br>
+		<br>
+	private void ��k��ToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { Close(); }</br>
+		<br>
+	private void loginToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { FrmLoginInfo loginInfoFrm = new FrmLoginInfo(_myeMain);<br>
+            loginInfoFrm.ShowDialog();<br>
+            logoutToolStripMenuItem.Enabled = _myeMain.Logged != 0;<br>
+            loginInfoFrm.Dispose(); }</br>
+		<br>
+	 private void logoutToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { if (_myeMain.LogOff() == 0)<br>
+                MessageBox.Show("Logout i�lemi s�ras�nda bir hata olu�tu."); }</br>	
+		<br>
+	 private void tableImportToolStripMenuItem1_Click(object sender, EventArgs e)<br>
+        { if (openFileDialog1.ShowDialog() == DialogResult.OK)<br>
+                ShowResult(_myeMain.ImportXML(openFileDialog1.FileName)); }</br>
+		<br>
+	 private void ShowResult(int result)<br>
+        { if (result == 0)<br>
+                MessageBox.Show("��lem ba�ar�l�", "Sonu�", MessageBoxButtons.OK, MessageBoxIcon.Information);<br>
+            else<br>
+            { string message = "";<br>
+                switch (result)<br>
+                { case -1: message = "SONUC -1 : ��lem Ba�ar�s�z. Tan�mlanmam�� Hata!"; break;<br>
+                    case 1: message = "SONUC  1 : Hatali Table No"; break;<br>
+                    case 2: message = "SONUC  2 : Hatali Parametre No"; break;<br>
+                    case 3: message = "SONUC  3 : Header`da Tanim (APN) dosyasi belirtilmemis"; break;<br>
+                    case 4: message = "SONUC  4 : Tanim dosyasi yok"; break;<br>
+                    case 5: message = "SONUC  5 : Import dosyasi bulunamadi yada XML Hatali"; break;<br>
+                    case 6: message = "SONUC  6 : Tekrarlayan Index"; break;<br>
+                    case 7: message = "SONUC  7 : Sirket Bulunamadi"; break;<br>
+                    case 8: message = "SONUC  8 : Kullanici / Sifre Hatali"; break;<br>
+                    case 9: message = "SONUC  9 : Firma Calisma dizini Hatali"; break;<br>
+                    case 10: message = "SONUC 10 : Parametre Hatasi"; break;<br>
+                    case 11: message = "SONUC 11 : Firma Yolu Bulunamadi"; break;<br>
+                    case 12: message = "SONUC 12 : Firma Bilgileri Bulunamadi"; break;<br>
+                    case 13: message = "SONUC 13 : Export Dosyasi Yaratilamiyor"; break;<br>
+                    case 14: message = "SONUC 14 : Alan ismi Bulunamadi"; break;<br>
+                    case 15: message = "SONUC 15 : Sisteme Girilmemis"; break;<br>
+                    case 16: message = "SONUC 16 : Kayit yapilamadi"; break;<br>
+                    default: message = String.Format("SONUC {0} : Hatan�n kapsam� bilinmiyor", result); break; }<br>
+                MessageBox.Show(message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error); }</br>
+        }<br>
+		<br>
+	 private void tableExportToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { if (saveFileDialog1.ShowDialog() == DialogResult.OK)<br>
+            { FrmTableSelect tableSelect = new FrmTableSelect();<br>
+                if (tableSelect.ShowDialog() == DialogResult.OK)<br>
+                    ShowResult(_myeMain.ExportXML(tableSelect.SelectedTableNo, 1, saveFileDialog1.FileName));<br>
+                tableSelect.Dispose(); } }<br>
+		<br>	
+		private void evrakImportToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { MessageBox.Show("Ekrana gelecek ilk pencere yard�myla XML dosyas�n� se�meniz gerekmekte.\nDaha sonra gelecek pencere yard�m�yla ise XSL dosyas�n� se�melisiniz.\nE�er XML format� olarak Mikro'nun yap�s�n� kullanmak istiyorsan�z XSL dosyas� se�imini iptal ediniz.");<br>
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)<br>
+            { string xmlPath = openFileDialog1.FileName;<br>
+                string xslPath = openFileDialog1.ShowDialog() == DialogResult.OK ?<br>
+                    openFileDialog1.FileName : "";<br>
+                ShowResult(_myeMain.EvrakImportXML(xmlPath, xslPath)); } }<br>
+		<br>
+		private void openLogToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { if (openFileDialog1.ShowDialog() == DialogResult.OK)<br>
+                richTextBox1.LoadFile(openFileDialog1.FileName); }</br>
+		<br>
+		private void createXMLToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        {  if (CheckConnection())<br>
+            { FrmTableSelect frmTableSelect = new FrmTableSelect();<br>
+                if (frmTableSelect.ShowDialog() == DialogResult.OK)<br>
+                { XmlElement root = CreateBaseDocument();<br>
+                    XmlElement table = root.OwnerDocument.CreateElement("Table");<br>
+                    table.InnerText = frmTableSelect.SelectedTableNo.ToString();<br>
+                    root.AppendChild(table);<br>
+					<br>
+                    XmlElement param = root.OwnerDocument.CreateElement("Param");<br>
+                    param.InnerText = "1";<br>
+                    root.AppendChild(param);<br>
+					<br>
+                    XmlElement row = root.OwnerDocument.CreateElement("row");<br>
+                    InsertFields(row, frmTableSelect.SelectedTableName);<br>
+                    root.AppendChild(row);<br>
+                    WriteDocument(root.OwnerDocument); }<br>
+                frmTableSelect.Dispose(); } }</br>
+		<br>
+		private bool CheckConnection()<br>
+        { if (!_dbConnectionOk)<br>
+                toolStripMenuItem1_Click(null, EventArgs.Empty);<br>
+            return _dbConnectionOk;  }</br>
+        <br>
+		private void toolStripMenuItem1_Click(object sender, EventArgs e)<br>
+        { FrmConnectionString connStrFrm = new FrmConnectionString();<br>
+            if (connStrFrm.ShowDialog() == DialogResult.OK)<br>
+            { _dbConnectionOk = true;<br>
+                _connectionString = connStrFrm.ConnectionString; }<br>
+            connStrFrm.Dispose(); }</br>
+		<br>
+		private XmlElement CreateBaseDocument()<br>
+        { XmlDocument document = new XmlDocument();<br>
+            XmlDeclaration declaration = document.CreateXmlDeclaration("1.0", "Windows-1254", null);<br>
+            document.AppendChild(declaration);<br>
+            XmlElement root = document.CreateElement("Mikro");<br>
+            document.AppendChild(root);<br>
+			return root; }<br>
+		<br>
+		 private void InsertFields(XmlElement rowElement, string tableName)<br>
+        { SqlConnection connection = new SqlConnection(_connectionString);<br>
+            SqlCommand cmd = new SqlCommand("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @tableName ORDER BY <br>ORDINAL_POSITION", connection);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);<br>
+            cmd.Parameters.Add("@tableName", SqlDbType.NVarChar).Value = tableName;<br>
+            try<br>
+            {  DataSet ds = new DataSet();<br>
+                adp.Fill(ds);<br>
+                foreach (DataRow row in ds.Tables[0].Rows)<br>
+                    rowElement.AppendChild(rowElement.OwnerDocument.CreateElement((string)row[0])); }<br>
+            catch<br>
+            {  MessageBox.Show("Veri taban� ba�lant�s�nda bir hata olu�tu"); }<br>
+            finally<br>
+            {  adp.Dispose();<br>
+                cmd.Dispose();<br>
+                connection.Dispose();  }  }</br>
+		<br>
+		private void tabloAktar�mToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { FrmTableSelect tblSelect = new FrmTableSelect();<br>
+            if (tblSelect.ShowDialog() == DialogResult.OK)<br>
+                CreateEvrakXml(0, tblSelect.SelectedTableName, tblSelect.SelectedTableName, null);<br>
+            tblSelect.Dispose(); }</br>
+		<br>
+		 private void CreateEvrakXml(int evrakType, string evrakDesc, string tableName, string detailTableName)<br>
+        {  if (CheckConnection())<br>
+            { XmlElement root = CreateBaseDocument();<br>
+                XmlElement evrak = root.OwnerDocument.CreateElement("Evrak");<br>
+                evrak.InnerText = evrakType.ToString();<br>
+                root.AppendChild(evrak);<br>
+				<br>
+                XmlElement desc = root.OwnerDocument.CreateElement("EvrakDesc");<br>
+                desc.InnerText = evrakDesc;<br>
+                root.AppendChild(desc);<br>
+				<br>
+                XmlElement row = root.OwnerDocument.CreateElement("row");<br>
+                if (tableName != null)<br>
+                    InsertFields(row, tableName);<br>
+                root.AppendChild(row);<br>
+				<br>
+                if (detailTableName != null)<br>
+                { XmlElement detail = row.OwnerDocument.CreateElement("detail");<br>
+                    row.AppendChild(detail);<br>
+                    InsertFields(detail, detailTableName); }<br>
+				<br>
+                WriteDocument(root.OwnerDocument);  }  }</br>
+				<br>
+				private void malFaturas�Evra��ToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { CreateEvrakXml(1, "Mal Faturas� Evra��", "CARI_HESAP_HAREKETLERI", "STOK_HAREKETLERI"); }<br>
+		<br>
+        private void kasaFi�iEvra��ToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { CreateEvrakXml(2, "Kasa Fi�i Evra��", "CARI_HESAP_HAREKETLERI", null);
+        }<br>
+		<br>
+        private void muhasebeEvra��ToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { CreateEvrakXml(3, "Muhasebe Fi�i Evra��", null, "MUHASEBE_FISLERI"); }<br>
+		<br>
+        private void bankaFi�iEvra�iToolStripMenuItem_Click(object sender, EventArgs e)<br>
+        { CreateEvrakXml(4, "Mal Faturas� Evra��", "CARI_HESAP_HAREKETLERI", "CARI_HESAP_HAREKETLERI"); }<br>
+		<br>
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)<br>
+        { CreateEvrakXml(5, "�ek Giri� Bordrosu Evra��", null, "CARI_HESAP_HAREKETLERI"); }<br>
+		<br>
+        private void cariDekontEvra��ToolStripMenuItem_Click(object sender, EventArgs e)
+        { CreateEvrakXml(6, "Cari Dekont Evra��", null, "CARI_HESAP_HAREKETLERI"); }<br>
+		<br>
+        private void sarf��k��ToolStripMenuItem_Click(object sender, EventArgs e)
+        { CreateEvrakXml(7, "Sarf ��k�� Ambar Fi�i", null, "STOK_HAREKETLERI"); }</br>
+		<br>
+		private void WriteDocument(XmlDocument document)<br>
+        { System.IO.StringWriter writer = new System.IO.StringWriter();<br>
+            XmlTextWriter xmlWriter = new XmlTextWriter(writer);<br>
+            xmlWriter.Formatting = Formatting.Indented;<br>
+            xmlWriter.Indentation = 4;<br>
+            document.WriteTo(xmlWriter);<br>
+            richTextBox1.Text = writer.ToString();<br>
+            writer.Dispose(); }<br>
+		<br>
+        private void btnSave_Click(object sender, EventArgs e)<br>
+        { if (saveFileDialog1.ShowDialog() == DialogResult.OK)<br>
+                richTextBox1.SaveFile(saveFileDialog1.FileName); } } }<br>
+		<br>
+	<hr>G�ncellenme Tarihi : 09.08.2012 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2012 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Ek3.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+</html>

@@ -1,0 +1,580 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/servis_hareketleri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:37 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 595</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : SERVIS_HAREKETLERI</b></td>
+    <td width="50%"><b>Tablo : Servis Hareketleri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>srvh_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>srvh_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>srvh_SpecRECNo</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>srvh_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>srvh_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>srvh_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>srvh_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>srvh_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>srvh_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>srvh_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>srvh_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>srvh_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>srvh_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>srvh_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>srvh_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>srvh_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>srvh_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>srvh_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>srvh_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>srvh_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>srvh_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>srvh_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>srvh_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>srvh_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>srvh_Hash</td>
+<td>Bigint</td>
+<td>Kay�t �zel Anahtar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>srvh_firmano</td>
+<td>Integer</td>
+<td>Firma No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>srvh_subeno</td>
+<td>Integer</td>
+<td>�ube No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>srvh_evrakno_seri</td>
+<td>dbo.evrakseri_str</td>
+<td>Evrak Seri No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>srvh_evrakno_sira</td>
+<td>Integer</td>
+<td>Evrak S�ra No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>srvh_belgeno</td>
+<td>dbo.belgeno_str</td>
+<td>Belge No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>srvh_belge_tarih</td>
+<td>DateTime</td>
+<td>Belge Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>srvh_isemri_uid</td>
+<td>Uniqueidentifier</td>
+<td>�� Emri Uid</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>srvh_referans_no</td>
+<td>Nvarchar(25)</td>
+<td>Referans No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>srvh_tarih</td>
+<td>DateTime</td>
+<td>Tarih</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>srvh_yetkili_uid</td>
+<td>Uniqueidentifier</td>
+<td>Yetkili Uid</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>srvh_calisma_saati</td>
+<td>Integer</td>
+<td>�al��ma Saati</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>srvh_yapilan_islemler1</td>
+<td>Nvarchar(120)</td>
+<td>Yap�lan ��lemler</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>srvh_yapilan_islemler2</td>
+<td>Nvarchar(120)</td>
+<td>Yap�lan ��lemler</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>srvh_yapilan_islemler3</td>
+<td>Nvarchar(120)</td>
+<td>Yap�lan ��lemler</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>srvh_baslama_saati</td>
+<td>DateTime</td>
+<td>Ba�lama Saati</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>srvh_bitis_saati</td>
+<td>DateTime</td>
+<td>Biti� Saati</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>srvh_arac_plaka</td>
+<td>Nvarchar(25)</td>
+<td>Ara� Plakas�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>srvh_toplam_yol</td>
+<td>Float</td>
+<td>Toplam Yol</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>srvh_satirno</td>
+<td>Integer</td>
+<td>Sat�r No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>srvh_hareket_tipi</td>
+<td>Tinyint</td>
+<td>Hareket Tipi</td>
+<td>0:Stok 1:Hizmet</td>
+</tr>
+<tr>
+<td>45</td>
+<td>srvh_stok_hizmet_kodu</td>
+<td>Nvarchar(25)</td>
+<td>Stok Hizmet Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>srvh_aciklama</td>
+<td>Nvarchar(40)</td>
+<td>A��klama</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>srvh_miktari</td>
+<td>Float</td>
+<td>Miktar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>srvh_fatura_garanti_tipi</td>
+<td>Tinyint</td>
+<td>Fatura Garanti Tipi</td>
+<td>0:Faturalanacak 1:Bak�m Onar�m 2:Garanti 3:Ek Garanti 4:Bedelsiz 5:Opsiyonel Bedelsiz 6:Opsiyonel Bedelli</td>
+</tr>
+<tr>
+<td>49</td>
+<td>srvh_durumu</td>
+<td>Tinyint</td>
+<td>Servis Durumu</td>
+<td>0:A��k 1:Kapal� 2:Onayland� 3:Faturaland� 4:Sarfedildi</td>
+</tr>
+<tr>
+<td>50</td>
+<td>srvh_depo_no</td>
+<td>Integer</td>
+<td>Depo No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>srvh_sormerk</td>
+<td>Nvarchar(25)</td>
+<td>Sorumluluk Merkezi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>srvh_projekodu</td>
+<td>Nvarchar(25)</td>
+<td>Proje Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>srvh_doviz_cinsi</td>
+<td>Tinyint</td>
+<td>D�viz Cinsi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>54</td>
+<td>srvh_sip_tip</td>
+<td>Tinyint</td>
+<td>Sipari� Tipi</td>
+<td>0:Normal Sipari� 1:Proforma Sipari�</td>
+</tr>
+<tr>
+<td>55</td>
+<td>srvh_sip_uid</td>
+<td>Uniqueidentifier</td>
+<td>Sipari� Uid</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>srvh_chz_mak_tipi</td>
+<td>Tinyint</td>
+<td>Cihaz Makine Tipi</td>
+<td>0:S�f�r Makine 1:Kiral�k Makine 2:M��teri Makinesi 3:D��ardan Kiralanan 4:�kinci El</td>
+</tr>
+<tr>
+<td>57</td>
+<td>srvh_ariza_tespiti_yapan_tipi</td>
+<td>Tinyint</td>
+<td>Ar�za Tespiti Yapan�n Tipi</td>
+<td>0:Ekip 1:Personel</td>
+</tr>
+<tr>
+<td>58</td>
+<td>srvh_ariza_tespiti_yapan_ekip</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Tespiti Yapan Ekip</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>srvh_ise_atanan_tipi</td>
+<td>Tinyint</td>
+<td>��e Atanan�n Tipi</td>
+<td>0:Ekip 1:Personel</td>
+</tr>
+<tr>
+<td>60</td>
+<td>srvh_ise_atanan_ekip</td>
+<td>Nvarchar(25)</td>
+<td>��e Atanan Ekip</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>srvh_isi_yapan_tipi</td>
+<td>Tinyint</td>
+<td>��i Yapan�n Tipi</td>
+<td>0:Ekip 1:Personel</td>
+</tr>
+<tr>
+<td>62</td>
+<td>srvh_isi_yapan_ekip</td>
+<td>Nvarchar(25)</td>
+<td>��i Yapan Ekip</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>srvh_cihaz_sayac_degeri</td>
+<td>Float</td>
+<td>Cihaz Saya� De�eri</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>srvh_ariza_kodu1</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>srvh_ariza_kodu2</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>srvh_ariza_kodu3</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>srvh_ariza_kodu4</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>srvh_ariza_kodu5</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>srvh_ariza_kodu6</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>70</td>
+<td>srvh_ariza_kodu7</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>srvh_ariza_kodu8</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>srvh_ariza_kodu9</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>srvh_ariza_kodu10</td>
+<td>Nvarchar(25)</td>
+<td>Ar�za Kodu</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_SERVIS_HAREKETLERI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>srvh_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_SERVIS_HAREKETLERI_02</td>
+<td>UNIQUE</td>
+<td>srvh_evrakno_seri, srvh_evrakno_sira, srvh_satirno</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 28.11.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/servis_hareketleri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:37 GMT -->
+</html>

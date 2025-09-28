@@ -1,0 +1,320 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/muhasebe_fisleri_ozet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:41 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1184</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : MUHASEBE_FISLERI_OZET</b></td>
+    <td width="50%"><b>Tablo : Muhasebe Fi� �zeti</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>mfo_RECno</td>
+  <td>Integer IDENTITY</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>mfo_firmano</td>
+  <td>Integer</td>
+  <td>Firma No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>mfo_subeno</td>
+  <td>Integer</td>
+  <td>�ube No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>mfo_HesapKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Hesap Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+ <tr>
+  <td>4</td>
+  <td>mfo_FisTuru</td>
+  <td>Tinyint</td>
+  <td>Fi� T�r�</td>
+  <td>0:Mahsup 1:Tahsil 2:Tediye 3:A��l�� 4:Kapan��</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>mfo_ProjeKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Proje Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>mfo_SrmMerkezi</td>
+  <td>Nvarchar(25)</td>
+  <td>Sorumluluk Merkezi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>mfo_MaliYil</td>
+  <td>Integer</td>
+  <td>Mali Y�l</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>mfo_Donem</td>
+  <td>Tinyint</td>
+  <td>D�nem</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>mfo_Grp0_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>mfo_Grp1_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>mfo_Grp2_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>mfo_Grp3_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>mfo_Grp4_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>mfo_Grp5_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>mfo_Grp6_B_Meblag</td>
+  <td>Float</td>
+  <td>Bor� Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>mfo_Grp0_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>mfo_Grp1_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>mfo_Grp2_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>mfo_Grp3_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>mfo_Grp4_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>mfo_Grp5_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>mfo_Grp6_A_Meblag</td>
+  <td>Float</td>
+  <td>Alacak Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>mfo_Grp0_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>mfo_Grp1_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>mfo_Grp2_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>mfo_Grp3_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>mfo_Grp4_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>mfo_Grp5_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>mfo_Grp6_B_PasifMeblag</td>
+  <td>Float</td>
+  <td>Bor� Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>mfo_Grp0_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>mfo_Grp1_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>mfo_Grp2_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>mfo_Grp3_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>mfo_Grp4_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>mfo_Grp5_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>mfo_Grp6_A_PasifMeblag</td>
+  <td>Float</td>
+  <td>Alacak Pasif Mebla��</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_MUHASEBE_FISLERI_OZET_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>mfo_RECno</td>
+</tr>
+<tr>
+<td>NDX_MUHASEBE_FISLERI_OZET_01</td>
+<td>UNIQUE</td>
+<td>mfo_firmano, mfo_MaliYil, mfo_HesapKodu, mfo_Donem, mfo_SrmMerkezi, mfo_ProjeKodu, mfo_FisTuru, mfo_subeno</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 31.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/muhasebe_fisleri_ozet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:41 GMT -->
+</html>

@@ -1,0 +1,754 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/e_fatura_islemleri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:36 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 559</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : E_FATURA_ISLEMLERI</b></td>
+    <td width="50%"><b>Tablo : e-Fatura ��lemleri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>efi_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>efi_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>efi_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>efi_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>efi_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>efi_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>efi_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>efi_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>efi_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>efi_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>efi_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>efi_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>efi_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>efi_special1</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>efi_special2</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>efi_special3</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>efi_MainProgramNo</td>
+  <td>Smallint</td>
+  <td>Ana Program Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>efi_VersionNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Versiyon Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>efi_MenuNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Men� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>efi_MikroSpecial1</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>efi_MikroSpecial2</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>efi_MikroSpecial3</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>efi_ExternalProgramType</td>
+  <td>Tinyint</td>
+  <td>D�� Yaz�l�m Aktar�m Tipi</td>
+  <td>0:Genel 1:Para��t 2:Irgat</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>efi_ExternalProgramId</td>
+  <td>Nvarchar(127)</td>
+  <td>D�� Yaz�l�m Id'si</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>efi_tip</td>
+  <td>Tinyint</td>
+  <td>e-Fatura ��lem Tipi</td>
+  <td>0:Bor� 1:Alacak</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>efi_evrakno_seri</td>
+  <td>dbo.evrakseri_str</td>
+  <td>Evrak Seri Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>efi_evrakno_sira</td>
+  <td>Integer</td>
+  <td>Evrak S�ra Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>efi_evrak_tipi</td>
+  <td>Tinyint</td>
+  <td>Evrak Tipi</td>
+  <td>0:Al�� Faturas�<br>
+  1:Tahsilat Makbuzu<br>
+  2:Kasa Tahsilat Fi�i<br>
+  3:Senet Giri� Bordrosu<br>
+  4:�ek Giri� Bordrosu<br>
+  5:Portf�ydeki �ek Kar��l��� Nakit Kasa Tahsilat Makbuzu<br>
+  6:Portf�ydeki Senet Kar��l��� Nakit Tahsilat Makbuzu<br>
+  7:Bankadan Kasaya Nakit �ekme Makbuzu<br>
+  8:Kasadan Bankaya Nakit Yat�rma Makbuzu<br>
+  9:Kredi Virman Fi�i<br>
+  10:Kredi Kabul Fi�i<br>
+  11:Takas �ek ��k�� Bordrosu<br>
+  12:Takas �ek Kar��l�ks�z �ade Bordrosu<br>
+  13:Takas �ek �ade Bordrosu<br>
+  14:Takas �ek �deme Bordrosu<br>
+  15:Tahsile Senet ��k�� Bordrosu<br>
+  16:Tahsilden Protestolu Portf�ye Senet �ade Bordrosu<br>
+  17:Tahsil Senet �ade Bordrosu<br>
+  18:Tahsildeki Senet �deme Bordrosu<br>
+  19:Teminata �ek ��k�� Bordrosu<br>
+  20:Teminat �ek Kar��l�ks�z �ade Bordrosu<br>
+  21:Teminat �ek �ade Bordrosu<br>
+  22:Teminattaki �ek �deme Bordrosu<br>
+  23:Teminata Senet ��k�� Bordrosu<br>
+  24:Teminatdan Protestolu Portf�ye Senet �ade Bordrosu<br>
+  25:Teminat Senet �ade Bordrosu<br>
+  26:Teminat Senet �deme Bordrosu<br>
+  27:Verilen Firma �eki �deme Bordrosu<br>
+  28:Verilen Firma Senedi �deme Bordrosu<br>
+  29:A��l�� Fi�i<br>
+  30:De�erli Ka��tlar A��l�� Fi�i<br>
+  31:Bor� Dekontu<br>
+  32:Alacak Dekontu<br>
+  33:Genel Virman Dekontu<br>
+  34:Gelen Havale<br>
+  35:Gonderilen Havale<br>
+  36:Bankadan Firma Senet �deme<br>
+  37:Kasa Masraf Fi�i<br>
+  38:Bankadan Firma �ek �deme<br>
+  39:Protestolu Senet �ade Giri� Bordrosu<br>
+  40:Kar��l�ks�z �ek �ade Giri� Bordrosu<br>
+  41:Mevduat �ek Kar��l�ks�z �ade<br>
+  42:Mevduat Senet prot �ade<br>
+  43:�ek �ade Giri� Bordrosu<br>
+  44:Senet �ade Giri� Bordrosu<br>
+  45:Protestolu Senet �ade ��k�� Bordrosu<br>
+  46:Kar��l�ks�z �ek �ade ��k�� Bordrosu<br>
+  47:�ek �ade ��k�� Bordrosu<br>
+  48:Senet �ade ��k�� Bordrosu<br>
+  49:Kasadan Kendi �deme Emrimizi Kapatma<br>
+  50:Bankadan Kendi �deme Emrimizi Kapatma<br>
+  51:Firma Kredi Kart� �deme<br>
+  52:Kasadan M��teri �deme S�z� Kapatma<br>
+  53:Bankadan M��teri �deme S�z� Kapatma<br>
+  54:Cari Hesap Kredi Kart� �deme<br>
+  55:Giri� Gider Makbuzu<br>
+  56:Giri� Serbest Meslek Makbuzu<br>
+  57:M��teri Sat�c� Virman Dekontu<br>
+  58:Bankalar Virman Dekontu<br>
+  59:Kur Fark� Virman Dekontu<br>
+  60:Pos Sat�� Virman Dekontu<br>
+  61:Stok Gider Pusulas�<br>
+  62:Kar��l�ks�z Portf�yden Portf�ye Transfer<br>
+  63:Sat�� Faturas�<br>
+  64:Tediye Makbuzu<br>
+  65:Kasa Tediye Fi�i<br>
+  66:Senet ��k�� Bordrosu<br>
+  67:�ek ��k�� Bordrosu<br>
+  68:Protestolu Portf�ydeki Senet Kar��l��� Nakit<br>
+  68:Kar��l�ks�z Portf�ydeki �ek Kar��l��� Nakit<br>
+  70:Kasalar Aras� �ek Transfer Bordrosu<br>
+  71:Kasalar Aras� Senet Transfer Bordrosu<br>
+  72:Kasalar Aras� Kar��l�ks�z �ek Transfer Bordrosu<br>
+  73:Kasalar Aras� Protestolu Senet Transfer Bordrosu<br>
+  74:Kar��l�ks�z ��kan �ek Transfer Bordrosu<br>
+  75:�denmeyen Senet Transfer Bordrosu<br>
+  76:A��l�� �ek Portf�ye Giri� Bordrosu<br>
+  77:Kredi Kart� Masraf Virman Dekontu<br>
+  78:Bankada Tahsildeki Senedi Cariye �ade Bordrosu<br>
+  79:Bankada Teminattaki Senedi Cariye �ade Bordrosu<br>
+  80:Bankada Tahsildeki �eki Cariye �ade Bordrosu<br>
+  81:Bankada Teminattaki �eki Cariye �ade Bordrosu<br>
+  82:�deme Emri Giri� Bordrosu<br>
+  83:�deme Emri ��k�� Bordrosu<br>
+  84:Bankada Tahsildeki Protestolu Senedi Cariye �ade Bordrosu<br>
+  85:Bankada Teminattaki Protestolu Senedi Cariye �ade Bordrosu<br>
+  86:Bankada Tahsildeki Kar��l�ks�z �eki Cariye �ade Bordrosu<br>
+  87:Bankada Teminattaki Kar��l�ks�z �eki Cariye �ade Bordrosu<br>
+  88:Satis Serbest Meslek Makbuzu<br>
+  89:D�viz Al�� Belgesi<br>
+  90:D�viz Sat�� Belgesi<br>
+  91:Grup �irketler Aras� Virman Dekontu<br>
+  92:Firma Havale Emri Kapatma<br>
+  93:M��teri Havale S�z� Kapatma<br>
+  94:Personel Tahakkuk Virman Dekontu<br>
+  95:�thalat Masraf Yans�tma Dekontu<br>
+  96:Finansal Kiralama S�zle�me Evra��<br>
+  97:Cari Vade Fark� S�f�rlama Fi�i<br>
+  98:Tahsil Edilen Avans Makbuzu<br>
+  99:�denen Avans Makbuzu<br>
+  100:Cari Bor� Dekontu<br>
+  101:Cari Alacak Dekontu<br>
+  102:Cari De�erli Ka��t De�erleme Virman Dekontu<br>
+  103:M��teri Kredi Kart� �ade ��k�� Bordrosu<br>
+  104:Bankalar Aras� Kredi Kart� Transferi<br>
+  105:Alternatif D�viz D�n���m Fark� Virman Dekontu<br>
+  106:Amortisman Giderle�tirme Virman Dekontu<br>
+  107:Hizmet Maliyeti Yans�tma Virman Dekontu<br>
+  108:Kredi S�zle�mesi Kabul Fi�i<br>
+  109:Kredi S�zle�mesi Taksit �deme Fi�i<br>
+  110:Kasalar Aras� Virman Dekontu<br>
+  111:Kredi Kabul Virman Dekontu<br>
+  112:Kredi Geri �deme Virman Dekontu<br>
+  113:Kredi Gider Tahakkuku Dekontu<br>
+  114:Kredi Ana Para Vadesi De�i�im Dekontu<br>
+  115:Kredi Gider Vadesi De�i�im Dekontu<br>
+  116:D�nemsel Hizmet Giderle�tirme Gelirle�tirme Dekontu<br>
+  117:D�nemsel Hizmet Gelecek Y�ldan Gelecek Aya Aktarma Dekontu<br>
+  118:Firma Kredi Kart� �ade Giri� Bordrosu<br>
+  119:Teminat Mektubu Giri� Bordrosu<br>
+  120:Teminat Mektubu ��k�� Bordrosu<br>
+  121:Depozito Giri� Bordrosu<br>
+  122:Depozito ��k�� Bordrosu<br>
+  123:Depozito �ekleri Portf�ye Transfer<br>
+  124:Depozito Senetleri Portf�ye Transfer<br>
+  125:Teminat Mektubu �ade ��k�� Bordrosu<br>
+  126:Teminat Mektubu �ade Giri� Bordrosu<br>
+  127:Depozito �ade ��k�� Bordrosu<br>
+  128:Depozito �ade Giri� Bordrosu<br>
+  129:�dendiden Tahsile M��teri Kredi Kart� �ade Bordrosu<br>
+  130:Firma Reel Kredi Kart� Kesinle�tirme Virman Dekontu<br>
+  131:Firma Reel Kredi Kart� �deme Virman Dekontu<br>
+  132:M��teri �deme S�z� �ade ��k�� Bordrosu<br>
+  133:K�smen �denen Senet Transfer Bordrosu<br>
+  134:M��teri Havale S�z� �ade ��k�� Bordrosu<br>
+  135:K�smen �denen �ek Kasalar� Aras� Transfer<br>
+  136:K�smen �denen Kar��l�ks�z �ek Kasalar� Aras� Transfer<br>
+  137:Stoktan Demirba�a Virman Dekontu</td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>efi_gib_seri_sira</td>
+  <td>Nvarchar(40)</td>
+  <td>Seri ve S�ra Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>efi_uuid</td>
+  <td>Nvarchar(40)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>efi_onaylandi_fl</td>
+  <td>Bit</td>
+  <td>Onayland� M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>efi_OnaylayanKulNo</td>
+  <td>Smallint</td>
+  <td>Onaylayan Kullan�c� No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>efi_onaylama_tarihi</td>
+  <td>DateTime</td>
+  <td>Onaylama Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>efi_islem_tipi</td>
+  <td>Tinyint</td>
+  <td>��lem Tipi</td>
+  <td>0:Kabul 1:Red</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>efi_yazdirma_sayisi</td>
+  <td>Integer</td>
+  <td>Yazd�rma Say�s�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>efi_efaturaolustu_fl</td>
+  <td>Bit</td>
+  <td>e-Fatura Olu�tu Mu ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>efi_efaturaolusturanKulNo</td>
+  <td>Smallint</td>
+  <td>e-Fatura Olu�turan Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>efi_efaturaolusturmatarihi</td>
+  <td>DateTime</td>
+  <td>e-Fatura Olu�turma Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>efi_kabuledildi_fl</td>
+  <td>Bit</td>
+  <td>Kabul Edildi Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>efi_kabuledenKulNo</td>
+  <td>Smallint</td>
+  <td>Kabul Eden Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td>efi_kabuletme_tarihi</td>
+  <td>DateTime</td>
+  <td>Kabul Etme Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>efi_rededildi_fl</td>
+  <td>Bit</td>
+  <td>Red Edildi Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td>efi_rededenKulNo</td>
+  <td>Smallint</td>
+  <td>Red Eden Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td>efi_rededilme_tarihi</td>
+  <td>DateTime</td>
+  <td>Red Edilme Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>efi_gonderildi_fl</td>
+  <td>Bit</td>
+  <td>G�nderildi Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>efi_gonderenKulNo</td>
+  <td>Smallint</td>
+  <td>G�nderen Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td>efi_gonderim_tarihi</td>
+  <td>DateTime</td>
+  <td>G�nderim Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>efi_baglama_fl</td>
+  <td>Bit</td>
+  <td>Ba�lanacak M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td>efi_baglayanKulNo</td>
+  <td>Smallint</td>
+  <td>Ba�layan Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>efi_baglama_tarihi</td>
+  <td>DateTime</td>
+  <td>Ba�lama Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>efi_bagsil_fl</td>
+  <td>Bit</td>
+  <td>Ba� Silinecek Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>51</td>
+  <td>efi_bagsilenKulNo</td>
+  <td>Smallint</td>
+  <td>Ba�� Silen Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>52</td>
+  <td>efi_bagisil_tarihi</td>
+  <td>DateTime</td>
+  <td>Ba� Silme Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>53</td>
+  <td>efi_icerikabul_fl</td>
+  <td>Bit</td>
+  <td>��eri Kabul Edilecek Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>54</td>
+  <td>efi_icerikabuledenKulNo</td>
+  <td>Smallint</td>
+  <td>��eri Kabul Eden Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>55</td>
+  <td>efi_icerikabul_tarihi</td>
+  <td>DateTime</td>
+  <td>��eri Kabul Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td>efi_yazdirma_fl</td>
+  <td>Bit</td>
+  <td>Yazd�r�lacak M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>57</td>
+  <td>efi_YazdiranKulNo</td>
+  <td>Smallint</td>
+  <td>Yazd�ran Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>58</td>
+  <td>efi_Yazdirma_tarihi</td>
+  <td>DateTime</td>
+  <td>Yazd�rma Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>59</td>
+  <td>efi_efaturaislem_tipi</td>
+  <td>Tinyint</td>
+  <td>e-Fatura ��lem Tipi</td>
+  <td>0:e-Fatura 1:e-Ar�iv 2:e-�rsaliye 3:e-M�stahsil 4:e-SMM 5:e-ZRaporu 6:e-Bilet 7:e-Yolcu Listesi 8:Vergi M�kellefi Olmayan Fatura</td>
+  </tr>
+  <tr>
+  <td>60</td>
+  <td>efi_fpgonderildi_fl</td>
+  <td>Bit</td>
+  <td>Fatura Pazar�na G�nderildi Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>61</td>
+  <td>efi_fpgonderenKulNo</td>
+  <td>Smallint</td>
+  <td>Fatura Pazar�na G�nderen Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>62</td>
+  <td>efi_fpgonderim_tarihi</td>
+  <td>DateTime</td>
+  <td>Fatura Pazar�na G�nderim Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>63</td>
+  <td>efi_Iptal_fl</td>
+  <td>Bit</td>
+  <td>�ptal Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>64</td>
+  <td>efi_IptaledenKulNo</td>
+  <td>Smallint</td>
+  <td>�ptal Eden Kullan�c� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>65</td>
+  <td>efi_Iptal_tarihi</td>
+  <td>DateTime</td>
+  <td>�ptal Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>66</td>
+  <td>efi_Earsiv_iptal_nedeni</td>
+  <td>Nvarchar(120)</td>
+  <td>G�nderilmi� e-Ar�iv Faturalar�n�n �ptal Nedeni</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>67</td>
+  <td>efi_Earsiv_iptal_tarihi</td>
+  <td>DateTime</td>
+  <td>G�nderilmi� e-Ar�iv Faturalar�n�n �ptal Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>68</td>
+  <td>efi_EfaturaaQueueuuid</td>
+  <td>Nvarchar(40)</td>
+  <td>e-Fatura Kuyruk Id</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>69</td>
+  <td>efi_teslimeden_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Teslim Eden UId</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>70</td>
+  <td>efi_teslimeden_adi</td>
+  <td>Nvarchar(50)</td>
+  <td>Teslim Eden Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>71</td>
+  <td>efi_teslimeden_soyadi</td>
+  <td>Nvarchar(50)</td>
+  <td>Teslim Eden Soyad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>72</td>
+  <td>efi_teslimalan_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Teslim Alan UId</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>73</td>
+  <td>efi_teslimalan_adi</td>
+  <td>Nvarchar(50)</td>
+  <td>Teslim Alan Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>74</td>
+  <td>efi_teslimalan_soyadi</td>
+  <td>Nvarchar(50)</td>
+  <td>Teslim Alan Soyad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>75</td>
+  <td>efi_carikod</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>76</td>
+  <td>efi_shematron_gecmedi_fl</td>
+  <td>Bit</td>
+  <td>e-Fatura ��lemleri Shematron'dan Ge�emedi Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>77</td>
+  <td>efi_Not</td>
+  <td>Nvarchar(127)</td>
+  <td>Not</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_E_FATURA_ISLEMLERI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>efi_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_E_FATURA_ISLEMLERI_02</td>
+<td>&nbsp;</td>
+<td>efi_evrak_tipi, efi_evrakno_seri, efi_evrakno_sira</td>
+</tr>
+<tr>
+<td>NDX_E_FATURA_ISLEMLERI_03</td>
+<td>&nbsp;</td>
+<td>efi_gib_seri_sira</td>
+</tr>
+<tr class=sRow >
+<td>NDX_E_FATURA_ISLEMLERI_04</td>
+<td>&nbsp;</td>
+<td>efi_uuid, efi_evrak_tipi</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 27.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/e_fatura_islemleri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:36 GMT -->
+</html>

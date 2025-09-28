@@ -1,0 +1,1457 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/cari_hesaplar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:15 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 31</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : CARI_HESAPLAR</b></td>
+    <td width="50%"><b>Tablo : Cari Kartlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+ <tr>
+  <td>0</td>
+  <td>cari_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>cari_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>cari_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>cari_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td>cari_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>5</td>
+  <td>cari_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>6</td>
+  <td>cari_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>cari_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>8</td>
+  <td>cari_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>9</td>
+  <td>cari_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>10</td>
+  <td>cari_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>11</td>
+  <td>cari_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>12</td>
+  <td>cari_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>13</td>
+  <td>cari_special1</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>14</td>
+  <td>cari_special2</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>15</td>
+  <td>cari_special3</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>16</td>
+  <td>cari_MainProgramNo</td>
+  <td>Smallint</td>
+  <td>Ana Program Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>17</td>
+  <td>cari_VersionNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Versiyon Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>18</td>
+  <td>cari_MenuNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Men� Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>19</td>
+  <td>cari_MikroSpecial1</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>20</td>
+  <td>cari_MikroSpecial2</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>21</td>
+  <td>cari_MikroSpecial3</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>22</td>
+  <td>cari_ExternalProgramType</td>
+  <td>Tinyint</td>
+  <td>D�� Yaz�l�m Aktar�m Tipi</td>
+  <td>0:Genel 1:Para��t 2:Irgat</td>
+ </tr>
+ <tr>
+  <td>23</td>
+  <td>cari_ExternalProgramId</td>
+  <td>Nvarchar(127)</td>
+  <td>D�� Yaz�l�m Id'si</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>24</td>
+  <td>cari_Hash</td>
+  <td>Bigint</td>
+  <td>Kay�t �zel Anahtar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>25</td>
+  <td>cari_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>26</td>
+  <td>cari_unvan1</td>
+  <td>Nvarchar(127)</td>
+  <td>�nvan 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>27</td>
+  <td>cari_unvan2</td>
+  <td>Nvarchar(127)</td>
+  <td>�nvan 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>28</td>
+   <td>cari_hareket_tipi</td>
+   <td>Tinyint</td>
+   <td>Cari Hareket Tipi</td>
+   <td>0:Mal ve Hizmet Al�n�r ve Sat�l�r 1:Mal ve Hizmet Sadece Sat�l�r 2:Mal ve Hizmet Sadece Al�n�r 3:Sadece Parasal Hareket Yap�l�r 4:Cari Hareket Yap�lmaz</td>
+</tr>
+<tr>
+   <td>29</td>
+   <td>cari_baglanti_tipi</td>
+   <td>Tinyint</td>
+   <td>Cari Ba�lant� Tipi</td>
+   <td>0:M��teri 1:Sat�c� 2:Di�er Cari 3:Da��t�c� 4:Bayi 5:Hedef M��teri 6:Hedef Bayi 7:Alt Bayi 8:Ba�l� Ortakl�k</td>
+</tr>
+<tr>
+   <td>30</td>
+   <td>cari_stok_alim_cinsi</td>
+   <td>Tinyint</td>
+   <td>Stok Al�m Cinsi</td>
+   <td>0:Toptan ve Perakende 1:Toptan 2:Perakende</td>
+</tr>
+<tr>
+   <td>31</td>
+   <td>cari_stok_satim_cinsi</td>
+   <td>Tinyint</td>
+   <td>Stok Sat�m Cinsi</td>
+   <td>0:Toptan ve Perakende 1:Toptan 2:Perakende</td>
+</tr>
+ <tr>
+  <td>32</td>
+  <td>cari_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Cari Hesap Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+  <tr>
+  <td>33</td>
+  <td>cari_muh_kod1</td>
+  <td>Nvarchar(40)</td>
+  <td>Cari Hesap Muhasebe Kodu1</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+   <tr>
+  <td>34</td>
+  <td>cari_muh_kod2</td>
+  <td>Nvarchar(40)</td>
+  <td>Cari Hesap Muhasebe Kodu2</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>35</td>
+  <td>cari_doviz_cinsi</td>
+  <td>Tinyint</td>
+  <td>D�viz Cinsi</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+ </tr>
+  <tr>
+  <td>36</td>
+  <td>cari_doviz_cinsi1</td>
+  <td>Tinyint</td>
+  <td>D�viz Cinsi1</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+ </tr>
+  <tr>
+  <td>37</td>
+  <td>cari_doviz_cinsi2</td>
+  <td>Tinyint</td>
+  <td>D�viz Cinsi2</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+ </tr>
+ <tr>
+  <td>38</td>
+  <td>cari_vade_fark_yuz</td>
+  <td>Float</td>
+  <td>Vade Fark Y�zdesi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>39</td>
+  <td>cari_vade_fark_yuz1</td>
+  <td>Float</td>
+  <td>Vade Fark Y�zdesi 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>40</td>
+  <td>cari_vade_fark_yuz2</td>
+  <td>Float</td>
+  <td>Vade Fark Y�zdesi 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>41</td>
+  <td>cari_KurHesapSekli</td>
+  <td>Tinyint</td>
+  <td>Kur Hesaplama �ekli</td>
+  <td>1:D�viz Al�� 2:D�viz Sat��<br>
+  3:Efektif Al�� 4:Efektif Sat��</td>
+ </tr>
+ <tr>
+  <td>42</td>
+  <td>cari_vdaire_adi</td>
+  <td>Nvarchar(50)</td>
+  <td>Vergi Dairesi </td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>43</td>
+  <td>cari_vdaire_no</td>
+  <td>Nvarchar(15)</td>
+  <td>Vergi Dairesi No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>44</td>
+  <td>cari_sicil_no</td>
+  <td>Nvarchar(15)</td>
+  <td>Sicil No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>45</td>
+  <td>cari_VergiKimlikNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Cari Vergi Kimlik No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>46</td>
+  <td>cari_satis_fk</td>
+  <td>Integer</td>
+  <td>Cari Sat�� Fiyat Kodu</td>
+  <td>Sat��larda hangi stok sat�� fiyat�n�n uygulanaca��n� belirtir.<br>
+    Bkz. <a href="stoklar-2.html">STOKLAR</a></td>
+ </tr>
+ <tr>
+  <td>47</td>
+  <td>cari_odeme_cinsi</td>
+  <td>Tinyint</td>
+  <td>Cari �deme Cinsi</td>
+  <td>0:Serbest 1:Haftal�k 2:Ayl�k 3:15 G�nl�k</td>
+ </tr>
+ <tr>
+  <td>48</td>
+  <td>cari_odeme_gunu</td>
+  <td>Tinyint</td>
+  <td>�deme G�n�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>49</td>
+  <td>cari_odemeplan_no</td>
+  <td>Integer</td>
+  <td>�deme Plan No</td>
+  <td>Bkz. <a href="odeme_planlari-2.html">ODEME_PLANLARI</a></td>
+ </tr>
+ <tr>
+   <td>50</td>
+   <td>cari_opsiyon_gun</td>
+   <td>Integer</td>
+   <td>Cari Opsiyon G�n</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>51</td>
+  <td>cari_cariodemetercihi</td>
+  <td>Tinyint</td>
+  <td>Cari �deme Tercihi</td>
+  <td>0:Nakit 1:M��teri �eki 2:Firma �eki 3:M��teri Senedi 4:Firma Senedi 5:Havale 6:�deme Emri 7:Do�rudan Havale 8:Firma Kredi Kart�</td>
+ </tr>
+ <tr>
+  <td>52</td>
+  <td>cari_fatura_adres_no</td>
+  <td>Integer</td>
+  <td>Fatura Adres No</td>
+  <td>Bkz. <a href="cari_hesap_adresleri-2.html">CARI_HESAP_ADRESLERI</a></td>
+ </tr>
+ <tr>
+  <td>53</td>
+  <td>cari_sevk_adres_no</td>
+  <td>Integer</td>
+  <td>Sevk Adres No</td>
+  <td>Bkz. <a href="cari_hesap_adresleri-2.html">CARI_HESAP_ADRESLERI</a></td>
+ </tr>
+ <tr>
+  <td>54</td>
+  <td>cari_banka_tcmb_kod1</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>55</td>
+  <td>cari_banka_tcmb_subekod1</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>56</td>
+  <td>cari_banka_tcmb_ilkod1</td>
+  <td>Nvarchar(3)</td>
+  <td>Banka �l Kodu 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>57</td>
+  <td>cari_banka_hesapno1</td>
+  <td>Nvarchar(40)</td>
+  <td>Banka Hesap No 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>58</td>
+  <td>cari_banka_swiftkodu1</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>59</td>
+  <td>cari_banka_tcmb_kod2</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>60</td>
+  <td>cari_banka_tcmb_subekod2</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kod 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>61</td>
+  <td>cari_banka_tcmb_ilkod2</td>
+  <td>Nvarchar(3)</td>
+  <td>Banka �l Kodu 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>62</td>
+  <td>cari_banka_hesapno2</td>
+  <td>Nvarchar(40)</td>
+  <td>Banka Hesap No 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>63</td>
+  <td>cari_banka_swiftkodu2</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 2</td>
+  <td>&nbsp;</td>
+ </tr> 
+ <tr>
+  <td>64</td>
+  <td>cari_banka_tcmb_kod3</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 3</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>65</td>
+  <td>cari_banka_tcmb_subekod3</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 3</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>66</td>
+   <td>cari_banka_tcmb_ilkod3</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 3</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>67</td>
+   <td>cari_banka_hesapno3</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 3</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>68</td>
+  <td>cari_banka_swiftkodu3</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 3</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>69</td>
+  <td>cari_banka_tcmb_kod4</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 4</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>70</td>
+  <td>cari_banka_tcmb_subekod4</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 4</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>71</td>
+   <td>cari_banka_tcmb_ilkod4</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 4</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>72</td>
+   <td>cari_banka_hesapno4</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 4</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>73</td>
+  <td>cari_banka_swiftkodu4</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 4</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>74</td>
+  <td>cari_banka_tcmb_kod5</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 5</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>75</td>
+  <td>cari_banka_tcmb_subekod5</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 5</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>76</td>
+   <td>cari_banka_tcmb_ilkod5</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 5</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>77</td>
+   <td>cari_banka_hesapno5</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 5</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>78</td>
+  <td>cari_banka_swiftkodu5</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 5</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>79</td>
+  <td>cari_banka_tcmb_kod6</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 6</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>80</td>
+  <td>cari_banka_tcmb_subekod6</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 6</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>81</td>
+   <td>cari_banka_tcmb_ilkod6</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 6</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>82</td>
+   <td>cari_banka_hesapno6</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 6</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>83</td>
+  <td>cari_banka_swiftkodu6</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 6</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>84</td>
+  <td>cari_banka_tcmb_kod7</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 7</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>85</td>
+  <td>cari_banka_tcmb_subekod7</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 7</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>86</td>
+   <td>cari_banka_tcmb_ilkod7</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 7</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>87</td>
+   <td>cari_banka_hesapno7</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 7</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>88</td>
+  <td>cari_banka_swiftkodu7</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 7</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>89</td>
+  <td>cari_banka_tcmb_kod8</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 8</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>90</td>
+  <td>cari_banka_tcmb_subekod8</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 8</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>91</td>
+   <td>cari_banka_tcmb_ilkod8</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 8</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>92</td>
+   <td>cari_banka_hesapno8</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 8</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>93</td>
+  <td>cari_banka_swiftkodu8</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 8</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>94</td>
+  <td>cari_banka_tcmb_kod9</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 9</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>95</td>
+  <td>cari_banka_tcmb_subekod9</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 9</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>96</td>
+   <td>cari_banka_tcmb_ilkod9</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 9</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>97</td>
+   <td>cari_banka_hesapno9</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 9</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>98</td>
+  <td>cari_banka_swiftkodu9</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 9</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>99</td>
+  <td>cari_banka_tcmb_kod10</td>
+  <td>Nvarchar(4)</td>
+  <td>Banka Kodu 10</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>100</td>
+  <td>cari_banka_tcmb_subekod10</td>
+  <td>Nvarchar(8)</td>
+  <td>Banka �ube Kodu 10</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>101</td>
+   <td>cari_banka_tcmb_ilkod10</td>
+   <td>Nvarchar(3)</td>
+   <td>Banka �l Kodu 10</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>102</td>
+   <td>cari_banka_hesapno10</td>
+   <td>Nvarchar(40)</td>
+   <td>Banka Hesap No 10</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>103</td>
+  <td>cari_banka_swiftkodu10</td>
+  <td>Nvarchar(25)</td>
+  <td>Swift Kodu 10</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>104</td>
+  <td>cari_EftHesapNum</td>
+  <td>Tinyint</td>
+  <td>Cari Eft Hesap Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>105</td>
+  <td>cari_Ana_cari_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Ana Cari Kodu</td>
+  <td>&nbsp;</a></td>
+ </tr>
+ <tr>
+  <td>106</td>
+  <td>cari_satis_isk_kod</td>
+  <td>Nvarchar(4)</td>
+  <td>Cari Sat�� �skonto Kodu</td>
+  <td>Bkz. <a href="stok_cari_iskonto_tanimlari-2.html">STOK_CARI_ISKONTO_TANIMLARI</a></td>
+ </tr>
+ <tr>
+  <td>107</td>
+  <td>cari_sektor_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Sekt�r Kodu</td>
+  <td>Bkz. <a href="stok_sektorleri-2.html">STOK_SEKTORLERI</a></td>
+ </tr>
+ <tr>
+  <td>108</td>
+  <td>cari_bolge_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari B�lge Kodu</td>
+  <td>Bkz. <a href="cari_hesap_bolgeleri-2.html">CARI_HESAP_BOLGELERI</a></td>
+ </tr>
+ <tr>
+  <td>109</td>
+  <td>cari_grup_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Grup Kodu</td>
+  <td>Bkz. <a href="cari_hesap_gruplari-2.html">CARI_HESAP_GRUPLARI</a></td>
+ </tr>
+ <tr>
+  <td>110</td>
+  <td>cari_temsilci_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Temsilci Kodu</td>
+  <td>Bkz. <a href="personeller-2.html">PERSONELLER</a></td>
+ </tr>
+ <tr>
+  <td>111</td>
+  <td>cari_muhartikeli</td>
+  <td>Nvarchar(10)</td>
+  <td>Muhasebe Kod Artikeli</td>
+  <td>Bkz. <a href="muhasebe_fisleri-2.html">MUHASEBE_FISLERI</a></td>
+ </tr>
+ <tr>
+   <td>112</td>
+   <td>cari_firma_acik_kapal</td>
+   <td>Bit</td>
+   <td>Firma A��k / Kapal�?</td>
+   <td>0:A��k 1:Kapal�</td>
+ </tr>
+ <tr>
+  <td>113</td>
+  <td>cari_BUV_tabi_fl</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>114</td>
+  <td>cari_cari_kilitli_flg</td>
+  <td>Bit</td>
+  <td>Cari Kilitli Mi?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>115</td>
+  <td>cari_etiket_bas_fl</td>
+  <td>Bit</td>
+  <td>Etiket Bas�ls�n M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>116</td>
+  <td>cari_Detay_incele_flg</td>
+  <td>Bit</td>
+  <td>Detay �ncelensin Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>117</td>
+  <td>cari_efatura_fl</td>
+  <td>Bit</td>
+  <td>e-Fatura ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>118</td>
+  <td>cari_POS_ongpesyuzde</td>
+  <td>Float</td>
+  <td>POS �ng�r�len Pe�inat Y�zdesi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>119</td>
+  <td>cari_POS_ongtaksayi</td>
+  <td>Float</td>
+  <td>POS �ng�r�len Taksit Say�s�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>120</td>
+  <td>cari_POS_ongIskOran</td>
+  <td>Float</td>
+  <td>POS �ng�r�len �skonto Oran�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>121</td>
+  <td>cari_kaydagiristarihi</td>
+  <td>DateTime</td>
+  <td>Kay�t Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>122</td>
+  <td>cari_KabEdFCekTutar</td>
+  <td>Float</td>
+  <td>Kabul Ed. Firma �ek Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>123</td>
+  <td>cari_hal_caritip</td>
+  <td>Tinyint</td>
+  <td>Hal Cari Tipi</td>
+  <td>0:T�ccar 1:M�stahsil 2:�ift�i</td>
+ </tr>
+ <tr>
+  <td>124</td>
+  <td>cari_HalKomYuzdesi</td>
+  <td>Float</td>
+  <td>Hal Komisyon Y�zdesi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>125</td>
+   <td>cari_TeslimSuresi</td>
+   <td>Smallint</td>
+   <td>Cari Teslim S�resi</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>126</td>
+  <td>cari_wwwadresi</td>
+  <td>Nvarchar(30)</td>
+  <td>Cari Web Adresi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>127</td>
+   <td>cari_EMail</td>
+   <td>Nvarchar(127)</td>
+   <td>Cari e-Mail Adresi</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>128</td>
+   <td>cari_CepTel</td>
+   <td>Nvarchar(20)</td>
+   <td>Cari Cep Telefonu</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+   <td>129</td>
+   <td>cari_VarsayilanGirisDepo</td>
+   <td>Integer</td>
+   <td>Varsay�lan Giri� Depo</td>
+   <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>130</td>
+  <td>cari_VarsayilanCikisDepo</td>
+  <td>Integer</td>
+  <td>Varsay�lan ��k�� Depo</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>131</td>
+  <td>cari_Portal_Enabled</td>
+  <td>Bit</td>
+  <td>Portal eri�imi a��k m�?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>132</td>
+  <td>cari_Portal_PW</td>
+  <td>Nvarchar(127)</td>
+  <td>Portal Ula��m �ifresi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>133</td>
+  <td>cari_BagliOrtaklisa_Firma</td>
+  <td>Integer</td>
+  <td>Ba�l� Ortakl�k �se Firma No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>134</td>
+  <td>cari_kampanyakodu</td>
+  <td>Nvarchar(4)</td>
+  <td>Kampanya Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>135</td>
+  <td>cari_b_bakiye_degerlendirilmesin_fl</td>
+  <td>Bit</td>
+  <td>Bor� Bakiye De�erlendirilmesin ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>136</td>
+  <td>cari_a_bakiye_degerlendirilmesin_fl</td>
+  <td>Bit</td>
+  <td>Alacak Bakiye De�erlendirilmesin ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>137</td>
+  <td>cari_b_irsbakiye_degerlendirilmesin_fl</td>
+  <td>Bit</td>
+  <td>Bor� �rsaliye Bakiye De�erlendirilmesin ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>138</td>
+  <td>cari_a_irsbakiye_degerlendirilmesin_fl</td>
+  <td>Bit</td>
+  <td>Alacak �rsaliye Bakiye De�erlendirilmesin ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>139</td>
+  <td>cari_b_sipbakiye_degerlendirilmesin_fl</td>
+  <td>Bit</td>
+  <td>Bor� Sipari� Bakiye De�erlendirilmesin ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>140</td>
+  <td>cari_a_sipbakiye_degerlendirilmesin_fl</td>
+  <td>Bit</td>
+  <td>Alacak Sipari� Bakiye De�erlendirilmesin ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>141</td>
+  <td>cari_KrediRiskTakibiVar_flg</td>
+  <td>Bit</td>
+  <td>Kredi Risk Takibi Var M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>142</td>
+  <td>cari_ufrs_fark_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>143</td>
+  <td>cari_ufrs_fark_muh_kod1</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>144</td>
+  <td>cari_ufrs_fark_muh_kod2</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>145</td>
+  <td>cari_odeme_sekli</td>
+  <td>Tinyint</td>
+  <td>�deme �ekli</td>
+  <td>0:Vadeye G�re 1:Sat�� �zerinden</td>
+ </tr>
+ <tr>
+  <td>146</td>
+  <td>cari_TeminatMekAlacakMuhKodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Mektubu Alacak Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>147</td>
+  <td>cari_TeminatMekAlacakMuhKodu1</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Mektubu Alacak Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>148</td>
+  <td>cari_TeminatMekAlacakMuhKodu2</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Mektubu Alacak Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>149</td>
+  <td>cari_TeminatMekBorcMuhKodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Mektubu Bor� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>150</td>
+  <td>cari_TeminatMekBorcMuhKodu1</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Mektubu Bor� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>151</td>
+  <td>cari_TeminatMekBorcMuhKodu2</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Mektubu Bor� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>152</td>
+  <td>cari_VerilenDepozitoTeminatMuhKodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Verilen Depozito Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>153</td>
+  <td>cari_VerilenDepozitoTeminatMuhKodu1</td>
+  <td>Nvarchar(40)</td>
+  <td>Verilen Depozito Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>154</td>
+  <td>cari_VerilenDepozitoTeminatMuhKodu2</td>
+  <td>Nvarchar(40)</td>
+  <td>Verilen Depozito Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>155</td>
+  <td>cari_AlinanDepozitoTeminatMuhKodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Al�nan Depozito Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>156</td>
+  <td>cari_AlinanDepozitoTeminatMuhKodu1</td>
+  <td>Nvarchar(40)</td>
+  <td>Al�nan Depozito Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>157</td>
+  <td>cari_AlinanDepozitoTeminatMuhKodu2</td>
+  <td>Nvarchar(40)</td>
+  <td>Al�nan Depozito Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>158</td>
+  <td>cari_def_efatura_cinsi</td>
+  <td>Tinyint</td>
+  <td>Varsay�lan e-Fatura Cinsi</td>
+  <td>0:Ticari Fatura 1:Temel Fatura 2:Yolcu Beraberinde Fatura 3:�hracat 4:M�stahsil 5:Smm 6:Kamu 7:Hal</td>
+ </tr>
+ <tr>
+  <td>159</td>
+  <td>cari_otv_tevkifatina_tabii_fl</td>
+  <td>Bit</td>
+  <td>�tv Tevkifat�na Tabi Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>160</td>
+  <td>cari_KEP_adresi</td>
+  <td>Nvarchar(80)</td>
+  <td>Kay�tl� e-Posta (KEP) Adresi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>161</td>
+  <td>cari_efatura_baslangic_tarihi</td>
+  <td>DateTime</td>
+  <td>e-Fatura Ba�lang�� Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>162</td>
+  <td>cari_mutabakat_mail_adresi</td>
+  <td>Nvarchar(80)</td>
+  <td>Mutabakat e-Posta Adresi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>163</td>
+  <td>cari_mersis_no</td>
+  <td>Nvarchar(25)</td>
+  <td>Mersis Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>164</td>
+  <td>cari_istasyon_cari_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Akaryak�t �stasyonu Cari Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>165</td>
+  <td>cari_gonderionayi_sms</td>
+  <td>Bit</td>
+  <td>Sms G�nderme Onay� Var M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>166</td>
+  <td>cari_gonderionayi_email</td>
+  <td>Bit</td>
+  <td>e-Posta G�nderme Onay� Var M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>167</td>
+  <td>cari_eirsaliye_fl</td>
+  <td>Bit</td>
+  <td>e-�rsaliye Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>168</td>
+  <td>cari_eirsaliye_baslangic_tarihi</td>
+  <td>DateTime</td>
+  <td>e-�rsaliye Ba�lang�� Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>169</td>
+  <td>cari_vergidairekodu</td>
+  <td>Nvarchar(10)</td>
+  <td>Vergi Dairesi Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>170</td>
+  <td>cari_CRM_sistemine_aktar_fl</td>
+  <td>Bit</td>
+  <td>CRM Sistemine Aktar�ls�n M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>171</td>
+  <td>cari_efatura_xslt_dosya</td>
+  <td>Nvarchar(127)</td>
+  <td>e-Fatura Xslt Dosyas� (farkl� cari ya da �ubeler i�in farkl� e-Fatura dizayn� tasarlanmas�)</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>172</td>
+  <td>cari_pasaport_no</td>
+  <td>Nvarchar(20)</td>
+  <td>Pasaport No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>173</td>
+  <td>cari_kisi_kimlik_bilgisi_aciklama_turu</td>
+  <td>Tinyint</td>
+  <td>Ki�i Kimlik Bilgisi A��klama T�r�</td>
+  <td>0:Tan�ms�z 1:TC Kimlik No Var 2:Yabanc� Kimlik No Var 3:Pasaport No Var 4:Yeni Do�an 5:Kimlik Bilinmiyor 6:Di�er 7:YUPASS No Var</td>
+ </tr>
+ <tr>
+  <td>174</td>
+  <td>cari_kisi_kimlik_bilgisi_diger_aciklama</td>
+  <td>Nvarchar(50)</td>
+  <td>Ki�i Kimlik Bilgisi Di�er T�r A��klamas�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>175</td>
+  <td>cari_uts_kurum_no</td>
+  <td>Nvarchar(15)</td>
+  <td>�TS (�r�n Takip Sistemi) Kurum No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>176</td>
+  <td>cari_kamu_kurumu_fl</td>
+  <td>Bit</td>
+  <td>e-Fatura Uygulamas�na Tabi Kamu Kurumu Mu ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>177</td>
+  <td>cari_earsiv_xslt_dosya</td>
+  <td>Nvarchar(127)</td>
+  <td>e-Ar�iv Xslt Dosyas� (farkl� cari ya da �ubeler i�in farkl� e-Ar�iv dizayn� tasarlanmas�)</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>178</td>
+  <td>cari_Perakende_fl</td>
+  <td>Bit</td>
+  <td>Perakende Carisi Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>179</td>
+  <td>cari_yeni_dogan_mi</td>
+  <td>Bit</td>
+  <td>Yeni Do�an M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>180</td>
+  <td>cari_eirsaliye_xslt_dosya</td>
+  <td>Nvarchar(127)</td>
+  <td>e-�rsaliye Xslt Dosyas�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>181</td>
+  <td>cari_def_eirsaliye_cinsi</td>
+  <td>Tinyint</td>
+  <td>e-�rsaliye Senaryo Tipi</td>
+  <td>0:Temel 1:Hal</td>
+ </tr>
+ <tr>
+  <td>182</td>
+  <td>cari_ozel_butceli_kurum_carisi</td>
+  <td>Nvarchar(25)</td>
+  <td>�zel B�t�eli Kurum Carisi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>183</td>
+  <td>cari_nakakincelenmesi</td>
+  <td>Bit</td>
+  <td>Nakit Ak��ta G�z Ard� Edilsin Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>184</td>
+  <td>cari_vergimukellefidegil_mi</td>
+  <td>Bit</td>
+  <td>Vergi M�kellefi De�il Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>185</td>
+  <td>cari_tasiyicifirma_cari_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Ta��y�c� Firma Cari Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>186</td>
+  <td>cari_nacekodu_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Nace Kodu 1</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>187</td>
+  <td>cari_nacekodu_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Nace Kodu 2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>188</td>
+  <td>cari_nacekodu_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Nace Kodu 3</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>189</td>
+  <td>cari_sirket_turu</td>
+  <td>Tinyint</td>
+  <td>�irket T�r�</td>
+  <td>0:Belirtilmemi� 1:Ger�ek Ki�i 2:Adi Ortakl�k 3:Kollektif �irket 4:Adi Komandit �irket 5:Eshaml� Komandit �irket 6:Limited �irket 7:Anonim �irket 8:Kooperatif 9:Di�er �irket 10:Avukat Ortakl��� 11:Banka �ubesi</td>
+ </tr>
+ <tr>
+  <td>190</td>
+  <td>cari_baba_adi</td>
+  <td>Nvarchar(50)</td>
+  <td>Baba Ad�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>191</td>
+  <td>cari_faal_terk</td>
+  <td>Tinyint</td>
+  <td>�irket Faal M� Terk Mi ?</td>
+  <td>0:Faal 1:Terk</td>
+ </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>cari_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_02</td>
+<td>UNIQUE</td>
+<td>cari_kod</td>
+</tr>
+<tr>
+<td>NDX_CARI_HESAPLAR_03</td>
+<td></td>
+<td>cari_unvan1</td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_04</td>
+<td>UNIQUE</td>
+<td>cari_sektor_kodu, cari_kod</td>
+</tr>
+<td>NDX_CARI_HESAPLAR_05</td>
+<td>UNIQUE</td>
+<td>cari_grup_kodu, cari_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_06</td>
+<td>UNIQUE</td>
+<td>cari_temsilci_kodu, cari_kod</td>
+</tr>
+<tr>
+<td>NDX_CARI_HESAPLAR_07</td>
+<td>UNIQUE</td>
+<td>cari_bolge_kodu, cari_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_08</td>
+<td>UNIQUE</td>
+<td>cari_kaydagiristarihi, cari_kod</td>
+</tr>
+<tr>
+<td>NDX_CARI_HESAPLAR_09</td>
+<td></td>
+<td>cari_Ana_cari_kodu</td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_10</td>
+<td></td>
+<td>cari_vdaire_no</td>
+</tr>
+<tr>
+<td>NDX_CARI_HESAPLAR_11</td>
+<td></td>
+<td>cari_VergiKimlikNo</td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAPLAR_12</td>
+<td></td>
+<td>cari_unvan2, cari_unvan1</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 30.11.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/cari_hesaplar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:17 GMT -->
+</html>

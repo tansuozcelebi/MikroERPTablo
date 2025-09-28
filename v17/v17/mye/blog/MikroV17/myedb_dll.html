@@ -1,0 +1,134 @@
+<html>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/myedb_dll.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:19:04 GMT -->
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>MyeDB.DLL</title>
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+</head>
+
+<body><p class="Caption"><i><a href="index-2.html">Database Yap�s�</a></i></p>
+
+	<h2>MyeDB.DLL</h2>
+	<i><b>�imdilik, v15'de MyeDB.DLL yaln�zca 9000 serisi �r�nleri desteklemektedir.</b></i>
+	<p>MyeDB.DLL, myeMain ActiveX Class'�n� i�eren DLL'dir. Bu class </p>
+	
+	<ul>
+	  <li><em>function ImportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function ExportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function ImportXML(const sFileName: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function ExportXML(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function LogIn(const sFirmaKodu: WideString; iCalismaYili: Integer; const sKullanici: WideString; const sSifre: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function LogOff: SYSINT; safecall;</em></li>
+	  <li><em>function Get_Logged: SYSINT; safecall;</em></li>
+	  <li><em>function EvrakImportXML(const strXML: WideString; const strXSL: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function ImportXML2(const sFileName: WideString; const sLogFileName: WideString): SYSINT; safecall;</em></li>
+	  <li><em>function EvrakImportXML2(const strXML: WideString; const strXSL: WideString;  const strLog: WideString): SYSINT; safecall;</em></li>
+	  <li><em>procedure ValidateUser(const UserCode: WideString; const UserPass: WideString; 
+                           var Valid_fl: Shortint); safecall;</em></li>
+	  <li><em>property Logged: SYSINT read Get_Logged;</em></li>
+	  <br>
+	  <br>fonksiyonlar�n� i�erir.<br>
+	  <br>
+	  Bu fonksiyonlar�n �a�r�lmas� i�in �rnek delphi ve csharp kodlar�n� a�a��dan bulabilirsiniz.<br>
+
+	  	<h2>myeDB_TLB.Pas</h2>
+	<p>Yazaca��m�z projede, Uses i�ine myeDB_TLB eklenmelidir. �rne�in; </p>
+	</ul>
+	
+	<ul>
+	  <em>unit MainForm;</em><br>
+      <em>interface</em><br>
+      <em>uses</em><br>
+        <em>Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,</em><br>
+        <em>Dialogs,myeDB_TLB, Menus, StdCtrls, ExtCtrls, DB, ADODB,</em><br>
+        <em>DataCons, StrUtils, ComCtrls;</em><br>
+		<br>
+      Ana formumuzun tan�m�nda<br>
+	  <br>
+	  <em>TForm1 = class(TForm)</em><br>
+      <em>��.</em><br>
+      <em>private</em><br>
+      <em>procedure OnMyeMainError(Sender:TObject);</em><br>
+      <em>procedure ErrorMessage(ErrCode:Integer);</em><br>
+   // <em>di�er private tan�mlar�n�z</em><br>
+      <em>public</em><br>
+       <em>myeObj : TmyeMain;</em><br>
+   // <em>di�er public tan�mlar�n�z</em><br>
+  <em>end;</em><br>
+<br>
+      Formunuzun olu�turulmas�nda (OnCreate event)<br>
+	  <br>
+	  <em>procedure TForm1.FormCreate(Sender: TObject);</em><br>
+      <em>begin</em><br>
+      <em>myeObj:=TmyeMain.Create(Self);</em><br>
+      <em>myeObj.OnonError:=OnMyeMainError;</em><br>
+      <em>end;</em><br>
+<br>
+      ActiveX objemizi olu�turup, formu sonland�r�lmas�nda (OnDestroy event)<br>
+	  <br>
+	  <em>procedure TForm1.FormDestroy(Sender: TObject);</em><br>
+      <em>begin</em><br>
+      <em>myeObj.Free;</em><br>
+      <em>end;</em><br>
+	  <br>
+	  Objemizi sonland�rmam�z mant�kl� olur.<br>
+      <br>
+	  <br>
+      Veri �zerinde bir i�lem (export ya da import ) yap�lmadan �nce login fonksiyonu �a��r�lmal�d�r. Bu i�lem i�in bir login penceresi tasarlad���n�z� ve ilgili alanlar� kullan�c�dan ald���n�z� varsay�yoruz. Bu durumda, �rnek login i�lemi,<br>
+	  <br>
+	  <em>if myeObj.LogIn(txtFirmCode.Text,</em><br>
+                    <em>StrToInt(txtYear.Text),</em><br>
+                    <em>txtUserName.Text,</em><br>
+                    <em>txtPassword.Text)<>0 then</em><br>
+      <em>ShowMessage('Kullan�c� sistemde');</em><br>
+    <em>else</em><br> 
+     <em>ShowMessage('Ba�lant� kurulamad�');</em><br>
+     <br>
+     �eklinde olacakt�r. Art�k fonksiyonlar� kullanmaya haz�r�z.<br>
+
+	 <br>
+	 T�m fonksiyonlar benzer parametreler ile �al��t���ndan, en �ok kullan�laca��n� sand���m�z evrak import i�lemi i�in bir �rnek verece�iz.<br>
+	 <br>
+	 <em>ErrCode:=myeObj.EvrakImportXML(XMLFileName,'');</em><br>
+  <em>if ErrCode<>0 then ErrorMessage(ErrCode) else ShowMessage('Evrak Import ba�ar�ld�');</em><br>
+     <br>
+	 Tahmin edilebilece�i gibi, parametre olarak g�nderilen dosya ad� (XMLFileName) import etmek istedi�im evrak bilgilerini i�eriyor. ErrorMessage fonksiyonuda SDK i�inde verilmi�tir. D�n�� de�erleri :<br>
+	 <br>
+	   -1 : ��lem Ba�ar�s�z. Tan�mlanmam�� Hata!<br>
+       1 : Hatali Table No<br>
+	   2 : Hatali Parametre No<br>
+       3 : Header`da Tanim (APN) dosyasi belirtilmemis<br>
+       4 : Tanim dosyasi yok<br>
+       5 : Import dosyasi bulunamadi yada XML Hatali<br>
+       6 : Tekrarlayan Index<br>
+       7 : Sirket Bulunamadi<br>
+       8 : Kullanici / Sifre Hatali<br>
+       9 : Firma Calisma dizini Hatali<br>
+       10: Parametre Hatasi<br>
+       11 : Firma Yolu Bulunamadi<br>
+       12 : Firma Bilgileri Bulunamadi<br>
+       13 : Export Dosyasi Yaratilamiyor<br>
+       14 : Alan ismi Bulunamadi<br>
+       15 : Sisteme Girilmemis<br>
+       16 : Kayit yapilamadi<br>
+	   <br>
+
+
+       MYEDB_TLB kaynak kodu i�in <a href="Ek1.html">Ek 1</a>'den faydalanabilirsiniz.<br>
+	   Evrak XML importu i�in haz�rlanm�� 2 sat�rl�k stok faturas� �rne�i i�in <a href="Ek2.html">Ek 2</a>'den faydalanabilirsiniz.<br>
+	   FrmMain kaynak kodu i�in <a href="Ek3.html">Ek 3</a>'den faydalanabilirsiniz.<br>
+	   MyeDB_SDK.zip'i indirmek i�in <a href="MyeDB_SDK.html">t�klay�n�z.</a></br>
+	   MikroSDK.zip'i (c sharp) indirmek i�in <a href="MikroSDK.html">t�klay�n�z.</a></br>
+	   XML evrak �rneklerini indirmek i�in <a href="TestData.html">t�klay�n�z.</a></br>
+	</ul>
+
+	<hr>G�ncellenme Tarihi : 09.08.2012 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2012 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/myedb_dll.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:19:06 GMT -->
+</html>

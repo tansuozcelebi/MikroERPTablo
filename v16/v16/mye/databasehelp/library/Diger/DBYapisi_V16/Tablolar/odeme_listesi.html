@@ -1,0 +1,616 @@
+<html>
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/Tablolar/odeme_listesi.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:17:54 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 80</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : ODEME_LISTESI</b></td>
+    <td width="50%"><b>Tablo : �deme Listeleri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td>
+    <b>Detay</b></td>
+  </tr>
+ <tr>
+  <td>0</td>
+  <td>ol_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>ol_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>ol_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>ol_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td>ol_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>5</td>
+  <td>ol_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>6</td>
+  <td>ol_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>ol_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>8</td>
+  <td>ol_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>9</td>
+  <td>ol_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>10</td>
+  <td>ol_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>11</td>
+  <td>ol_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>12</td>
+  <td>ol_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>13</td>
+  <td>ol_special1</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>14</td>
+  <td>ol_special2</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>15</td>
+  <td>ol_special3</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>16</td>
+  <td>ol_Carikodu</td>
+  <td>Nvarchar(25)</td>
+  <td>�deme Cari Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>17</td>
+  <td>ol_Tutari</td>
+  <td>Float</td>
+  <td>�deme Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>18</td>
+  <td>ol_OrtVadeTarih</td>
+  <td>DateTime</td>
+  <td>Ortalama Vade Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>19</td>
+  <td>ol_CekList1</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>20</td>
+  <td>ol_CekList2</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>21</td>
+  <td>ol_CekList3</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>22</td>
+  <td>ol_CekList4</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>23</td>
+  <td>ol_CekList5</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>24</td>
+  <td>ol_CekList6</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>25</td>
+  <td>ol_CekList7</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>26</td>
+  <td>ol_CekList8</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>27</td>
+  <td>ol_CekList9</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>28</td>
+  <td>ol_CekList10</td>
+  <td>Nvarchar(25)</td>
+  <td>Verilen �ek Kodu</td>
+  <td>Bkz. <a href="odeme_emirleri-2.html">ODEME_EMIRLERI</a></td>
+ </tr>
+ <tr>
+  <td>29</td>
+  <td>ol_OdenenTutar</td>
+  <td>Float</td>
+  <td>�denen Tutar</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>30</td>
+  <td>ol_OdenenVade</td>
+  <td>DateTime</td>
+  <td>�denen Vade Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>31</td>
+  <td>ol_OdemeCinsi</td>
+  <td>Tinyint</td>
+  <td>�deme Cinsi</td>
+  <td>0:Nakit 1:M��teri �eki 2:Firma �eki <br>
+  3:M��teri Senedi 4:Firma Senedi 5:Havale 6:�deme Emri 7:Do�rudan Havale</td>
+ </tr>
+ <tr>
+  <td>32</td>
+  <td>ol_KasBankKd1</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>33</td>
+  <td>ol_KasBankKd2</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>34</td>
+  <td>ol_KasBankKd3</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>35</td>
+  <td>ol_KasBankKd4</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>36</td>
+  <td>ol_KasBankKd5</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>37</td>
+  <td>ol_KasBankKd6</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>38</td>
+  <td>ol_KasBankKd7</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>39</td>
+  <td>ol_KasBankKd8</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>40</td>
+  <td>ol_KasBankKd9</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>41</td>
+  <td>ol_KasBankKd10</td>
+  <td>Nvarchar(25)</td>
+  <td>Kasa Banka Kodu</td>
+  <td>Bkz. <a href="kasalar-2.html">KASALAR</a></td>
+ </tr>
+ <tr>
+  <td>42</td>
+  <td>ol_KesideYeri</td>
+  <td>Nvarchar(14)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>43</td>
+  <td>ol_opsiyongun</td>
+  <td>Integer</td>
+  <td>Opsiyon G�n Say�s�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>44</td>
+  <td>ol_carigrup</td>
+  <td>Tinyint</td>
+  <td>Cari Grubu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>45</td>
+  <td>ol_caridovizcins</td>
+  <td>Tinyint</td>
+  <td>Cari D�viz Cinsi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>46</td>
+  <td>ol_srmmrkkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Sorumluluk Merkezi Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>47</td>
+  <td>ol_karsisrmmrkkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Kar�� Sorumluluk Merkezi Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>48</td>
+  <td>ol_aciklama</td>
+  <td>Nvarchar(40)</td>
+  <td>A��klama</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>49</td>
+  <td>ol_onaylayankulno</td>
+  <td>Smallint</td>
+  <td>Onaylayan Kullan�c� No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>50</td>
+  <td>ol_onayli_fl</td>
+  <td>Bit</td>
+  <td>Onayl� M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>51</td>
+  <td>ol_bakiye_sekli</td>
+  <td>Tinyint</td>
+  <td>Bakiye �ekli</td>
+  <td>0:A��k Fatura 1:Adat</td>
+ </tr>
+ <tr>
+  <td>52</td>
+  <td>ol_odeme_sekli</td>
+  <td>Tinyint</td>
+  <td>�deme �ekli</td>
+  <td>0:Bakiye ve Ortalama Vade 1:Her Vade Ayr� 2:Her Fatura Ayr� 3:Her Fatura Vade Gruplu Ayr� 4:Her Bakiye ve Vade Ayr�</td>
+ </tr>
+ <tr>
+  <td>53</td>
+  <td>ol_alacakfatevrtip</td>
+  <td>Tinyint</td>
+  <td>Alacak Fatura Evrak Tipi</td>
+  <td>0:Al�� Faturas�<br>
+  1:Tahsilat Makbuzu<br>
+  2:Kasa Tahsilat Fi�i<br>
+  3:Senet Giri� Bordrosu<br>
+  4:�ek Giri� Bordrosu<br>
+  5:Portf�ydeki �ek Kar��l��� Nakit Kasa Tahsilat Makbuzu<br>
+  6:Portf�ydeki Senet Kar��l��� Nakit Tahsilat Makbuzu<br>
+  7:Bankadan Kasaya Nakit �ekme Makbuzu<br>
+  8:Kasadan Bankaya Nakit Yat�rma Makbuzu<br>
+  9:Kredi Virman Fi�i<br>
+  10:Kredi Kabul Fi�i<br>
+  11:Takas �ek ��k�� Bordrosu<br>
+  12:Takas �ek Kar��l�ks�z �ade Bordrosu<br>
+  13:Takas �ek �ade Bordrosu<br>
+  14:Takas �ek �deme Bordrosu<br>
+  15:Tahsile Senet ��k�� Bordrosu<br>
+  16:Tahsilden Protestolu Portf�ye Senet �ade Bordrosu<br>
+  17:Tahsil Senet �ade Bordrosu<br>
+  18:Tahsildeki Senet �deme Bordrosu<br>
+  19:Teminata �ek ��k�� Bordrosu<br>
+  20:Teminat �ek Kar��l�ks�z �ade Bordrosu<br>
+  21:Teminat �ek �ade Bordrosu<br>
+  22:Teminattaki �ek �deme Bordrosu<br>
+  23:Teminata Senet ��k�� Bordrosu<br>
+  24:Teminatdan Protestolu Portf�ye Senet �ade Bordrosu<br>
+  25:Teminat Senet �ade Bordrosu<br>
+  26:Teminat Senet �deme Bordrosu<br>
+  27:Verilen Firma �eki �deme Bordrosu<br>
+  28:Verilen Firma Senedi �deme Bordrosu<br>
+  29:A��l�� Fi�i<br>
+  30:De�erli Ka��tlar A��l�� Fi�i<br>
+  31:Bor� Dekontu<br>
+  32:Alacak Dekontu<br>
+  33:Genel Virman Dekontu<br>
+  34:Gelen Havale<br>
+  35:Gonderilen Havale<br>
+  36:Bankadan Firma Senet �deme<br>
+  37:Kasa Masraf Fi�i<br>
+  38:Bankadan Firma �ek �deme<br>
+  39:Protestolu Senet �ade Giri� Bordrosu<br>
+  40:Kar��l�ks�z �ek �ade Giri� Bordrosu<br>
+  41:Mevduat �ek Kar��l�ks�z �ade<br>
+  42:Mevduat Senet prot �ade<br>
+  43:�ek �ade Giri� Bordrosu<br>
+  44:Senet �ade Giri� Bordrosu<br>
+  45:Protestolu Senet �ade ��k�� Bordrosu<br>
+  46:Kar��l�ks�z �ek �ade ��k�� Bordrosu<br>
+  47:�ek �ade ��k�� Bordrosu<br>
+  48:Senet �ade ��k�� Bordrosu<br>
+  49:Kasadan Kendi �deme Emrimizi Kapatma<br>
+  50:Bankadan Kendi �deme Emrimizi Kapatma<br>
+  51:Firma Kredi Kart� �deme<br>
+  52:Kasadan M��teri �deme S�z� Kapatma<br>
+  53:Bankadan M��teri �deme S�z� Kapatma<br>
+  54:Cari Hesap Kredi Kart� �deme<br>
+  55:Giri� Gider Makbuzu<br>
+  56:Giri� Serbest Meslek Makbuzu<br>
+  57:M��teri Sat�c� Virman Dekontu<br>
+  58:Bankalar Virman Dekontu<br>
+  59:Kur Fark� Virman Dekontu<br>
+  60:Pos Sat�� Virman Dekontu<br>
+  61:Stok Gider Pusulas�<br>
+  62:Kar��l�ks�z Portf�yden Portf�ye Transfer<br>
+  63:Sat�� Faturas�<br>
+  64:Tediye Makbuzu<br>
+  65:Kasa Tediye Fi�i<br>
+  66:Senet ��k�� Bordrosu<br>
+  67:�ek ��k�� Bordrosu<br>
+  68:Protestolu Portf�ydeki Senet Kar��l��� Nakit<br>
+  68:Kar��l�ks�z Portf�ydeki �ek Kar��l��� Nakit<br>
+  70:Kasalar Aras� �ek Transfer Bordrosu<br>
+  71:Kasalar Aras� Senet Transfer Bordrosu<br>
+  72:Kasalar Aras� Kar��l�ks�z �ek Transfer Bordrosu<br>
+  73:Kasalar Aras� Protestolu Senet Transfer Bordrosu<br>
+  74:Kar��l�ks�z ��kan �ek Transfer Bordrosu<br>
+  75:�denmeyen Senet Transfer Bordrosu<br>
+  76:A��l�� �ek Portf�ye Giri� Bordrosu<br>
+  77:Kredi Kart� Masraf Virman Dekontu<br>
+  78:Bankada Tahsildeki Senedi Cariye �ade Bordrosu<br>
+  79:Bankada Teminattaki Senedi Cariye �ade Bordrosu<br>
+  80:Bankada Tahsildeki �eki Cariye �ade Bordrosu<br>
+  81:Bankada Teminattaki �eki Cariye �ade Bordrosu<br>
+  82:�deme Emri Giri� Bordrosu<br>
+  83:�deme Emri ��k�� Bordrosu<br>
+  84:Bankada Tahsildeki Protestolu Senedi Cariye �ade Bordrosu<br>
+  85:Bankada Teminattaki Protestolu Senedi Cariye �ade Bordrosu<br>
+  86:Bankada Tahsildeki Kar��l�ks�z �eki Cariye �ade Bordrosu<br>
+  87:Bankada Teminattaki Kar��l�ks�z �eki Cariye �ade Bordrosu<br>
+  88:Satis Serbest Meslek Makbuzu<br>
+  89:D�viz Al�� Belgesi<br>
+  90:D�viz Sat�� Belgesi<br>
+  91:Grup �irketler Aras� Virman Dekontu<br>
+  92:Firma Havale Emri Kapatma<br>
+  93:M��teri Havale S�z� Kapatma<br>
+  94:Personel Tahakkuk Virman Dekontu<br>
+  95:�thalat Masraf Yans�tma Dekontu<br>
+  96:Finansal Kiralama S�zle�me Evra��<br>
+  97:Cari Vade Fark� S�f�rlama Fi�i<br>
+  98:Tahsil Edilen Avans Makbuzu<br>
+  99:�denen Avans Makbuzu<br>
+  100:Cari Bor� Dekontu<br>
+  101:Cari Alacak Dekontu<br>
+  102:Cari De�erli Ka��t De�erleme Virman Dekontu<br>
+  103:M��teri Kredi Kart� �ade ��k�� Bordrosu<br>
+  104:Bankalar Aras� Kredi Kart� Transferi<br>
+  105:Alternatif D�viz D�n���m Fark� Virman Dekontu<br>
+  106:Amortisman Giderle�tirme Virman Dekontu<br>
+  107:Hizmet Maliyeti Yans�tma Virman Dekontu<br>
+  108:Kredi S�zle�mesi Kabul Fi�i<br>
+  109:Kredi S�zle�mesi Taksit �deme Fi�i<br>
+  110:Kasalar Aras� Virman Dekontu<br>
+  111:Kredi Kabul Virman Dekontu<br>
+  112:Kredi Geri �deme Virman Dekontu<br>
+  113:Kredi Gider Tahakkuku Dekontu<br>
+  114:Kredi Ana Para Vadesi De�i�im Dekontu<br>
+  115:Kredi Gider Vadesi De�i�im Dekontu<br>
+  116:D�nemsel Hizmet Giderle�tirme Gelirle�tirme Dekontu<br>
+  117:D�nemsel Hizmet Gelecek Y�ldan Gelecek Aya Aktarma Dekontu<br>
+  118:Firma Kredi Kart� �ade Giri� Bordrosu<br>
+  119:Teminat Mektubu Giri� Bordrosu<br>
+  120:Teminat Mektubu ��k�� Bordrosu<br>
+  121:Depozito Giri� Bordrosu<br>
+  122:Depozito ��k�� Bordrosu<br>
+  123:Depozito �ekleri Portf�ye Transfer<br>
+  124:Depozito Senetleri Portf�ye Transfer<br>
+  125:Teminat Mektubu �ade ��k�� Bordrosu<br>
+  126:Teminat Mektubu �ade Giri� Bordrosu<br>
+  127:Depozito �ade ��k�� Bordrosu<br>
+  128:Depozito �ade Giri� Bordrosu<br>
+  129:�dendiden Tahsile M��teri Kredi Kart� �ade Bordrosu<br>
+  130:Firma Reel Kredi Kart� Kesinle�tirme Virman Dekontu<br>
+  131:Firma Reel Kredi Kart� �deme Virman Dekontu<br>
+  132:M��teri �deme S�z� �ade ��k�� Bordrosu<br>
+  133:K�smen �denen Senet Transfer Bordrosu<br>
+  134:M��teri Havale S�z� �ade ��k�� Bordrosu<br>
+  135:K�smen �denen �ek Kasalar� Aras� Transfer<br>
+  136:K�smen �denen Kar��l�ks�z �ek Kasalar� Aras� Transfer</td>
+ </tr>
+ <tr>
+  <td>54</td>
+  <td>ol_alacakfatevrno_seri</td>
+  <td>dbo.evrakseri_str</td>
+  <td>Alacak Fatura Evrak Seri No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>55</td>
+  <td>ol_alacakfatevrno_sira</td>
+  <td>Integer</td>
+  <td>Alacak Fatura Evrak S�ra No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>56</td>
+  <td>ol_alacakfat_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Alacak Fatura Uid</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>57</td>
+  <td>ol_alacakfatvadetarihi</td>
+  <td>DateTime</td>
+  <td>Alacak Fatura Vade Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>58</td>
+  <td>ol_odemeevragi_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>�deme Evra�� Uid</td>
+  <td>&nbsp;</td>
+ </tr>
+ </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_ODEME_LISTESI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>ol_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_ODEME_LISTESI_02</td>
+<td></td>
+<td>ol_Carikodu, ol_carigrup, ol_srmmrkkodu</td>
+</tr>
+<tr>
+<td>NDX_ODEME_LISTESI_03</td>
+<td></td>
+<td>ol_OrtVadeTarih</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 03.01.2018 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2018 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/Tablolar/odeme_listesi.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:17:55 GMT -->
+</html>

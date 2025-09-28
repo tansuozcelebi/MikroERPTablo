@@ -1,0 +1,546 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/muhasebe_hesap_plani.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : MUHASEBE_HESAP_PLANI</b></td>
+    <td width="50%"><b>Tablo : Muhasebe Hesap Plan�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white" width="100%">
+  <tr>
+    <td height="24" width="107">
+    <b>No</b></td>
+    <td width="191">
+    <b>Alan Ad�</b></td>
+    <td width="117">
+    <b>Tip</b></td>
+    <td width="253">
+    <b>A��klama</b></td>
+    <td width="151">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+    <td>
+    0</td>
+    <td>
+    muh_Guid</td>
+    <td>
+    Uniqueidentifier</td>
+    <td width="253">
+    &nbsp;</td>
+    <td width="317">
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    1</td>
+    <td>
+    muh_DBCno</td>
+    <td>
+    Smallint</td>
+    <td width="253">
+    &nbsp;</td>
+    <td width="317">
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    2</td>
+    <td>
+    muh_SpecRECno</td>
+    <td>
+    Integer</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    3</td>
+    <td>
+    muh_iptal</td>
+    <td>
+    Bit</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    4</td>
+    <td>
+    muh_fileid</td>
+    <td>
+    Smallint</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    5</td>
+    <td>
+    muh_hidden</td>
+    <td>
+    Bit</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    6</td>
+    <td>
+    muh_kilitli</td>
+    <td>
+    Bit</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    7</td>
+    <td>
+    muh_degisti</td>
+    <td>
+    Bit</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    8</td>
+    <td>
+    muh_checksum</td>
+    <td>
+    Integer</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    9</td>
+    <td>
+    muh_create_user</td>
+    <td>
+    Smallint</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    10</td>
+    <td>
+    muh_create_date</td>
+    <td>
+    DateTime</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    11</td>
+    <td>
+    muh_lastup_user</td>
+    <td>
+    Smallint</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    12</td>
+    <td>
+    muh_lastup_date</td>
+    <td>
+    DateTime</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    13</td>
+    <td>
+    muh_special1</td>
+    <td>
+    Nvarchar(127)</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    14</td>
+    <td>
+    muh_special2</td>
+    <td>
+    Nvarchar(127)</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    15</td>
+    <td>
+    muh_special3</td>
+    <td>
+    Nvarchar(127)</td>
+    <td>
+    &nbsp;</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>muh_MainProgramNo</td>
+  <td>Smallint</td>
+  <td>Ana Program Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>muh_VersionNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Versiyon Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>muh_MenuNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Men� Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>muh_MikroSpecial1</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>muh_MikroSpecial2</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>muh_MikroSpecial3</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>muh_ExternalProgramType</td>
+  <td>Tinyint</td>
+  <td>D�� Yaz�l�m Aktar�m Tipi</td>
+  <td>0:Genel 1:Para��t 2:Irgat</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>muh_ExternalProgramId</td>
+  <td>Nvarchar(127)</td>
+  <td>D�� Yaz�l�m Id'si</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    24</td>
+    <td>
+    muh_hesap_kod</td>
+    <td>
+    Nvarchar(25)</td>
+    <td>
+    Hesap Kodu</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    25</td>
+    <td>
+    muh_hesap_isim1</td>
+    <td>
+    Nvarchar(40)</td>
+    <td>
+    Hesap Ad�</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    26</td>
+    <td>
+    muh_hesap_isim2</td>
+    <td>
+    Nvarchar(40)</td>
+    <td>
+    Yabanc� Hesap Ad�</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    27</td>
+    <td>
+    muh_hesap_tip</td>
+    <td>
+    Tinyint</td>
+    <td>
+    Hesap Tipi</td>
+    <td>
+    0:Aktif 1:Pasif 2:Gelir 3:Gider 4:Naz�m</td>
+  </tr>
+  <tr>
+    <td>
+    28</td>
+    <td>
+    muh_doviz_cinsi</td>
+    <td>
+    Tinyint</td>
+    <td>
+    Hesap Orj. D�viz Cinsi</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    29</td>
+    <td>
+    muh_kurfarki_fl</td>
+    <td>
+    Bit</td>
+    <td>
+    Kur Farki Hesab� m�?</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    30</td>
+    <td>
+    muh_sorum_merk</td>
+    <td>
+    Tinyint</td>
+    <td>
+    Sorumluluk Merkezi</td>
+    <td>
+    0:Serbest 1:Gereksiz 2:Gerekli</td>
+  </tr>
+  <tr>
+    <td>
+    31</td>
+    <td>
+    muh_kilittarihi</td>
+    <td>
+    DateTime</td>
+    <td>
+    Kilit Tarihi</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    32</td>
+    <td>
+    muh_hes_dav_bicimi</td>
+    <td>
+    Tinyint</td>
+    <td>
+    Hesap Davran�� Bi�imi</td>
+    <td>
+    0:Parasal 1:Parasal Olmayan</td>
+  </tr>
+  <tr>
+    <td>
+    33</td>
+    <td>
+    muh_kdv_tipi</td>
+    <td>
+    Tinyint</td>
+    <td>
+    KDV Tipi</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    34</td>
+    <td>
+    muh_calisma_sekli</td>
+    <td>
+    Tinyint</td>
+    <td>
+    �al��ma �ekli</td>
+    <td>
+    0:Bor� 1:Alacak 2:Bor�-Alacak</td>
+  </tr>
+  <tr>
+    <td>
+    35</td>
+    <td>
+    muh_maliyet_dagitim_sekli</td>
+    <td>
+    Tinyint</td>
+    <td>
+    Maliyet Da��t�m �ekli</td>
+    <td>
+	0:S�reye g�re 1:Miktara g�re 2:A��rl��a g�re 3:Alana g�re 4:Hacme g�re 5:Adam saate g�re 6:Miktar 2'ye g�re 7:Miktar3'e g�re 8:Miktar4'e g�re 9:Enerji1'e g�re 10:Enerji2'ye g�re 11:Miktar b�l� safha say�s�na g�re 12:Miktar b�l� safha say�s� �arp� standart maliyete g�re</td>
+  </tr>
+  <tr>
+    <td>
+    36</td>
+    <td>
+    muh_grupkodu</td>
+    <td>
+    Nvarchar(4)</td>
+    <td>
+    Grup Kodu</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+   <tr>
+    <td>
+    37</td>
+    <td>
+    muh_enf_fark_maliyet_fl</td>
+    <td>
+    Bit</td>
+    <td>
+    Enflasyon fark maliyetli mi?</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+   <tr>
+    <td>
+    38</td>
+    <td>
+    muh_kdv_dagitim_sekli</td>
+    <td>
+    Tinyint</td>
+    <td>
+    KDV Da��t�m �ekli</td>
+    <td>
+    0:Kdv Manuel 1:Kdv Ay�r 2:Kdv Hesapla 3:Kdv Ay�r �ade 4:Kdv Hesapla �ade</td>
+  </tr>
+   <tr>
+    <td>
+    39</td>
+    <td>
+    muh_miktar_oto_fl</td>
+    <td>
+    Bit</td>
+    <td>
+    Fi�te otomatik F8 giri�i</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    40</td>
+    <td>
+    muh_ticariden_bilgi_girisi_fl</td>
+    <td>
+    Bit</td>
+    <td>
+    Hesap kartlar�na ticariden bilgi giri� yap�ls�n m�?</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    41</td>
+    <td>
+    muh_proje_detayi</td>
+    <td>
+    Tinyint</td>
+    <td>
+    Proje Detay�</td>
+    <td>
+    0:Serbest 1:Gereksiz 2:Ge�erli</td>
+  </tr>
+  <tr>
+    <td>
+    42</td>
+    <td>
+    muh_kesin_mizan_hesap_kodu</td>
+    <td>
+    Nvarchar(25)</td>
+    <td>
+    Kesin Mizan Hesap Kodu</td>
+    <td>
+    &nbsp;</td>
+  </tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_MUHASEBE_HESAP_PLANI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>muh_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_MUHASEBE_HESAP_PLANI_02</td>
+<td>UNIQUE</td>
+<td>muh_hesap_kod</td>
+</tr>
+<tr>
+<td>NDX_MUHASEBE_HESAP_PLANI_03</td>
+<td></td>
+<td>muh_hesap_isim1</td>
+</tr>
+<tr class=sRow >
+<td>NDX_MUHASEBE_HESAP_PLANI_04</td>
+<td></td>
+<td>muh_grupkodu, muh_hesap_kod</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 31.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DBYapisi">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/muhasebe_hesap_plani.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:54 GMT -->
+</html>

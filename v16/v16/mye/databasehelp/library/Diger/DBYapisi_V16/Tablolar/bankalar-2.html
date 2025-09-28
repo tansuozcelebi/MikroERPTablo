@@ -1,0 +1,682 @@
+<html>
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/tablolar/bankalar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:18:05 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 52</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : BANKALAR</b></td>
+    <td width="50%"><b>Tablo : Banka Kartlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>ban_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>ban_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>ban_SpecRECNo</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>ban_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>ban_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>ban_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>ban_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>ban_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>ban_CheckSum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>ban_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>ban_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>ban_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>ban_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>ban_special1</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>ban_special2</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>ban_special3</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>ban_kod</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Banka Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>ban_ismi</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">Banka �smi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>ban_sube</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">Banka �ubesi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>ban_SwiftKodu</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Swift Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>ban_IBANKodu</td>
+  <td>Nvarchar(40)</td>
+  <td width="328">IBAN Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>ban_hesapno</td>
+  <td>Nvarchar(30)</td>
+  <td width="328">Banka Hesap No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>ban_firma_no</td>
+  <td>Integer</td>
+  <td width="328">Firma No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>ban_hesap_tip</td>
+  <td>Tinyint</td>
+  <td width="328">Banka Hesap Tipi</td>
+  <td>0:Mevduat 1:Kredi</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>ban_mevduat_tip</td>
+  <td>Tinyint</td>
+  <td width="328">Mevduat Cinsi</td>
+  <td>0:Vadesiz ticari 1:Vadesiz tasarruf 
+  2:Vadeli tasarruf 3:Yat�r�m fonu 4:Repo 5:Bloke 6:Di�er mevduat</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>ban_kredi_tip</td>
+  <td>Tinyint</td>
+  <td width="328">Kredi Cinsi</td>
+  <td>0:K�sa vadeli a��k kredi 
+  1:K�sa vadeli teminatl� kredi 2:Uzun vadeli a��k kredi 
+  3:Uzun vadeli teminatl� kredi 4:Exim kredileri 5:Di�er kredi</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>ban_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td width="328">Banka Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>ban_ver_cek_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Verilen �ek Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>ban_tah_cek_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td width="328">Tahsil �ek Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>ban_tah_sen_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td width="328">Tahsil Senet Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>ban_tem_cek_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat �ek Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>ban_tem_sen_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Teminat Senet Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>ban_mus_krdrkart_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>M��teri Kredi Kart� Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>ban_frm_krdrkart_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Firma Kredi Kart� Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>ban_must_havale_sozu_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>M��teri Havale S�z� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>ban_firma_havale_emri_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Firma Havale Emri Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>ban_tem_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Banka Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>ban_doviz_cinsi</td>
+  <td>Tinyint</td>
+  <td width="328">Banka D�viz Cinsi</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>ban_vade_fark_yuzde</td>
+  <td>Float</td>
+  <td width="328">Banka Vade Fark Y�zdesi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>ban_kredi_tavan</td>
+  <td>Float</td>
+  <td width="328">Kredi Tavan�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td>ban_risk_tavan</td>
+  <td>Float</td>
+  <td width="328">Risk Tavan�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>ban_nakakincelenmesi</td>
+  <td>Bit</td>
+  <td>Nakit Ak��ta �ncelenmesin?</td>
+  <td>Bu alan�n True oldu�u bankalar ile ilgili mevduat
+    bakiyeleri nakit ak�� raporlar�nda rapora al�nmaz.</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td>ban_TCMB_Kodu</td>
+  <td>Nvarchar(4)</td>
+  <td>TCMB Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td>ban_TCMB_Sube_Kodu</td>
+  <td>Nvarchar(8)</td>
+  <td>TCMB �ube Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>ban_TCMB_Il_Kodu</td>
+  <td>Nvarchar(3)</td>
+  <td>TCMB �l Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>ban_musteri_no</td>
+  <td>Nvarchar(30)</td>
+  <td>M��teri Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td>ban_Ayni_banka_tahsil_suresi</td>
+  <td>Tinyint</td>
+  <td>Ayn� banka tahsil s�resi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>ban_baska_banka_tahsil_suresi</td>
+  <td>Tinyint</td>
+  <td>Ba�ka banka tahsil s�resi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td>ban_odul_katkisi_hesap_cinsi</td>
+  <td>Tinyint</td>
+  <td>�d�l Katk�s� Hesap Cinsi</td>
+  <td>0:Carimiz 1:Cari Personelimiz 2:Bankam�z 3:Hizmetimiz 4:Kasam�z 
+  5:Giderimiz 6:Muhasebe Hesab�m�z 7:Personelimiz 8:Demirba��m�z 9:�thalat Dosyam�z 10:Finansal S�zle�memiz 11:Kredi S�zle�memiz 12:D�nemsel Hizmetimiz 13:Kredi Kart�m�z</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>ban_odul_katkisi_hesabi</td>
+  <td>Nvarchar(25)</td>
+  <td>�d�l Katk�s� Hesab�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>ban_servis_komisyon_hesap_cinsi</td>
+  <td>Tinyint</td>
+  <td>Servis Komisyon Hesap Cinsi</td>
+  <td>0:Carimiz 1:Cari Personelimiz 2:Bankam�z 3:Hizmetimiz 4:Kasam�z 
+  5:Giderimiz 6:Muhasebe Hesab�m�z 7:Personelimiz 8:Demirba��m�z 9:�thalat Dosyam�z 10:Finansal S�zle�memiz 11:Kredi S�zle�memiz 12:D�nemsel Hizmetimiz 13:Kredi Kart�m�z</td>
+  </tr>
+  <tr>
+  <td>51</td>
+  <td>ban_servis_komisyon_hesabi</td>
+  <td>Nvarchar(25)</td>
+  <td>Servis Komisyon Hesab�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>52</td>
+  <td>ban_erken_odm_faiz_hesap_cinsi</td>
+  <td>Tinyint</td>
+  <td>Erken �deme Faiz Hesap Cinsi</td>
+  <td>0:Carimiz 1:Cari Personelimiz 2:Bankam�z 3:Hizmetimiz 4:Kasam�z 
+  5:Giderimiz 6:Muhasebe Hesab�m�z 7:Personelimiz 8:Demirba��m�z 9:�thalat Dosyam�z 10:Finansal S�zle�memiz 11:Kredi S�zle�memiz 12:D�nemsel Hizmetimiz 13:Kredi Kart�m�z</td>
+  </tr>
+  <tr>
+  <td>53</td>
+  <td>ban_erken_odm_faiz_hesabi</td>
+  <td>Nvarchar(25)</td>
+  <td>Erken �deme Faiz Hesab�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>54</td>
+  <td>ban_pos_tahsilat_cari_hesabi</td>
+  <td>Nvarchar(25)</td>
+  <td>POS Tahsilat Cari Hesab�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>55</td>
+  <td>ban_adr_cadde</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">Cadde</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td>ban_adr_mahalle</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">Mahalle</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>57</td>
+  <td>ban_adr_sokak</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">Sokak</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>58</td>
+  <td>ban_adr_Semt</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Semt</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>59</td>
+  <td>ban_adr_Apt_No</td>
+  <td>Nvarchar(10)</td>
+  <td width="328">Apartman Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>60</td>
+  <td>ban_adr_Daire_No</td>
+  <td>Nvarchar(10)</td>
+  <td width="328">Daire Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>61</td>
+  <td>ban_adr_posta_kodu</td>
+  <td>Nvarchar(8)</td>
+  <td width="328">Posta Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>62</td>
+  <td>ban_adr_ilce</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">�l�e</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>63</td>
+  <td>ban_adr_il</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">�l</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>64</td>
+  <td>ban_adr_ulke</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">�lke</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>65</td>
+  <td>ban_adr_adres_kodu</td>
+  <td>Nvarchar(10)</td>
+  <td width="328">Adres Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>66</td>
+  <td>ban_tel_ulke_kodu</td>
+  <td>Nvarchar(5)</td>
+  <td width="328">�lke Telefon Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>67</td>
+  <td>ban_tel_bolge_kodu</td>
+  <td>Nvarchar(5)</td>
+  <td width="328">B�lge Telefon Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>68</td>
+  <td>ban_tel_no1</td>
+  <td>Nvarchar(10)</td>
+  <td>Telefon No 1</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>69</td>
+  <td>ban_tel_no2</td>
+  <td>Nvarchar(10)</td>
+  <td>Telefon No 2</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>70</td>
+  <td>ban_tel_faxno</td>
+  <td>Nvarchar(10)</td>
+  <td width="328">Fax No</td>
+  <td width="280"> </td>
+  </tr>
+  <tr>
+  <td>71</td>
+  <td>ban_tel_modem</td>
+  <td>Nvarchar(10)</td>
+  <td width="328">Modem No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>72</td>
+  <td>ban_temsilci</td>
+  <td>Nvarchar(50)</td>
+  <td width="328">Temsilci</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>73</td>
+  <td>ban_temsilci_email</td>
+  <td>Nvarchar(80)</td>
+  <td width="328">Temsilci E-Postas�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>74</td>
+  <td>ban_ufrs_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>75</td>
+  <td>ban_ufrs_ver_cek_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Verilen �ek Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>76</td>
+  <td>ban_ufrs_tah_cek_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Tahsil �ek Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>77</td>
+  <td>ban_ufrs_tah_sen_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Tahsil Senet Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>78</td>
+  <td>ban_ufrs_tem_cek_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Teminat �ek Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>79</td>
+  <td>ban_ufrs_tem_sen_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Teminat Senet Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>80</td>
+  <td>ban_ufrs_mus_krdrkart_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs M��teri Kredi Kart� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>81</td>
+  <td>ban_ufrs_frm_krdrkart_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Firma Kredi Kart� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>82</td>
+  <td>ban_ufrs_must_havale_sozu_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs M��teri Havale S�z� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>83</td>
+  <td>ban_ufrs_firma_havale_emri_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Firma Havale Emri Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>84</td>
+  <td>ban_ufrs_ver_cek_sinif_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Verilen �ek S�n�f Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>85</td>
+  <td>ban_ufrs_frm_hav_emri_sinif_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Firma Havale Emri S�n�f Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>86</td>
+  <td>ban_ufrs_tem_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Banka Teminat Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_BANKALAR_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>ban_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_BANKALAR_02</td>
+<td>UNIQUE</td>
+<td>ban_kod</td>
+</tr>
+<tr>
+<td>NDX_BANKALAR_03</td>
+<td></td>
+<td>ban_ismi</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 02.01.2018 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2018 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/tablolar/bankalar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:18:05 GMT -->
+</html>

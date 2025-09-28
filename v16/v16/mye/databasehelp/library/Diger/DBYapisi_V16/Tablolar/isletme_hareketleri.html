@@ -1,0 +1,734 @@
+<html>
+
+<!-- Mirrored from www.mikroelterminali.com/databasehelp/library/Diger/DBYapisi_V16/Tablolar/isletme_hareketleri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:17:57 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 103</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : ISLETME_HAREKETLERI</b></td>
+    <td width="50%"><b>Tablo : ��letme Fi�leri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>dfis_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>dfis_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>dfis_SpecRECno</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>dfis_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>dfis_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>dfis_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>dfis_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>dfis_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>dfis_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>dfis_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>dfis_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>dfis_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>dfis_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>dfis_special1</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>dfis_special2</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>dfis_special3</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>dfis_firmano</td>
+<td>Integer</td>
+    <td>
+    Firma No</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>dfis_subeno</td>
+<td>Integer</td>
+    <td>
+    �ube No</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>dfis_maliyil</td>
+<td>Integer</td>
+    <td>
+    Mali Y�l</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>dfis_tarih</td>
+<td>DateTime</td>
+    <td>
+    Fi� Tarihi</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>dfis_hesap_kod</td>
+<td>Nvarchar(25)</td>
+    <td>
+    Fi� Hesap Kodu</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>dfis_aciklama1</td>
+<td>Nvarchar(65)</td>
+    <td>
+    A��klama</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>dfis_meblag0</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>23</td>
+<td>dfis_meblag1</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>dfis_meblag2</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>dfis_meblag3</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>dfis_meblag4</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>dfis_meblag5</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>dfis_meblag6</td>
+<td>Float</td>
+    <td>
+    Mebla�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>dfis_fevraktarih</td>
+<td>DateTime</td>
+    <td>
+    Evrak Tarihi</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>dfis_fcinsi</td>
+<td>Tinyint</td>
+    <td>
+    Fi� Cinsi</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>dfis_fvergipnt</td>
+<td>Tinyint</td>
+    <td>
+    �lgili Vergi Ba�lant�s�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>dfis_Fvergi</td>
+<td>Float</td>
+    <td>
+    �lgili Vergi Oran�</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>dfis_ftip</td>
+<td>Tinyint</td>
+    <td>
+    Fi� Tipi</td>
+    <td>
+    0:Gelir 1:Gider</td>
+</tr>
+<tr>
+<td>34</td>
+<td>dfis_ticari_tip</td>
+<td>Tinyint</td>
+    <td>
+    Ticari Tip</td>
+    <td>
+    0:Ticari ili�ki yok 1:Stok hareket 2:Cari hareket 3:Sipari� 4:Personel tahakkuk 5:Akaryak�t hareket 6:Demirba� hareket 7:Smm hareket</td>
+</tr>
+<tr>
+<td>35</td>
+<td>dfis_ticari_evraktip</td>
+<td>Tinyint</td>
+    <td>
+    Ticari Evrak Tipi</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>dfis_evrakno_seri</td>
+<td>Nvarchar(15)</td>
+    <td>
+    Evrak Seri No</td>
+    <td>
+    Bkz. <a href="evrak_aciklamalari-2.html">EVRAK_ACIKLAMALARI</a></td>
+</tr>
+<tr>
+<td>37</td>
+<td>dfis_evrakno_sira</td>
+<td>Integer</td>
+    <td>
+    Evrak Seri No</td>
+    <td>
+    Bkz. <a href="evrak_aciklamalari-2.html">EVRAK_ACIKLAMALARI</a></td>
+</tr>
+<tr>
+<td>38</td>
+<td>dfis_fozelmahkod</td>
+<td>Nvarchar(25)</td>
+    <td>
+    �zel Mahsup Kodu</td>
+    <td>
+    &nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>dfis_evraktip</td>
+<td>Tinyint</td>
+    <td>
+    Evrak Tipi</td>
+    <td>
+    0:Tan�ms�z 1:Fatura 2:e-Fatura 3:e-Ar�iv Fatura 4:e-Bilet 5:Perakende Fi�i 6:Serbest Meslek Makbuzu 7:�rsaliyeli Fatura 8:�zel Fatura 9:Dip Ko�anl� Bilet 10:K�ymetli Maden 11:D�viz ve K�ymetli Maden 12:Noter Makbuzu 13:D�ner Sermaye Bilgisi 14:Dip Ko�anl� Olmayan Bilet 15:Tahsilat Al�nd� Belgesi Kamu Belediye 16:Future3 17:Future4 18:Future5 19:Future6 20:Future7 21:Di�er 22:Amortisman 23:Kira Mahsubu 24:Personel Bordro</td>
+</tr>
+<tr>
+<td>40</td>
+<td>dfis_vergiDairesiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Vergi Dairesi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>dfis_tcknVkn</td>
+<td>Nvarchar(15)</td>
+<td>TC Kimlik No, Vergi Kimlik No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>dfis_ad</td>
+<td>Nvarchar(127)</td>
+<td>Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>dfis_soyad</td>
+<td>Nvarchar(127)</td>
+<td>Soyad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>dfis_adresiGuncelleme</td>
+<td>Bit</td>
+<td>Adresi G�ncelleme Var M� ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>dfis_adresBilgisi</td>
+<td>Nvarchar(127)</td>
+<td>Adres Bilgisi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>dfis_miktar</td>
+<td>Float</td>
+<td>Miktar</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>dfis_birimKodu</td>
+<td>Nvarchar(10)</td>
+<td>Birim Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>dfis_kismiTevkifatKodu</td>
+<td>Nvarchar(10)</td>
+<td>K�smi Tevkifat Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>dfis_kismiTevkifatOrani</td>
+<td>Float</td>
+<td>K�smi Tevkifat Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>dfis_stopajKodu</td>
+<td>Nvarchar(10)</td>
+<td>Stopaj Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>dfis_stopajOrani</td>
+<td>Float</td>
+<td>Stopaj Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>dfis_stopajTutari</td>
+<td>Float</td>
+<td>Stopaj Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>dfis_giderBelgeTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gider Belge T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>54</td>
+<td>dfis_alisTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Al�� T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>55</td>
+<td>dfis_giderKayitTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gider Kay�t T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>dfis_giderKayitAltTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gider Kay�t Alt T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>57</td>
+<td>dfis_odemeTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>�deme T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>58</td>
+<td>dfis_hesaplamaYontemiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Hesaplama Y�ntemi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>dfis_amortismanYontemiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Amortisman Y�ntemi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>dfis_sabitKiymetTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Sabit K�ymet T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>dfis_ozelKodKodu</td>
+<td>Nvarchar(10)</td>
+<td>�zel Kod Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>62</td>
+<td>dfis_kodu</td>
+<td>Nvarchar(20)</td>
+<td>Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>dfis_adi</td>
+<td>Nvarchar(127)</td>
+<td>Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>dfis_iktisadiKiymetKodu</td>
+<td>Nvarchar(10)</td>
+<td>�ktisadi K�ymet Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>dfis_periyot</td>
+<td>Tinyint</td>
+<td>Periyot</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>dfis_tevkifatDurumKodu</td>
+<td>Tinyint</td>
+<td>Tevkifat Durum Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>dfis_damgaVergisiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Damga Vergisi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>dfis_gelirBelgeTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gelir Belge T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>dfis_satisTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Sat�� T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>70</td>
+<td>dfis_gelirKayitTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gelir Kay�t T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>dfis_gelirKayitAltTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gelir Kay�t Alt T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>dfis_kismiIstisnaKodu</td>
+<td>Nvarchar(10)</td>
+<td>K�smi �stisna Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>dfis_kismiIstisnaOrani</td>
+<td>Float</td>
+<td>K�smi �stisna Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>74</td>
+<td>dfis_tamIstisnaKodu</td>
+<td>Nvarchar(10)</td>
+<td>Tam �stisna Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>75</td>
+<td>dfis_tamIstisnaOrani</td>
+<td>Float</td>
+<td>Tam �stisna Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>76</td>
+<td>dfis_ihracKayitliTeslimKodu</td>
+<td>Nvarchar(10)</td>
+<td>�hra� Kay�tl� Teslim Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>77</td>
+<td>dfis_ihracKayitliTeslimOrani</td>
+<td>Float</td>
+<td>�hra� Kay�tl� Teslim Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>78</td>
+<td>dfis_digerIadeHakkiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Di�er �ade Hakk� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>79</td>
+<td>dfis_digerIadeHakkiOrani</td>
+<td>Float</td>
+<td>Di�er �ade Hakk� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>80</td>
+<td>dfis_digerIslemlerKodu</td>
+<td>Nvarchar(10)</td>
+<td>Di�er ��lemler Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>81</td>
+<td>dfis_digerIslemlerOrani</td>
+<td>Float</td>
+<td>Di�er ��lemler Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>82</td>
+<td>dfis_netDefterDegeri</td>
+<td>Float</td>
+<td>Net Defter De�eri</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>83</td>
+<td>dfis_sabitKiymetId</td>
+<td>Nvarchar(10)</td>
+<td>Sabit K�ymet Id</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>84</td>
+<td>dfis_iadeKismiTevkifatKodu</td>
+<td>Nvarchar(10)</td>
+<td>�ade K�smi Tevkifat Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>85</td>
+<td>dfis_iadeKismiTevkifatOrani</td>
+<td>Float</td>
+<td>�ade K�smi Tevkifat Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>86</td>
+<td>dfis_krediKartiTutari</td>
+<td>Float</td>
+<td>Kredi Kart� Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>87</td>
+<td>dfis_belgeTutari</td>
+<td>Float</td>
+<td>Belge Tutar�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>88</td>
+<td>dfis_nihaiTuketici</td>
+<td>Bit</td>
+<td>Nihai T�ketici</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_ISLETME_HAREKETLERI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>dfis_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_ISLETME_HAREKETLERI_02</td>
+<td></td>
+<td>dfis_firmano, dfis_maliyil, dfis_tarih</td>
+</tr>
+<tr>
+<td>NDX_ISLETME_HAREKETLERI_03</td>
+<td></td>
+<td>dfis_hesap_kod, dfis_tarih</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 21.03.2018 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2018 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>

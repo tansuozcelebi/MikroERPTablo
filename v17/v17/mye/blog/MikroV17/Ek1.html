@@ -1,0 +1,415 @@
+<html>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Ek1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>EK 1: myeDB_TLB.Pas</title>
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+</head>
+
+<body><p class="Caption"><i><a href="index-2.html">Database Yap�s�</a></i></p>
+
+	<h2>Ek 1: MyeDB_TLB.PAS</h2>
+	unit myeDB_TLB;</br>
+	<br>
+	// PASTLWTR : 1.2<br>
+   // File generated on 17.10.2012 15:54:42 from Type Library described below.<br>
+
+   // ************************************************************************  //<br>
+   // Type Lib: C:\v12xx\Final\myeDB.dll (1)<br>
+   // LIBID: {61131C9A-52C5-4775-99F9-07B29C72DBBF}<br>
+   // LCID: 0<br>
+   // Helpfile:<br>
+   // HelpString: myeDB Library<br>
+   // DepndLst:<br> 
+   //   (1) v2.0 stdole, (C:\WINDOWS\system32\stdole2.tlb)<br>
+   // Errors:<br>
+   //   Error creating palette bitmap of (TmyeMain) : List index out of bounds (2)<br>
+   // ************************************************************************ //<br>
+   // *************************************************************************//<br>
+   // NOTE:<br>                                                                      
+   // Items guarded by $IFDEF_LIVE_SERVER_AT_DESIGN_TIME are used by properties<br> 
+   // which return objects that may need to be explicitly created via a function<br> 
+   // call prior to any access via the property. These items have been disabled<br>  
+   // in order to prevent accidental use from within the object inspector. You<br>   
+   // may enable them by defining LIVE_SERVER_AT_DESIGN_TIME or by selectively<br>   
+   // removing them from the $IFDEF blocks. However, such items must still be<br>    
+   // programmatically created via a method of the appropriate CoClass before<br>    
+   // they can be used.<br>                                                          
+   {$TYPEDADDRESS OFF} // Unit must be compiled without type-checked pointers.<br> 
+   {$WARN SYMBOL_PLATFORM OFF}<br>
+   {$WRITEABLECONST ON}<br>
+   {$VARPROPSETTER ON}<br>
+   interface<br>
+   <br>
+   uses Windows, ActiveX, Classes, Graphics, OleServer, StdVCL, Variants;<br>
+   // *********************************************************************//<br>
+   // GUIDS declared in the TypeLibrary. Following prefixes are used:<br>        
+   //   Type Libraries     : LIBID_xxxx<br>                                      
+   //   CoClasses          : CLASS_xxxx<br>                                      
+   //   DISPInterfaces     : DIID_xxxx<br>                                       
+   //   Non-DISP interfaces: IID_xxxx<br>                                        
+   // *********************************************************************//<br>
+   const<br>
+   // TypeLibrary Major and minor versions<br>
+   myeDBMajorVersion = 1;<br>
+   myeDBMinorVersion = 0;<br>
+   <br>
+   LIBID_myeDB: TGUID = '{61131C9A-52C5-4775-99F9-07B29C72DBBF}';<br>
+   <br>
+   IID_ImyeMain: TGUID = '{E4EC91BB-2D81-49DF-A540-355737FEE726}';<br>
+   DIID_ImyeMainEvents: TGUID = '{F0D09343-3D68-495A-9C91-E22EE510F8FA}';<br>
+   CLASS_myeMain: TGUID = '{03156457-CF65-4FFC-A2EF-976EA35036AE}';<br>
+   type<br>
+   <br>
+   // *********************************************************************//<br>
+   // Forward declaration of types defined in TypeLibrary<br>                    
+   // *********************************************************************//<br>
+   ImyeMain = interface;<br>
+   ImyeMainDisp = dispinterface;<br>
+   ImyeMainEvents = dispinterface;<br>
+   <br>
+   // *********************************************************************//<br>
+   // Declaration of CoClasses defined in Type Library<br>                       
+   // (NOTE: Here we map each CoClass to its Default Interface)<br>              
+   // *********************************************************************//<br>
+   myeMain = ImyeMain;<br>
+   <br>
+   // *********************************************************************//<br>
+   // Interface: ImyeMain<br>
+   // Flags:     (4416) Dual OleAutomation Dispatchable<br>
+   // GUID:      {E4EC91BB-2D81-49DF-A540-355737FEE726}<br>
+   // *********************************************************************//<br>
+   ImyeMain = interface(IDispatch)<br>
+   ['{E4EC91BB-2D81-49DF-A540-355737FEE726}']<br>
+   function ImportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; safecall;<br>
+   function ExportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; safecall;<br>
+   function ImportXML(const sFileName: WideString): SYSINT; safecall;<br>
+   function ExportXML(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; safecall;<br>
+   function LogIn(const sFirmaKodu: WideString; iCalismaYili: Integer; 
+                   const sKullanici: WideString; const sSifre: WideString): SYSINT; safecall;<br>
+   function LogOff: SYSINT; safecall;<br>
+   function Get_Logged: SYSINT; safecall;<br>
+   function EvrakImportXML(const strXML: WideString; const strXSL: WideString): SYSINT; safecall;<br>
+   function ImportXML2(const sFileName: WideString; const sLogFileName: WideString): SYSINT; safecall;<br>
+   function EvrakImportXML2(const strXML: WideString; const strXSL: WideString; 
+                             const strLog: WideString): SYSINT; safecall;<br>
+   procedure ValidateUser(const UserCode: WideString; const UserPass: WideString; 
+                           var Valid_fl: Shortint); safecall;<br>
+   property Logged: SYSINT read Get_Logged;<br>
+   end;<br>
+   <br>
+   // *********************************************************************//<br>
+   // DispIntf:  ImyeMainDisp<br>
+   // Flags:     (4416) Dual OleAutomation Dispatchable<br>
+   // GUID:      {E4EC91BB-2D81-49DF-A540-355737FEE726}<br>
+   // *********************************************************************//<br>
+   ImyeMainDisp = dispinterface<br>
+   ['{E4EC91BB-2D81-49DF-A540-355737FEE726}']<br>
+   function ImportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; dispid 2;<br>
+   function ExportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; dispid 3;<br>
+   function ImportXML(const sFileName: WideString): SYSINT; dispid 4;<br>
+   function ExportXML(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT; dispid 5;<br>
+   function LogIn(const sFirmaKodu: WideString; iCalismaYili: Integer; 
+                   const sKullanici: WideString; const sSifre: WideString): SYSINT; dispid 6;<br>
+   function LogOff: SYSINT; dispid 1;<br>
+   property Logged: SYSINT readonly dispid 7;<br>
+   function EvrakImportXML(const strXML: WideString; const strXSL: WideString): SYSINT; dispid 8;<br>
+   function ImportXML2(const sFileName: WideString; const sLogFileName: WideString): SYSINT; dispid 9;<br>
+   function EvrakImportXML2(const strXML: WideString; const strXSL: WideString; 
+                             const strLog: WideString): SYSINT; dispid 10;<br>
+   procedure ValidateUser(const UserCode: WideString; const UserPass: WideString; 
+                           var Valid_fl: {??Shortint}OleVariant); dispid 201;<br>
+   end;<br>
+   <br>
+   // *********************************************************************//<br>
+   // DispIntf:  ImyeMainEvents<br>
+   // Flags:     (4096) Dispatchable<br>
+   // GUID:      {F0D09343-3D68-495A-9C91-E22EE510F8FA}<br>
+   // *********************************************************************//<br>
+   ImyeMainEvents = dispinterface<br>
+   ['{F0D09343-3D68-495A-9C91-E22EE510F8FA}']<br>
+   procedure onError; dispid 1;<br>
+   end;<br>
+   <br>
+   // *********************************************************************//<br>
+   // The Class ComyeMain provides a Create and CreateRemote method to<br>          
+   // create instances of the default interface ImyeMain exposed by<br>              
+   // the CoClass myeMain. The functions are intended to be used by<br>            
+   // clients wishing to automate the CoClass objects exposed by the<br>         
+   // server of this typelibrary.<br>                                            
+   // *********************************************************************//<br>
+   ComyeMain = class<br>
+   class function Create: ImyeMain;<br>
+   class function CreateRemote(const MachineName: string): ImyeMain;<br>
+   end;<br>
+   <br>
+   // *********************************************************************//<br>
+   // OLE Server Proxy class declaration<br>
+   // Server Object    : TmyeMain<br>
+   // Help String      : myeMain Object<br>
+   // Default Interface: ImyeMain<br>
+   // Def. Intf. DISP? : No<br>
+   // Event   Interface: ImyeMainEvents<br>
+   // TypeFlags        : (2) CanCreate<br>
+   // *********************************************************************//<br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   TmyeMainProperties= class;<br>
+   {$ENDIF}<br>
+   TmyeMain = class(TOleServer)<br>
+   private<br>
+   FOnonError: TNotifyEvent;<br>
+   FIntf:        ImyeMain;<br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   FProps:       TmyeMainProperties;<br>
+   function      GetServerProperties: TmyeMainProperties;<br>
+   {$ENDIF}<br>
+   function      GetDefaultInterface: ImyeMain;<br>
+   protected<br>
+   procedure InitServerData; override;<br>
+   procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;<br>
+   function Get_Logged: SYSINT;<br>
+   public<br>
+   constructor Create(AOwner: TComponent); override;<br>
+   destructor  Destroy; override;<br>
+   procedure Connect; override;<br>
+   procedure ConnectTo(svrIntf: ImyeMain);<br>
+   procedure Disconnect; override;<br>
+   function ImportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT;<br>
+   function ExportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT;<br>
+   function ImportXML(const sFileName: WideString): SYSINT;<br>
+   function ExportXML(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT;<br>
+   function LogIn(const sFirmaKodu: WideString; iCalismaYili: Integer; 
+                   const sKullanici: WideString; const sSifre: WideString): SYSINT;<br>
+   function LogOff: SYSINT;<br>
+   function EvrakImportXML(const strXML: WideString; const strXSL: WideString): SYSINT;<br>
+   function ImportXML2(const sFileName: WideString; const sLogFileName: WideString): SYSINT;<br>
+   function EvrakImportXML2(const strXML: WideString; const strXSL: WideString;
+                             const strLog: WideString): SYSINT;<br>
+   procedure ValidateUser(const UserCode: WideString; const UserPass: WideString; 
+                           var Valid_fl: Shortint);<br>
+   property DefaultInterface: ImyeMain read GetDefaultInterface;<br>
+   property Logged: SYSINT read Get_Logged;<br>
+   published<br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   property Server: TmyeMainProperties read GetServerProperties;<br>
+   {$ENDIF}<br>
+   property OnonError: TNotifyEvent read FOnonError write FOnonError;<br>
+   end;<br>
+   <br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   // *********************************************************************//<br>
+   // OLE Server Properties Proxy Class<br>
+   // Server Object    : TmyeMain<br>
+   // (This object is used by the IDE's Property Inspector to allow editing<br>
+   //  of the properties of this server)<br>
+   // *********************************************************************//<br>
+   TmyeMainProperties = class(TPersistent)<br>
+   private<br>
+   FServer:    TmyeMain;<br>
+   function    GetDefaultInterface: ImyeMain;<br>
+   constructor Create(AServer: TmyeMain);<br>
+   protected<br>
+   function Get_Logged: SYSINT;<br>
+   public<br>
+   property DefaultInterface: ImyeMain read GetDefaultInterface;<br>
+   published<br>
+   end;<br>
+   {$ENDIF}<br>
+   <br>
+   <br>
+   procedure Register;<br>
+   <br>
+   resourcestring
+   dtlServerPage = '(none)';<br>
+   <br>
+   dtlOcxPage = '(none)';<br>
+   <br>
+   implementation<br>
+   <br>
+   uses ComObj;<br>
+   <br>
+   class function ComyeMain.Create: ImyeMain;<br>
+   begin<br>
+   Result := CreateComObject(CLASS_myeMain) as ImyeMain;<br>
+   end;<br>
+   <br>
+   class function ComyeMain.CreateRemote(const MachineName: string): ImyeMain;<br>
+   begin<br>
+   Result := CreateRemoteComObject(MachineName, CLASS_myeMain) as ImyeMain;<br>
+   end;<br>
+   <br>
+   procedure TmyeMain.InitServerData;<br>
+   const<br>
+   CServerData: TServerData = (<br>
+   ClassID:   '{03156457-CF65-4FFC-A2EF-976EA35036AE}';<br>
+   IntfIID:   '{E4EC91BB-2D81-49DF-A540-355737FEE726}';<br>
+   EventIID:  '{F0D09343-3D68-495A-9C91-E22EE510F8FA}';<br>
+   LicenseKey: nil;<br>
+   Version: 500);<br>
+   begin<br>
+   ServerData := @CServerData;<br>
+   end;<br>
+   <br>
+   procedure TmyeMain.Connect;<br>
+   var<br>
+   punk: IUnknown;<br>
+   begin<br>
+   if FIntf = nil then<br>
+   begin<br>
+   punk := GetServer;<br>
+   ConnectEvents(punk);<br>
+   Fintf:= punk as ImyeMain;<br>
+   end;<br>
+   end;<br>
+   <br>
+   procedure TmyeMain.ConnectTo(svrIntf: ImyeMain);<br>
+   begin<br>
+   Disconnect;<br>
+   FIntf := svrIntf;<br>
+   ConnectEvents(FIntf);<br>
+   end;<br>
+   <br>
+   procedure TmyeMain.DisConnect;<br>
+   begin<br>
+   if Fintf <> nil then<br>
+   begin<br>
+   DisconnectEvents(FIntf);<br>
+   FIntf := nil;<br>
+   end;<br>
+   end;<br>
+   <br>
+   function TmyeMain.GetDefaultInterface: ImyeMain;<br>
+   begin<br>
+   if FIntf = nil then<br>
+   Connect;<br>
+   Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call ''Connect'' or ''ConnectTo'' before this operation');<br>
+   Result := FIntf;<br>
+   end;<br>
+   <br>
+   constructor TmyeMain.Create(AOwner: TComponent);<br>
+   begin<br>
+   inherited Create(AOwner);<br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   FProps := TmyeMainProperties.Create(Self);<br>
+   {$ENDIF}<br>
+   end;<br>
+   <br>
+   destructor TmyeMain.Destroy;<br>
+   begin<br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   FProps.Free;<br>
+   {$ENDIF}<br>
+   inherited Destroy;<br>
+   end;<br>
+   <br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   function TmyeMain.GetServerProperties: TmyeMainProperties;<br>
+   begin<br>
+   Result := FProps;<br>
+   end;<br>
+   {$ENDIF}<br>
+   <br>
+   procedure TmyeMain.InvokeEvent(DispID: TDispID; var Params: TVariantArray);<br>
+   begin<br>
+   case DispID of<br>
+   -1: Exit;  // DISPID_UNKNOWN<br>
+   1: if Assigned(FOnonError) then<br>
+   FOnonError(Self);<br>
+   end; {case DispID}<br>
+   end;<br>
+   <br>
+   function TmyeMain.Get_Logged: SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.Logged;<br>
+   end;
+   <br>
+   function TmyeMain.ImportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.ImportASCII(iTableNo, iParamNo, sFileName);<br>
+   end;<br>
+   <br>
+   function TmyeMain.ExportASCII(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.ExportASCII(iTableNo, iParamNo, sFileName);<br>
+   end;<br>
+   <br>
+   function TmyeMain.ImportXML(const sFileName: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.ImportXML(sFileName);<br>
+   end;<br>
+   <br>
+   function TmyeMain.ExportXML(iTableNo: Integer; iParamNo: Integer; const sFileName: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.ExportXML(iTableNo, iParamNo, sFileName);<br>
+   end;<br>
+   <br>
+   function TmyeMain.LogIn(const sFirmaKodu: WideString; iCalismaYili: Integer; 
+                        const sKullanici: WideString; const sSifre: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.LogIn(sFirmaKodu, iCalismaYili, sKullanici, sSifre);<br>
+   end;<br>
+   <br>
+   function TmyeMain.LogOff: SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.LogOff;<br>
+   end;<br>
+   <br>
+   function TmyeMain.EvrakImportXML(const strXML: WideString; const strXSL: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.EvrakImportXML(strXML, strXSL);<br>
+   end;<br>
+   <br>
+   function TmyeMain.ImportXML2(const sFileName: WideString; const sLogFileName: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.ImportXML2(sFileName, sLogFileName);<br>
+   end;<br>
+   <br>
+   function TmyeMain.EvrakImportXML2(const strXML: WideString; const strXSL: WideString; 
+                                  const strLog: WideString): SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.EvrakImportXML2(strXML, strXSL, strLog);<br>
+   end;<br>
+   <br>
+   procedure TmyeMain.ValidateUser(const UserCode: WideString; const UserPass: WideString; 
+                                var Valid_fl: Shortint);<br>
+   begin<br>
+  DefaultInterface.ValidateUser(UserCode, UserPass, Valid_fl);<br>
+  end;<br>
+   <br>
+   {$IFDEF LIVE_SERVER_AT_DESIGN_TIME}<br>
+   constructor TmyeMainProperties.Create(AServer: TmyeMain);<br>
+   begin<br>
+   inherited Create;<br>
+   FServer := AServer;<br>
+   end;<br>
+   <br>
+   function TmyeMainProperties.GetDefaultInterface: ImyeMain;<br>
+   begin<br>
+   Result := FServer.DefaultInterface;<br>
+   end;<br>
+   <br>
+   function TmyeMainProperties.Get_Logged: SYSINT;<br>
+   begin<br>
+   Result := DefaultInterface.Logged;<br>
+   end;<br>
+   <br>
+   {$ENDIF}
+   <br>
+   procedure Register;<br>
+   begin<br>
+   RegisterComponents(dtlServerPage, [TmyeMain]);<br>
+   end;<br>
+   <br>
+   end.<br>
+   <br>
+
+	<hr>G�ncellenme Tarihi : 09.08.2012 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2012 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Ek1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+</html>

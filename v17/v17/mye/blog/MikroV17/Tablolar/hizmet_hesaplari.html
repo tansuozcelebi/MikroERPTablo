@@ -1,0 +1,543 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/hizmet_hesaplari.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:20 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 61</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : HIZMET_HESAPLARI</b></td>
+    <td width="50%"><b>Tablo : Hizmet Kartlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td>
+    <b>Detay</b></td>
+  </tr>
+ <tr>
+  <td>0</td>
+  <td>hiz_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>hiz_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>hiz_SpecRecno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>hiz_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td>hiz_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>5</td>
+  <td>hiz_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>6</td>
+  <td>hiz_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>hiz_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>8</td>
+  <td>hiz_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>9</td>
+  <td>hiz_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>10</td>
+  <td>hiz_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>11</td>
+  <td>hiz_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>12</td>
+  <td>hiz_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>13</td>
+  <td>hiz_special1</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>14</td>
+  <td>hiz_special2</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>15</td>
+  <td>hiz_special3</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>16</td>
+  <td>hiz_MainProgramNo</td>
+  <td>Smallint</td>
+  <td>Ana Program Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>17</td>
+  <td>hiz_VersionNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Versiyon Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>18</td>
+  <td>hiz_MenuNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Men� Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>19</td>
+  <td>hiz_MikroSpecial1</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>20</td>
+  <td>hiz_MikroSpecial2</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>21</td>
+  <td>hiz_MikroSpecial3</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>22</td>
+  <td>hiz_ExternalProgramType</td>
+  <td>Tinyint</td>
+  <td>D�� Yaz�l�m Aktar�m Tipi</td>
+  <td>0:Genel 1:Para��t 2:Irgat</td>
+ </tr>
+ <tr>
+  <td>23</td>
+  <td>hiz_ExternalProgramId</td>
+  <td>Nvarchar(127)</td>
+  <td>D�� Yaz�l�m Id'si</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>24</td>
+  <td>hiz_tip</td>
+  <td>Tinyint</td>
+  <td>Hizmet Tipi</td>
+  <td>�lerde kullanmak �zere tan�mlanm��t�r.</td>
+ </tr>
+ <tr>
+  <td>25</td>
+  <td>hiz_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>26</td>
+  <td>hiz_isim</td>
+  <td>Nvarchar(127)</td>
+  <td>Hizmet �smi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>27</td>
+  <td>hiz_yabanci_isim</td>
+  <td>Nvarchar(127)</td>
+  <td>Yabanc� �sim</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>28</td>
+  <td>hiz_tipkod</td>
+  <td>Nvarchar(25)</td>
+  <td>Tip Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>29</td>
+  <td>hiz_sinifkod</td>
+  <td>Nvarchar(25)</td>
+  <td>S�n�f Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>30</td>
+  <td>hiz_grupkod</td>
+  <td>Nvarchar(25)</td>
+  <td>Grup Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>31</td>
+  <td>hiz_sat_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>32</td>
+  <td>hiz_sat_iade_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� �ade Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>33</td>
+  <td>hiz_mal_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Maliyet Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>34</td>
+  <td>hiz_sat_mal_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�lan Hizmet Maliyeti Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>35</td>
+  <td>hiz_mal_yan_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Maliyet Yans�tma Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>36</td>
+  <td>hiz_fiyat</td>
+  <td>Float</td>
+  <td>Fiyat�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>37</td>
+  <td>hiz_doviz_cinsi</td>
+  <td>Tinyint</td>
+  <td>D�viz Cinsi</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+ </tr>
+ <tr>
+  <td>38</td>
+  <td>hiz_isk_grup</td>
+  <td>Nvarchar(4)</td>
+  <td>�skonto Grubu</td>
+  <td>Bkz. <a href="stok_cari_iskonto_tanimlari-2.html">STOK_CARI_ISKONTO_TANIMLARI</a></td>
+ </tr>
+ <tr>
+  <td>39</td>
+  <td>hiz_KDV</td>
+  <td>Tinyint</td>
+  <td>Kdv Oran�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>40</td>
+  <td>hiz_muh_sat_isk_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� �skonto Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr> 
+ <tr>
+  <td>41</td>
+  <td>hiz_muh_aIiskmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Al�� �skonto Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>42</td>
+  <td>hiz_ilavemasmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>�lave Masraf Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>43</td>
+  <td>hiz_operasyon_suresi</td>
+  <td>Integer</td>
+  <td>Operasyon S�resi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>44</td>
+  <td>hiz_oivuygulama</td>
+  <td>Tinyint</td>
+  <td>�zet �leti�im Vergisi Uygulamas�</td>
+  <td>0:Yok 1:Al��ta Tutardan 2:Al��ta Y�zdeyle 3:Sat��ta Tutardan 4:Sat��ta Y�zdeyle 5:Al��ta Ve Sat��ta Tutardan 6:Al��ta Ve Sat��ta Y�zdeyle</td>
+ </tr>
+ <tr>
+  <td>45</td>
+  <td>hiz_oivtutar</td>
+  <td>Float</td>
+  <td>�zet �leti�im Vergisi Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>46</td>
+  <td>hiz_oivturu</td>
+  <td>Tinyint</td>
+  <td>�zet �leti�im Vergisi T�r�</td>
+  <td>0:Yok 1:��V 2:5035 say�l� kanuna g�re ��V</td>
+ </tr>
+ <tr>
+  <td>47</td>
+  <td>hiz_sat_ufrs_fark_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>48</td>
+  <td>hiz_sat_iade_ufrs_fark_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� �ade Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>49</td>
+  <td>hiz_mal_ufrs_fark_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Maliyet Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>50</td>
+  <td>hiz_sat_mal_ufrs_fark_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�lan Hizmet Maliyeti Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>51</td>
+  <td>hiz_mal_yan_ufrs_fark_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Maliyet Yans�tma Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>52</td>
+  <td>hiz_muh_sat_ufrs_fark_isk_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� �skonto Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>53</td>
+  <td>hiz_muh_aIiskufrs_fark_muhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Al�� �skonto Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>54</td>
+  <td>hiz_ilavemasufrs_fark_muhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>�lave Masraf Ufrs Fark Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>55</td>
+  <td>hiz_birim_ad</td>
+  <td>Nvarchar(10)</td>
+  <td>Birim Ad�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>56</td>
+  <td>hiz_bsbayadahil</td>
+  <td>Tinyint</td>
+  <td>Bs-Ba'ya Dahil Mi ?</td>
+  <td>0:Evet 1:Hay�r</td>
+ </tr>
+ <tr>
+  <td>57</td>
+  <td>hiz_vergifonid_1</td>
+  <td>Smallint</td>
+  <td>Vergi Fon Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>58</td>
+  <td>hiz_vergifonid_2</td>
+  <td>Smallint</td>
+  <td>Vergi Fon Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>59</td>
+  <td>hiz_vergifonid_3</td>
+  <td>Smallint</td>
+  <td>Vergi Fon Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>60</td>
+  <td>hiz_vergifonid_4</td>
+  <td>Smallint</td>
+  <td>Vergi Fon Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>61</td>
+  <td>hiz_vergifonid_5</td>
+  <td>Smallint</td>
+  <td>Vergi Fon Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>62</td>
+  <td>hiz_efat_sinif_kodu</td>
+  <td>Nvarchar(20)</td>
+  <td>e-Fatura S�n�f Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>63</td>
+  <td>hiz_efat_sinif_listesi</td>
+  <td>Nvarchar(15)</td>
+  <td>e-Fatura S�n�f Listesi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>64</td>
+  <td>hiz_efat_sinif_versiyonu</td>
+  <td>Nvarchar(15)</td>
+  <td>e-Fatura S�n�f Versiyonu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>65</td>
+  <td>hiz_Tevkifat_turu</td>
+  <td>Tinyint</td>
+  <td>Tevkifat T�r�</td>
+  <td>0:Yok 1:10da3 2:10da9 3:10da4 4:32 5:61 6:45 7:Tam 8:10da2 9:10da5 10:10da7</td>
+ </tr>
+ </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_HIZMET_HESAPLARI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>hiz_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_HIZMET_HESAPLARI_02</td>
+<td>UNIQUE</td>
+<td>hiz_kod</td>
+</tr>
+<tr>
+<td>NDX_HIZMET_HESAPLARI_03</td>
+<td></td>
+<td>hiz_isim</td>
+</tr>
+<tr class=sRow >
+<td>NDX_HIZMET_HESAPLARI_04</td>
+<td></td>
+<td>hiz_tipkod</td>
+</tr>
+<tr>
+<td>NDX_HIZMET_HESAPLARI_05</td>
+<td></td>
+<td>hiz_sinifkod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_HIZMET_HESAPLARI_06</td>
+<td></td>
+<td>hiz_grupkod</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 06.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/hizmet_hesaplari.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:20 GMT -->
+</html>

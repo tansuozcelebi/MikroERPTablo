@@ -1,0 +1,147 @@
+<html>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/ornek.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+<title>�rnekler</title>
+</head>
+
+<body><p class="Caption"><i><a href="index-2.html">Database Yap�s�</a></i></p>
+
+<h2>�rnekler:</h2>
+<p>* Stok tablosuna C:\Temp\Import.AXP import dosyasindan bilgi aktarilmak 
+istendiginde;<br>
+* Stok Tablosunun numarasi 13t�r.<br>
+* Parametre dosyasi Seri9000 Programlarindan Import k�sm�ndan olu�turulur. <br>
+* Parametre Numarasini ise 1 olarak varsayiyoruz. <br>
+* Firmamiz Mikro Olsun.<br>
+* Cal��ma Y�l� : 2012<br>
+* Sezon : 1<br>
+* Kullan�c� Kodu : OZG<br>
+* �ifre : ozgur<br>
+<br>
+C:\9000v4xx\s9000EXC.exe IMPORT &quot;C:\Temp\Import.AXP&quot; &quot;C:\9000v4xx&quot; 13 1 /NLT 0 
+Mikro 2012 1 OZG ozgur<br>
+<br>
+* Komut calistiginda sonuc 0 olarak d�nerse i�lem hatas�z olarak bitmi�tir. <br>
+* Log dosyam�z�n ismi EXCI131.Log (I Import oldugunu 13 TabloNo ve 1 ise 
+ParametreNoyu belirtir) olacak ve C:\9000v4xx dizininde bulunacakt�r.<br>
+* Log Dosyamiza bakarsak;<br>
+<br>
+SONUC 0 : ��lem Ba�ar�l�<br>
+<br>
+* Hatal� bir durumda ise;<br>
+<br>
+HATA 6 : Tekrarlayan Index (A�a��daki Kay�t ��in) ve Kayit Yenileme Secene�i 
+Kapali. Kayit Yapilmadi. Database Status : 5 
+File:c:\9000V4XX\FINAL\1\2012_1\STOK._BF User:1 Date:27/3/2012 Time:18:39<br>
+KAYIT : 11 NO 11 STOK <br>
+HATA 6 : Tekrarlayan Index (A�a��daki Kay�t ��in) ve Kayit Yenileme Secene�i 
+Kapali. Kayit Yapilmadi. Database Status : 5 
+File:c:\9000V4XX\FINAL\1\2012_1\STOK._BF User:1 Date:27/3/2012 Time:18:39<br>
+KAYIT : 12 NO 12 STOK <br>
+HATA 6 : Tekrarlayan Index (A�a��daki Kay�t ��in) ve Kayit Yenileme Secene�i 
+Kapali. Kayit Yapilmadi. Database Status : 5 
+File:c:\9000V4XX\FINAL\1\2012_1\STOK._BF User:1 Date:27/3/2012 Time:18:39<br>
+KAYIT : 13 NO 13 STOK <br>
+SONUC 6 : Tekrarlayan Index</p>
+
+<p><u><a name="XML">XML Dosyas� �rne�i;</a></u></p>
+
+<p>&nbsp;&nbsp;&nbsp; A�a��daki XML �rne�i Stok tablosunu ve 1. parametre 
+dosyas�n� kullanarak import yapar. Ayr�ca Stok tablosundan 1 nolu parametre 
+ayarlar� kullan�larak yap�lm�� bir export i�leminin sonucuda a�a��daki dosyay� 
+�retecektir. Dikkat edilirse &amp; ve &gt; karakterleri &amp;amp; ve &amp;lt; olarak 
+de�i�tirilmi�tir. Bu xml`in bu karakterleri tan�mamas� nedeniyle XML 
+standartlar�na g�re bu kodlarla de�i�tirilmesi gerekti�inden dolay�d�r. XML 
+Import edilirken bu kodlar orijinal karakterlerine otomatik olarak �evrilir. Bu 
+sebeple import XML dosyas� haz�rlarken &amp; yerine &amp;amp; ve &gt; yerine &amp;lt; 
+kullan�n�z. Export edilen tablolarda bu de�i�iklik yine otomatik olarak yap�l�r.</p>
+
+<p>&nbsp;&nbsp;&nbsp; Dosya Ad� : <a href="file:///C:/Temp/import.xml">
+C:\Temp\import.xml</a><br>
+&nbsp;&nbsp;&nbsp; Mikro Dizini : <a href="file:///C:/9000v4xx">C:\9000v4xx</a><br>
+&nbsp;&nbsp;&nbsp; �irket : Mikro<br>
+&nbsp;&nbsp;&nbsp; �al��ma y�l� : 2012<br>
+&nbsp;&nbsp;&nbsp; Sezon : 1<br>
+&nbsp;&nbsp;&nbsp; Kullan�c� Ad� : OZG<br>
+&nbsp;&nbsp;&nbsp; �ifre : ozgur</p>
+
+<p>Olarak belirlendi�inde Stok tablomuza bilgi girmek i�in gerek Mikro 
+programlar�ndaki XML Import �zelli�ini gerekse Mikro Data Exchange program�n�n 
+command line �zelli�ini kullanabiliriz. Bunun i�in;<br>
+&nbsp;&nbsp;&nbsp; s9000exc IMPORT &quot;c:\temp\import.xml&quot; &quot;<a href="file:///c:/9000v4xx">c:\9000v4xx</a>&quot; 
+0 0 /NLT 0 Mikro 2012 1 OZG ozgur<br>
+komutu �al��t�r�ld�ktan sonra a�a��daki data Mikro �irketinin stok tablosuna 
+girilir. ��lem sonucu ise <a href="file:///C:/9000v4xx/Exc00.xml">
+C:\9000v4xx\Exc00.xml</a> dosyas�ndan g�r�lebilir. Bkz <a href="ornek.html#xmllog">XML Log 
+�rne�i</a><br>
+&nbsp;&nbsp;&nbsp; </p>
+
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;Windows-1254&quot; ?&gt;<br>
+&lt;Mikro&gt;<br>
+&lt;Table&gt;STOK&lt;/Table&gt;<br>
+&lt;Param&gt;1&lt;/Param&gt;<br>
+&lt;row&gt;<br>
+&lt;sto_kod&gt;*S00001&lt;/sto_kod&gt;<br>
+&lt;sto_isim&gt;����L�K &amp;amp; BAKIM&lt;/sto_isim&gt;<br>
+&lt;/row&gt;<br>
+&lt;row&gt;<br>
+&lt;sto_kod&gt;0S83808803&lt;/sto_kod&gt;<br>
+&lt;sto_isim&gt;DIRSEK VE NOZ.KOMP.726 5/16LT&lt;/sto_isim&gt;<br>
+&lt;/row&gt;<br>
+&lt;row&gt;<br>
+&lt;sto_kod&gt;0S83852&lt;/sto_kod&gt;<br>
+&lt;sto_isim&gt;ILACLAMA TANGO 1,5LT&lt;/sto_isim&gt;<br>
+&lt;/row&gt;<br>
+&lt;row&gt;<br>
+&lt;sto_kod&gt;0S83852801&lt;/sto_kod&gt;<br>
+&lt;sto_isim&gt;TABANCA KOMP.TANGO 1,5LT&lt;/sto_isim&gt;<br>
+&lt;/row&gt;<br>
+&lt;/Mikro&gt;</p>
+
+<p><u><a name="xmllog">XML Log �rne�i;</a></u></p>
+<p>&nbsp;&nbsp;&nbsp; Log dosyas� Mikro dizininde olu�ur ve isimlendirmesi �u 
+�ekilde olur. EXC00.XML. E�er /NLT den �nceki 2 parametre&nbsp; belirtilmi�se bu 
+parametreler isimlendirme i�in al�n�r.<br>
+�rnek : ... 13 1 /NLT .... ise log dosyas� EXC131.XML olarak yarat�lacakt�r. Log 
+dosyas�n�n format� ise a�a��daki �ekildedir.</p>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;Windows-1254&quot; ?&gt;<br>
+&lt;Mikro&gt;<br>
+&lt;Table&gt;STOK&lt;/Table&gt;<br>
+&lt;Param&gt;6&lt;/Param&gt;<br>
+&lt;row&gt;<br>
+&lt;sto_RECno&gt;4&lt;/sto_RECno&gt;<br>
+&lt;sto_kod&gt;1&amp;0&lt;/sto_kod&gt;<br>
+&lt;sto_isim&gt;NO 10 STOK&lt;/sto_isim&gt;<br>
+&lt;sto_prim_orani&gt;10&lt;/sto_prim_orani&gt;<br>
+&lt;sto_cins&gt;1&lt;/sto_cins&gt;<br>
+&lt;/row&gt;<br>
+&lt;row&gt;<br>
+&lt;Hata&gt;<br>
+&lt;Kod&gt;6&lt;/Kod&gt;<br>
+&lt;Aciklama&gt;Tekrarlayan Index (A�a��daki Kay�t ��in) ve Kayit Yenileme Secene�i 
+Kapali. Kayit Yapilmadi.&lt;/Aciklama&gt;<br>
+&lt;/Hata&gt;<br>
+&lt;sto_kod&gt;20&lt;/sto_kod&gt;<br>
+&lt;sto_isim&gt;NO 20 STOK&lt;/sto_isim&gt;<br>
+&lt;sto_prim_orani&gt;20&lt;/sto_prim_orani&gt;<br>
+&lt;sto_cins&gt;2&lt;/sto_cins&gt;<br>
+&lt;/row&gt;<br>
+&lt;Sonuc&gt;6&lt;/Sonuc&gt;<br>
+&lt;/Mikro&gt;<br>
+<br>
+Yukar�daki log dosyas�ndan 1. kay�d�n normal olarak STOK tablosuna girildi�ini 
+ancak 2. kayd�n 6 nolu hata olan &quot;Tekrarlayan Index&quot; a��klamal� hataya neden 
+oldugunu ve sisteme girilmedi�ini anlayabiliriz. Bkz <a href="hata.html">Hata 
+Kodlar�</a>.</p>
+
+<hr>G�ncellenme Tarihi : 09.08.2012 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2012 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/ornek.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:20:53 GMT -->
+</html>

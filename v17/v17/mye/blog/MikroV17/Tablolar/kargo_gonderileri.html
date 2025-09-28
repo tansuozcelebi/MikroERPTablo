@@ -1,0 +1,375 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/kargo_gonderileri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:33 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 242</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : KARGO_GONDERILERI</b></td>
+    <td width="50%"><b>Tablo : Kargo G�nderileri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>kargo_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>kargo_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>kargo_Spec_Rec_no</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>kargo_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>kargo_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>kargo_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>kargo_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>kargo_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>kargo_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>kargo_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>kargo_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>kargo_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>kargo_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>kargo_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>kargo_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>kargo_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>kargo_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>kargo_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>kargo_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>kargo_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>kargo_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>kargo_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>kargo_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>kargo_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>kargo_sirkettipi</td>
+<td>Tinyint</td>
+<td>�irket Tipi</td>
+<td>0:Yurt ��i Kargo</td>
+</tr>
+<tr>
+<td>25</td>
+<td>kargo_gonderitarihi</td>
+<td>DateTime</td>
+<td>G�nderi Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>kargo_alicikodu</td>
+<td>Nvarchar(25)</td>
+<td>Al�c� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>kargo_aliciadresno</td>
+<td>Integer</td>
+<td>Al�c� Adres No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>kargo_varisdepono</td>
+<td>Integer</td>
+<td>Var�� Depo No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>kargo_evraktabloid</td>
+<td>Integer</td>
+<td>Evrak Tablo Id</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>kargo_evraktipi</td>
+<td>Tinyint</td>
+<td>Evrak Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>kargo_evrakcinsi</td>
+<td>Tinyint</td>
+<td>Evrak Cinsi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>kargo_evraknoseri</td>
+<td>dbo.evrakseri_str</td>
+<td>Evrak Seri No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>kargo_evraknosira</td>
+<td>Integer</td>
+<td>Evrak S�ra No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>kargo_evrakbelgeno</td>
+<td>dbo.belgeno_str</td>
+<td>Evrak Belge No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>kargo_evrakuid</td>
+<td>Uniqueidentifier</td>
+<td>Evrak Uid</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>kargo_kargoadedi</td>
+<td>Float</td>
+<td>Kargo Adedi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>kargo_evrakbedeli</td>
+<td>Float</td>
+<td>Evrak Bedeli</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>kargo_evrtahsilattipi</td>
+<td>Tinyint</td>
+<td>Evrak Tahsilat Tipi</td>
+<td>0:Nakit 1:M��teri �eki 2:Firma �eki 3:M��teri Senedi 4:Firma Senedi 5:Havale 6:�deme Emri 7:Do�rudan Havale 8:Firma Kredi Kart�</td>
+</tr>
+<tr>
+<td>39</td>
+<td>kargo_ozelalan</td>
+<td>Nvarchar(50)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>kargo_gonderiakibeti</td>
+<td>Tinyint</td>
+<td>G�nderi Durumu</td>
+<td>0:Kargoya Teslim Edilmedi 1:Kargoya Teslim Edildi</td>
+</tr>
+<tr>
+<td>41</td>
+<td>kargo_gonderitipi</td>
+<td>Tinyint</td>
+<td>G�nderi Tipi</td>
+<td>0:Tahsilatl� G�nderi 1:Normal G�nderi</td>
+</tr>
+<tr>
+<td>42</td>
+<td>kargo_gonderiyikimodeyecek</td>
+<td>Tinyint</td>
+<td>G�nderiyi Kim �deyecek ?</td>
+<td>0:Al�c� �deyecek 1:Taraf�m�zdan �denecek</td>
+</tr>
+<tr>
+<td>43</td>
+<td>kargo_mastergonderino</td>
+<td>Uniqueidentifier</td>
+<td>Master G�nderi No</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_KARGO_GONDERILERI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>kargo_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_KARGO_GONDERILERI_02</td>
+<td></td>
+<td>kargo_sirkettipi, kargo_gonderitarihi</td>
+</tr>
+<tr>
+<td>NDX_KARGO_GONDERILERI_03</td>
+<td></td>
+<td>kargo_sirkettipi, kargo_evraktabloid, kargo_evraktipi, kargo_evrakcinsi, kargo_evraknoseri, kargo_evraknosira</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 03.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/kargo_gonderileri.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:33 GMT -->
+</html>

@@ -1,0 +1,35 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# IDE files
+.vscode/
+.idea/
+
+# HTTrack cache files
+**/hts-cache/
+**/*.whtt
+**/hts-log.txt
+**/backblue.gif
+**/fade.gif
+
+# Script files used for setup (optional to keep)
+# *.ps1
+
+# Large files
+*.zip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

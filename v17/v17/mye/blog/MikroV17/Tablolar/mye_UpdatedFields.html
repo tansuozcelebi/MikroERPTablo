@@ -1,0 +1,134 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/mye_UpdatedFields.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:40 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1048</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : mye_UpdatedFields</b></td>
+    <td width="50%"><b>Tablo : De�i�tirilen Alanlar ��in Log Tablosu</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>KeyField</td>
+  <td>Integer IDENTITY</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>TableID</td>
+  <td>Integer</td>
+  <td>Tablo No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>Record_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>FieldType</td>
+  <td>Integer</td>
+  <td>De�i�en alan�n tipi</td>
+  <td>0:String 1:Integer 2:Real 3:Date 4:Time 5:Decimal 6:Money 7:Logical 8:Numeric 9:Float 10:Pascal String 14:Unsigned Integer 15:Autoincr 53:Date</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>FieldName</td>
+  <td>Nvarchar(40)</td>
+  <td>De�i�en alan�n ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>upd_user</td>
+  <td>Integer</td>
+  <td>De�i�ikli�i yapan kullan�c�n�n numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>upd_date</td>
+  <td>DateTime</td>
+  <td>��lem tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>upd_olddata</td>
+  <td>Nvarchar(200)</td>
+  <td>Eski de�er</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>upd_newdata</td>
+  <td>Nvarchar(200)</td>
+  <td>Yeni de�er</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_mye_UpdatedFields_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>KeyField</td>
+</tr>
+<tr>
+<td>NDX_mye_UpdatedFields_01</td>
+<td></td>
+<td>TableID</td>
+</tr>
+<tr class=sRow >
+<td>NDX_mye_UpdatedFields_02</td>
+<td></td>
+<td>upd_user</td>
+</tr>
+<tr>
+<td>NDX_mye_UpdatedFields_03</td>
+<td></td>
+<td>upd_date</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 28.12.2017 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2017 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/mye_UpdatedFields.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:40 GMT -->
+</html>

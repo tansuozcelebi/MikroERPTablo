@@ -1,0 +1,189 @@
+<html>
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/cari_hesap_hareketleri_ozet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:41 GMT -->
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1183</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : CARI_HESAP_HAREKETLERI_OZET</b></td>
+    <td width="50%"><b>Tablo : Cari Hesap Hareket �zeti</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>cho_RECno</td>
+  <td>Integer IDENTITY</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>cho_firmano</td>
+  <td>Integer</td>
+  <td>Firma No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>cho_subeno</td>
+  <td>Integer</td>
+  <td>�ube No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>cho_Cinsi</td>
+  <td>Tinyint</td>
+  <td>Cari Cinsi</td>
+  <td>0:Carimiz 1:Cari Personelimiz 2:Bankam�z 3:Hizmetimiz 4:Kasam�z 
+  5:Giderimiz 6:Muhasebe Hesab�m�z 7:Personelimiz 8:Demirba��m�z 9:�thalat Dosyam�z 10:Finansal S�zle�memiz 11:Kredi S�zle�memiz 12:D�nemsel Hizmetimiz 13:Kredi Kart�m�z</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>cho_CariKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>cho_ProjeKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Proje Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>cho_SrmMerkezi</td>
+  <td>Nvarchar(25)</td>
+  <td>Sorumluluk Merkezi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>cho_GrupNo</td>
+  <td>Tinyint</td>
+  <td>Grup No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>cho_MaliYil</td>
+  <td>Integer</td>
+  <td>Mali Y�l</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>cho_Donem</td>
+  <td>Tinyint</td>
+  <td>D�nem</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>cho_HareketCins</td>
+  <td>Tinyint</td>
+  <td>Hareket Cinsi</td>
+  <td>0:Nakit 1:M��teri �eki 2:M��teri Senedi 3:Firma �eki 4:Firma Senedi 5:Dekont 
+  6:Toptan Fatura 7:Perakende Faturas� 8:Hizmet Faturas� 9:Serbest Meslek Makbuzu 
+  10:Vade Fark� Faturas� 11:Kur Fark� Faturas� 12:Fason Faturas� 13:D�� Ticaret Faturas� 
+  14:Demirba� Faturas� 15:De�er Fark� Faturas� 16:Cari A��l�� 17:M��teri Havale S�z� 
+  18:M��teri �deme S�z� 19:M��teri Kredi Kart� 20:Firma Havale Emri 
+  21:Firma �deme Emri 22:Firma Kredi Kart� 23:Vade Fark� S�f�rlama 24:Hal Faturas� 
+  25:M�stahsil Fatura 26:Stok Gider Pusulas� 27:Gider Makbuzu 28:�thalat Masraf Faturas� 
+  29:G�mr�k Beyannamesi 30:Finansal Kiralama S�zle�mesi 31:Finansal Kira Faturas� 
+  32:FUTURE_2 33:Avans Makbuzu 34:M�stahsil De�er Fark� Faturas� 35:Kabz�mal Faturas� 36:Hediye �eki Faturas� 37:M��teri Teminat Mektubu 38:Firma Teminat Mektubu 39:Depozito �eki 40:Depozito Senedi 41:Firma Reel Kredi Kart�</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>cho_Ana_Borc</td>
+  <td>Float</td>
+  <td>Ana D�viz Cinsinden Bor�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>cho_Ana_Alacak</td>
+  <td>Float</td>
+  <td>Ana D�viz Cinsinden Alacak</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>cho_Alt_Borc</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden Bor�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>cho_Alt_Alacak</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden Alacak</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>cho_Orj_Borc</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden Bor�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>cho_Orj_Alacak</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden Alacak</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_CARI_HESAP_HAREKETLERI_OZET_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>cho_RECno</td>
+</tr>
+<tr>
+<td>NDX_CARI_HESAP_HAREKETLERI_OZET_01</td>
+<td>UNIQUE</td>
+<td>cho_Cinsi, cho_CariKodu, cho_GrupNo, cho_HareketCins, cho_ProjeKodu, cho_SrmMerkezi, cho_MaliYil, cho_Donem, cho_firmano, cho_subeno</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 12.06.2015 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2015 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+
+<!-- Mirrored from www.ozgurguler.net/blog/MikroV17/Tablolar/cari_hesap_hareketleri_ozet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Sep 2025 20:21:41 GMT -->
+</html>
