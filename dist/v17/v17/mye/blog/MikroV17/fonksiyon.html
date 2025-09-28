@@ -1,0 +1,832 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mikro Tablolar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+</head>
+<body><p class="Caption"><i><a href="index-2.html">Database Yap�s�</a></i></p>
+<p><b>Mikro'nun FirmFN, GlbFn, FirmSP dosyalar�nda bulunan fonksiyonlar�:<br>
+</b><br>
+  <li>fn_StokCins (sto_cins)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, stok cinsini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sto_cins: Stok cins seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stoklar.htm">stok cinsi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re stok cinsinin s�zl� kar��l���<br>
+  <p>�rnek kullan�m:</p>
+  SELECT sto_kod, sto_isim, dbo.fn_StokCins(sto_cins) FROM STOKLAR<br>
+  <p>Sonu�:</p>
+  17.009.00.0	BASKILI 4 AYLIK S.S.K. BILDIRGESI	Ticari Mal<br>
+  17.009.01.0	BASKILI AYLIK S.S.K. BILDIRGESI	Ticari Mal<br>
+  <br>
+  <li>fn_KullaniciAdi (@UserNo)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan de�i�ken parametresine g�re, kullan�c� ad�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  @User_no: Kullan�c� numaras�. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/kullanicilar.htm">kullan�c� no alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re kullan�c� ad�n�n s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT User_name FROM MikroDB_V16.dbo.KULLANICILAR WHERE User_no=1 <br>
+  <p>Sonu�:</p>
+  1 numaral� kullan�c�ya denk gelen isim gelecektir.<br>
+  <br>
+  <li>fn_KullaniciUzunAdi (@UserNo)</li><br>
+  fn_KullaniciAdi ile ayn� yap�dad�r.<br>
+  <br>
+  <li>fn_DovizSembolu (@dno)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan de�i�ken parametresine g�re, d�viz numaras�n� sembol olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  @dno: D�viz numaras�. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/doviz_kurlari.htm">d�viz no alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re d�viz numaras�n�n sembol�d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_DovizSembolu (1) as [D�vizSembol�] <br>
+  <p>Sonu�:</p>
+  1 numaral� d�viz sembol�ne denk gelen isim yani USD olarak gelecektir.<br>
+  <br>
+  <li>fn_DovizIsmi (@dno)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan de�i�ken parametresine g�re, d�viz numaras�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  @dno: D�viz numaras�. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/doviz_kurlari.htm">d�viz no alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re d�viz numaras�n�n ad�d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_DovizIsmi (1) as [D�vizIsmi] <br>
+  <p>Sonu�:</p>
+  1 numaral� d�viz numaras�na denk gelen isim Amerikan Dolar� olarak gelecektir.<br>
+  <br>
+  <li>fn_FirmaAnaDovizCinsi ()</li>
+  <p>��k�� De�eri:</p>
+  Aktif firman�za tan�mlad���n�z ana d�viz cinsini d�nd�r�r.<br>
+  <br>
+  <li>fn_FirmaAlternatifDovizCinsi ()</li>
+  <p>��k�� De�eri:</p>
+  Aktif firman�za tan�mlad���n�z alternatif d�viz cinsini d�nd�r�r.<br>
+  <br>
+  <li>fn_KasaTipi (kas_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, kasa tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  kas_tip: Kasa tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/kasalar.htm">kasa tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re kasa tipinin s�zl� kar��l���<br>
+  <p>�rnek kullan�m:</p>
+  SELECT kas_kod, kas_isim, dbo.fn_KasaTipi(kas_tip) FROM KASALAR<br>
+  <p>Sonu�:</p>
+  �EK_001 �EK001 �ek Kasas�<br>
+  �EK_002 �EK002 �ek Kasas�<br>
+  <br>
+  <li>fn_CariCins (@TypeNo)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari cinsini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">cari cinsi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari cinsinin s�zl� kar��l���<br>
+  <br>
+  <li>fn_CariHareketTip (cari_hareket_tipi)</li>
+ <p>��lev:</p>
+  Verilen parametreye g�re, cari hareket tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cari_hareket_tipi: Cari hareket tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesaplar.htm">cari hareket tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari hareket tipinin s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_CariHareketTip(cari_hareket_tipi) AS [HAREKET T�P�] FROM dbo.CARI_HESAPLAR <br>
+  <p>Sonu�:</p>
+  Mal ve hizmet al�n�r ve sat�l�r<br>
+  <br>
+  <li>fn_CariTip (cari_tipi)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cari_tipi: Cari tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesaplar.htm">cari tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari tipinin s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_CariTip(cari_tipi) AS [CARI T�P�] FROM dbo.CARI_HESAPLAR <br>
+  <p>Sonu�:</p>
+  M��teri, sat�c� vb. �ekilde s�ralan�r.<br>
+  <br>
+  <li>fn_CariHarCins (cha_cinsi)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari hareket cinsini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cha_cinsi: Cari hareket cinsi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">hareket cinsi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari hareket cinsinin s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_CariHarCins(cha_cinsi) AS [CARI HAREKET CINSI] FROM dbo.CARI_HESAP_HAREKETLERI <br>
+  <p>Sonu�:</p>
+  M��teri �eki, toptan fatura, nakit vb. �ekilde s�ralan�r.<br>
+  <br>
+  <li>fn_CariHarEvrTipKisa (cha_evrak_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari hareket evrak tipini k�salt�lm�� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cha_evrak_tip: Cari evrak tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">cari hareket evrak tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari hareket evrak tipinin k�salt�lm�� s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_CariHarEvrTipUzun (cha_evrak_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari hareket evrak tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cha_evrak_tip: Cari evrak tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">cari hareket evrak tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari hareket evrak tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_CariHarPoz (cha_tpoz)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari hareket pozisyonunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cha_tpoz: Cari hareket pozisyon seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">cari pozisyonu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari hareket pozisyonunun s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_SiparisAcikKapali (sip_kapat_fl, sip_miktar, sip_teslim_miktar)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, sipari�in a��k m� kapal� m� oldu�unu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sip_kapat_fl: Sipari� kapand� m�?<br>
+  sip_miktar: Sipari� miktar�<br>
+  sip_teslim_miktar: Sipari� teslim miktar� Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">sipari� kapand�?, sipari� miktar�, sipari� teslim miktar� alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re sipari�in a��k/kapal� oldu�unun kar��l���d�r.<br>
+  <br>
+  <li>fn_CariharBorcAlacak (0, cha_tip, cha_tpoz, cha_cari_cins) (1, sth_tip, 0, 0)</li>
+  <p>��lev:</p>
+  Yap�lan cari hareketin stok hareketini de baz alarak bor�lu mu alacakl� m� oldu�unu yaz� olarak d�ner.
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">hareket tipi, cari pozisyon alan�, cari cinsi, <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">hareket tipi</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hareketin bor�lu/alacakl� oldu�unun kar��l���d�r.<br>
+  <br>
+  <li>fn_CariHarTip (dbo.fn_CariharBorcAlacak(0,cha_tip,cha_tpoz,cha_cari_cins))</li><br>
+  CariharBorcAlacak fonksiyonuna ba�l� olarak CariHarTip fonksiyonu bor�, alacak veya bor�-alacak �eklinde bir de�er d�necektir.<br>
+  <br>
+  <li>fn_CekSenetKisa (sck_tip)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, senet-�ek tipini k�salt�lm�� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sck_tip: Senet-�ek tipi. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/odeme_emirleri.htm">senet �ek tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re �ek-senet tipinin k�salt�lm�� s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_CekSenetKisa(0) as [K�sa ad�]<br>
+  <p>Sonu�:</p>
+  0 numaral� �ek-senet tipine denk gelen k�sa ismi gelecektir.-->M.Cek (m��teri �eki anlam�nda)<br>
+  <br>
+  <li>fn_CekSenetPos (sca_sntck_poz,0), (cha_sntck_poz,0), (sck_sonpoz,1)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan de�i�ken parametresine g�re, �ek-senet pozisyonunun s�zl� kar��l���d�r.<br>
+  <p>Giri� parametreleri:</p>
+  sck_sonpoz: Senet-�ek pozisyonu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/odeme_emirleri.htm">senet �ek pozisyonu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re senet-�ek pozisyonunun s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_CekSenetUzun (sck_tip,0)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, senet-�ek tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sck_tip: Senet-�ek tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/odeme_emirleri.htm">senet �ek tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re �ek-senet tipinin s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_CekSenetUzun(0,0) as [Uzun ad�]<br>
+  <p>Sonu�:</p>
+  0 numaral� �ek-senet tipine denk gelen ismi gelecektir.-->Musteri Ceki<br>
+  <br>
+  <li>fn_FisTur (fis_tur)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, fi� t�r�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  fis_tur: Fi� t�r� seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/muhasebe_fisleri.htm">fi� t�r� alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re fi� t�r�n�n s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_FisTur('M') as [Fi� T�r�]<br>
+  <p>Sonu�:</p>
+  Mahsup<br>
+  <br>
+  <li>fn_FisMahsupTur (fis_fmahsup_tipi)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, fi� mahsup tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  fis_fmahsup_tipi: Fi� mahsup tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/muhasebe_fisleri.htm">fi� mahsup tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re fi� mahsup t�r�n�n s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_DinHesapTip (dfis_hesap_kod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, hesap tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/isletme_hareketleri.htm">fi� hesap kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re hesap tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_FirmaHareketTipi (fh_tip)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, firma hareket tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  fh_tip: Firma hareket tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/vergi_tahakkuklari.htm">firma hareket tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re firma hareket tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_IthalatUlke (ith_ulketipi)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, ithalat �lke tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  ith_ulketipi: Ithalat �lke tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/ithalat_dosyalari.htm">�lke tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re ithalat �lke tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_NormalIade (cha_normal_Iade)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, cari hareketin normal mi iade i�lemimi oldu�unu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  cha_normal_Iade: Normal/Iade? seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">Normal/Iade? alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari hareketin normal veya iade i�lemi olarak s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_SatButTipi (sb_detaytipi)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, sat�� b�t�e detay tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sb_detaytipi: B�t�e detay tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/butce_master.htm">b�t�e detay tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sat�� b�t�e detay tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_SatButStokDetTipi (sb_stokdetaykodtipi)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, sat�� b�t�e detay tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sb_stokdetaykodtipi: Stok detay kod tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/butce_master.htm">b�t�e detay tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sat�� b�t�e stok detay kod tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_SiparisCins (sip_cins), (pro_cins)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, sipari� cinsini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sip_cins, pro_cins: Sipari� cinsi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">sipari� cinsi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sipari� cinsinin s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_SiparisCins(0) as [Sipari� Cinsi]<br>
+  <p>Sonu�:</p>
+  Normal sipari�<br>
+  <br>
+  <li>fn_SiparisDurum (sip_durumu)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, sipari� durumunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sip_durumu: Sipari� durumu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">sipari� durumu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sipari� durumunun s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_StokHarCins (sth_cins)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, stok hareket cinsini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sth_cins: Stok hareket cinsi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">hareket cinsi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re stok hareket cinsinin s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_StokHarCins(0) as [Hareket Cinsi]<br>
+  <p>Sonu�:</p>
+  Toptan<br>
+  <br>
+  <li>fn_StokHarEvrTip (sth_evraktip)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, stok hareket evrak tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sth_evraktip: Stok hareket evrak tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">evrak tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re stok hareket evrak tipinin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_StokHarDepoIsmi (sth_giris_depo_no,sth_cikis_depo_no,sth_tip)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, stok hareket depo ismini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sth_giris_depo_no: Giri� depo no.<br>
+  sth_cikis_depo_no: ��k�� depo no.<br>
+  sth_tip: Hareket Tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">giri� depo no, ��k�� depo no, hareket tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re stok hareket depo isminin s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_DepoIsmi (@DepoNo)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan de�i�ken parametresine g�re, depo ad�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  @Depo_No: Depo numaras�. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/depolar.htm">depo no alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re depo ad�n�n s�zl� kar��l���d�r.<br>
+  <br>
+  <li>fn_StokHarTip (sth_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, stok hareket tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">hareket tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re stok hareket tipinin s�zl� kar��l���<br>
+  <br>
+  <li>fn_TalepTemin (sip_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, sipari� tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">sipari� tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sipari� tipinin s�zl� kar��l���<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_TalepTemin (0) as [Sipari� tipi]<br>
+  <p>Sonu�:</p>
+  Talep<br>
+  <br>
+  <li>fn_TicariTip (fis_ticari_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, ticari tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/muhasebe_fisleri.htm">ticari tip kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re ticari tipin s�zl� kar��l���<br>
+  <br>
+  <li>fn_CariGrupIsmi (crg_isim)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, cari grup ismini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_gruplari.htm">cari grup ad� alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re cari grup isminin s�zl� kar��l���<br>
+  <br>
+  <li>fn_TesvikBelgeTip (di_Tipi)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, te�vik belge tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  di_Tipi: DIIB tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/diib_tanimlari.htm">DIIB tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re te�vik belge tipinin s�zl� kar��l���<br>
+  <br>
+  <li>fn_BankaCinsi (ban_hesap_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, banka hesap tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  ban_hesap_tip: Banka hesap tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/bankalar.htm">banka hesap tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re banka mevduat tipinin s�zl� kar��l���<br>
+  <br>
+  <li>fn_BankaMevduatCinsi (ban_mevduat_tip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, banka mevduat tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  ban_mevduat_tip: Banka mevduat tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/bankalar.htm">banka mevduat tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re banka mevduat tipinin s�zl� kar��l���<br>
+  <br>
+  <li>fn_GrupAdi (cha_cari_cins,cha_grupno)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, grup ad�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">cari cinsi ve cari grup no alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re grup ad�n�n s�zl� kar��l���<br>
+  <br>
+  <li>fn_CariHesapMeblag (cha_meblag, cha_aratoplam, cha_vergi1, cha_vergi2, cha_vergi3, cha_vergi4, cha_vergi15, cha_vergi6, cha_vergi7, cha_vergi8, cha_vergi9, cha_vergi10, cha_d_kur, cha_altd_kur, cha_karsid_kur, cha_cinsi, cha_evrak_tip, 0, @CARICINSI)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hesab�n mebla��n� rakam olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_hareketleri.htm">hareket mebla��, vergi, ara toplam, d�viz kurlar�, evrak tipi alanlar�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hesap hareket mebla��n�n kar��l���<br>
+  <br>
+  <li>fn_CariHesapAnaDovizBakiye (@CARICINSI, @CARIKODU, @SORMERKKODU, @GRUPNO)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hesab�n bakiyesini ana d�viz cinsinden rakam olarak d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hesap bakiyesinin ana d�viz cinsinden kar��l���<br>
+  <br>
+  <li>fn_CariHesapAlternatifDovizBakiye (@CARICINSI, @CARIKODU, @SORMERKKODU, @GRUPNO)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hesab�n bakiyesini alternatif d�viz cinsinden rakam olarak d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hesap bakiyesinin alternatif d�viz cinsinden kar��l���<br>
+  <br>
+  <li>fn_CariHesapOrjinalDovizBakiye (@CARICINSI, @CARIKODU, @SORMERKKODU, @GRUPNO)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hesab�n bakiyesini orjinal d�viz cinsinden rakam olarak d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hesap bakiyesinin orjinal d�viz cinsinden kar��l���<br>
+  <br>
+  <li>fn_IsEmriDurum (is_EmriDurumu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, i� emri durumunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  is_EmriDurumu: �� emri durumu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/isemirleri.htm">i� emri durumu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re i� emri durumunun s�zl� kar��l���<br>
+  <br>
+  <li>fn_PartiLotMiktar (@pl_partikodu,@pl_lotno,@pl_stokkodu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, parti-lot miktar�n� hesaplar.<br>
+  <p>Giri� parametreleri:</p>
+  pl_partikodu: Parti kodu.<br>
+  pl_lot no: Lot numaras�<br>
+  pl_stokkodu: Stok kodu. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/partilot.htm">parti kodu, lot no, stok kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re parti-lot miktar�n�n kar��l���<br>
+  <br>
+  <li>fn_PartiLotSevkEdilen (@pl_partikodu,@pl_lotno,@pl_stokkodu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, sevk edilen parti-lot miktar�n� hesaplar.<br>
+  <p>Giri� parametreleri:</p>
+  pl_partikodu: Parti kodu.<br>
+  pl_lot no: Lot numaras�<br>
+  pl_stokkodu: Stok kodu. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/partilot.htm">parti kodu, lot no, stok kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re sevk edilen parti-lot miktar�n�n kar��l���<br>
+  <br>
+  <li>fn_PartiLotPlanlanan (@pl_partikodu,@pl_lotno,@pl_stokkodu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, planlanan parti-lot miktar�n� hesaplar.<br>
+  <p>Giri� parametreleri:</p>
+  pl_partikodu: Parti kodu.<br>
+  pl_lot no: Lot numaras�<br>
+  pl_stokkodu: Stok kodu. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/partilot.htm">parti kodu, lot no, stok kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re planlanan parti-lot miktar�n�n kar��l���<br>
+  <br>
+  <li>fn_PartiLotKalan (@pl_partikodu,@pl_lotno,@pl_stokkodu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, kalan parti-lot miktar�n� hesaplar.<br>
+  <p>Giri� parametreleri:</p>
+  pl_partikodu: Parti kodu.<br>
+  pl_lot no: Lot numaras�<br>
+  pl_stokkodu: Stok kodu. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/partilot.htm">parti kodu, lot no, stok kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re kalan parti-lot miktar�n�n kar��l���<br>
+  <br>
+  <li>fn_DonemDepoyaGirenMiktar (@stok,@depo,@ilktarih,@sontarih)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, stoklar�n verece�iniz d�nemler aras�ndaki depoya giren miktar�n� hesaplar.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re d�nemsel olarak depoya giren miktar�n kar��l���<br>
+  <br>
+  <li>fn_IsEmrineSarfEdilenNetMiktar (@Stokkodu, @Isemrikodu, @Fasoncukodu, @Partikodu, @Lotno)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, stoklara ba�l� i� emirlerine sarfedilen net miktar� hesaplar.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re i� emrine sarfedilen net miktar�n kar��l���<br>
+  <br>
+  <li>fn_IsEmrindenUretilenNetMiktar (@Stokkodu, @Isemrikodu, @Fasoncukodu, @Partikodu, @Lotno)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, stoklara ba�l� i� emirlerinden �retilen net miktar� hesaplar.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re i� emrinden �retilen net miktar�n kar��l���<br>
+  <br>
+  <li>fn_IsEmriAgaci (@IlkIsemri kodu, @SonIsemri kodu, @IlkTarih, @SonTarih, @SipSeri, @SipSira, @SipSatir)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, i� emri a�ac�n� olu�turmak.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re i� emri a�ac�nda i� emri koduna ba�l� olarak eldeki ve t�ketim sonras� stok miktar�n�n, operasyonlar�n, planlanan s�renin g�sterimi<br>
+  <br>
+  <li>fn_CariHizmetSatisSozlesmesiFoyu (@carikod, @ilktar, @sontar)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hizmet sat�� s�zle�mesi f�y�n� listeler.<br>
+  <p>Giri� parametreleri:</p>
+  Cari kodu,ilk-son tarih parametreleri verilir.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re hizmet sat�� s�zle�mesi evra��n�n �zeti<br>
+  <br>
+  <li>fn_CariHizmetAlisSozlesmesiFoyu (@carikod, @ilktar, @sontar)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hizmet al�� s�zle�mesi f�y�n� listeler.<br>
+  <p>Giri� parametreleri:</p>
+  Cari kodu,ilk-son tarih parametreleri verilir.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re hizmet al�� s�zle�mesi evra��n�n �zeti<br>
+  <br>
+  <li>fn_CariHizmetSatisSozlesmesiOperasyonu (@ilktar, @sontar)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hizmet sat�� s�zle�mesi operasyonunu d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  �lk ve son tarih parametreleri verilir.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hizmet sat�� s�zle�mesi operasyonunu listeler.<br>
+  <br>
+  <li>fn_CariHizmetAlisSozlesmesiOperasyonu (@ilktar, @sontar)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, cari hizmet al�� s�zle�mesi operasyonunu d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  �lk ve son tarih parametreleri verilir.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hizmet al�� s�zle�mesi operasyonunu listeler.<br>
+  <br>
+  <li>fn_SiparisMiktarToplam (sip_stok_kod,sip_tip)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, toplam sipari� miktar�n� d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sip_stok_kod: Stok kodu<br>
+  sip_tip: Sipari� tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">sipari� tipi ve stok kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re toplam sipari� miktar�.<br>
+  <br>
+  <li>fn_SiparisTeslimMiktarToplam (sip_stok_kod,sip_tip,@tesilktar,@tessontar)</li>
+  <p>��lev:</p>
+  Verilen ilk ve son sipari� teslim tarihi aral���ndaki, teslim edilen toplam sipari� miktar�n� d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  sip_stok_kod: Stok kodu<br>
+  sip_tip: Sipari� tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">sipari� tipi ve stok kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re teslim edilen toplam sipari� miktar�.<br>
+  <br>
+  <li>fn_SiparisOperasyonlari (@siptip, @ilktar, @sontar, @acikkapali, @tamamlanmis, @onayli, @DepoTipi, @VerilenDepo, @TarihTipi)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, t�m sipari�leri d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">giri� parametreleriyle ilgili alanlar</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re t�m sipari� evraklar�.<br>
+  <br>
+  <li>fn_ProformaSiparisOperasyonlari (@siptip, @ilktar, @sontar, @acikkapali, @tamamlanmis, @onayli)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, proforma sipari�leri d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/siparisler.htm">giri� parametreleriyle ilgili alanlar</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re proforma sipari� evraklar�.<br>
+  <br>
+  <li>fn_EgitimDurumu (aeg_durumu)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, al�nan e�itim durumunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  aeg_durumu: Al�nan e�itim durumu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/personel_alinan_egitimler.htm">al�nan e�itim durumu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re al�nan e�itim durumunun s�zl� kar��l���.<br>
+  <br>
+  <li>fn_EgitimTipi (aeg_tipi) </li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, al�nan e�itim tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  aeg_tipi: Al�nan e�itim tip seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/personel_alinan_egitimler.htm">al�nan e�itim tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re al�nan e�itim tipinin s�zl� kar��l���.<br>
+  <br>
+  <li>fn_EgitimOperasyonu (@ilktar, @sontar, @durum)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, e�itim planlama operasyonunu d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  �lk-son tarih ve e�itim durumu parametreleri verilir.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re e�itim planlama operasyonunu listeler.<br>
+  <br>
+  <li>fn_OperasyonunIsmerkezleri (Opd_OpKodu)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, operasyon i� merkezlerini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Opd_OpKodu: Operasyon detay kodu. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/uretim_operasyon_detaylari.htm">operasyon detay kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re operasyon i� merkezinin s�zl� kar��l���.<br>
+  <br>
+  <li>fn_BakimDurum (bkm_durum)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, bak�m durumunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  bkm_durum: Bak�m durum seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/bakim_hareketleri.htm">durumu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re bak�m durumunun s�zl� kar��l���.<br>
+  <br>
+  <li>fn_IsletmeHesapTipi (dinm_Hhtip)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, i�letme hesap tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  dinm_Hhtip: Hesap tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/isletme_hesap_plani.htm">hesap tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re i�letme hesap tipinin s�zl� kar��l���.<br>
+  <br>
+  <li>fn_GunStr (adr_ziyaretgunu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, ziyaret g�n�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  adr_ziyaretgunu: Ziyaret g�n� seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_adresleri.htm">ziyaret g�n� alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re ziyaret g�n�n�n s�zl� kar��l���.<br>
+  <br>
+  <li>fn_ZiyaretDurum ('P', adr_ziyaretperyodu, adr_ziyaretgunu)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, ziyaret durumunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  adr_ziyaretgunu: Ziyaret g�n� seti<br>
+  adr_ziyaretperyodu: Ziyaret peryodu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_adresleri.htm">ziyaret peryodu ve ziyaret g�n� alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re ziyaret durumunun s�zl� kar��l���.<br>
+  <br>
+  <li>fn_RotaYonetimi (@ilkkod, @sonkod, @kodyapi)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, rota y�netimini ger�ekle�tirmek.<br>
+  <p>Giri� parametreleri:</p>
+  Personel ilk-son kodu ve kod yap�s� giri�i yap�l�r.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari adres kartlar�n� listeler.<br>
+  <br>
+  <li>fn_ProjeDurumu (pro_durumu)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, proje durumunun s�zl� kar��l���.<br>
+  <p>Giri� parametreleri:</p>
+  pro_durumu: Proje durumu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/projeler.htm">proje durumu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re proje durumunu d�ner.<br>
+  <br>
+  <li>fn_BolgeIsmi (bol_kodu)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, b�lge isminin s�zl� kar��l���.<br>
+  <p>Giri� parametreleri:</p>
+  bol_kod: B�lge kodu. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/cari_hesap_bolgeleri.htm">b�lge kodu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re b�lge ad�n� d�ner.<br>
+  <br>
+  <li>fn_GenelCariHareketFoyu (@ilktar, @sontar)</li>
+  <p>��lev:</p>
+  Verilen parametrelere g�re, carilere kesilen veya carilerden gelen faturlar� listelemek.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari faturalar�n� d�ner.<br>
+  <br>
+  <li>fn_CariHesapMuhasebeKontrol()</li>
+  <p>��lev:</p>
+  Cari muhasebe kodundan bakiyesini d�nd�r�p, muhasebe kontrol�n� yapan tabloyu olu�turmak.<br>
+  <br>
+  <li>fn_BankaGrupMuhasebeKontrol (@grup)</li>
+  <p>��lev:</p>
+  Banka grup muhasebe kodundan bakiyesini d�nd�r�p, muhasebe kontrol�n� yapan tabloyu olu�turmak.<br>
+  <br>
+  <li>fn_BankaMuhasebeKontrol ()</li>
+  <p>��lev:</p>
+  Banka muhasebe kodundan bakiyesini d�nd�r�p, muhasebe kontrol�n� yapan tabloyu olu�turmak.<br>
+  <br>
+  <li>fn_iliskitipi (il_iliski_tipi)</li>
+  <p>��lev:</p>
+  Verilen parametreye g�re, ili�ki tipini yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  il_iliski_tipi: �li�ki tipi seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/iliskiler.htm">ili�ki tipi alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re ili�ki tipinin s�zl� kar��l���.<br>
+  <br>
+  <li>fn_CariiliskiAnalizKupu (@ilktarih, @sontarih)</li>
+  <p>��lev:</p>
+  Verilen ilk ve son tarih de�i�ken parametrelerine g�re, carilerle ili�ki program�n� analiz edip, k�p olarak d�nd�rmek.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re carilerle ili�ki analiz k�p�.<br>
+  <br>
+  <li>fn_Cariiliskicarifoyu (@carikodu, @ilktarih, @sontarih)</li>
+  <p>��lev:</p>
+  Verilen cari kodu, ilk ve son tarih de�i�ken parametrelerine g�re, carilerle ili�ki ile bu programdaki carileri de�erlendirip, f�y olarak d�nd�rmek.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re carilerle ili�ki cari f�y�.<br>
+  <br>
+  <li>fn_Cariiliskipersfoyu (@perskodu, @ilktarih, @sontarih)</li>
+  <p>��lev:</p>
+  Verilen personel kodu, ilk ve son tarih de�i�ken parametrelerine g�re, carilerle ili�ki ile bu programdaki personelleri de�erlendirip, f�y olarak d�nd�rmek.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re carilerle ili�ki personel f�y�.<br>
+  <br>
+  <li>fn_StokUretimIzleme (@ilkkod, @sonkod, @kodyapi, @Depolarstr, @tesilktar, @tessontar)</li>
+  <p>��lev:</p>
+  Verilen stok (�r�n) ilk-son kod, kod yap�s�, �oklu depo se�imi ve teslim ilk-son tarihi parametrelerine g�re, yap�lan stok �retimini g�z �n�ne al�p, tek bir ekrandan izlemenizi sa�lamak.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re stok �retim izleme program�.<br>
+  <br>
+  <li>fn_PerIsGrubu (per_is_grup)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, personel i� grubunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  per_is_grup: �� grubu seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/personeller.htm">i� grubu alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re personel i� grubunun s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_PerIsGrubu(0) as [�� grubu]<br>
+  <p>Sonu�:</p>
+  MEMUR<br>
+  <br>
+  <li>fn_PerTahakkukKupu</li>
+  <p>��lev:</p>
+  Verilen ilk ve son tarih de�i�ken parametrelerine g�re, carilerle ili�ki program�n� analiz edip, k�p olarak d�nd�rmek.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re carilerle ili�ki analiz k�p�.<br>
+  <br>
+  <li>fn_AyIsimBul (pt_tah_ay)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, tahakkuk ay�n� yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  pt_tah_ay: Tahakkuk ay� seti. Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/personel_tahakkuklari.htm">tahakkuk ay� alan�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re tahakkuk ay�n�n s�zl� kar��l���d�r.<br>
+  <p>�rnek kullan�m:</p>
+  SELECT dbo.fn_AyIsimBul (2) as [ay]<br>
+  <p>Sonu�:</p>
+  �ubat<br>
+  <br>
+  <li>fn_StokHareketNetDeger (sth_tutar, sth_iskonto1, sth_iskonto2, sth_iskonto3, sth_iskonto4, sth_iskonto5, sth_iskonto6, sth_masraf1, sth_masraf2, sth_masraf3, sth_masraf4, sth_otvtutari, sth_tip, @DovizCinsi, sth_har_doviz_kuru, sth_alt_doviz_kuru, sth_stok_doviz_kuru)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, stok hareket net de�erini miktarsal olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">hareket tutar�, iskonto miktarlar�-masraflar�, hareket tipi, hareket d�viz kurlar� alanlar�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re stok hareketinin miktarsal olarak net de�erin kar��l���d�r.<br>
+  <br>
+  <li>fn_StokHareketMaliyetDeger (sth_maliyet_ana,sth_maliyet_alternatif,sth_maliyet_orjinal,@DovizCinsi)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, stok hareketin maliyet de�erini parasal olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">ana-alternatif-orjinal maliyet alanlar�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re stok hareketin maliyet de�erinin parasal kar��l���d�r.<br>
+  <br>
+  <li>fn_StokHareketBrutDeger (sth_tutar, @DovizCinsi, sth_har_doviz_kuru, sth_alt_doviz_kuru, sth_stok_doviz_kuru)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, stok hareketin br�t de�erini parasal olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  Bkz. <a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/stok_hareketleri.htm">hareket tutar�, hareketli-alternatif-stok d�viz kuru alanlar�</a><br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re stok hareketin br�t de�erinin parasal kar��l���d�r.<br>
+  <br>
+  <li>fn_Stok_Giris_Cikis (@stokkod,@ilktar,@sontar)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, tan�mlanan sto�un iki tarih aras�ndaki giri�-��k�� hareketlerini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re sto�un iki tarih aras�ndaki hareketlerinin kar��l���d�r.<br>
+  <br>
+  <li>fn_kimlere_satildi (@stokkod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, tan�mlanan sto�un kimlere sat�ld��� bilgisini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sto�un kimlere sat�ld���n�n kar��l���d�r.<br>
+  <br>
+  <li>fn_kimlerden_alindi (@stokkod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, tan�mlanan sto�un kimlerden al�nd��� bilgisini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sto�un kimlerden al�nd���n�n kar��l���d�r.<br>
+  <br>
+  <li>fn_neler_sattik (@caritip,@carikod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, ilgili cariye neler satt���m�z bilgisini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cariye neler satt���m�z�n kar��l���d�r.<br>
+  <br>
+  <li>fn_neler_aldik (@caritip,@carikod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, ilgili cariden neler ald���m�z bilgisini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cariden neler ald���m�z�n kar��l���d�r.<br>
+  <br>
+  <li>fn_Stok_Recetesi (@stokkod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, stok re�ete bilgisini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sto�un re�ete bilgisi kar��l���d�r.<br>
+  <br>
+  <li>fn_Stogun_Kullanildigi_Receteler (@stokkod)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re, sto�un kullan�ld��� re�ete bilgisini d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametreye g�re sto�un kullan�ld��� re�etelerin kar��l���d�r.<br>
+  <br>
+  <li>fn_OpVadeTarih (@Vade,@RefTarih)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, vade tarihini tarih olarak d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re vade tarihinin kar��l���d�r.<br>
+  <br>
+  <li>fn_OpVadeGun (@Vade,@RefTarih)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, vade g�n�n� d�ner.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re vade g�n�n�n rakamsal kar��l���d�r.<br>
+  <br>
+  <li>fn_CariFoy (@caricins, @carikod, @grupno, @ilktar, @sontar, @SomStr)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametrelere g�re, cari f�y�n� listeler.<br>
+  <p>��k�� De�eri:</p>
+  Verilen parametrelere g�re cari hareketin �zeti.<br>
+  <br>
+  <li>fn_PerTahsil (per_kim_tahsil)</li>
+  <p>��lev:</p>
+  Parantez i�inde tan�mlanan parametreye g�re personel tahsil durumunu yaz� olarak d�ner.<br>
+  <p>Giri� parametreleri:</p>
+  per_kim_tahsil: Tahsil seti Bkz.<a href= "https://www.ozgurguler.net/blog/DBYapisi_v16/tablolar/personeller.htm">tahsil alan�</a><br>
+  <p>��k�� de�eri:</p>
+  Verilen parametreye g�re personel tahsil durumunun s�zl� kar��l���d�r.
+  <br>
+  <li>fn_UretimTalepdenUretim (@tlpilktar, @tlpsontar, @tesilktar, @tessontar, @stokilkkod, @stoksonkod, @stokkodyapi)</li>
+  <br>
+  <li> fn_BarkodYonetimi (@ilkkod, @sonkod, @kodyapi, @ilktar, @sontar)</li>
+<hr>G�ncellenme Tarihi : 14.12.2017 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s� v16">bize yaz�n</A><br><b>�2017 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

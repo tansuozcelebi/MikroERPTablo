@@ -1,0 +1,961 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 56</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : DEMIRBASLAR</b></td>
+    <td width="50%"><b>Tablo : Demirba� Kartlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+ <tr>
+  <td>0</td>
+  <td>dem_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>dem_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>dem_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>dem_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td>dem_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>5</td>
+  <td>dem_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>6</td>
+  <td>dem_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>dem_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>8</td>
+  <td>dem_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>9</td>
+  <td>dem_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>10</td>
+  <td>dem_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>11</td>
+  <td>dem_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>12</td>
+  <td>dem_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>13</td>
+  <td>dem_special1</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>14</td>
+  <td>dem_special2</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>15</td>
+  <td>dem_special3</td>
+  <td>Nvarchar(127)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>16</td>
+  <td>dem_MainProgramNo</td>
+  <td>Smallint</td>
+  <td>Ana Program Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>17</td>
+  <td>dem_VersionNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Versiyon Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>18</td>
+  <td>dem_MenuNo</td>
+  <td>Nvarchar(10)</td>
+  <td>Men� Numaras�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>19</td>
+  <td>dem_MikroSpecial1</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>20</td>
+  <td>dem_MikroSpecial2</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>21</td>
+  <td>dem_MikroSpecial3</td>
+  <td>Nvarchar(40)</td>
+  <td>�zel Alan</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>22</td>
+  <td>dem_ExternalProgramType</td>
+  <td>Tinyint</td>
+  <td>D�� Yaz�l�m Aktar�m Tipi</td>
+  <td>0:Genel 1:Para��t 2:Irgat</td>
+ </tr>
+ <tr>
+  <td>23</td>
+  <td>dem_ExternalProgramId</td>
+  <td>Nvarchar(127)</td>
+  <td>D�� Yaz�l�m Id'si</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>24</td>
+  <td>dem_firmano</td>
+  <td>Integer</td>
+  <td>Firma No</td>
+  <td>&nbsp;</td>
+ </tr>
+  <tr>
+  <td>25</td>
+  <td>dem_subeno</td>
+  <td>Integer</td>
+  <td>�ube No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>26</td>
+  <td>dem_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Demirba� Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>27</td>
+  <td>dem_isim</td>
+  <td>Nvarchar(50)</td>
+  <td>Demirba� �smi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>28</td>
+  <td>dem_aciklama</td>
+  <td>Nvarchar(50)</td>
+  <td>A��klama</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>29</td>
+  <td>dem_doviz_cinsi</td>
+  <td>Tinyint</td>
+  <td>D�viz Cinsi</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+ </tr>
+ <tr>
+  <td>30</td>
+  <td>dem_vergi</td>
+  <td>Tinyint</td>
+  <td>Vergi Oran�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>31</td>
+  <td>dem_amortoran</td>
+  <td>Float</td>
+  <td>Amortisman Oran�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>32</td>
+  <td>dem_amortip</td>
+  <td>Tinyint</td>
+  <td>Amortisman Tipi</td>
+  <td>0:Cari Amortisman 1:Eksilen Amortisman 2:Eksilen Amortisman (Normal)</td>
+ </tr>
+ <tr>
+  <td>33</td>
+  <td>dem_birim</td>
+  <td>Nvarchar(10)</td>
+  <td>Birim</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>34</td>
+  <td>dem_fatura_tarihi</td>
+  <td>DateTime</td>
+  <td>Fatura Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>35</td>
+  <td>dem_fatura_seri</td>
+  <td>dbo.evrakseri_str</td>
+  <td>Fatura Seri No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>36</td>
+  <td>dem_fatura_sira</td>
+  <td>Integer</td>
+  <td>Fatura S�ra No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>37</td>
+  <td>dem_tutar</td>
+  <td>Float</td>
+  <td>Demirba� Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>38</td>
+  <td>dem_tutar_alternatif</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden Demirba� Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>39</td>
+  <td>dem_tutar_orjinal</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden Demirba� Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>40</td>
+  <td>dem_miktar</td>
+  <td>Float</td>
+  <td>Demirba� Miktar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>41</td>
+  <td>dem_dagankodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Da��t�m Anahtar� Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>42</td>
+  <td>dem_sozlesmekodu</td>
+  <td>Nvarchar(25)</td>
+  <td>S�zle�me Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>43</td>
+  <td>dem_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Demirba� Muhasebe Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>44</td>
+  <td>dem_birik_amort_muh</td>
+  <td>Nvarchar(40)</td>
+  <td>Birikmi� Amortisman Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>45</td>
+  <td>dem_ydf_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yeniden De�erlendirme Amortisman Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>46</td>
+  <td>dem_amorgider_muhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Amortisman Gideri Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>47</td>
+  <td>dem_maliyet_artis_mu</td>
+  <td>Nvarchar(40)</td>
+  <td>Maliyet Art�� Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>48</td>
+  <td>dem_satis_kar_muhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Kar� Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>49</td>
+  <td>dem_satis_zarar_muhk</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Zarar� Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>50</td>
+  <td>dem_yeni_fon_muhkodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Yenileme Fonu Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>51</td>
+  <td>dem_SermEkgmStsKaz_m</td>
+  <td>Nvarchar(40)</td>
+  <td>Serm. Ek. Gm. Sat. Kaz.Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>52</td>
+  <td>dem_amorgidkar_muhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Amortisman Gider Kar��l��� Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>53</td>
+  <td>dem_yatirimtes_muhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yat�r�m Te�vik Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>54</td>
+  <td>dem_muh_kodu_kkeg</td>
+  <td>Nvarchar(40)</td>
+  <td>Binek Otolar ��in KKEG Matrah�n�n Yaz�laca�� Muhasebe Hesab�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>55</td>
+  <td>dem_kkeg_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Binek Otolar ��in KKEG'in Muhasebe Hesab�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>56</td>
+  <td>dem_amort_masraf_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Amortisman Masraf Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>57</td>
+  <td>dem_amort_masraf_kodu_kkeg</td>
+  <td>Nvarchar(25)</td>
+  <td>Amortisman Masraf Kodu KKEG</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>58</td>
+  <td>dem_yenileme_fonu_masraf_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Yenileme Fonu Masraf Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+  <tr>
+  <td>59</td>
+  <td>dem_isl_demirbas_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>��letme Demirba� Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>60</td>
+  <td>dem_makinetesis_fl</td>
+  <td>Bit</td>
+  <td>Makine tesis mi?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>61</td>
+  <td>dem_emlak_fl</td>
+  <td>Bit</td>
+  <td>Emlak m�?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>62</td>
+  <td>dem_izdusum_fl</td>
+  <td>Bit</td>
+  <td>�sd���m?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>63</td>
+  <td>dem_yeni_degyo_fl</td>
+  <td>Bit</td>
+  <td>Yeniden De�erlendirme Yok?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>64</td>
+  <td>dem_kistas_fl</td>
+  <td>Bit</td>
+  <td>K�st. Amort. Tabi mi?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>65</td>
+  <td>dem_tesfik_fl</td>
+  <td>Bit</td>
+  <td>Te�vik?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>66</td>
+  <td>dem_atikizdeger_dusu</td>
+  <td>Float</td>
+  <td>�zde�er D���m�?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>67</td>
+  <td>dem_zimmetyeri</td>
+  <td>Nvarchar(25)</td>
+  <td>Zimmet Yeri</td>
+  <td>Bkz. <a href="zimmet_yerleri-2.html">ZIMMET_YERLERI</a></td>
+ </tr>
+ <tr>
+  <td>68</td>
+  <td>dem_zimmetcaripers</td>
+  <td>Nvarchar(25)</td>
+  <td>Zimmet Cari Personeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>69</td>
+  <td>dem_grupkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Grup Kodu</td>
+  <td>Bkz. <a href="demirbas_gruplari-2.html">DEMIRBAS_GRUPLARI</a></td>
+ </tr>
+ <tr>
+  <td>70</td>
+  <td>dem_SrmmMrkKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Sorumluluk Merkezi Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>71</td>
+  <td>dem_enf_tabii</td>
+  <td>Tinyint</td>
+  <td>Enflasyon d�zeltmesine tabii mi ?</td>
+  <td>0:Evet 1:Hay�r</td>
+ </tr>
+ <tr>
+  <td>72</td>
+  <td>dem_muhgrup_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Muhasebe grup kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>73</td>
+  <td>dem_mkod_artik</td>
+  <td>Nvarchar(10)</td>
+  <td>Muhasebe kod artikeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>74</td>
+  <td>dem_faydaliOmur_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Faydal� �m�r kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>75</td>
+  <td>dem_ProjeKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Proje kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>76</td>
+  <td>dem_altfaydali_omur_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Alternatif Faydal� �m�r kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>77</td>
+  <td>dem_alternatif_amortoran</td>
+  <td>Float</td>
+  <td>Alternatif Amortisman Oran�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>78</td>
+  <td>dem_ufrstutar</td>
+  <td>Float</td>
+  <td>Ufrs'ye G�re Fatura Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>79</td>
+  <td>dem_ufrstutar_alternatif</td>
+  <td>Float</td>
+  <td>Ufrs'ye G�re Alternatif D�viz Cinsinden Tutar</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>80</td>
+  <td>dem_ufrstutar_orjinal</td>
+  <td>Float</td>
+  <td>Ufrs'ye G�re Orjinal D�viz Cinsinden Tutar</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>81</td>
+  <td>dem_ufrsamortip</td>
+  <td>Tinyint</td>
+  <td>Ufrs Amortisman Tipi</td>
+  <td>0:Cari Amortisman 1:Eksilen Amortisman</td>
+ </tr>
+ <tr>
+  <td>82</td>
+  <td>dem_ufrs_omur_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Ufrs �m�r kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>83</td>
+  <td>dem_ufrsamortoran</td>
+  <td>Float</td>
+  <td>Ufrs Amortisman Oran�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>84</td>
+  <td>dem_ufrskistas_fl</td>
+  <td>Bit</td>
+  <td>Ufrs K�stas� Var M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>85</td>
+  <td>dem_ufrsfark_muh_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Muhasebe Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>86</td>
+  <td>dem_birik_amort_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Birikmi� Amortisman Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>87</td>
+  <td>dem_ydf_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Yeniden De�erlendirme Amortisman Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>88</td>
+  <td>dem_amorgider_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Amortisman Gideri Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>89</td>
+  <td>dem_maliyet_artis_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Maliyet Art�� Fonu Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>90</td>
+  <td>dem_satis_kar_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Sat�� Kar� Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>91</td>
+  <td>dem_satis_zarar_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Sat�� Zarar� Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>92</td>
+  <td>dem_yeni_fon_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Yenileme Fonu Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>93</td>
+  <td>dem_SermEkgmStsKaz_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Serm. Ek. Gm. Sat. Kaz.Muh. Kodu</td>
+  <td>Bkz. <a href="muhasebe_hesap_plani-2.html">MUHASEBE_HESAP_PLANI</a></td>
+ </tr>
+ <tr>
+  <td>94</td>
+  <td>dem_amorgidkar_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Amortisman Gideri Kar��l��� Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>95</td>
+  <td>dem_yatirimtes_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Yat�r�m Te�vik Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>96</td>
+  <td>dem_ufrsfark_muh_kodu_kkeg</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark� Muhasebe Kodu KKEG</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>97</td>
+  <td>dem_kkeg_ufrsfark_kodu</td>
+  <td>Nvarchar(40)</td>
+  <td>KKEG'in Ufrs Fark Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>98</td>
+  <td>dem_otv_tutar</td>
+  <td>Float</td>
+  <td>�tv Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>99</td>
+  <td>dem_otv_maliyete_eklensin_fl</td>
+  <td>Bit</td>
+  <td>�tv Maliyete Eklensin Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>100</td>
+  <td>dem_kdv_maliyete_eklensin_fl</td>
+  <td>Bit</td>
+  <td>Kdv Maliyete Eklensin Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>101</td>
+  <td>dem_GtipNo</td>
+  <td>Nvarchar(25)</td>
+  <td>Gtip No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>102</td>
+  <td>dem_AmortismanGiderTuru</td>
+  <td>Nvarchar(25)</td>
+  <td>Amortisman Gider T�r�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>103</td>
+  <td>dem_DefterBeyanId</td>
+  <td>Nvarchar(127)</td>
+  <td>Defter Beyan Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>104</td>
+  <td>dem_DefterBeyanDevirFisiId</td>
+  <td>Nvarchar(127)</td>
+  <td>Defter Beyan Devir Fi�i Id</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>105</td>
+  <td>dem_itfa_bedeli_ana</td>
+  <td>Float</td>
+  <td>Ana D�viz Cinsinden �tfa Bedeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>106</td>
+  <td>dem_itfa_bedeli_alt</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden �tfa Bedeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>107</td>
+  <td>dem_itfa_bedeli_orj</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden �tfa Bedeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>108</td>
+  <td>dem_kkeg_bedel_ana</td>
+  <td>Float</td>
+  <td>Ana D�viz Cinsinden KKEG Bedeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>109</td>
+  <td>dem_kkeg_bedel_alt</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden KKEG Bedeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>110</td>
+  <td>dem_kkeg_bedel_orj</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden KKEG Bedeli</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>111</td>
+  <td>dem_binek_oto_sinifi</td>
+  <td>Tinyint</td>
+  <td>Binek Oto S�n�f�</td>
+  <td>0:Binek Oto De�il 1:S�f�r Oto 2:�kinci El Oto</td>
+ </tr>
+ <tr>
+  <td>112</td>
+  <td>dem_isl_demirbas_kodu_kkeg</td>
+  <td>Nvarchar(25)</td>
+  <td>��letme Demirba� Kodu KKEG</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>113</td>
+  <td>dem_aracplaka</td>
+  <td>Nvarchar(15)</td>
+  <td>Ara� Plakas�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>114</td>
+  <td>dem_satis_kari_yenileme_fonuna_fl</td>
+  <td>Bit</td>
+  <td>Sat�� Kar�n�n Yenileme Fonuna Muhasebele�me ��lemi Olacak M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>115</td>
+  <td>dem_yenileme_fonu_bedeli_ana</td>
+  <td>Float</td>
+  <td>Ana D�viz Cinsinden Yenileme Fonu Bedeli</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>116</td>
+  <td>dem_yenileme_fonu_bedeli_alt</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden Yenileme Fonu Bedeli</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>117</td>
+  <td>dem_yenileme_fonu_bedeli_orj</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden Yenileme Fonu Bedeli</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>118</td>
+  <td>dem_yenileme_fonu_bedeli_ana_ufrs</td>
+  <td>Float</td>
+  <td>Ana D�viz Cinsinden Yenileme Fonu Bedeli (UFRS)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>119</td>
+  <td>dem_yenileme_fonu_bedeli_alt_ufrs</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Cinsinden Yenileme Fonu Bedeli (UFRS)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>120</td>
+  <td>dem_yenileme_fonu_bedeli_orj_ufrs</td>
+  <td>Float</td>
+  <td>Orjinal D�viz Cinsinden Yenileme Fonu Bedeli (UFRS)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>121</td>
+  <td>dem_VUK530_duzeltmesine_tabii</td>
+  <td>Tinyint</td>
+  <td>Vergi Usul Kanunu (S�ra No: 530) D�zeltmesine Tabi Mi ?</td>
+  <td>0:Hay�r 1:Evet</td>
+  </tr>
+  <tr>
+  <td>122</td>
+  <td>dem_nitelik</td>
+  <td>Tinyint</td>
+  <td>Nitelik</td>
+  <td>0:Amortismana Tabi Olmayan 1:Amortismana Tabi 2:Tesis Arazi 3:Makineler 4:Gemiler 5:Ta��tlar 6:Gayrimaddi �ktisadi K�ymetler 7:Demirba�lar 8:�zel Maliyet Bedelleri 9:Di�er</td>
+  </tr>
+  <tr>
+  <td>123</td>
+  <td>dem_VUK530_duzeltme_tarihi</td>
+  <td>DateTime</td>
+  <td>VUK 530 ��in D�zeltme Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+ </table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_DEMIRBASLAR_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>dem_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_DEMIRBASLAR_02</td>
+<td>UNIQUE</td>
+<td>dem_kod</td>
+</tr>
+<tr>
+<td>NDX_DEMIRBASLAR_03</td>
+<td></td>
+<td>dem_isim</td>
+</tr>
+<tr class=sRow >
+<td>NDX_DEMIRBASLAR_04</td>
+<td></td>
+<td>dem_muh_kodu</td>
+</tr>
+<tr>
+<td>NDX_DEMIRBASLAR_05</td>
+<td>UNIQUE</td>
+<td>dem_zimmetyeri, dem_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_DEMIRBASLAR_06</td>
+<td>UNIQUE</td>
+<td>dem_grupkodu, dem_kod</td>
+</tr>
+<tr>
+<td>NDX_DEMIRBASLAR_07</td>
+<td>UNIQUE</td>
+<td>dem_muhgrup_kodu, dem_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_DEMIRBASLAR_08</td>
+<td>UNIQUE</td>
+<td>dem_faydaliOmur_kodu, dem_kod</td>
+</tr>
+<tr>
+<td>NDX_DEMIRBASLAR_09</td>
+<td>UNIQUE</td>
+<td>dem_zimmetcaripers, dem_kod</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 23.06.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

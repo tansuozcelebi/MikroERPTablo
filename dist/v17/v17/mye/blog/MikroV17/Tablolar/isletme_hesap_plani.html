@@ -1,0 +1,637 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 102</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : ISLETME_HESAP_PLANI</b></td>
+    <td width="50%"><b>Tablo : ��letme Hesap Plan�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>dinm_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>dinm_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>dinm_SpecRECno</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>dinm_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>dinm_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>dinm_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>dinm_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>dinm_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>dinm_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>dinm_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>dinm_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>dinm_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>dinm_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>dinm_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>dinm_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>dinm_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>dinm_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>dinm_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>dinm_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>dinm_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>dinm_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>dinm_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>dinm_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>dinm_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>dinm_hesap_kod</td>
+<td>Nvarchar(25)</td>
+<td>Hesap Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>dinm_hesap_isim1</td>
+<td>Nvarchar(40)</td>
+<td>Hesap Ad� </td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>dinm_hesap_isim2</td>
+<td>Nvarchar(40)</td>
+<td>Hesap Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>dinm_doviz_cinsi</td>
+<td>Tinyint</td>
+<td>D�viz Cinsi</td>
+<td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td>dinm_kurfarki_fl</td>
+<td>Bit</td>
+<td>Kur Fark�?</td>
+<td>0:Hay�r 1:Evet</td>
+</tr>
+<tr>
+<td>29</td>
+<td>dinm_sorum_merk</td>
+<td>Tinyint</td>
+<td>Sorumluluk Merkezi Detay�</td>
+<td>0:Serbest 1:Gereksiz 2:Gerekli</td>
+</tr>
+<tr>
+<td>30</td>
+<td>dinm_kilittarihi</td>
+<td>DateTime</td>
+<td width="328">Kilit Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>dinm_hes_dav_bicimi</td>
+<td>Tinyint</td>
+<td>Hesap Davran�� Bi�imi</td>
+<td>0:Parasal 1:Parasal Olmayan</td>
+</tr>
+<tr>
+<td>32</td>
+<td>dinm_Hhtip</td>
+<td>Tinyint</td>
+<td>Hesap Tipi</td>
+<td>0:Mal Al�� 1:Genel Gider 2:�malat Gideri 3:Demirba� 4:Mal Sat�� 5:Gelirler 6:Stoklar 7:Demirba� Amortisman 8:Kanunen Kabul Edilmeyen Gider</td>
+</tr>
+<tr>
+<td>33</td>
+<td>dinm_HhVtip_fl</td>
+<td>Bit</td>
+<td>Vergi Tipi?</td>
+<td>0:Hay�r 1:Evet</td>
+</tr>
+<tr>
+<td>34</td>
+<td>dinm_HhVergi</td>
+<td>Tinyint</td>
+<td>Vergi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>dinm_HhAsgKarGrubu</td>
+<td>Tinyint</td>
+<td width="328">Asgari Kar Grubu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>dinm_HHtop_per</td>
+<td>Tinyint</td>
+<td>Toptan veya Perakende</td>
+<td width="280">0:Toptan 1:Perakende</td>
+</tr>
+<tr>
+<td>37</td>
+<td>dinm_Hhiademeblag</td>
+<td>Float</td>
+<td>�ade Mebla��</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>dinm_HVergiHesaplama</td>
+<td>Tinyint</td>
+<td>Vergi Hesaplama �ekli</td>
+<td>0:Otomatik 1:Manuel</td>
+</tr>
+<tr>
+<td>39</td>
+<td>dinm_miktar_oto_fl</td>
+<td>Bit</td>
+<td>Hesap Kart�ndaki Miktar Otomatik A��ls�n m�?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>dinm_evraktip</td>
+<td>Tinyint</td>
+<td>Evrak Tipi</td>
+<td>0:Tan�ms�z 1:Fatura 2:e-Fatura 3:e-Ar�iv Fatura 4:e-Bilet 5:Perakende Fi�i 6:Serbest Meslek Makbuzu 7:�rsaliyeli Fatura 8:�zel Fatura 9:Dip Ko�anl� Bilet 10:K�ymetli Maden 11:D�viz ve K�ymetli Maden 12:Noter Makbuzu 13:D�ner Sermaye Belgesi 14:Dip Ko�anl� Olmayan Bilet 15:Tahsilat Al�nd� Belgesi Kamu Belediye 16:e-Serbest Meslek Makbuzu 17:e-Serbest Meslek Makbuzu Pos 18:Te�viki Zaruri Olmayan Hareket 19:�oklu Belge 20:Gider Pusulas� veya Makbuzu 21:Di�er 22:Amortisman 23:Kira Mahsubu 24:Personel Bordro 25:Z Raporu 26:G�n Sonu Has�lat 27:M�stahsil Makbuzu 28:OKC Fi�i</td>
+</tr>
+<tr>
+<td>41</td>
+<td>dinm_giderBelgeTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gider Belge T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>dinm_alisTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Al�� T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>dinm_giderKayitTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gider Kay�t T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>dinm_giderKayitAltTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gider Kay�t Alt T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>dinm_gelirBelgeTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gelir Belge T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>dinm_satisTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Sat�� T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>dinm_gelirKayitTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gelir Kay�t T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>dinm_gelirKayitAltTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Gelir Kay�t Alt T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>dinm_stopajkodu</td>
+<td>Nvarchar(10)</td>
+<td>Stopaj Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>dinm_stopajorani</td>
+<td>Float</td>
+<td>Stopaj Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>dinm_kismiTevkifatKodu</td>
+<td>Nvarchar(10)</td>
+<td>K�smi Tevkifat Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>dinm_kismiTevkifatOrani</td>
+<td>Float</td>
+<td>K�smi Tevkifat Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>dinm_odemeTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>�deme T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>54</td>
+<td>dinm_hesaplamaYontemiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Hesaplama Y�ntemi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>55</td>
+<td>dinm_amortismanYontemiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Amortisman Y�ntemi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>dinm_sabitKiymetTuruKodu</td>
+<td>Nvarchar(10)</td>
+<td>Sabit K�ymet T�r� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>57</td>
+<td>dinm_ozelKodKodu</td>
+<td>Nvarchar(10)</td>
+<td>�zel Kod Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>58</td>
+<td>dinm_kodu</td>
+<td>Nvarchar(20)</td>
+<td>Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>dinm_adi</td>
+<td>Nvarchar(127)</td>
+<td>Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>dinm_iktisadiKiymetKodu</td>
+<td>Nvarchar(10)</td>
+<td>�ktisadi K�ymet Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>dinm_periyot</td>
+<td>Tinyint</td>
+<td>Periyot</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>62</td>
+<td>dinm_tevkifatDurumKodu</td>
+<td>Tinyint</td>
+<td>Tevkifat Durum Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>dinm_damgaVergisiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Damga Vergisi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>dinm_kismiIstisnaKodu</td>
+<td>Nvarchar(10)</td>
+<td>K�smi �stisna Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>dinm_kismiIstisnaOrani</td>
+<td>Float</td>
+<td>K�smi �stisna Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>dinm_tamIstisnaKodu</td>
+<td>Nvarchar(10)</td>
+<td>Tam �stisna Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>dinm_tamIstisnaOrani</td>
+<td>Float</td>
+<td>Tam �stisna Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>dinm_ihracKayitliTeslimKodu</td>
+<td>Nvarchar(10)</td>
+<td>�hra� Kay�tl� Teslim Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>dinm_ihracKayitliTeslimOrani</td>
+<td>Float</td>
+<td>�hra� Kay�tl� Teslim Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>70</td>
+<td>dinm_digerIadeHakkiKodu</td>
+<td>Nvarchar(10)</td>
+<td>Di�er �ade Hakk� Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>dinm_digerIadeHakkiOrani</td>
+<td>Float</td>
+<td>Di�er �ade Hakk� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>dinm_digerIslemlerKodu</td>
+<td>Nvarchar(10)</td>
+<td>Di�er ��lemler Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>dinm_digerIslemlerOrani</td>
+<td>Float</td>
+<td>Di�er ��lemler Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>74</td>
+<td>dinm_sabitKiymetId</td>
+<td>Nvarchar(127)</td>
+<td>Sabit K�ymet Id</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>75</td>
+<td>dinm_iadeKismiTevkifatKodu</td>
+<td>Nvarchar(10)</td>
+<td>�ade K�smi Tevkifat Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>76</td>
+<td>dinm_iadeKismiTevkifatOrani</td>
+<td>Float</td>
+<td>�ade K�smi Tevkifat Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>77</td>
+<td>dinm_nihaiTuketici</td>
+<td>Bit</td>
+<td>Nihai T�ketici</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>78</td>
+<td>dinm_kdvsizIslem</td>
+<td>Bit</td>
+<td>Kdv'siz ��lem</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>79</td>
+<td>dinm_donemsellik</td>
+<td>Bit</td>
+<td>D�nemsellik</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>80</td>
+<td>dinm_donemsellikId</td>
+<td>Nvarchar(127)</td>
+<td>D�nemsellik Id</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>81</td>
+<td>dinm_naceKodu</td>
+<td>Nvarchar(25)</td>
+<td>NACE Kodu</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_ISLETME_HESAP_PLANI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>dinm_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_ISLETME_HESAP_PLANI_02</td>
+<td>UNIQUE</td>
+<td>dinm_hesap_kod</td>
+</tr>
+<tr>
+<td>NDX_ISLETME_HESAP_PLANI_03</td>
+<td></td>
+<td>dinm_hesap_isim1</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 04.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

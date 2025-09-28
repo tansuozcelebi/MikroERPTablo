@@ -1,0 +1,3087 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 211</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : POS_SOZLESME_TANIMLARI</b></td>
+    <td width="50%"><b>Tablo : POS S�zle�me Tan�mlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>psz_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>psz_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>psz_SpecRECNo</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>psz_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>psz_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>psz_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>psz_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>psz_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>psz_CheckSum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>psz_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>psz_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>psz_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>psz_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>psz_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>psz_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>psz_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>psz_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>psz_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>psz_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>psz_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>psz_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>psz_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>psz_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>psz_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>psz_uye_isyeri_no</td>
+<td>Nvarchar(25)</td>
+<td width="328">�ye �� Yeri No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>psz_uye_isyeri_adi</td>
+<td>Nvarchar(50)</td>
+<td width="328">�ye �� Yeri Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>psz_banka_kodu</td>
+<td>Nvarchar(25)</td>
+<td width="328">Banka Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>psz_sor_merk_kodu</td>
+<td>Nvarchar(25)</td>
+<td width="328">Sorumluluk Merkezi Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>psz_proje_kodu</td>
+<td>Nvarchar(25)</td>
+<td width="328">Proje Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>psz_kart_sahip_tipi1</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>30</td>
+<td>psz_taksit_sayisi1</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>psz_firmaya_odeme_taksit_sayisi1</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>psz_valor_gunu1</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>psz_komisyon_orani1</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>psz_odul_katkisi_orani1</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>psz_erken_odeme_faiz_orani1</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>psz_diger_komisyon_orani1</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>psz_kart_sahip_tipi2</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>38</td>
+<td>psz_taksit_sayisi2</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>psz_firmaya_odeme_taksit_sayisi2</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>psz_valor_gunu2</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>psz_komisyon_orani2</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>psz_odul_katkisi_orani2</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>psz_erken_odeme_faiz_orani2</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>psz_diger_komisyon_orani2</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>psz_kart_sahip_tipi3</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>46</td>
+<td>psz_taksit_sayisi3</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>psz_firmaya_odeme_taksit_sayisi3</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>psz_valor_gunu3</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>psz_komisyon_orani3</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>psz_odul_katkisi_orani3</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>psz_erken_odeme_faiz_orani3</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>psz_diger_komisyon_orani3</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>psz_kart_sahip_tipi4</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>54</td>
+<td>psz_taksit_sayisi4</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>55</td>
+<td>psz_firmaya_odeme_taksit_sayisi4</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>psz_valor_gunu4</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>57</td>
+<td>psz_komisyon_orani4</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>58</td>
+<td>psz_odul_katkisi_orani4</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>psz_erken_odeme_faiz_orani4</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>psz_diger_komisyon_orani4</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>psz_kart_sahip_tipi5</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>62</td>
+<td>psz_taksit_sayisi5</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>psz_firmaya_odeme_taksit_sayisi5</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>psz_valor_gunu5</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>psz_komisyon_orani5</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>psz_odul_katkisi_orani5</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>psz_erken_odeme_faiz_orani5</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>psz_diger_komisyon_orani5</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>psz_kart_sahip_tipi6</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>70</td>
+<td>psz_taksit_sayisi6</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>psz_firmaya_odeme_taksit_sayisi6</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>psz_valor_gunu6</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>psz_komisyon_orani6</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>74</td>
+<td>psz_odul_katkisi_orani6</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>75</td>
+<td>psz_erken_odeme_faiz_orani6</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>76</td>
+<td>psz_diger_komisyon_orani6</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>77</td>
+<td>psz_kart_sahip_tipi7</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>78</td>
+<td>psz_taksit_sayisi7</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>79</td>
+<td>psz_firmaya_odeme_taksit_sayisi7</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>80</td>
+<td>psz_valor_gunu7</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>81</td>
+<td>psz_komisyon_orani7</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>82</td>
+<td>psz_odul_katkisi_orani7</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>83</td>
+<td>psz_erken_odeme_faiz_orani7</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>84</td>
+<td>psz_diger_komisyon_orani7</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>85</td>
+<td>psz_kart_sahip_tipi8</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>86</td>
+<td>psz_taksit_sayisi8</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>87</td>
+<td>psz_firmaya_odeme_taksit_sayisi8</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>88</td>
+<td>psz_valor_gunu8</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>89</td>
+<td>psz_komisyon_orani8</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>90</td>
+<td>psz_odul_katkisi_orani8</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>91</td>
+<td>psz_erken_odeme_faiz_orani8</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>92</td>
+<td>psz_diger_komisyon_orani8</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>93</td>
+<td>psz_kart_sahip_tipi9</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>94</td>
+<td>psz_taksit_sayisi9</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>95</td>
+<td>psz_firmaya_odeme_taksit_sayisi9</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>96</td>
+<td>psz_valor_gunu9</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>97</td>
+<td>psz_komisyon_orani9</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>98</td>
+<td>psz_odul_katkisi_orani9</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>99</td>
+<td>psz_erken_odeme_faiz_orani9</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>100</td>
+<td>psz_diger_komisyon_orani9</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>101</td>
+<td>psz_kart_sahip_tipi10</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>102</td>
+<td>psz_taksit_sayisi10</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>103</td>
+<td>psz_firmaya_odeme_taksit_sayisi10</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>104</td>
+<td>psz_valor_gunu10</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>105</td>
+<td>psz_komisyon_orani10</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>106</td>
+<td>psz_odul_katkisi_orani10</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>107</td>
+<td>psz_erken_odeme_faiz_orani10</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>108</td>
+<td>psz_diger_komisyon_orani10</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>109</td>
+<td>psz_kart_sahip_tipi11</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>110</td>
+<td>psz_taksit_sayisi11</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>111</td>
+<td>psz_firmaya_odeme_taksit_sayisi11</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>112</td>
+<td>psz_valor_gunu11</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>113</td>
+<td>psz_komisyon_orani11</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>114</td>
+<td>psz_odul_katkisi_orani11</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>115</td>
+<td>psz_erken_odeme_faiz_orani11</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>116</td>
+<td>psz_diger_komisyon_orani11</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>117</td>
+<td>psz_kart_sahip_tipi12</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>118</td>
+<td>psz_taksit_sayisi12</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>119</td>
+<td>psz_firmaya_odeme_taksit_sayisi12</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>120</td>
+<td>psz_valor_gunu12</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>121</td>
+<td>psz_komisyon_orani12</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>122</td>
+<td>psz_odul_katkisi_orani12</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>123</td>
+<td>psz_erken_odeme_faiz_orani12</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>124</td>
+<td>psz_diger_komisyon_orani12</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>125</td>
+<td>psz_kart_sahip_tipi13</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>126</td>
+<td>psz_taksit_sayisi13</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>127</td>
+<td>psz_firmaya_odeme_taksit_sayisi13</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>128</td>
+<td>psz_valor_gunu13</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>129</td>
+<td>psz_komisyon_orani13</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>130</td>
+<td>psz_odul_katkisi_orani13</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>131</td>
+<td>psz_erken_odeme_faiz_orani13</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>132</td>
+<td>psz_diger_komisyon_orani13</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>133</td>
+<td>psz_kart_sahip_tipi14</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>134</td>
+<td>psz_taksit_sayisi14</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>135</td>
+<td>psz_firmaya_odeme_taksit_sayisi14</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>136</td>
+<td>psz_valor_gunu14</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>137</td>
+<td>psz_komisyon_orani14</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>138</td>
+<td>psz_odul_katkisi_orani14</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>139</td>
+<td>psz_erken_odeme_faiz_orani14</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>140</td>
+<td>psz_diger_komisyon_orani14</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>141</td>
+<td>psz_kart_sahip_tipi15</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>142</td>
+<td>psz_taksit_sayisi15</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>143</td>
+<td>psz_firmaya_odeme_taksit_sayisi15</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>144</td>
+<td>psz_valor_gunu15</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>145</td>
+<td>psz_komisyon_orani15</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>146</td>
+<td>psz_odul_katkisi_orani15</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>147</td>
+<td>psz_erken_odeme_faiz_orani15</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>148</td>
+<td>psz_diger_komisyon_orani15</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>149</td>
+<td>psz_kart_sahip_tipi16</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>150</td>
+<td>psz_taksit_sayisi16</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>151</td>
+<td>psz_firmaya_odeme_taksit_sayisi16</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>152</td>
+<td>psz_valor_gunu16</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>153</td>
+<td>psz_komisyon_orani16</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>154</td>
+<td>psz_odul_katkisi_orani16</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>155</td>
+<td>psz_erken_odeme_faiz_orani16</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>156</td>
+<td>psz_diger_komisyon_orani16</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>157</td>
+<td>psz_kart_sahip_tipi17</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>158</td>
+<td>psz_taksit_sayisi17</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>159</td>
+<td>psz_firmaya_odeme_taksit_sayisi17</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>160</td>
+<td>psz_valor_gunu17</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>161</td>
+<td>psz_komisyon_orani17</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>162</td>
+<td>psz_odul_katkisi_orani17</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>163</td>
+<td>psz_erken_odeme_faiz_orani17</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>164</td>
+<td>psz_diger_komisyon_orani17</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>165</td>
+<td>psz_kart_sahip_tipi18</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>166</td>
+<td>psz_taksit_sayisi18</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>167</td>
+<td>psz_firmaya_odeme_taksit_sayisi18</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>168</td>
+<td>psz_valor_gunu18</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>169</td>
+<td>psz_komisyon_orani18</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>170</td>
+<td>psz_odul_katkisi_orani18</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>171</td>
+<td>psz_erken_odeme_faiz_orani18</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>172</td>
+<td>psz_diger_komisyon_orani18</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>173</td>
+<td>psz_kart_sahip_tipi19</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>174</td>
+<td>psz_taksit_sayisi19</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>175</td>
+<td>psz_firmaya_odeme_taksit_sayisi19</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>176</td>
+<td>psz_valor_gunu19</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>177</td>
+<td>psz_komisyon_orani19</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>178</td>
+<td>psz_odul_katkisi_orani19</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>179</td>
+<td>psz_erken_odeme_faiz_orani19</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>180</td>
+<td>psz_diger_komisyon_orani19</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>181</td>
+<td>psz_kart_sahip_tipi20</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>182</td>
+<td>psz_taksit_sayisi20</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>183</td>
+<td>psz_firmaya_odeme_taksit_sayisi20</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>184</td>
+<td>psz_valor_gunu20</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>185</td>
+<td>psz_komisyon_orani20</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>186</td>
+<td>psz_odul_katkisi_orani20</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>187</td>
+<td>psz_erken_odeme_faiz_orani20</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>188</td>
+<td>psz_diger_komisyon_orani20</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>189</td>
+<td>psz_kart_sahip_tipi21</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>190</td>
+<td>psz_taksit_sayisi21</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>191</td>
+<td>psz_firmaya_odeme_taksit_sayisi21</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>192</td>
+<td>psz_valor_gunu21</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>193</td>
+<td>psz_komisyon_orani21</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>194</td>
+<td>psz_odul_katkisi_orani21</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>195</td>
+<td>psz_erken_odeme_faiz_orani21</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>196</td>
+<td>psz_diger_komisyon_orani21</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>197</td>
+<td>psz_kart_sahip_tipi22</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>198</td>
+<td>psz_taksit_sayisi22</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>199</td>
+<td>psz_firmaya_odeme_taksit_sayisi22</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>200</td>
+<td>psz_valor_gunu22</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>201</td>
+<td>psz_komisyon_orani22</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>202</td>
+<td>psz_odul_katkisi_orani22</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>203</td>
+<td>psz_erken_odeme_faiz_orani22</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>204</td>
+<td>psz_diger_komisyon_orani22</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>205</td>
+<td>psz_kart_sahip_tipi23</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>206</td>
+<td>psz_taksit_sayisi23</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>207</td>
+<td>psz_firmaya_odeme_taksit_sayisi23</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>208</td>
+<td>psz_valor_gunu23</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>209</td>
+<td>psz_komisyon_orani23</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>210</td>
+<td>psz_odul_katkisi_orani23</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>211</td>
+<td>psz_erken_odeme_faiz_orani23</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>212</td>
+<td>psz_diger_komisyon_orani23</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>213</td>
+<td>psz_kart_sahip_tipi24</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>214</td>
+<td>psz_taksit_sayisi24</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>215</td>
+<td>psz_firmaya_odeme_taksit_sayisi24</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>216</td>
+<td>psz_valor_gunu24</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>217</td>
+<td>psz_komisyon_orani24</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>218</td>
+<td>psz_odul_katkisi_orani24</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>219</td>
+<td>psz_erken_odeme_faiz_orani24</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>220</td>
+<td>psz_diger_komisyon_orani24</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>221</td>
+<td>psz_kart_sahip_tipi25</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>222</td>
+<td>psz_taksit_sayisi25</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>223</td>
+<td>psz_firmaya_odeme_taksit_sayisi25</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>224</td>
+<td>psz_valor_gunu25</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>225</td>
+<td>psz_komisyon_orani25</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>226</td>
+<td>psz_odul_katkisi_orani25</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>227</td>
+<td>psz_erken_odeme_faiz_orani25</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>228</td>
+<td>psz_diger_komisyon_orani25</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>229</td>
+<td>psz_kart_sahip_tipi26</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>230</td>
+<td>psz_taksit_sayisi26</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>231</td>
+<td>psz_firmaya_odeme_taksit_sayisi26</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>232</td>
+<td>psz_valor_gunu26</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>233</td>
+<td>psz_komisyon_orani26</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>234</td>
+<td>psz_odul_katkisi_orani26</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>235</td>
+<td>psz_erken_odeme_faiz_orani26</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>236</td>
+<td>psz_diger_komisyon_orani26</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>237</td>
+<td>psz_kart_sahip_tipi27</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>238</td>
+<td>psz_taksit_sayisi27</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>239</td>
+<td>psz_firmaya_odeme_taksit_sayisi27</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>240</td>
+<td>psz_valor_gunu27</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>241</td>
+<td>psz_komisyon_orani27</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>242</td>
+<td>psz_odul_katkisi_orani27</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>243</td>
+<td>psz_erken_odeme_faiz_orani27</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>244</td>
+<td>psz_diger_komisyon_orani27</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>245</td>
+<td>psz_kart_sahip_tipi28</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>246</td>
+<td>psz_taksit_sayisi28</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>247</td>
+<td>psz_firmaya_odeme_taksit_sayisi28</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>248</td>
+<td>psz_valor_gunu28</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>249</td>
+<td>psz_komisyon_orani28</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>250</td>
+<td>psz_odul_katkisi_orani28</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>251</td>
+<td>psz_erken_odeme_faiz_orani28</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>252</td>
+<td>psz_diger_komisyon_orani28</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>253</td>
+<td>psz_kart_sahip_tipi29</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>254</td>
+<td>psz_taksit_sayisi29</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>255</td>
+<td>psz_firmaya_odeme_taksit_sayisi29</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>256</td>
+<td>psz_valor_gunu29</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>257</td>
+<td>psz_komisyon_orani29</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>258</td>
+<td>psz_odul_katkisi_orani29</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>259</td>
+<td>psz_erken_odeme_faiz_orani29</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>260</td>
+<td>psz_diger_komisyon_orani29</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>261</td>
+<td>psz_kart_sahip_tipi30</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>262</td>
+<td>psz_taksit_sayisi30</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>263</td>
+<td>psz_firmaya_odeme_taksit_sayisi30</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>264</td>
+<td>psz_valor_gunu30</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>265</td>
+<td>psz_komisyon_orani30</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>266</td>
+<td>psz_odul_katkisi_orani30</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>267</td>
+<td>psz_erken_odeme_faiz_orani30</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>268</td>
+<td>psz_diger_komisyon_orani30</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>269</td>
+<td>psz_kart_sahip_tipi31</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>270</td>
+<td>psz_taksit_sayisi31</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>271</td>
+<td>psz_firmaya_odeme_taksit_sayisi31</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>272</td>
+<td>psz_valor_gunu31</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>273</td>
+<td>psz_komisyon_orani31</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>274</td>
+<td>psz_odul_katkisi_orani31</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>275</td>
+<td>psz_erken_odeme_faiz_orani31</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>276</td>
+<td>psz_diger_komisyon_orani31</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>277</td>
+<td>psz_kart_sahip_tipi32</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>278</td>
+<td>psz_taksit_sayisi32</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>279</td>
+<td>psz_firmaya_odeme_taksit_sayisi32</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>280</td>
+<td>psz_valor_gunu32</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>281</td>
+<td>psz_komisyon_orani32</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>282</td>
+<td>psz_odul_katkisi_orani32</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>283</td>
+<td>psz_erken_odeme_faiz_orani32</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>284</td>
+<td>psz_diger_komisyon_orani32</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>285</td>
+<td>psz_kart_sahip_tipi33</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>286</td>
+<td>psz_taksit_sayisi33</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>287</td>
+<td>psz_firmaya_odeme_taksit_sayisi33</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>288</td>
+<td>psz_valor_gunu33</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>289</td>
+<td>psz_komisyon_orani33</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>290</td>
+<td>psz_odul_katkisi_orani33</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>291</td>
+<td>psz_erken_odeme_faiz_orani33</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>292</td>
+<td>psz_diger_komisyon_orani33</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>293</td>
+<td>psz_kart_sahip_tipi34</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>294</td>
+<td>psz_taksit_sayisi34</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>295</td>
+<td>psz_firmaya_odeme_taksit_sayisi34</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>296</td>
+<td>psz_valor_gunu34</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>297</td>
+<td>psz_komisyon_orani34</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>298</td>
+<td>psz_odul_katkisi_orani34</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>299</td>
+<td>psz_erken_odeme_faiz_orani34</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>300</td>
+<td>psz_diger_komisyon_orani34</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>301</td>
+<td>psz_kart_sahip_tipi35</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>302</td>
+<td>psz_taksit_sayisi35</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>303</td>
+<td>psz_firmaya_odeme_taksit_sayisi35</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>304</td>
+<td>psz_valor_gunu35</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>305</td>
+<td>psz_komisyon_orani35</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>306</td>
+<td>psz_odul_katkisi_orani35</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>307</td>
+<td>psz_erken_odeme_faiz_orani35</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>308</td>
+<td>psz_diger_komisyon_orani35</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>309</td>
+<td>psz_kart_sahip_tipi36</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>310</td>
+<td>psz_taksit_sayisi36</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>311</td>
+<td>psz_firmaya_odeme_taksit_sayisi36</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>312</td>
+<td>psz_valor_gunu36</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>313</td>
+<td>psz_komisyon_orani36</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>314</td>
+<td>psz_odul_katkisi_orani36</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>315</td>
+<td>psz_erken_odeme_faiz_orani36</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>316</td>
+<td>psz_diger_komisyon_orani36</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>317</td>
+<td>psz_kart_sahip_tipi37</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>318</td>
+<td>psz_taksit_sayisi37</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>319</td>
+<td>psz_firmaya_odeme_taksit_sayisi37</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>320</td>
+<td>psz_valor_gunu37</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>321</td>
+<td>psz_komisyon_orani37</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>322</td>
+<td>psz_odul_katkisi_orani37</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>323</td>
+<td>psz_erken_odeme_faiz_orani37</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>324</td>
+<td>psz_diger_komisyon_orani37</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>325</td>
+<td>psz_kart_sahip_tipi38</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>326</td>
+<td>psz_taksit_sayisi38</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>327</td>
+<td>psz_firmaya_odeme_taksit_sayisi38</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>328</td>
+<td>psz_valor_gunu38</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>329</td>
+<td>psz_komisyon_orani38</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>330</td>
+<td>psz_odul_katkisi_orani38</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>331</td>
+<td>psz_erken_odeme_faiz_orani38</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>332</td>
+<td>psz_diger_komisyon_orani38</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>333</td>
+<td>psz_kart_sahip_tipi39</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>334</td>
+<td>psz_taksit_sayisi39</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>335</td>
+<td>psz_firmaya_odeme_taksit_sayisi39</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>336</td>
+<td>psz_valor_gunu39</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>337</td>
+<td>psz_komisyon_orani39</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>338</td>
+<td>psz_odul_katkisi_orani39</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>339</td>
+<td>psz_erken_odeme_faiz_orani39</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>340</td>
+<td>psz_diger_komisyon_orani39</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>341</td>
+<td>psz_kart_sahip_tipi40</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>342</td>
+<td>psz_taksit_sayisi40</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>343</td>
+<td>psz_firmaya_odeme_taksit_sayisi40</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>344</td>
+<td>psz_valor_gunu40</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>345</td>
+<td>psz_komisyon_orani40</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>346</td>
+<td>psz_odul_katkisi_orani40</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>347</td>
+<td>psz_erken_odeme_faiz_orani40</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>348</td>
+<td>psz_diger_komisyon_orani40</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>349</td>
+<td>psz_kart_sahip_tipi41</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>350</td>
+<td>psz_taksit_sayisi41</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>351</td>
+<td>psz_firmaya_odeme_taksit_sayisi41</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>352</td>
+<td>psz_valor_gunu41</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>353</td>
+<td>psz_komisyon_orani41</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>354</td>
+<td>psz_odul_katkisi_orani41</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>355</td>
+<td>psz_erken_odeme_faiz_orani41</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>356</td>
+<td>psz_diger_komisyon_orani41</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>357</td>
+<td>psz_kart_sahip_tipi42</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>358</td>
+<td>psz_taksit_sayisi42</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>359</td>
+<td>psz_firmaya_odeme_taksit_sayisi42</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>360</td>
+<td>psz_valor_gunu42</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>361</td>
+<td>psz_komisyon_orani42</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>362</td>
+<td>psz_odul_katkisi_orani42</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>363</td>
+<td>psz_erken_odeme_faiz_orani42</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>364</td>
+<td>psz_diger_komisyon_orani42</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>365</td>
+<td>psz_kart_sahip_tipi43</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>366</td>
+<td>psz_taksit_sayisi43</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>367</td>
+<td>psz_firmaya_odeme_taksit_sayisi43</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>368</td>
+<td>psz_valor_gunu43</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>369</td>
+<td>psz_komisyon_orani43</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>370</td>
+<td>psz_odul_katkisi_orani43</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>371</td>
+<td>psz_erken_odeme_faiz_orani43</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>372</td>
+<td>psz_diger_komisyon_orani43</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>373</td>
+<td>psz_kart_sahip_tipi44</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>374</td>
+<td>psz_taksit_sayisi44</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>375</td>
+<td>psz_firmaya_odeme_taksit_sayisi44</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>376</td>
+<td>psz_valor_gunu44</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>377</td>
+<td>psz_komisyon_orani44</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>378</td>
+<td>psz_odul_katkisi_orani44</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>379</td>
+<td>psz_erken_odeme_faiz_orani44</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>380</td>
+<td>psz_diger_komisyon_orani44</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>381</td>
+<td>psz_kart_sahip_tipi45</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>382</td>
+<td>psz_taksit_sayisi45</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>383</td>
+<td>psz_firmaya_odeme_taksit_sayisi45</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>384</td>
+<td>psz_valor_gunu45</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>385</td>
+<td>psz_komisyon_orani45</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>386</td>
+<td>psz_odul_katkisi_orani45</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>387</td>
+<td>psz_erken_odeme_faiz_orani45</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>388</td>
+<td>psz_diger_komisyon_orani45</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>389</td>
+<td>psz_kart_sahip_tipi46</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>390</td>
+<td>psz_taksit_sayisi46</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>391</td>
+<td>psz_firmaya_odeme_taksit_sayisi46</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>392</td>
+<td>psz_valor_gunu46</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>393</td>
+<td>psz_komisyon_orani46</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>394</td>
+<td>psz_odul_katkisi_orani46</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>395</td>
+<td>psz_erken_odeme_faiz_orani46</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>396</td>
+<td>psz_diger_komisyon_orani46</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>397</td>
+<td>psz_kart_sahip_tipi47</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>398</td>
+<td>psz_taksit_sayisi47</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>399</td>
+<td>psz_firmaya_odeme_taksit_sayisi47</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>400</td>
+<td>psz_valor_gunu47</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>401</td>
+<td>psz_komisyon_orani47</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>402</td>
+<td>psz_odul_katkisi_orani47</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>403</td>
+<td>psz_erken_odeme_faiz_orani47</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>404</td>
+<td>psz_diger_komisyon_orani47</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>405</td>
+<td>psz_kart_sahip_tipi48</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>406</td>
+<td>psz_taksit_sayisi48</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>407</td>
+<td>psz_firmaya_odeme_taksit_sayisi48</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>408</td>
+<td>psz_valor_gunu48</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>409</td>
+<td>psz_komisyon_orani48</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>410</td>
+<td>psz_odul_katkisi_orani48</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>411</td>
+<td>psz_erken_odeme_faiz_orani48</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>412</td>
+<td>psz_diger_komisyon_orani48</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>413</td>
+<td>psz_kart_sahip_tipi49</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>414</td>
+<td>psz_taksit_sayisi49</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>415</td>
+<td>psz_firmaya_odeme_taksit_sayisi49</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>416</td>
+<td>psz_valor_gunu49</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>417</td>
+<td>psz_komisyon_orani49</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>418</td>
+<td>psz_odul_katkisi_orani49</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>419</td>
+<td>psz_erken_odeme_faiz_orani49</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>420</td>
+<td>psz_diger_komisyon_orani49</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>421</td>
+<td>psz_kart_sahip_tipi50</td>
+<td>Tinyint</td>
+<td width="328">Kart Sahip Tipi</td>
+<td>0:Kendi Kredi Kart� 1:Ba�ka Banka Kredi Kart�</td>
+</tr>
+<tr>
+<td>422</td>
+<td>psz_taksit_sayisi50</td>
+<td>Smallint</td>
+<td width="328">Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>423</td>
+<td>psz_firmaya_odeme_taksit_sayisi50</td>
+<td>Smallint</td>
+<td width="328">Firmaya �deme Taksit Say�s�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>424</td>
+<td>psz_valor_gunu50</td>
+<td>Smallint</td>
+<td width="328">Val�r G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>425</td>
+<td>psz_komisyon_orani50</td>
+<td>Float</td>
+<td width="328">Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>426</td>
+<td>psz_odul_katkisi_orani50</td>
+<td>Float</td>
+<td width="328">�d�l Katk�s� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>427</td>
+<td>psz_erken_odeme_faiz_orani50</td>
+<td>Float</td>
+<td width="328">Erken �deme Faiz Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>428</td>
+<td>psz_diger_komisyon_orani50</td>
+<td>Float</td>
+<td width="328">Di�er Komisyon Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>429</td>
+<td>psz_taksit_valor_durumu</td>
+<td>Tinyint</td>
+<td width="328">Taksit Val�r Durumu</td>
+<td>0:T�m Taksitler Tek Val�r 1:Her Taksit Ayr� Val�r</td>
+</tr>
+<tr>
+<td>430</td>
+<td>psz_servis_komisyon_kesinti_durumu</td>
+<td>Tinyint</td>
+<td width="328">Servis Komisyon Kesinti Durumu</td>
+<td>0:T�m Taksitlere Da��l�yor 1:�lk Taksitten 2:Son Taksitten</td>
+</tr>
+<tr>
+<td>431</td>
+<td>psz_odul_katkisi_kesinti_durumu</td>
+<td>Tinyint</td>
+<td width="328">�d�l Katk�s� Kesinti Durumu</td>
+<td>0:T�m Taksitlere Da��l�yor 1:�lk Taksitten 2:Son Taksitten</td>
+</tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_POS_SOZLESME_TANIMLARI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>psz_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_POS_SOZLESME_TANIMLARI_02</td>
+<td>UNIQUE</td>
+<td>psz_uye_isyeri_no</td>
+</tr>
+<tr>
+<td>NDX_POS_SOZLESME_TANIMLARI_03</td>
+<td>&nbsp;</td>
+<td>psz_uye_isyeri_adi</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 20.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

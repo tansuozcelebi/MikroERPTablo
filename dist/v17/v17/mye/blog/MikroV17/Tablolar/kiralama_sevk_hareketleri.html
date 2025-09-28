@@ -1,0 +1,416 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 580</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : KIRALAMA_SEVK_HAREKETLERI</b></td>
+    <td width="50%"><b>Tablo : Kiralama Sevk Hareketleri</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>ksvk_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>ksvk_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ksvk_Spec_Rec_no</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ksvk_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ksvk_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ksvk_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ksvk_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ksvk_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ksvk_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ksvk_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>ksvk_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ksvk_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>ksvk_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>ksvk_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>ksvk_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>ksvk_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ksvk_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ksvk_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>ksvk_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ksvk_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ksvk_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>ksvk_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>ksvk_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>ksvk_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>ksvk_firmano</td>
+<td>Integer</td>
+<td>Firma No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>ksvk_subeno</td>
+<td>Integer</td>
+<td width="328">�ube No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>ksvk_tarihi</td>
+<td>DateTime</td>
+<td width="328">Kiralama Sevk Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>ksvk_evrakno_seri</td>
+<td>dbo.evrakseri_str</td>
+<td>Evrak Seri No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>ksvk_evrakno_sira</td>
+<td>Integer</td>
+<td>Evrak S�ra No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>ksvk_satirno</td>
+<td>Integer</td>
+<td>Sat�r No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>ksvk_belgeno</td>
+<td>dbo.belgeno_str</td>
+<td>Belge No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>ksvk_belge_tarihi</td>
+<td>DateTime</td>
+<td>Belge Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>ksvk_cari_kodu</td>
+<td>Nvarchar(25)</td>
+<td>Cari Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>ksvk_adres_no</td>
+<td>Integer</td>
+<td>Adres No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>ksvk_kirakodu</td>
+<td>Nvarchar(25)</td>
+<td>Kira Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>ksvk_giris_cikis</td>
+<td>Tinyint</td>
+<td>Giri� Mi ��k�� M� ?</td>
+<td>0:Giri� 1:��k��</td>
+</tr>
+<tr>
+<td>36</td>
+<td>ksvk_depono</td>
+<td>Integer</td>
+<td>Depo No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>ksvk_nakliye_cari_kodu</td>
+<td>Nvarchar(25)</td>
+<td>Nakliye Cari Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>ksvk_hareket_kodu</td>
+<td>Nvarchar(25)</td>
+<td>Hareket Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>ksvk_seri_no</td>
+<td>dbo.cihazseri_str</td>
+<td>Seri No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>ksvk_sevktarihi</td>
+<td>DateTime</td>
+<td>Sevk Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>ksvk_satir_aciklama</td>
+<td>Nvarchar(60)</td>
+<td>Sat�r A��klama</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>ksvk_khar_uid</td>
+<td>Uniqueidentifier</td>
+<td>Kiralama Hareketi Uid</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>ksvk_kmsayac</td>
+<td>Integer</td>
+<td>Km/saya�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>ksvk_sis_uid</td>
+<td>Uniqueidentifier</td>
+<td>Servis �� Emri Uid</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>ksvk_eirs_senaryo</td>
+<td>Tinyint</td>
+<td>e-�rsaliye Senaryo</td>
+<td>0:Temel �rsaliye 1:Hal Tipi �rsaliye</td>
+</tr>
+<tr>
+<td>46</td>
+<td>ksvk_eirs_tipi</td>
+<td>Tinyint</td>
+<td>e-�rsaliye Tipi</td>
+<td>0:Sevk 1:Matbu</td>
+</tr>
+<tr>
+<td>47</td>
+<td>ksvk_teslim_tarihi</td>
+<td>DateTime</td>
+<td>Teslim Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>ksvk_matbu_fl</td>
+<td>Bit</td>
+<td>Matbu Evrak M� ?</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_KIRALAMA_SEVK_HAREKETLERI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>ksvk_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_KIRALAMA_SEVK_HAREKETLERI_02</td>
+<td></td>
+<td>ksvk_tarihi</td>
+</tr>
+<tr>
+<td>NDX_KIRALAMA_SEVK_HAREKETLERI_03</td>
+<td></td>
+<td>ksvk_giris_cikis, ksvk_tarihi</td>
+</tr>
+<tr class=sRow >
+<td>NDX_KIRALAMA_SEVK_HAREKETLERI_04</td>
+<td></td>
+<td>ksvk_giris_cikis, ksvk_hareket_kodu, ksvk_tarihi</td>
+</tr>
+<tr>
+<td>NDX_KIRALAMA_SEVK_HAREKETLERI_05</td>
+<td>UNIQUE</td>
+<td>ksvk_evrakno_seri, ksvk_evrakno_sira, ksvk_satirno</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 27.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

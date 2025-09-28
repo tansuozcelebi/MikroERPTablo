@@ -1,0 +1,305 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mikro Versiyon 17 Veritabanı Yapısı</title>
+<style>
+/* Modern Header Bar CSS */
+.mye-header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+.mye-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.mye-header-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.mye-header-brand:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+.mye-header-brand .logo {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.mye-header-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.mye-header-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.mye-header-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.mye-header-btn.primary {
+    background: rgba(255, 255, 255, 0.9);
+    color: #667eea;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mye-header-btn.primary:hover {
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+}
+/* Modal Styles */
+.mye-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.mye-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.mye-modal-content {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+.mye-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mye-modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+.mye-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+.mye-modal-close:hover {
+    color: #666;
+}
+.mye-modal-body {
+    color: #666;
+    line-height: 1.6;
+}
+.mye-modal-body h3 {
+    color: #333;
+    margin: 20px 0 10px 0;
+}
+.mye-modal-body p {
+    margin-bottom: 15px;
+}
+/* Body margin for fixed header */
+body {
+    margin-top: 70px !important;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .mye-header-content {
+        padding: 10px 15px;
+    }
+    
+    .mye-header-brand {
+        font-size: 1rem;
+    }
+    
+    .mye-header-brand .logo {
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+    }
+    
+    .mye-header-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    body {
+        margin-top: 60px !important;
+    }
+}
+</style>
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+</head>
+<body>
+<!-- MYE Modern Header Bar -->
+<div class="mye-header-bar">
+    <div class="mye-header-content">
+        <a href="../../../../../index.html" class="mye-header-brand">
+            <div class="logo">M</div>
+            <span>Mikro Terminal</span>
+        </a>
+        <nav class="mye-header-nav">
+            <a href="../../../../../index.html" class="mye-header-btn">
+                <span>🏠</span> Başa Dön
+            </a>
+            <button onclick="openAboutModal()" class="mye-header-btn primary">
+                <span>ℹ️</span> Hakkında
+            </button>
+        </nav>
+    </div>
+</div>
+<!-- About Modal -->
+<div id="aboutModal" class="mye-modal">
+    <div class="mye-modal-content">
+        <div class="mye-modal-header">
+            <h2 class="mye-modal-title">Fabus Firması Hakkında</h2>
+            <button class="mye-modal-close" onclick="closeAboutModal()">&times;</button>
+        </div>
+        <div class="mye-modal-body">
+            <h3>🏢 Fabus Yazılım ve Danışmanlık</h3>
+            <p>
+                <strong>Fabus</strong>, 1995 yılından beri Türkiye'nin önde gelen yazılım şirketlerinden biri olarak 
+                işletmelere yenilikçi teknoloji çözümleri sunmaktadır.
+            </p>
+            
+            <h3>🎯 Misyonumuz</h3>
+            <p>
+                İşletmelerin dijital dönüşüm süreçlerinde güvenilir partner olmak, kullanıcı dostu 
+                yazılımlar geliştirerek müşterilerimizin iş süreçlerini optimize etmek.
+            </p>
+            
+            <h3>💼 Hizmetlerimiz</h3>
+            <p>
+                • <strong>Mikro Terminal:</strong> Comprehensive database management solutions<br>
+                • <strong>ERP Sistemleri:</strong> Kurumsal kaynak planlaması<br>
+                • <strong>Muhasebe Yazılımları:</strong> Mali işlem yönetimi<br>
+                • <strong>Stok ve Satış Takibi:</strong> Envanter yönetimi<br>
+                • <strong>İK Sistemleri:</strong> İnsan kaynakları yönetimi
+            </p>
+            
+            <h3>🌟 Değerlerimiz</h3>
+            <p>
+                <strong>Güvenilirlik</strong> - <strong>Yenilikçilik</strong> - <strong>Müşteri Odaklılık</strong> - <strong>Sürekli Gelişim</strong>
+            </p>
+            
+            <h3>📞 İletişim</h3>
+            <p>
+                <strong>Web:</strong> www.fabus.com.tr<br>
+                <strong>E-posta:</strong> info@fabus.com.tr<br>
+                <strong>Telefon:</strong> +90 212 XXX XX XX
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+function openAboutModal() {
+    document.getElementById('aboutModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+function closeAboutModal() {
+    document.getElementById('aboutModal').classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+// Modal dışına tıklanınca kapatma
+document.getElementById('aboutModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeAboutModal();
+    }
+});
+// ESC tuşu ile kapatma
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('aboutModal').classList.contains('active')) {
+        closeAboutModal();
+    }
+});
+</script>
+<p class="Caption"><i><a href="index-2.html">Database Yapısı</a></i></p>
+	<h2>Mikro Versiyon 17 Veritabanı Yapısı</h2>
+	<p>Mikro V17 database'ine (veri tabanına) bilgi giriş ve çıkışı Import/Export özelliği sayesinde 
+	yapılabilir. Bunun için ASCII ya da XML formatı kullanılabilir. Bu döküman size
+	<a href="xml.html">XML Import/Export formatı</a>, <a href="myedb_dll.html">MyeDB.DLL</a>, <a href="tablo.html">Mikro'nun 
+	database tabloları</a> ve <a href="fonksiyon.html">Mikro'nun 
+	FirmFN, GlbFn, FirmSP dosyalarında bulunan fonksiyonları</a> hakkında bilgi verecektir. </p>
+	
+	<p>Mikro programları ile bilgi aktarımı yapmak için;</p>
+	<ul>
+	  <li>Mikro v17 database tablolarına bilgi girişi yapılacaksa import için dosya 
+	  formatı düşünülür ve import dosyası oluşturulur. Bkz. <a href="tablo.html">
+	  Tablolar ve Alanlar</a></li>
+	  <li>ASCII import/export ya da XML export yapılacaksa Mikro programınızdan ASCII 
+	  formatını, içindeki alanları, uzunluklarını ve aktarım özelliklerini belirtmek 
+	  için parametre dosyası hazırlanır ve numara verilerek kaydedilir.</li>
+	  <li>Veri aktarımı için iki yol vardır;<br>
+	  - Mikro programınıza Supervisor (SRV) olarak giriniz ve DB Exim butonuna 
+	  basarak gelen pencerede ASCII Import/Export ya da XML Import/Export tuşlarını 
+	  takip edebilirsiniz.<br>
+	</ul>
+	<hr> 
+
+</html>

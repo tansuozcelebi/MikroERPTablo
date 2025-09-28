@@ -1,0 +1,431 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 122</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : IHRACAT_DOSYALARI</b></td>
+    <td width="50%"><b>Tablo : �hracat Tan�mlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>ihr_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>ihr_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ihr_SpecRecNo</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ihr_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ihr_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ihr_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ihr_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ihr_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ihr_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ihr_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>ihr_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ihr_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>ihr_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>ihr_special1</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>ihr_special2</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>ihr_special3</td>
+<td>Nvarchar(127)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ihr_MainProgramNo</td>
+<td>Smallint</td>
+<td>Ana Program Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ihr_VersionNo</td>
+<td>Nvarchar(10)</td>
+<td>Versiyon Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>ihr_MenuNo</td>
+<td>Nvarchar(10)</td>
+<td>Men� Numaras�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ihr_MikroSpecial1</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ihr_MikroSpecial2</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>ihr_MikroSpecial3</td>
+<td>Nvarchar(40)</td>
+<td>�zel Alan</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>ihr_ExternalProgramType</td>
+<td>Tinyint</td>
+<td>D�� Yaz�l�m Aktar�m Tipi</td>
+<td>0:Genel 1:Para��t 2:Irgat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>ihr_ExternalProgramId</td>
+<td>Nvarchar(127)</td>
+<td>D�� Yaz�l�m Id'si</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>ihr_firmano</td>
+<td>Integer</td>
+<td>Firma No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>ihr_subeno</td>
+<td>Integer</td>
+<td>�ube No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>ihr_kodu</td>
+<td>Nvarchar(25)</td>
+<td width="328">�hracat Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>ihr_ismi</td>
+<td>Nvarchar(40)</td>
+<td width="328">Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>ihr_Satici</td>
+<td>Nvarchar(25)</td>
+<td width="328">Sat�c�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>ihr_UlkeTipi</td>
+<td>Tinyint</td>
+<td width="328">�lke Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>ihr_UlkeKodu</td>
+<td>Nvarchar(4)</td>
+<td width="328">�lke Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>ihr_GumrukKodu</td>
+<td>Nvarchar(4)</td>
+<td width="328">G�mr�k Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>ihr_TeslimSekli</td>
+<td>Nvarchar(4)</td>
+<td width="328">Teslim �ekli</td>
+<td>0:CFR 1:CIF 2:CIP 3:CPT 4:DAF 5:DDP 6:DDU 
+7:DEQ 8:DES 9:EXW 10:FAS 11:FCA 12:FOB 13:FOT 14:DAT 15:DAP 16:DPU</td>
+</tr>
+<tr>
+<td>33</td>
+<td>ihr_OdemeSekli</td>
+<td>Tinyint</td>
+<td>�deme �ekli</td>
+<td>0:L/C, 1:Cash, 2:CAD, 3:CAG, 4:Cash+CAD, 5:Cash+CAG</td>
+</tr>
+<tr>
+<td>34</td>
+<td>ihr_DovizCinsi</td>
+<td>Tinyint</td>
+<td>Doviz Cinsi</td>
+<td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+</tr>
+<tr>
+<td>35</td>
+<td>ihr_carigrupno</td>
+<td>Tinyint</td>
+<td>Cari Grup No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>ihr_AraciBanka</td>
+<td>Nvarchar(25)</td>
+<td width="328">Arac� Banka</td>
+<td>Bkz. <a href="bankalar-2.html">BANKALAR</a></td>
+</tr>
+<tr>
+<td>37</td>
+<td>ihr_GCB_Tarihi</td>
+<td>DateTime</td>
+<td width="328">G�mr�k ��k�� Beyannamesi Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>ihr_GCB_No</td>
+<td>Nvarchar(30)</td>
+<td width="328">G�mr�k ��k�� Beyannamesi No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>ihr_Tasima</td>
+<td>Tinyint</td>
+<td width="328">Ta��ma �ekli</td>
+<td>0:Denizyolu ile 1:Kargo ile 2:Konteyner ile 3:Karayolu ile 4:Demiryolu ile 5:Havayolu ile 6:Posta ile 7:�ok Ara�l� ile 8:Sabit Ta��ma Tesisleri ile 9:�� Su Ta��mac�l��� ile</td>
+</tr>
+<tr>
+<td>40</td>
+<td>ihr_VasitaNo</td>
+<td>Nvarchar(25)</td>
+<td width="328">Vas�ta No</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>ihr_Nakliyeci</td>
+<td>DateTime</td>
+<td width="328">Nakliyeci</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>ihr_GumrukMusaviri</td>
+<td>Nvarchar(25)</td>
+<td width="328">G�mr�k M��aviri</td>
+<td>Bkz. <a href="gumruk_tanimlari-2.html">GUMRUK_TANIMLARI</a></td>
+</tr>
+<tr>
+<td>43</td>
+<td>ihr_Intac_Tarihi</td>
+<td>DateTime</td>
+<td>�nta� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>ihr_Cikis_UlkeTipi</td>
+<td>Tinyint</td>
+<td>��k�� �lke Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>ihr_Cikis_ulkekodu</td>
+<td>Nvarchar(4)</td>
+<td>��k�� �lke Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>ihr_Mense_UlkeTipi</td>
+<td>Tinyint</td>
+<td>Men�e �lke Tipi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>ihr_Mense_ulkekodu</td>
+<td>Nvarchar(4)</td>
+<td>Men�e �lke Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>ihr_Araci_CariKodu</td>
+<td>Nvarchar(25)</td>
+<td>Arac� Cari Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>ihr_Akreditif</td>
+<td>Nvarchar(25)</td>
+<td>Akreditif</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>ihr_GCB_ETGB</td>
+<td>Tinyint</td>
+<td>G�mr�k ��k�� Beyannamesi(G�B) Mi Elektronik Ticaret G�mr�k Beyannamesi (ETGB) Mi ?</td>
+<td>0:G�B 1:ETGB</td>
+</tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_IHRACAT_DOSYALARI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>ihr_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_IHRACAT_DOSYALARI_02</td>
+<td>UNIQUE</td>
+<td>ihr_kodu</td>
+</tr>
+<tr>
+<td>NDX_IHRACAT_DOSYALARI_03</td>
+<td></td>
+<td>ihr_ismi</td>
+</tr>
+<tr class=sRow >
+<td>NDX_IHRACAT_DOSYALARI_04</td>
+<td></td>
+<td>ihr_Satici</td>
+</tr>
+<tr>
+<td>NDX_IHRACAT_DOSYALARI_05</td>
+<td></td>
+<td>ihr_UlkeKodu</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 05.07.2023 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2023 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

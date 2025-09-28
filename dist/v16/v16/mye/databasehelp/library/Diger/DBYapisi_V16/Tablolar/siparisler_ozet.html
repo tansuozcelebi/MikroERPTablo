@@ -1,0 +1,177 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 1181</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : SIPARISLER_OZET</b></td>
+    <td width="50%"><b>Tablo : Sipari� �zeti</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>so_RECno</td>
+  <td>Integer IDENTITY</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>so_firmano</td>
+  <td>Integer</td>
+  <td>Firma No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>so_subeno</td>
+  <td>Integer</td>
+  <td>�ube No</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>so_Tipi</td>
+  <td>Tinyint</td>
+  <td>Hareket Tipi</td>
+  <td>0:Stok 1:Hizmet 2:Gider 3:Demirba�</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>so_Kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>so_SrmMerkezi</td>
+  <td>Nvarchar(25)</td>
+  <td>Sorumluluk Merkezi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>so_ProjeKodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Proje Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>so_Depo</td>
+  <td>Integer</td>
+  <td>Depo</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>so_MaliYil</td>
+  <td>Integer</td>
+  <td>Mali Y�l</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>so_Donem</td>
+  <td>Tinyint</td>
+  <td>D�nem</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>so_HareketCins</td>
+  <td>Tinyint</td>
+  <td>Hareket Cinsi</td>
+  <td>0:Normal Sipari� 1:Konsinye Sipari� 2:Proforma Sipari� 
+  3:D�� Ticaret Sipari�i 4:Fason Sipari�i 5:Dahili Sarf Sipari�i 6:Depolar Aras� Sipari� 7:Sat�n Alma Talebi 8:�retim Talebi 9:�� Emirleri</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>so_TalepMiktar</td>
+  <td>Float</td>
+  <td>Talep Edilen Miktar</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>so_TalepKarsilanan</td>
+  <td>Float</td>
+  <td>Kar��lanan Talep</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>so_TalepKapanan</td>
+  <td>Float</td>
+  <td>Kapanan Talep</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>so_TeminMiktar</td>
+  <td>Float</td>
+  <td>Temin Edilen Miktar</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>so_TeminKarsilanan</td>
+  <td>Float</td>
+  <td>Kar��lanan Temin</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>so_TeminKapanan</td>
+  <td>Float</td>
+  <td>Kapanan Temin</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_SIPARISLER_OZET_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>so_RECno</td>
+</tr>
+<tr>
+<td>NDX_SIPARISLER_OZET_01</td>
+<td>UNIQUE</td>
+<td>so_Tipi, so_Kodu, so_Depo, so_HareketCins, so_MaliYil, so_Donem, so_SrmMerkezi, so_ProjeKodu, so_firmano, so_subeno</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 26.09.2013 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2013 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

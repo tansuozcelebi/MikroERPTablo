@@ -1,0 +1,855 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 272</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : FIRMA_MALIYIL_ISLETME_TANIMLARI</b></td>
+    <td width="50%"><b>Tablo : Firma Mali Y�l ��letme Tan�mlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>fmit_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>fmit_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>fmit_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>fmit_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>fmit_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>fmit_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>fmit_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>fmit_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>fmit_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>fmit_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>fmit_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>fmit_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>fmit_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>fmit_special1</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>fmit_special2</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>fmit_special3</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>fmit_firmasirano</td>
+  <td>Integer</td>
+  <td>Firma S�ra No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>fmit_maliyil</td>
+  <td>Integer</td>
+  <td>Mali Y�l</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>fmit_isletme_devir_vergi</td>
+  <td>Float</td>
+  <td>Bir Y�l �nceden Devreden Vergi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>fmit_isletme_devir_atik_vergi</td>
+  <td>Float</td>
+  <td>Bir Y�l �nceden Devreden Atik Vergisi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>fmit_isletme_atik_kdv_dokulmesin</td>
+  <td>Bit</td>
+  <td>Kdv D�k�ls�n M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>fmit_isletme_asgarikarhaddi</td>
+  <td>Float</td>
+  <td>��letme Asgari Kar Haddi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>fmit_amortisman_demirbas</td>
+  <td>Nvarchar(25)</td>
+  <td>Amortisman� Demirba� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>fmit_amortisman_makine</td>
+  <td>Nvarchar(25)</td>
+  <td>Amortisman Makine Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>fmit_brut_ucret_imalat</td>
+  <td>Nvarchar(25)</td>
+  <td>Br�t �cret �malat Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>fmit_isveren_sgk_imalat</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren SGK �malat Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>fmit_isveren_iss_imalat</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren iss �malat Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>fmit_brut_ucret_pazarlama</td>
+  <td>Nvarchar(25)</td>
+  <td>Br�t �cret Pazarlama Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>fmit_isveren_sgk_pazarlama</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren SGK Pazarlama Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>fmit_isveren_iss_pazarlama</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren iss Pazarlama Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>fmit_brut_ucret_genel</td>
+  <td>Nvarchar(25)</td>
+  <td>Br�t �cret Genel Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>fmit_isveren_sgk_genel</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren SGK Genel Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>fmit_isveren_iss_genel</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren iss Genel Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>fmit_isveren_his_tesvik</td>
+  <td>Nvarchar(25)</td>
+  <td>��veren his Te�vik Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>fmit_demirbas_satis_kar</td>
+  <td>Nvarchar(25)</td>
+  <td>Demirba� Sat�� Kar� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>fmit_demirbas_satis_zarar</td>
+  <td>Nvarchar(25)</td>
+  <td>Demirba� Sat�� Zarar� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>fmit_demirbas_satis_vergi</td>
+  <td>Nvarchar(25)</td>
+  <td>Demirba� Sat�� Vergisi Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>fmit_stok_alis_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>fmit_stok_alis_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>fmit_stok_alis_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td>fmit_stok_alis_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>fmit_stok_alis_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td>fmit_stok_alis_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td>fmit_stok_alis_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>fmit_stok_alis_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>fmit_stok_alis_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td>fmit_stok_alis_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>fmit_stok_alis_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td>fmit_stok_satis_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>fmit_stok_satis_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>fmit_stok_satis_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>51</td>
+  <td>fmit_stok_satis_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>52</td>
+  <td>fmit_stok_satis_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>53</td>
+  <td>fmit_stok_satis_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>54</td>
+  <td>fmit_stok_satis_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>55</td>
+  <td>fmit_stok_satis_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td>fmit_stok_satis_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>57</td>
+  <td>fmit_stok_satis_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>58</td>
+  <td>fmit_stok_satis_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>59</td>
+  <td>fmit_masraf_alis_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>60</td>
+  <td>fmit_masraf_alis_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>61</td>
+  <td>fmit_masraf_alis_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>62</td>
+  <td>fmit_masraf_alis_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>63</td>
+  <td>fmit_masraf_alis_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>64</td>
+  <td>fmit_masraf_alis_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>65</td>
+  <td>fmit_masraf_alis_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>66</td>
+  <td>fmit_masraf_alis_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>67</td>
+  <td>fmit_masraf_alis_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>68</td>
+  <td>fmit_masraf_alis_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>69</td>
+  <td>fmit_masraf_alis_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Masraf Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>70</td>
+  <td>fmit_hizmet_satis_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>71</td>
+  <td>fmit_hizmet_satis_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>72</td>
+  <td>fmit_hizmet_satis_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>73</td>
+  <td>fmit_hizmet_satis_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>74</td>
+  <td>fmit_hizmet_satis_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>75</td>
+  <td>fmit_hizmet_satis_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>76</td>
+  <td>fmit_hizmet_satis_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>77</td>
+  <td>fmit_hizmet_satis_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>78</td>
+  <td>fmit_hizmet_satis_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>79</td>
+  <td>fmit_hizmet_satis_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>80</td>
+  <td>fmit_hizmet_satis_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Hizmet Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>81</td>
+  <td>fmit_smm_alis_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>82</td>
+  <td>fmit_smm_alis_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>83</td>
+  <td>fmit_smm_alis_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>84</td>
+  <td>fmit_smm_alis_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>85</td>
+  <td>fmit_smm_alis_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>86</td>
+  <td>fmit_smm_alis_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>87</td>
+  <td>fmit_smm_alis_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>88</td>
+  <td>fmit_smm_alis_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>89</td>
+  <td>fmit_smm_alis_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>90</td>
+  <td>fmit_smm_alis_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>91</td>
+  <td>fmit_smm_alis_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Al�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>92</td>
+  <td>fmit_smm_satis_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>93</td>
+  <td>fmit_smm_satis_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>94</td>
+  <td>fmit_smm_satis_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>95</td>
+  <td>fmit_smm_satis_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>96</td>
+  <td>fmit_smm_satis_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>97</td>
+  <td>fmit_smm_satis_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>98</td>
+  <td>fmit_smm_satis_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>99</td>
+  <td>fmit_smm_satis_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>100</td>
+  <td>fmit_smm_satis_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>101</td>
+  <td>fmit_smm_satis_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>102</td>
+  <td>fmit_smm_satis_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Smm Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>103</td>
+  <td>fmit_gider_makbuzu_0</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>104</td>
+  <td>fmit_gider_makbuzu_1</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>105</td>
+  <td>fmit_gider_makbuzu_2</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>106</td>
+  <td>fmit_gider_makbuzu_3</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>107</td>
+  <td>fmit_gider_makbuzu_4</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>108</td>
+  <td>fmit_gider_makbuzu_5</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>109</td>
+  <td>fmit_gider_makbuzu_6</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>110</td>
+  <td>fmit_gider_makbuzu_7</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>111</td>
+  <td>fmit_gider_makbuzu_8</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>112</td>
+  <td>fmit_gider_makbuzu_9</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>113</td>
+  <td>fmit_gider_makbuzu_10</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Makbuzu Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_FIRMA_MALIYIL_ISLETME_TANIMLARI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>fmit_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_FIRMA_MALIYIL_ISLETME_TANIMLARI_02</td>
+<td>UNIQUE</td>
+<td>fmit_firmasirano, fmit_maliyil</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 22.12.2017 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2017 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

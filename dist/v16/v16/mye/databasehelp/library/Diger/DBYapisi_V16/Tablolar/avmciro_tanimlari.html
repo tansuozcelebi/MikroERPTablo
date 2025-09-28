@@ -1,0 +1,3024 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 594</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : AVMCIRO_TANIMLARI</b></td>
+    <td width="50%"><b>Tablo : Al�� Veri� Merkezi Ciro Tan�mlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>Avmc_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Avmc_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Avmc_SpecRECno</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Avmc_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Avmc_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Avmc_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Avmc_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Avmc_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Avmc_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Avmc_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Avmc_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Avmc_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Avmc_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Avmc_special1</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Avmc_special2</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Avmc_special3</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Avmc_cirokira_kodu</td>
+<td>Nvarchar(25)</td>
+<td>Ciro Kira Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Avmc_cirobildirimperiyodu</td>
+<td>Tinyint</td>
+<td>Ciro Bildirim Peryodu</td>
+<td>0:G�n 1:Hafta 2:Ay 3:3 Ay 4:6 Ay 5:9 Ay 6:Y�l</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Avmc_cirodegperyodu</td>
+<td>Tinyint</td>
+<td>Ciro De�erleme Peryodu</td>
+<td>0:G�n 1:Hafta 2:Ay 3:3 Ay 4:6 Ay 5:9 Ay 6:Y�l</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Avmc_cirodegdvzkriteri</td>
+<td>Tinyint</td>
+<td>Ciro De�erleme D�viz Kriteri</td>
+<td>0:G�nl�k 1:Periyot Ba�� 2:Periyot Ortas� 3:Periyot Sonu 4:Periyot Ortalamas�</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Avmc_cirodvzdegerleme</td>
+<td>Tinyint</td>
+<td>Ciro D�viz De�erleme</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Avmc_cirobildirimgecikmesuresi</td>
+<td>Smallint</td>
+<td>Ciro Bildirim Gecikme S�resi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Avmc_cirobildirimsuresi</td>
+<td>Smallint</td>
+<td>Ciro Bildirim S�resi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Avmc_cirokiraodemevadesi</td>
+<td>Smallint</td>
+<td>Ciro Kira �deme Vadesi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Avmc_cirokiraodemevadfyuz</td>
+<td>Float</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Avmc_cirokirahizmetkodu</td>
+<td>Nvarchar(25)</td>
+<td>Ciro Kira Hizmet Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Avmc_cirokiraodemecinsi</td>
+<td>Tinyint</td>
+<td>Ciro Kira �deme Cinsi</td>
+<td>0:Serbest 1:Haftal�k 2:Ayl�k 3:�� G�n�</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Avmc_cirokiraodemegunu</td>
+<td>Tinyint</td>
+<td>Ciro Kira �deme G�n�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Avmc_cirokirasiperyodu</td>
+<td>Tinyint</td>
+<td>Ciro Kiras� Peryodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Avmc_cirokirasiperyodaraligi</td>
+<td>Smallint</td>
+<td>Ciro Kiras� Periyot Aral���</td>
+<td>0:Ayl�k 1:Y�ll�k</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Avmc_CiroKirasiHesYontemi</td>
+<td>Tinyint</td>
+<td>Ciro Kiras� Hesaplama Y�ntemi</td>
+<td>0:Asgari 1:Asgari Art� Ortak Gider</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Avmc_cirokirasiorani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Avmc_cirokirasiorani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Avmc_cirokirasiorani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Avmc_cirokirasi1Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Avmc_cirokirasi1Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Avmc_cirokirasi1Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Avmc_cirokirasi1Tavan11</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Avmc_cirokirasi1Tavan12</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Avmc_cirokirasi1Tavan13</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Avmc_cirokirasi1Carpani11</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Avmc_cirokirasi1Carpani12</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Avmc_cirokirasi1Carpani13</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Avmc_cirokirasi1TavanAyriDeg_fl1</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Avmc_cirokirasi1Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Avmc_cirokirasi1Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Avmc_cirokirasi1Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Avmc_cirokirasi1Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Avmc_cirokirasi1Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Avmc_cirokirasi1Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Avmc_cirokirasi1Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Avmc_cirokirasi1TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Avmc_cirokirasi1Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>Avmc_cirokirasi1Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Avmc_cirokirasi1Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Avmc_cirokirasi1Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Avmc_cirokirasi1Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Avmc_cirokirasi1Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Avmc_cirokirasi1Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Avmc_cirokirasi1TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Avmc_cirokirasi2Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Avmc_cirokirasi2Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Avmc_cirokirasi2Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Avmc_cirokirasi2Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Avmc_cirokirasi2Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>Avmc_cirokirasi2Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>Avmc_cirokirasi2Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Avmc_cirokirasi2Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Avmc_cirokirasi2Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>Avmc_cirokirasi2TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Avmc_cirokirasi2Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>Avmc_cirokirasi2Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>Avmc_cirokirasi2Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Avmc_cirokirasi2Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>74</td>
+<td>Avmc_cirokirasi2Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>75</td>
+<td>Avmc_cirokirasi2Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>76</td>
+<td>Avmc_cirokirasi2Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>77</td>
+<td>Avmc_cirokirasi2TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>78</td>
+<td>Avmc_cirokirasi2Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Avmc_cirokirasi2Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Avmc_cirokirasi2Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>81</td>
+<td>Avmc_cirokirasi2Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>82</td>
+<td>Avmc_cirokirasi2Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>83</td>
+<td>Avmc_cirokirasi2Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>84</td>
+<td>Avmc_cirokirasi2Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Avmc_cirokirasi2TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>86</td>
+<td>Avmc_cirokirasi3Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Avmc_cirokirasi3Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Avmc_cirokirasi3Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Avmc_cirokirasi3Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Avmc_cirokirasi3Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Avmc_cirokirasi3Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Avmc_cirokirasi3Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>93</td>
+<td>Avmc_cirokirasi3Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>94</td>
+<td>Avmc_cirokirasi3Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>95</td>
+<td>Avmc_cirokirasi3TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>96</td>
+<td>Avmc_cirokirasi3Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Avmc_cirokirasi3Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Avmc_cirokirasi3Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Avmc_cirokirasi3Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Avmc_cirokirasi3Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Avmc_cirokirasi3Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Avmc_cirokirasi3Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Avmc_cirokirasi3TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>104</td>
+<td>Avmc_cirokirasi3Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>105</td>
+<td>Avmc_cirokirasi3Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>106</td>
+<td>Avmc_cirokirasi3Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>107</td>
+<td>Avmc_cirokirasi3Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>108</td>
+<td>Avmc_cirokirasi3Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>109</td>
+<td>Avmc_cirokirasi3Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Avmc_cirokirasi3Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>111</td>
+<td>Avmc_cirokirasi3TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Avmc_cirokirasi4Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>113</td>
+<td>Avmc_cirokirasi4Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>114</td>
+<td>Avmc_cirokirasi4Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>115</td>
+<td>Avmc_cirokirasi4Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>116</td>
+<td>Avmc_cirokirasi4Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>117</td>
+<td>Avmc_cirokirasi4Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>118</td>
+<td>Avmc_cirokirasi4Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>119</td>
+<td>Avmc_cirokirasi4Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>120</td>
+<td>Avmc_cirokirasi4Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>121</td>
+<td>Avmc_cirokirasi4TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>122</td>
+<td>Avmc_cirokirasi4Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>123</td>
+<td>Avmc_cirokirasi4Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>124</td>
+<td>Avmc_cirokirasi4Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>125</td>
+<td>Avmc_cirokirasi4Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>126</td>
+<td>Avmc_cirokirasi4Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>127</td>
+<td>Avmc_cirokirasi4Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>128</td>
+<td>Avmc_cirokirasi4Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>129</td>
+<td>Avmc_cirokirasi4TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>130</td>
+<td>Avmc_cirokirasi4Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>131</td>
+<td>Avmc_cirokirasi4Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>132</td>
+<td>Avmc_cirokirasi4Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>133</td>
+<td>Avmc_cirokirasi4Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>134</td>
+<td>Avmc_cirokirasi4Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>135</td>
+<td>Avmc_cirokirasi4Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>136</td>
+<td>Avmc_cirokirasi4Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>137</td>
+<td>Avmc_cirokirasi1TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>138</td>
+<td>Avmc_cirokirasi5Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>139</td>
+<td>Avmc_cirokirasi5Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>140</td>
+<td>Avmc_cirokirasi5Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Avmc_cirokirasi5Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>142</td>
+<td>Avmc_cirokirasi5Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>143</td>
+<td>Avmc_cirokirasi5Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>144</td>
+<td>Avmc_cirokirasi5Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>145</td>
+<td>Avmc_cirokirasi5Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>146</td>
+<td>Avmc_cirokirasi5Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>147</td>
+<td>Avmc_cirokirasi5TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>148</td>
+<td>Avmc_cirokirasi5Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>149</td>
+<td>Avmc_cirokirasi5Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Avmc_cirokirasi5Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>151</td>
+<td>Avmc_cirokirasi5Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>152</td>
+<td>Avmc_cirokirasi5Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>153</td>
+<td>Avmc_cirokirasi5Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>154</td>
+<td>Avmc_cirokirasi5Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>155</td>
+<td>Avmc_cirokirasi5TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>156</td>
+<td>Avmc_cirokirasi5Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>157</td>
+<td>Avmc_cirokirasi5Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>158</td>
+<td>Avmc_cirokirasi5Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>159</td>
+<td>Avmc_cirokirasi5Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>160</td>
+<td>Avmc_cirokirasi5Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>161</td>
+<td>Avmc_cirokirasi5Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>162</td>
+<td>Avmc_cirokirasi5Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>163</td>
+<td>Avmc_cirokirasi5TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>164</td>
+<td>Avmc_cirokirasi6Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>165</td>
+<td>Avmc_cirokirasi6Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>166</td>
+<td>Avmc_cirokirasi6Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>167</td>
+<td>Avmc_cirokirasi6Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>168</td>
+<td>Avmc_cirokirasi6Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>169</td>
+<td>Avmc_cirokirasi6Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>170</td>
+<td>Avmc_cirokirasi6Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>171</td>
+<td>Avmc_cirokirasi6Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Avmc_cirokirasi6Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>173</td>
+<td>Avmc_cirokirasi6TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>174</td>
+<td>Avmc_cirokirasi6Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>175</td>
+<td>Avmc_cirokirasi6Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>176</td>
+<td>Avmc_cirokirasi6Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>177</td>
+<td>Avmc_cirokirasi6Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>178</td>
+<td>Avmc_cirokirasi6Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>179</td>
+<td>Avmc_cirokirasi6Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>180</td>
+<td>Avmc_cirokirasi6Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>181</td>
+<td>Avmc_cirokirasi6TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>182</td>
+<td>Avmc_cirokirasi6Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>183</td>
+<td>Avmc_cirokirasi6Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>184</td>
+<td>Avmc_cirokirasi6Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>185</td>
+<td>Avmc_cirokirasi6Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>186</td>
+<td>Avmc_cirokirasi6Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>187</td>
+<td>Avmc_cirokirasi6Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>188</td>
+<td>Avmc_cirokirasi6Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>189</td>
+<td>Avmc_cirokirasi6TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>190</td>
+<td>Avmc_cirokirasi7Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>191</td>
+<td>Avmc_cirokirasi7Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>192</td>
+<td>Avmc_cirokirasi7Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>193</td>
+<td>Avmc_cirokirasi7Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>194</td>
+<td>Avmc_cirokirasi7Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>195</td>
+<td>Avmc_cirokirasi7Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Avmc_cirokirasi7Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>197</td>
+<td>Avmc_cirokirasi7Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>198</td>
+<td>Avmc_cirokirasi7Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>199</td>
+<td>Avmc_cirokirasi7TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>200</td>
+<td>Avmc_cirokirasi7Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Avmc_cirokirasi7Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Avmc_cirokirasi7Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Avmc_cirokirasi7Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>204</td>
+<td>Avmc_cirokirasi7Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Avmc_cirokirasi7Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Avmc_cirokirasi7Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>207</td>
+<td>Avmc_cirokirasi7TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Avmc_cirokirasi7Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>209</td>
+<td>Avmc_cirokirasi7Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>210</td>
+<td>Avmc_cirokirasi7Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>211</td>
+<td>Avmc_cirokirasi7Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>212</td>
+<td>Avmc_cirokirasi7Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>213</td>
+<td>Avmc_cirokirasi7Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>214</td>
+<td>Avmc_cirokirasi7Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>215</td>
+<td>Avmc_cirokirasi7TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>216</td>
+<td>Avmc_cirokirasi8Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>217</td>
+<td>Avmc_cirokirasi8Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>218</td>
+<td>Avmc_cirokirasi8Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>219</td>
+<td>Avmc_cirokirasi8Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>220</td>
+<td>Avmc_cirokirasi8Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Avmc_cirokirasi8Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>222</td>
+<td>Avmc_cirokirasi8Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>223</td>
+<td>Avmc_cirokirasi8Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>224</td>
+<td>Avmc_cirokirasi8Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>225</td>
+<td>Avmc_cirokirasi8TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>226</td>
+<td>Avmc_cirokirasi8Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>227</td>
+<td>Avmc_cirokirasi8Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>228</td>
+<td>Avmc_cirokirasi8Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>229</td>
+<td>Avmc_cirokirasi8Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>230</td>
+<td>Avmc_cirokirasi8Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>231</td>
+<td>Avmc_cirokirasi8Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>232</td>
+<td>Avmc_cirokirasi8Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>233</td>
+<td>Avmc_cirokirasi8TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>234</td>
+<td>Avmc_cirokirasi8Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>235</td>
+<td>Avmc_cirokirasi8Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>236</td>
+<td>Avmc_cirokirasi8Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>237</td>
+<td>Avmc_cirokirasi8Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>238</td>
+<td>Avmc_cirokirasi8Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>239</td>
+<td>Avmc_cirokirasi8Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>240</td>
+<td>Avmc_cirokirasi8Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>241</td>
+<td>Avmc_cirokirasi8TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>242</td>
+<td>Avmc_cirokirasi9Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>243</td>
+<td>Avmc_cirokirasi9Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>244</td>
+<td>Avmc_cirokirasi9Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>245</td>
+<td>Avmc_cirokirasi9Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>246</td>
+<td>Avmc_cirokirasi9Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>247</td>
+<td>Avmc_cirokirasi9Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>248</td>
+<td>Avmc_cirokirasi9Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>249</td>
+<td>Avmc_cirokirasi9Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>250</td>
+<td>Avmc_cirokirasi9Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>251</td>
+<td>Avmc_cirokirasi9TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>252</td>
+<td>Avmc_cirokirasi9Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>253</td>
+<td>Avmc_cirokirasi9Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>254</td>
+<td>Avmc_cirokirasi9Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>255</td>
+<td>Avmc_cirokirasi9Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>256</td>
+<td>Avmc_cirokirasi9Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>257</td>
+<td>Avmc_cirokirasi9Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>258</td>
+<td>Avmc_cirokirasi9Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>259</td>
+<td>Avmc_cirokirasi9TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>260</td>
+<td>Avmc_cirokirasi9Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>261</td>
+<td>Avmc_cirokirasi9Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>262</td>
+<td>Avmc_cirokirasi9Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>263</td>
+<td>Avmc_cirokirasi9Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>264</td>
+<td>Avmc_cirokirasi9Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>265</td>
+<td>Avmc_cirokirasi9Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>266</td>
+<td>Avmc_cirokirasi9Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>267</td>
+<td>Avmc_cirokirasi9TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>268</td>
+<td>Avmc_cirokirasi10Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>269</td>
+<td>Avmc_cirokirasi10Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>270</td>
+<td>Avmc_cirokirasi10Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>271</td>
+<td>Avmc_cirokirasi10Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>272</td>
+<td>Avmc_cirokirasi10Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>273</td>
+<td>Avmc_cirokirasi10Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>274</td>
+<td>Avmc_cirokirasi10Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>275</td>
+<td>Avmc_cirokirasi10Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>276</td>
+<td>Avmc_cirokirasi10Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>277</td>
+<td>Avmc_cirokirasi10TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>278</td>
+<td>Avmc_cirokirasi10Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>279</td>
+<td>Avmc_cirokirasi10Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>280</td>
+<td>Avmc_cirokirasi10Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>281</td>
+<td>Avmc_cirokirasi10Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>282</td>
+<td>Avmc_cirokirasi10Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>283</td>
+<td>Avmc_cirokirasi10Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>284</td>
+<td>Avmc_cirokirasi10Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>285</td>
+<td>Avmc_cirokirasi10TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>286</td>
+<td>Avmc_cirokirasi10Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>287</td>
+<td>Avmc_cirokirasi10Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>288</td>
+<td>Avmc_cirokirasi10Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>289</td>
+<td>Avmc_cirokirasi10Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>290</td>
+<td>Avmc_cirokirasi10Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>291</td>
+<td>Avmc_cirokirasi10Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>292</td>
+<td>Avmc_cirokirasi10Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>293</td>
+<td>Avmc_cirokirasi10TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>294</td>
+<td>Avmc_cirokirasi11Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>295</td>
+<td>Avmc_cirokirasi11Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>296</td>
+<td>Avmc_cirokirasi11Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>297</td>
+<td>Avmc_cirokirasi11Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>298</td>
+<td>Avmc_cirokirasi11Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>299</td>
+<td>Avmc_cirokirasi11Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>300</td>
+<td>Avmc_cirokirasi11Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>301</td>
+<td>Avmc_cirokirasi11Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>302</td>
+<td>Avmc_cirokirasi11Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>303</td>
+<td>Avmc_cirokirasi11TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Avmc_cirokirasi11Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Avmc_cirokirasi11Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>306</td>
+<td>Avmc_cirokirasi11Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>307</td>
+<td>Avmc_cirokirasi11Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>308</td>
+<td>Avmc_cirokirasi11Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>309</td>
+<td>Avmc_cirokirasi11Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>310</td>
+<td>Avmc_cirokirasi11Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>311</td>
+<td>Avmc_cirokirasi11TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>312</td>
+<td>Avmc_cirokirasi11Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>313</td>
+<td>Avmc_cirokirasi11Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>314</td>
+<td>Avmc_cirokirasi11Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>315</td>
+<td>Avmc_cirokirasi11Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>316</td>
+<td>Avmc_cirokirasi11Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>317</td>
+<td>Avmc_cirokirasi11Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>318</td>
+<td>Avmc_cirokirasi11Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>319</td>
+<td>Avmc_cirokirasi11TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>320</td>
+<td>Avmc_cirokirasi12Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>321</td>
+<td>Avmc_cirokirasi12Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>322</td>
+<td>Avmc_cirokirasi12Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>323</td>
+<td>Avmc_cirokirasi12Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>324</td>
+<td>Avmc_cirokirasi12Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>325</td>
+<td>Avmc_cirokirasi12Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>326</td>
+<td>Avmc_cirokirasi12Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>327</td>
+<td>Avmc_cirokirasi12Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>328</td>
+<td>Avmc_cirokirasi12Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>329</td>
+<td>Avmc_cirokirasi12TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>330</td>
+<td>Avmc_cirokirasi12Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>331</td>
+<td>Avmc_cirokirasi12Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>332</td>
+<td>Avmc_cirokirasi12Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>333</td>
+<td>Avmc_cirokirasi12Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>334</td>
+<td>Avmc_cirokirasi12Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>335</td>
+<td>Avmc_cirokirasi12Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>336</td>
+<td>Avmc_cirokirasi12Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>337</td>
+<td>Avmc_cirokirasi12TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>338</td>
+<td>Avmc_cirokirasi12Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>339</td>
+<td>Avmc_cirokirasi12Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>340</td>
+<td>Avmc_cirokirasi12Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>341</td>
+<td>Avmc_cirokirasi12Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>342</td>
+<td>Avmc_cirokirasi12Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>343</td>
+<td>Avmc_cirokirasi12Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>344</td>
+<td>Avmc_cirokirasi12Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>345</td>
+<td>Avmc_cirokirasi12TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>346</td>
+<td>Avmc_cirokirasi13Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>347</td>
+<td>Avmc_cirokirasi13Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>348</td>
+<td>Avmc_cirokirasi13Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>349</td>
+<td>Avmc_cirokirasi13Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>350</td>
+<td>Avmc_cirokirasi13Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>351</td>
+<td>Avmc_cirokirasi13Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>352</td>
+<td>Avmc_cirokirasi13Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>353</td>
+<td>Avmc_cirokirasi13Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>354</td>
+<td>Avmc_cirokirasi13Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>355</td>
+<td>Avmc_cirokirasi13TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>356</td>
+<td>Avmc_cirokirasi13Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>357</td>
+<td>Avmc_cirokirasi13Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>358</td>
+<td>Avmc_cirokirasi13Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>359</td>
+<td>Avmc_cirokirasi13Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>360</td>
+<td>Avmc_cirokirasi13Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>361</td>
+<td>Avmc_cirokirasi13Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>362</td>
+<td>Avmc_cirokirasi13Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>363</td>
+<td>Avmc_cirokirasi13TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>364</td>
+<td>Avmc_cirokirasi13Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>365</td>
+<td>Avmc_cirokirasi13Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>366</td>
+<td>Avmc_cirokirasi13Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>367</td>
+<td>Avmc_cirokirasi13Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>368</td>
+<td>Avmc_cirokirasi13Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>369</td>
+<td>Avmc_cirokirasi13Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>370</td>
+<td>Avmc_cirokirasi13Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>371</td>
+<td>Avmc_cirokirasi13TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>372</td>
+<td>Avmc_cirokirasi14Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>373</td>
+<td>Avmc_cirokirasi14Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>374</td>
+<td>Avmc_cirokirasi14Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>375</td>
+<td>Avmc_cirokirasi14Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Avmc_cirokirasi14Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>377</td>
+<td>Avmc_cirokirasi14Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>378</td>
+<td>Avmc_cirokirasi14Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>379</td>
+<td>Avmc_cirokirasi14Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>380</td>
+<td>Avmc_cirokirasi14Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>381</td>
+<td>Avmc_cirokirasi14TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>382</td>
+<td>Avmc_cirokirasi14Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>383</td>
+<td>Avmc_cirokirasi14Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>384</td>
+<td>Avmc_cirokirasi14Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>385</td>
+<td>Avmc_cirokirasi14Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>386</td>
+<td>Avmc_cirokirasi14Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>387</td>
+<td>Avmc_cirokirasi14Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>388</td>
+<td>Avmc_cirokirasi14Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>389</td>
+<td>Avmc_cirokirasi14TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>390</td>
+<td>Avmc_cirokirasi14Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>391</td>
+<td>Avmc_cirokirasi14Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>392</td>
+<td>Avmc_cirokirasi14Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>393</td>
+<td>Avmc_cirokirasi14Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>394</td>
+<td>Avmc_cirokirasi14Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>395</td>
+<td>Avmc_cirokirasi14Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>396</td>
+<td>Avmc_cirokirasi14Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>397</td>
+<td>Avmc_cirokirasi14TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>398</td>
+<td>Avmc_cirokirasi15Bastar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>399</td>
+<td>Avmc_cirokirasi15Bittar</td>
+<td>DateTime</td>
+<td>Ciro Kiras� Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Avmc_cirokirasi15Orani</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Avmc_cirokirasi15Tavan1</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>402</td>
+<td>Avmc_cirokirasi15Tavan2</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Avmc_cirokirasi15Tavan3</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Avmc_cirokirasi15Carpani1</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Avmc_cirokirasi15Carpani2</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Avmc_cirokirasi15Carpani3</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>407</td>
+<td>Avmc_cirokirasi15TavanAyriDeg_fl</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>408</td>
+<td>Avmc_cirokirasi15Orani2</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Avmc_cirokirasi15Tavan21</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Avmc_cirokirasi15Tavan22</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>411</td>
+<td>Avmc_cirokirasi15Tavan23</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>412</td>
+<td>Avmc_cirokirasi15Carpani21</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>413</td>
+<td>Avmc_cirokirasi15Carpani22</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>414</td>
+<td>Avmc_cirokirasi15Carpani23</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>415</td>
+<td>Avmc_cirokirasi15TavanAyriDeg_fl2</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>416</td>
+<td>Avmc_cirokirasi15Orani3</td>
+<td>Float</td>
+<td>Ciro Kiras� Oran�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>417</td>
+<td>Avmc_cirokirasi15Tavan31</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>418</td>
+<td>Avmc_cirokirasi15Tavan32</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>419</td>
+<td>Avmc_cirokirasi15Tavan33</td>
+<td>Float</td>
+<td>Ciro Kiras� Tavan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>420</td>
+<td>Avmc_cirokirasi15Carpani31</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>421</td>
+<td>Avmc_cirokirasi15Carpani32</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Avmc_cirokirasi15Carpani33</td>
+<td>Float</td>
+<td>Ciro Kiras� �arpan�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>423</td>
+<td>Avmc_cirokirasi15TavanAyriDeg_fl3</td>
+<td>Bit</td>
+<td>Ciro Kiras� Tavan� Ayr� De�erlendirilsin Mi ?</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_AVMCIRO_TANIMLARI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>Avmc_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_AVMCIRO_TANIMLARI_02</td>
+<td>UNIQUE</td>
+<td>Avmc_cirokira_kodu</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 26.12.2017 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2017 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>

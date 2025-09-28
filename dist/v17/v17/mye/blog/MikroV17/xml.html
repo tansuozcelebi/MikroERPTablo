@@ -1,0 +1,58 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK rel="stylesheet" type="text/css" href="../../library.html">
+<title>XML</title>
+</head>
+<body><p class="Caption"><i><a href="index-2.html">Database Yap�s�</a></i></p>
+<p> &quot;Import|Export Dosya Adi&amp;Yolu.<b>XML</b>&quot; &quot;9000 Root 
+Dizini&quot; TabloNo ParametreNo /NLT 0 FirmaKodu CalismaYili Sezon KullaniciKodu 
+Sifre</p>
+<p>E�er import/export dosyasi olarak xml dosyasi belirtilmi�se XML Import/Export 
+i�lemi ger�ekle�ir. Import i�in XML format� a�a��daki gibidir.</p>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;Windows-1254&quot; ?&gt;<br>
+&lt;<font color="#FF0000">Mikro</font>&gt;<br>
+&lt;<font color="#FF0000">Table</font>&gt;<font color="#000080">Tablo Ad�</font>&lt;/<font color="#FF0000">Table</font>&gt;<br>
+&lt;<font color="#FF0000">Param</font>&gt;<font color="#000080">Parametre Numaras�</font>&lt;/<font color="#FF0000">Param</font>&gt;<br>
+&lt;<font color="#FF0000">row</font>&gt;<br>
+&lt;<font color="#FF0000">Alan Ad�1</font>&gt;<font color="#000080">De�er</font>&lt;/<font color="#FF0000">Alan 
+Ad�1</font>&gt;<br>
+&lt;<font color="#FF0000">Alan Ad�2</font>&gt;<font color="#000080">De�er</font>&lt;/<font color="#FF0000">Alan 
+Ad�2</font>&gt;<br>
+&lt;/<font color="#FF0000">row</font>&gt;<br>
+&lt;<font color="#FF0000">row</font>&gt;<br>
+&lt;<font color="#FF0000">Alan Ad�1</font>&gt;<font color="#000080">De�er</font>&lt;/<font color="#FF0000">Alan 
+Ad�1</font>&gt;<br>
+&lt;<font color="#FF0000">Alan Ad�2</font>&gt;<font color="#000080">De�er</font>&lt;/<font color="#FF0000">Alan 
+Ad�2</font>&gt;<br>
+&lt;/<font color="#FF0000">row</font>&gt;<br>
+&lt;/<font color="#FF0000">Mikro</font>&gt;<br>
+<br>
+<u>XML Format A��klamas�;</u></p>
+<ul>
+  <li>Mikro : &lt;Mikro&gt;&lt;/Mikro&gt; Tagleri aras�nda kalan k�sm�n bir Mikro XML 
+  Import/Export format� oldu�unu g�sterir.</li>
+  <li>Table : &lt;Table&gt;&lt;/Table&gt; aras�ndaki de�er import/export i�leminin hangi 
+  mikro tablosu �zerinde yap�laca��n� g�sterir. Bkz: <a href="tablo.html">Tablo 
+  listesi</a></li>
+  <li>Param : Standart ASCII Import/Export i�lemlerinde oldu�u gibi i�lem 
+  parametrelerinin bulundu�u dosyaya dair parametre numaras�d�r. Parametre 
+  dosyas� Import dosyas�ndaki kay�tlar�n mikro tablolar�na overwrite edilip 
+  edilmeyece�ini vs. gibi i�lemlerin �zelliklerini ayarlamak i�indir.</li>
+  <li>row : &lt;row&gt; &lt;/row&gt; aras�nda kalanlar bunlar�n birer tablo kayd�n�n 
+  olu�turdu�unu g�sterir.</li>
+  <li>Alan Ad� : &lt;Alan Ad�&gt; &lt;/Alan Ad�&gt; aras�ndaki de�er tablodaki alan�n 
+  de�erini belirtmek i�indir.</li>
+</ul>
+<p><u>XML Export;</u></p>
+<p>&nbsp;&nbsp;&nbsp; XML Export parametre dosyas�n� filtreleme i�lemi i�in 
+kullan�r. Belirtilen kriterlerdeki kay�tlar belirtilen tablodan al�n�p bir XML 
+dosyas�na yaz�l�r. �rnek XML Import/Export format� i�in <a href="ornek.html">
+t�klay�n</a>.</p>
+<hr>G�ncellenme Tarihi : 09.08.2012 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2012 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

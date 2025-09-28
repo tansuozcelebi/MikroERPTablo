@@ -1,0 +1,78 @@
+# Robots.txt for Mikro ERP Documentation Site
+# Website: https://tansuozcelebi.github.io/MikroERPTablo/
+# Created: 2025-09-29
+# Purpose: SEO optimization and web crawler guidance
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Block irrelevant or potentially harmful crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+# Block certain file types and directories that shouldn't be indexed
+Disallow: /*.zip$
+Disallow: /*.gz$
+Disallow: /*.tar$
+Disallow: /*.whtt$
+Disallow: /hts-cache/
+Disallow: /hts-log.txt
+Disallow: /*fade.gif
+Disallow: /*backblue.gif
+
+# Allow important directories and files
+Allow: /v16/
+Allow: /v17/
+Allow: /mye-header.html
+Allow: /mye-header.css
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+
+# Priority paths for better indexing
+Allow: /index.html
+Allow: /v16/index.html
+Allow: /v17/index.html
+Allow: /v16/mye/databasehelp/
+Allow: /v17/mye/blog/MikroV17/
+
+# Sitemap location
+Sitemap: https://tansuozcelebi.github.io/MikroERPTablo/sitemap.xml
+
+# Cache directives for better performance
+# (Note: These are not standard robots.txt but help with SEO tools)
+# Visit-time: 0400-0800
+# Request-rate: 1/10s

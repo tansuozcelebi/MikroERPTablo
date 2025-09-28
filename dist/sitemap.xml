@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- V16 Ana Sayfası -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v16/index.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- V17 Ana Sayfası -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/index.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- V16 Veritabanı Dokümantasyonu -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v16/mye/databasehelp/library/Diger/DBYapisi_V16/index.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- V17 Blog Dokümantasyonu -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/index.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- V17 Önemli Sayfa Örnekleri -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/fonksiyon.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/MikroSDK.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/MyeDB_SDK.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/tablo.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Önemli Tablo Dokümantasyonları -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v16/mye/databasehelp/library/Diger/DBYapisi_V16/Tablolar/stoklar.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v16/mye/databasehelp/library/Diger/DBYapisi_V16/Tablolar/cari_hesaplar.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v16/mye/databasehelp/library/Diger/DBYapisi_V16/Tablolar/muhasebe_fisleri.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- V17 Tablo Örnekleri -->
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/Tablolar/stoklar.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://tansuozcelebi.github.io/MikroERPTablo/v17/mye/blog/MikroV17/Tablolar/cari_hesaplar.html</loc>
+        <lastmod>2025-09-29</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+</urlset>

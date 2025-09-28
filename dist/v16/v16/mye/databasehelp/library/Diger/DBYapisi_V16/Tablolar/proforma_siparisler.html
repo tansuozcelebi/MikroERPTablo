@@ -1,0 +1,1011 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 22</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : PROFORMA_SIPARISLER</b></td>
+    <td width="50%"><b>Tablo : Proforma Sipari� Hareketleri Tablosu</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>pro_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>pro_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>pro_SpecRecNo</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>pro_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>pro_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>pro_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>pro_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>pro_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>pro_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>pro_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>pro_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>pro_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>pro_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>pro_special1</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>pro_special2</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>pro_special3</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>pro_firmano</td>
+  <td>Integer</td>
+  <td>Firma No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>pro_subeno</td>
+  <td>Integer</td>
+  <td>�ube No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>pro_tarihi</td>
+  <td>DateTime</td>
+  <td>Sipari� Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>pro_testarihi</td>
+  <td>DateTime</td>
+  <td>Sipari� Teslim Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>pro_tipi</td>
+  <td>Tinyint</td>
+  <td>Sipari� Tipi</td>
+  <td>0:Talep 1:Temin</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>pro_cinsi</td>
+  <td>Tinyint</td>
+  <td>Sipari� Cinsi</td>
+  <td>0:Normal Sipari� 1:Konsinye Sipari� 2:Proforma Sipari� 
+  3:D�� Ticaret Sipari�i 4:Fason Sipari�i 5:Dahili Sarf Sipari�i 6:Depolar Aras� Sipari� 7:Sat�n Alma Talebi 8:�retim Talebi 9:�� Emirleri</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>pro_evrakno_seri</td>
+  <td>dbo.evrakseri_str</td>
+  <td>Sipari� Evrak Seri No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>pro_evrakno_sira</td>
+  <td>Integer</td>
+  <td>Sipari� Evrak S�ra No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>pro_satirno</td>
+  <td>Integer</td>
+  <td>Sipari� Sat�r No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>pro_belge_no</td>
+  <td>dbo.belgeno_str</td>
+  <td>Sipari� Belge No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>pro_belge_tarihi</td>
+  <td>DateTime</td>
+  <td width="328">Belge Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>pro_saticikodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Sat�c� Kodu</td>
+  <td>Bkz. <a href="cari_hesaplar-2.html">CARI_HESAPLAR</a></td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>pro_mustkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>M��teri Kodu</td>
+  <td>Bkz. <a href="cari_hesaplar-2.html">CARI_HESAPLAR</a></td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>pro_stokkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Kodu</td>
+  <td>Bkz. <a href="stoklar-2.html">STOKLAR</a></td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>pro_bfiyati</td>
+  <td>Float</td>
+  <td>Sipari� Birim Fiyat�</td>
+  <td>Bkz. <a href="stoklar-2.html">STOKLAR</a></td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>pro_miktar</td>
+  <td>Float</td>
+  <td>Sipari� Miktar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>pro_birim_pntr</td>
+  <td>Tinyint</td>
+  <td>Sipari�in Birim ile Ba�lant�s�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>pro_tesmiktari</td>
+  <td>Float</td>
+  <td>Sipari� Teslim Miktar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>pro_tutari</td>
+  <td>Float</td>
+  <td>Sipari� Tutar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>pro_iskonto1</td>
+  <td>Float</td>
+  <td>�skonto</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>pro_iskonto2</td>
+  <td>Float</td>
+  <td>�skonto</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>pro_iskonto3</td>
+  <td>Float</td>
+  <td>�skonto</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>pro_iskonto4</td>
+  <td>Float</td>
+  <td>�skonto</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>pro_iskonto5</td>
+  <td>Float</td>
+  <td>�skonto</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td>pro_iskonto6</td>
+  <td>Float</td>
+  <td>�skonto</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>pro_masraf1</td>
+  <td>Float</td>
+  <td>Masraf</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td>pro_masraf2</td>
+  <td>Float</td>
+  <td>Masraf</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td>pro_masraf3</td>
+  <td>Float</td>
+  <td>Masraf</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>pro_masraf4</td>
+  <td>Float</td>
+  <td>Masraf</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>pro_vergipntr</td>
+  <td>Tinyint</td>
+  <td>Sipari�le �lgili Vergi Ba�lant�s�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td>pro_vergi</td>
+  <td>Float</td>
+  <td>Sipari� Vergisi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>pro_masrafvergipntr</td>
+  <td>Tinyint</td>
+  <td>Sipari�le �lgili Ana Vergi Ba�lant�s�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td>pro_masrafvergi</td>
+  <td>Float</td>
+  <td>Sipari� Ana Vergisi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>pro_opno</td>
+  <td>Integer</td>
+  <td>�deme Plan� No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>pro_aciklama</td>
+  <td>Nvarchar(50)</td>
+  <td>Sipari� A��klamas�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>51</td>
+  <td>pro_aciklama2</td>
+  <td>Nvarchar(50)</td>
+  <td>Sipari� 2. A��klamas�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>52</td>
+  <td>pro_depono</td>
+  <td>Integer</td>
+  <td>Sipari� Depo No</td>
+  <td>Bkz. <a href="depolar-2.html">DEPOLAR</a></td>
+  </tr>
+  <tr>
+  <td>53</td>
+  <td>pro_onaylayanKul_no</td>
+  <td>Smallint</td>
+  <td width="328">Onaylayan Kullan�c� No</td>
+  <td>Bkz. <a href="kullanicilar-2.html">KULLANICILAR</a></td>
+  </tr>
+  <tr>
+  <td>54</td>
+  <td>pro_vergisiz</td>
+  <td>Bit</td>
+  <td>Vergisiz Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>55</td>
+  <td>pro_kapat</td>
+  <td>Bit</td>
+  <td>Sipari� Kapand� M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td>pro_promosyon_fl</td>
+  <td>Bit</td>
+  <td>Promosyon Var M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>57</td>
+  <td>pro_cari_sormerk</td>
+  <td>Nvarchar(25)</td>
+  <td>Cari Sorumluluk Merkezi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>58</td>
+  <td>pro_stok_sormerk</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Sorumluluk Merkezi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>59</td>
+  <td>pro_cari_grupno</td>
+  <td>Tinyint</td>
+  <td>Cari Grup No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>60</td>
+  <td>pro_dovizcinsi</td>
+  <td>Tinyint</td>
+  <td>D�viz Cinsi</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+  </tr>
+  <tr>
+  <td>61</td>
+  <td>pro_dovizkuru</td>
+  <td>Float</td>
+  <td>D�viz Kuru</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+  </tr>
+  <tr>
+  <td>62</td>
+  <td>pro_altdovizkuru</td>
+  <td>Float</td>
+  <td>Alternatif D�viz Kuru</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+  </tr>
+  <tr>
+  <td>63</td>
+  <td>pro_adresno</td>
+  <td>Integer</td>
+  <td>Adres No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>64</td>
+  <td>pro_teslimturu</td>
+  <td>Nvarchar(4)</td>
+  <td>Teslim T�r�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>65</td>
+  <td>pro_cagrilabilir_fl</td>
+  <td>Bit</td>
+  <td width="328">�a�r�labilir Sipari� Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>66</td>
+  <td>pro_sip_uid</td>
+  <td>Uniqueidentifier</td>
+  <td width="328">Proforma Sipari� Uid</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>67</td>
+  <td>pro_isk_mas_1</td>
+  <td>Tinyint</td>
+  <td>�skonto</td>
+  <td>0:Br�t toplamdan y�zde, 1:Ara toplamdan y�zde, 2:Tutar iskonto 
+masraf, 3:Miktar ba��na tutar, 4:Miktar2 ba��na tutar, 5:Miktar3 ba��na tutar, 
+6:Bedelsiz miktar, 7:�skonto1 yuzde, 8:�skonto1 aratop y�zde, 9:�skonto2 
+y�zde, 10:�skonto2 aratop y�zde, 11:�skonto3 y�zde, 12:�skonto3 aratop y�zde, 
+13:�skonto4 y�zde, 14:�skonto4 aratop y�zde, 15:�skonto5 y�zde, 16:�skonto5 aratop 
+y�zde, 17:�skonto6 y�zde, 18:�skonto6 aratop y�zde, 19:Masraf1 y�zde, 20:Masraf1 
+aratop y�zde, 21:Masraf2 y�zde, 22:Masraf2 aratop y�zde, 23:Masraf3 y�zde, 
+24:Masraf3 aratop y�zde</td>
+  </tr>
+  <tr>
+  <td>68</td>
+  <td>pro_isk_mas_2</td>
+  <td>Tinyint</td>
+  <td>�skonto</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>69</td>
+  <td>pro_isk_mas_3</td>
+  <td>Tinyint</td>
+  <td>�skonto</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>70</td>
+  <td>pro_isk_mas_4</td>
+  <td>Tinyint</td>
+  <td>�skonto</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>71</td>
+  <td>pro_isk_mas_5</td>
+  <td>Tinyint</td>
+  <td>�skonto</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>72</td>
+  <td>pro_isk_mas_6</td>
+  <td>Tinyint</td>
+  <td>�skonto</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>73</td>
+  <td>pro_isk_mas_7</td>
+  <td>Tinyint</td>
+  <td>Masraf</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>74</td>
+  <td>pro_isk_mas_8</td>
+  <td>Tinyint</td>
+  <td>Masraf</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>75</td>
+  <td>pro_isk_mas_9</td>
+  <td>Tinyint</td>
+  <td>Masraf</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>76</td>
+  <td>pro_isk_mas_10</td>
+  <td>Tinyint</td>
+  <td>Masraf</td>
+  <td><u>Yukar�daki ile Ayn�</u></td>
+  </tr>
+  <tr>
+  <td>77</td>
+  <td>pro_sat_isk_mas1</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>78</td>
+  <td>pro_sat_isk_mas2</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>79</td>
+  <td>pro_sat_isk_mas3</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>80</td>
+  <td>pro_sat_isk_mas4</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>81</td>
+  <td>pro_sat_isk_mas5</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>82</td>
+  <td>pro_sat_isk_mas6</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>83</td>
+  <td>pro_sat_isk_mas7</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>84</td>
+  <td>pro_sat_isk_mas8</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>85</td>
+  <td>pro_sat_isk_mas9</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>86</td>
+  <td>pro_sat_isk_mas10</td>
+  <td>Bit</td>
+  <td>Sat�r �skonto-Masraf?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>87</td>
+  <td>sip_Exp_Imp_Kodu</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Export Import Kodu (EXIM)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>88</td>
+  <td>pro_karoani</td>
+  <td>Float</td>
+  <td>Kar Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>89</td>
+  <td>pro_durumu</td>
+  <td>Tinyint</td>
+  <td>Sipari� Durumu</td>
+  <td>0:Stoktan sevk edilecek 1:�retilecek 
+  2:Sat�n al�nacak</td>
+  </tr>
+  <tr>
+  <td>90</td>
+  <td>pro_stal_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Sat�n Alma �artlar� Uid</td>
+  <td>Bkz. <a href="satinalma_sartlari-2.html">SATINALMA_SARTLARI</a></td>
+  </tr>
+  <tr>
+  <td>91</td>
+  <td>pro_planlananmiktar</td>
+  <td>Float</td>
+  <td>Planlanan Miktar</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>92</td>
+  <td>pro_teklif_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Sipari� Teklif Uid</td>
+  <td>Bkz. <a href="verilen_teklifler-2.html">VERILEN_TEKLIFLER</a></td>
+  </tr>
+  <tr>
+  <td>93</td>
+  <td>pro_parti_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Parti Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>94</td>
+  <td>pro_lot_no</td>
+  <td>Integer</td>
+  <td>Lot No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>95</td>
+  <td>pro_projekodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Proje No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>96</td>
+  <td>pro_fiyat_liste_no</td>
+  <td>Integer</td>
+  <td>Fiyat Liste No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>97</td>
+  <td>pro_Otv_Pntr</td>
+  <td>Tinyint</td>
+  <td></td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>98</td>
+  <td>pro_Otv_Vergi</td>
+  <td>Float</td>
+  <td></td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>99</td>
+  <td>pro_otvtutari</td>
+  <td>Float</td>
+  <td>�tv Tutar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>100</td>
+  <td>pro_OtvVergisiz_Fl</td>
+  <td>Tinyint</td>
+  <td></td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>101</td>
+  <td>pro_paket_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Paket Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>102</td>
+  <td>pro_Rez_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Rezervasyon Uid</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>103</td>
+  <td>pro_harekettipi</td>
+  <td>Tinyint</td>
+  <td>Hareket Tipi</td>
+  <td>0:Stok Sipari�i 1:Hizmet Sipari�i</td>
+  </tr>
+  <tr>
+  <td>104</td>
+  <td>pro_yetkili_uid</td>
+  <td>Uniqueidentifier</td>
+  <td>Yetkili Uid</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>105</td>
+  <td>pro_kapatmanedenkod</td>
+  <td>Nvarchar(25)</td>
+  <td>Kapatma Nedeni Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>106</td>
+  <td>pro_gecerlilik_tarihi</td>
+  <td>DateTime</td>
+  <td>Ge�erlilik Tarihi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>107</td>
+  <td>pro_onodeme_evrak_tip</td>
+  <td>Tinyint</td>
+  <td>�n �deme Evrak Tipi</td>
+  <td>0:Al�� Faturas�<br>
+  1:Tahsilat Makbuzu<br>
+  2:Kasa Tahsilat Fi�i<br>
+  3:Senet Giri� Bordrosu<br>
+  4:�ek Giri� Bordrosu<br>
+  5:Portf�ydeki �ek Nakit<br>
+  6:Portf�ydeki Senet Nakit<br>
+  7:Para Nakit �ekme<br>
+  8:Para Nakit Yat�rma<br>
+  9:Kredi Virman<br>
+  10:Kredi Kabul<br>
+  11:Takas �ek C�k��<br>
+  12:Takas �ek Kar��l�ks�z �ade<br>
+  13:Takas �ek �ade<br>
+  14:Takas �ek �deme<br>
+  15:Tahsil Senet ��k��<br>
+  16:Tahsil Senet Protestolu �ade<br>
+  17:Tahsil Senet �ade<br>
+  18:Tahsil Senet �deme<br>
+  19:Teminat �ek ��k��<br>
+  20:Teminat �ek Kar��l�ks�z �ade<br>
+  21:Teminat �ek �ade<br>
+  22:Teminat �ek �deme<br>
+  23:Teminat Senet ��k��<br>
+  24:Teminat Senet Protestolu �ade<br>
+  25:Teminat Senet �ade<br>
+  26:Teminat Senet �deme<br>
+  27:Firma �ek �deme<br>
+  28:Firma Senet �deme<br>
+  29:A��l��<br>
+  30:De�erli Ka��tlar A��l�� Fi�i<br>
+  31:Bor� Dekontu<br>
+  32:Alacak Dekontu<br>
+  33:Genel Virman Dekontu<br>
+  34:Gelen Havale<br>
+  35:Gonderilen Havale<br>
+  36:Bankadan Firma Senet �deme<br>
+  37:Kasa Masraf Fi�i<br>
+  38:Bankadan Firma �ek �deme<br>
+  39:Protestolu Senet �ade Giri� Bordrosu<br>
+  40:Kar��l�ks�z �ek �ade Giri� Bordrosu<br>
+  41:Mevduat �ek Kar��l�ks�z �ade<br>
+  42:Mevduat Senet prot �ade<br>
+  43:�ek �ade Giri� Bordrosu<br>
+  44:Senet �ade Giri� Bordrosu<br>
+  45:Protestolu Senet �ade ��k�� Bordrosu<br>
+  46:Kar��l�ks�z �ek �ade ��k�� Bordrosu<br>
+  47:�ek �ade ��k�� Bordrosu<br>
+  48:Senet �ade ��k�� Bordrosu<br>
+  49:Kasadan Kendi �deme Emrimizi Kapatma<br>
+  50:Bankadan Kendi �deme Emrimizi Kapatma<br>
+  51:Firma Kredi Kart� �deme<br>
+  52:Kasadan M��teri �deme S�z� Kapatma<br>
+  53:Bankadan M��teri �deme S�z� Kapatma<br>
+  54:M��teri Kredi Kart� �deme<br>
+  55:Giri� Gider Makbuzu<br>
+  56:Giri� Serbest Meslek Makbuzu<br>
+  57:M��teri Sat�c� Virman Dekontu<br>
+  58:Bankalar Virman Dekontu<br>
+  59:Kur Farklar� Virmani<br>
+  60:Pos Sat�� Virman Dekontu<br>
+  61:Stok Gider Pusulas�<br>
+  62:Kar��l�ks�z Portf�yden Portf�ye Transfer<br>
+  63:Sat�� Faturas�<br>
+  64:Tediye Makbuzu<br>
+  65:Kasa Tediye Fi�i<br>
+  66:Senet ��k�� Bordrosu<br>
+  67:�ek ��k�� Bordrosu<br>
+  68:Protestolu Portf�ydeki Senet Kar��l��� Nakit<br>
+  68:Kar��l�ks�z Portf�ydeki �ek Kar��l��� Nakit<br>
+  70:Kasalar Aras� �ek Transfer<br>
+  71:Kasalar Aras� Senet Transfer<br>
+  72:Kasalar Aras� Kar��l�ks�z �ek Transfer<br>
+  73:Kasalar Aras� Protestolu Senet Transfer<br>
+  74:Kar��l�ks�z ��kan �ek transfer<br>
+  75:�denmeyen Senet Transfer<br>
+  76:A��l�� �ek Portf�ye Giri�<br>
+  77:Kredi Kart� Masraf Virman Dekontu<br>
+  78:Bankada Tahsildeki Senedi Cariye �ade Bordrosu<br>
+  79:Bankada Teminattaki Senedi Cariye �ade Bordrosu<br>
+  80:Bankada Tahsildeki �eki Cariye �ade Bordrosu<br>
+  81:Bankada Teminattaki �eki Cariye �ade Bordrosu<br>
+  82:�deme Emri Giri� Bordrosu<br>
+  83:�deme Emri ��k�� Bordrosu<br>
+  84:Bankada Tahsildeki Protestolu Senedi Cariye �ade Bordrosu<br>
+  85:Bankada Teminattaki Protestolu Senedi Cariye �ade Bordrosu<br>
+  86:Bankada Tahsildeki Kar��l�ks�z �eki Cariye �ade Bordrosu<br>
+  87:Bankada Teminattaki Kar��l�ks�z �eki Cariye �ade Bordrosu<br>
+  88:Satis Serbest Meslek Makbuzu<br>
+  89:D�viz Al�� Belgesi<br>
+  90:D�viz Sat�� Belgesi<br>
+  91:Grup �irketler Aras� Virman Dekontu<br>
+  92:Firma Havale Emri Kapatma<br>
+  93:M��teri Havale S�z� Kapatma<br>
+  94:Personel Tahakkuk Virman Dekontu<br>
+  95:�thalat Masraf Yans�tma Dekontu<br>
+  96:Finansal Kiralama S�zle�me Evra��<br>
+  97:Cari Vade Fark� S�f�rlama Fi�i<br>
+  98:Tahsil Edilen Avans Makbuzu<br>
+  99:�denen Avans Makbuzu<br>
+  100:Cari Bor� Dekontu<br>
+  101:Cari Alacak Dekontu<br>
+  102:Cari De�erli Ka��t De�erleme Virman Dekontu<br>
+  103:M��teri Kredi Kart� �ade ��k�� Bordrosu<br>
+  104:Bankalar Aras� Kredi Kart� Transferi<br>
+  105:Alternatif D�viz D�n���m Fark� Virman Dekontu<br>
+  106:Amortisman Giderle�tirme Virman Dekontu<br>
+  107:Hizmet Maliyeti Yans�tma Virman Dekontu<br>
+  108:Kredi S�zle�mesi Kabul Fi�i<br>
+  109:Kredi S�zle�mesi Taksit �deme Fi�i<br>
+  110:Kasalar Aras� Virman Dekontu<br>
+  111:Kredi Kabul Virman Dekontu<br>
+  112:Kredi Geri �deme Virman Dekontu<br>
+  113:Kredi Gider Tahakkuku Dekontu<br>
+  114:Kredi Ana Para Vadesi De�i�im Dekontu<br>
+  115:Kredi Gider Vadesi De�i�im Dekontu<br>
+  116:D�nemsel Hizmet Giderle�tirme Gelirle�tirme Dekontu<br>
+  117:D�nemsel Hizmet Gelecek Y�ldan Gelecek Aya Aktarma Dekontu<br>
+  118:Firma Kredi Kart� �ade Giri� Bordrosu<br>
+  119:Teminat Mektubu Giri� Bordrosu<br>
+  120:Teminat Mektubu ��k�� Bordrosu<br>
+  121:Depozito Giri� Bordrosu<br>
+  122:Depozito ��k�� Bordrosu<br>
+  123:Depozito �ekleri Portf�ye Transfer<br>
+  124:Depozito Senetleri Portf�ye Transfer<br>
+  125:Teminat Mektubu �ade ��k�� Bordrosu<br>
+  126:Teminat Mektubu �ade Giri� Bordrosu<br>
+  127:Depozito �ade ��k�� Bordrosu<br>
+  128:Depozito �ade Giri� Bordrosu<br>
+  129:�dendiden Tahsile M��teri Kredi Kart� �ade Bordrosu<br>
+  130:Firma Reel Kredi Kart� Kesinle�tirme Virman Dekontu<br>
+  131:Firma Reel Kredi Kart� �deme Virman Dekontu<br>
+  132:M��teri �deme S�z� �ade ��k�� Bordrosu<br>
+  133:K�smen �denen Senet Transfer Bordrosu<br>
+  134:M��teri Havale S�z� �ade ��k�� Bordrosu<br>
+  135:K�smen �denen �ek Kasalar� Aras� Transfer<br>
+  136:K�smen �denen Kar��l�ks�z �ek Kasalar� Aras� Transfer</td>
+  </tr>
+  <tr>
+  <td>108</td>
+  <td>pro_onodeme_evrak_seri</td>
+  <td>dbo.evrakseri_str</td>
+  <td>�n �deme Evrak Seri Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>109</td>
+  <td>pro_onodeme_evrak_sira</td>
+  <td>Integer</td>
+  <td>�n �deme Evrak S�ra Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>110</td>
+  <td>pro_rezervasyon_miktari</td>
+  <td>Float</td>
+  <td>Rezervasyon Miktar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>111</td>
+  <td>pro_rezerveden_teslim_edilen</td>
+  <td>Float</td>
+  <td>Rezerveden Teslim Edilen Miktar</td>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_PROFORMA_SIPARISLER_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>pro_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_PROFORMA_SIPARISLER_02</td>
+<td></td>
+<td>pro_testarihi</td>
+</tr>
+<tr>
+<td>NDX_PROFORMA_SIPARISLER_03</td>
+<td></td>
+<td>pro_tarihi</td>
+</tr>
+<tr class=sRow >
+<td>NDX_PROFORMA_SIPARISLER_04</td>
+<td></td>
+<td>pro_tipi, pro_stokkodu, pro_testarihi</td>
+</tr>
+<tr>
+<td>NDX_PROFORMA_SIPARISLER_05</td>
+<td></td>
+<td>pro_tipi, pro_mustkodu, pro_testarihi</td>
+</tr>
+<tr class=sRow >
+<td>NDX_PROFORMA_SIPARISLER_06</td>
+<td>UNIQUE</td>
+<td>pro_tipi, pro_cinsi, pro_evrakno_seri, pro_evrakno_sira, pro_satirno</td>
+</tr>
+<tr>
+<td>NDX_PROFORMA_SIPARISLER_07</td>
+<td></td>
+<td>pro_tipi, pro_stokkodu, pro_testarihi</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 04.01.2018 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2018 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

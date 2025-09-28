@@ -1,0 +1,1447 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 170</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : URETIM_PLAN_MATRISI</b></td>
+    <td width="50%"><b>Tablo : �retim Plan Matrisi Tan�mlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+<tr>
+<td>0</td>
+<td>mtrs_Guid</td>
+<td>Uniqueidentifier</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>mtrs_DBCno</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>mtrs_SpecRECno</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>mtrs_iptal</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>mtrs_fileid</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mtrs_hidden</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>mtrs_kilitli</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>mtrs_degisti</td>
+<td>Bit</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>mtrs_checksum</td>
+<td>Integer</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>mtrs_create_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>mtrs_create_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>mtrs_lastup_user</td>
+<td>Smallint</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>mtrs_lastup_date</td>
+<td>DateTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>mtrs_special1</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>mtrs_special2</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>mtrs_special3</td>
+<td>Nvarchar(4)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>mtrs_kodu</td>
+<td>Nvarchar(25)</td>
+<td>Kodu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>mtrs_aciklama</td>
+<td>dbo.nvarchar_maxhesapisimno</td>
+<td>A��klama</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>mtrs_donemadi1</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>mtrs_bastar1</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>mtrs_bittar1</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>mtrs_donemadi2</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>22</td>
+<td>mtrs_bastar2</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>23</td>
+<td>mtrs_bittar2</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>mtrs_donemadi3</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>mtrs_bastar3</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>mtrs_bittar3</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>mtrs_donemadi4</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>mtrs_bastar4</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>mtrs_bittar4</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>mtrs_donemadi5</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>mtrs_bastar5</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>mtrs_bittar5</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>mtrs_donemadi6</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>mtrs_bastar6</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>mtrs_bittar6</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>mtrs_donemadi7</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>mtrs_bastar7</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>mtrs_bittar7</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>mtrs_donemadi8</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>40</td>
+<td>mtrs_bastar8</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>41</td>
+<td>mtrs_bittar8</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>42</td>
+<td>mtrs_donemadi9</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>43</td>
+<td>mtrs_bastar9</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>44</td>
+<td>mtrs_bittar9</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>45</td>
+<td>mtrs_donemadi10</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>46</td>
+<td>mtrs_bastar10</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>47</td>
+<td>mtrs_bittar10</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>48</td>
+<td>mtrs_donemadi11</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>49</td>
+<td>mtrs_bastar11</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>50</td>
+<td>mtrs_bittar11</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>51</td>
+<td>mtrs_donemadi12</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>52</td>
+<td>mtrs_bastar12</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>53</td>
+<td>mtrs_bittar12</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>54</td>
+<td>mtrs_donemadi13</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>55</td>
+<td>mtrs_bastar13</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>56</td>
+<td>mtrs_bittar13</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>57</td>
+<td>mtrs_donemadi14</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>58</td>
+<td>mtrs_bastar14</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>59</td>
+<td>mtrs_bittar14</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>mtrs_donemadi15</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>mtrs_bastar15</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>62</td>
+<td>mtrs_bittar15</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>mtrs_donemadi16</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>64</td>
+<td>mtrs_bastar16</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>65</td>
+<td>mtrs_bittar16</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>66</td>
+<td>mtrs_donemadi17</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>67</td>
+<td>mtrs_bastar17</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>68</td>
+<td>mtrs_bittar17</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>69</td>
+<td>mtrs_donemadi18</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>70</td>
+<td>mtrs_bastar18</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>71</td>
+<td>mtrs_bittar18</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>72</td>
+<td>mtrs_donemadi19</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>73</td>
+<td>mtrs_bastar19</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>74</td>
+<td>mtrs_bittar19</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>75</td>
+<td>mtrs_donemadi20</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>76</td>
+<td>mtrs_bastar20</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>77</td>
+<td>mtrs_bittar20</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>78</td>
+<td>mtrs_donemadi21</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>79</td>
+<td>mtrs_bastar21</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>80</td>
+<td>mtrs_bittar21</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>81</td>
+<td>mtrs_donemadi22</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>82</td>
+<td>mtrs_bastar22</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>83</td>
+<td>mtrs_bittar22</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>84</td>
+<td>mtrs_donemadi23</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>85</td>
+<td>mtrs_bastar23</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>86</td>
+<td>mtrs_bittar23</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>87</td>
+<td>mtrs_donemadi24</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>88</td>
+<td>mtrs_bastar24</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>89</td>
+<td>mtrs_bittar24</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>90</td>
+<td>mtrs_donemadi25</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>91</td>
+<td>mtrs_bastar25</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>92</td>
+<td>mtrs_bittar25</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>93</td>
+<td>mtrs_donemadi26</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>94</td>
+<td>mtrs_bastar26</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>95</td>
+<td>mtrs_bittar26</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>96</td>
+<td>mtrs_donemadi27</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>97</td>
+<td>mtrs_bastar27</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>98</td>
+<td>mtrs_bittar27</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>99</td>
+<td>mtrs_donemadi28</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>100</td>
+<td>mtrs_bastar28</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>101</td>
+<td>mtrs_bittar28</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>102</td>
+<td>mtrs_donemadi29</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>103</td>
+<td>mtrs_bastar29</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>104</td>
+<td>mtrs_bittar29</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>105</td>
+<td>mtrs_donemadi30</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>106</td>
+<td>mtrs_bastar30</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>107</td>
+<td>mtrs_bittar30</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>108</td>
+<td>mtrs_donemadi31</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>109</td>
+<td>mtrs_bastar31</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>110</td>
+<td>mtrs_bittar31</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>111</td>
+<td>mtrs_donemadi32</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>112</td>
+<td>mtrs_bastar32</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>113</td>
+<td>mtrs_bittar32</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>114</td>
+<td>mtrs_donemadi33</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>115</td>
+<td>mtrs_bastar33</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>116</td>
+<td>mtrs_bittar33</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>117</td>
+<td>mtrs_donemadi34</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>118</td>
+<td>mtrs_bastar34</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>119</td>
+<td>mtrs_bittar34</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>120</td>
+<td>mtrs_donemadi35</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>121</td>
+<td>mtrs_bastar35</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>122</td>
+<td>mtrs_bittar35</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>123</td>
+<td>mtrs_donemadi36</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>124</td>
+<td>mtrs_bastar36</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>125</td>
+<td>mtrs_bittar36</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>126</td>
+<td>mtrs_donemadi37</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>127</td>
+<td>mtrs_bastar37</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>128</td>
+<td>mtrs_bittar37</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>129</td>
+<td>mtrs_donemadi38</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>130</td>
+<td>mtrs_bastar38</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>131</td>
+<td>mtrs_bittar38</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>132</td>
+<td>mtrs_donemadi39</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>133</td>
+<td>mtrs_bastar39</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>134</td>
+<td>mtrs_bittar39</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>135</td>
+<td>mtrs_donemadi40</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>136</td>
+<td>mtrs_bastar40</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>137</td>
+<td>mtrs_bittar40</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>138</td>
+<td>mtrs_donemadi41</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>139</td>
+<td>mtrs_bastar41</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>140</td>
+<td>mtrs_bittar41</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>141</td>
+<td>mtrs_donemadi42</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>142</td>
+<td>mtrs_bastar42</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>143</td>
+<td>mtrs_bittar42</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>144</td>
+<td>mtrs_donemadi43</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>145</td>
+<td>mtrs_bastar43</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>146</td>
+<td>mtrs_bittar43</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>147</td>
+<td>mtrs_donemadi44</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>148</td>
+<td>mtrs_bastar44</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>149</td>
+<td>mtrs_bittar44</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>150</td>
+<td>mtrs_donemadi45</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>151</td>
+<td>mtrs_bastar45</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>152</td>
+<td>mtrs_bittar45</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>153</td>
+<td>mtrs_donemadi46</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>154</td>
+<td>mtrs_bastar46</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>155</td>
+<td>mtrs_bittar46</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>156</td>
+<td>mtrs_donemadi47</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>157</td>
+<td>mtrs_bastar47</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>158</td>
+<td>mtrs_bittar47</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>159</td>
+<td>mtrs_donemadi48</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>160</td>
+<td>mtrs_bastar48</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>161</td>
+<td>mtrs_bittar48</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>162</td>
+<td>mtrs_donemadi49</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>163</td>
+<td>mtrs_bastar49</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>164</td>
+<td>mtrs_bittar49</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>165</td>
+<td>mtrs_donemadi50</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>166</td>
+<td>mtrs_bastar50</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>167</td>
+<td>mtrs_bittar50</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>168</td>
+<td>mtrs_donemadi51</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>169</td>
+<td>mtrs_bastar51</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>170</td>
+<td>mtrs_bittar51</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>171</td>
+<td>mtrs_donemadi52</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>172</td>
+<td>mtrs_bastar52</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>173</td>
+<td>mtrs_bittar52</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>174</td>
+<td>mtrs_donemadi53</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>175</td>
+<td>mtrs_bastar53</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>176</td>
+<td>mtrs_bittar53</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>177</td>
+<td>mtrs_donemadi54</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>178</td>
+<td>mtrs_bastar54</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>179</td>
+<td>mtrs_bittar54</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>180</td>
+<td>mtrs_donemadi55</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>181</td>
+<td>mtrs_bastar55</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>182</td>
+<td>mtrs_bittar55</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>183</td>
+<td>mtrs_donemadi56</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>184</td>
+<td>mtrs_bastar56</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>185</td>
+<td>mtrs_bittar56</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>186</td>
+<td>mtrs_donemadi57</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>187</td>
+<td>mtrs_bastar57</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>188</td>
+<td>mtrs_bittar57</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>189</td>
+<td>mtrs_donemadi58</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>190</td>
+<td>mtrs_bastar58</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>191</td>
+<td>mtrs_bittar58</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>192</td>
+<td>mtrs_donemadi59</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>193</td>
+<td>mtrs_bastar59</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>194</td>
+<td>mtrs_bittar59</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>195</td>
+<td>mtrs_donemadi60</td>
+<td>Nvarchar(25)</td>
+<td>D�nem Ad�</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>196</td>
+<td>mtrs_bastar60</td>
+<td>DateTime</td>
+<td>Ba�lang�� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>197</td>
+<td>mtrs_bittar60</td>
+<td>DateTime</td>
+<td>Biti� Tarihi</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_URETIM_PLAN_MATRISI_00</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>mtrs_Guid</td>
+</tr>
+<tr class=sRow >
+<td>NDX_URETIM_PLAN_MATRISI_02</td>
+<td>UNIQUE</td>
+<td>mtrs_kodu</td>
+</tr>
+<tr>
+<td>NDX_URETIM_PLAN_MATRISI_03</td>
+<td></td>
+<td>mtrs_aciklama</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 21.12.2017 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2017 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>

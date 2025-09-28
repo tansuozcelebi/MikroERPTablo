@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mikro ERP Veritabanı Dokümantasyonu - v16 ve v17 tablo yapıları, API referansları ve geliştirici kaynakları. Mikro Terminal için kapsamlı teknik dokümantasyon.">
+    <meta name="keywords" content="Mikro ERP, veritabanı, tablo yapısı, API, dokümantasyon, v16, v17, MyeDB, SDK, geliştirici, yazılım">
+    <meta name="author" content="Tansu Özçelebi">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="revisit-after" content="30 days">
+    <meta name="rating" content="general">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Mikro ERP Veritabanı Dokümantasyonu">
+    <meta property="og:description" content="Kapsamlı Mikro ERP v16 ve v17 veritabanı tablo yapıları, API referansları ve geliştirici dokümantasyonu">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tansuozcelebi.github.io/MikroERPTablo/">
+    <meta property="og:site_name" content="Mikro Terminal">
+    <meta property="og:locale" content="tr_TR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mikro ERP Veritabanı Dokümantasyonu">
+    <meta name="twitter:description" content="Mikro ERP v16 ve v17 için kapsamlı teknik dokümantasyon ve API referansları">
+    <meta name="twitter:creator" content="@tansuozcelebi">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tansuozcelebi.github.io/MikroERPTablo/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Mikro ERP Dokümantasyonu",
+      "url": "https://tansuozcelebi.github.io/MikroERPTablo/",
+      "description": "Mikro ERP veritabanı tablo yapıları ve API dokümantasyonu",
+      "author": {
+        "@type": "Person",
+        "name": "Tansu Özçelebi"
+      },
+      "inLanguage": "tr-TR",
+      "keywords": "Mikro ERP, veritabanı, tablo, API, dokümantasyon"
+    }
+    </script>
+    
+    <title>Mikro ERP Veritabanı Dokümantasyonu - v16 & v17 Tablo Yapıları</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-feature-settings: "liga" 1, "kern" 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: -0.02em;
+        }
+        .header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            letter-spacing: 0.01em;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+        }
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+            letter-spacing: -0.01em;
+        }
+        .card p {
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+        .card-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        .version-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .v17 .version-badge {
+            background: #4ecdc4;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .card {
+                padding: 30px;
+                max-width: none;
+            }
+        }
+    </style>
+    <!-- Build Info: v1.0.0 - 0b069a8 -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mikro Fly ERP</h1>
+            <p>www.mye.com.tr</p>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="version-badge">Stable</div>
+                <div class="card-icon">16</div>
+                <h2>Mikro v16</h2>
+                <p>Veritabanı yapısı</p>
+                <a href="v16/index.html" class="card-btn">v16</a>
+            </div>
+            <div class="card v17">
+                <div class="version-badge">Latest</div>
+                <div class="card-icon">17</div>
+                <h2>Mikro v17</h2>
+                <p>Veritabanı yapısı</p>
+                <a href="v17/index.html" class="card-btn">v17</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

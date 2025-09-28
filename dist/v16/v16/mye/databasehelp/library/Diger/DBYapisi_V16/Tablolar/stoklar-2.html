@@ -1,0 +1,1502 @@
+﻿<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tablo Alanlar�</title>
+<LINK rel="stylesheet" type="text/css" href="../../../library.html">
+</head>
+<body><p class="Caption"><i><a href="../index-2.html">Database Yap�s�</a></i></p>
+<center><u><a href="header-2.html">Ba�l�k (Header) K�sm� 
+A��klamas� ve Genel Notlar ��in T�klay�n</a></u></center>
+<p><b>Tablo No : 13</b></p>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="50%"><b>Tablo Ad� : STOKLAR</b></td>
+    <td width="50%"><b>Tablo : Stok Kartlar�</b></td>
+    </tr>
+</table>
+<br>
+<table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+  <tr>
+    <td width="64">
+    <b>No</b></td>
+    <td width="186">
+    <b>Alan Ad�</b></td>
+    <td width="148">
+    <b>Tip</b></td>
+    <td width="328">
+    <b>A��klama</b></td>
+    <td width="280">
+    <b>Detay</b></td>
+  </tr>
+  <tr>
+  <td>0</td>
+  <td>sto_Guid</td>
+  <td>Uniqueidentifier</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>sto_DBCno</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>sto_SpecRECno</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>sto_iptal</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>sto_fileid</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>sto_hidden</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>sto_kilitli</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>sto_degisti</td>
+  <td>Bit</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>sto_checksum</td>
+  <td>Integer</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td>sto_create_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>sto_create_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td>sto_lastup_user</td>
+  <td>Smallint</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td>sto_lastup_date</td>
+  <td>DateTime</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td>sto_special1</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td>sto_special2</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>sto_special3</td>
+  <td>Nvarchar(4)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>sto_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>sto_isim</td>
+  <td>Nvarchar(50)</td>
+  <td>Stok Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>sto_kisa_ismi</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok K�sa Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td>sto_yabanci_isim</td>
+  <td>Nvarchar(50)</td>
+  <td>Stok Yabanc� �sim</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>sto_sat_cari_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Sat�c� Cari Kodu</td>
+  <td>Bkz. Tablo <a href="cari_hesaplar-2.html">CARI_HESAPLAR</a></td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td>sto_cins</td>
+  <td>Tinyint</td>
+  <td>Stok Cinsi</td>
+  <td>0:Ticari Mal 1:�lk Madde 2:Ara Mam�l<br>
+  3:Yar� Mam�l 4:Mam�l 5:Yan Mam�l <br>
+  6:��letme Malzemesi 7:T�ketim Malzemesi 8:Yedek Par�a <br>
+  9:Akaryak�t Stok 10:Montaj Re�eteli Mam�l 11:Temel Hammadde</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>sto_doviz_cinsi</td>
+  <td>Tinyint</td>
+  <td>D�viz No</td>
+  <td>Bkz. <a href="doviz_kurlari-2.html">DOVIZ_KURLARI</a></td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>sto_detay_takip</td>
+  <td>Tinyint</td>
+  <td width="328" >Detay Takibi</td>
+  <td width="280" >0:Detay takip yok 1:Parti baz�nda <br>
+  2:Parti Lot baz�nda 3:Seri no baz�nda 4:Ba� baz�nda 5:Parti Lot ba� baz�nda</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>sto_birim1_ad</td>
+  <td>Nvarchar(10)</td>
+  <td>Birim Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td>sto_birim1_katsayi</td>
+  <td>Float</td>
+  <td>Birim Katsay�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>sto_birim1_agirlik</td>
+  <td>Float</td>
+  <td>Birim Net A��rl�k (kg)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td>sto_birim1_en</td>
+  <td>Float</td>
+  <td>Birim En (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>sto_birim1_boy</td>
+  <td>Float</td>
+  <td>Birim Boy (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>sto_birim1_yukseklik</td>
+  <td>Float</td>
+  <td>Birim Y�kseklik (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>sto_birim1_dara</td>
+  <td>Float</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td>sto_birim2_ad</td>
+  <td>Nvarchar(10)</td>
+  <td>Birim Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>sto_birim2_katsayi</td>
+  <td>Float</td>
+  <td>Birim Katsay�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>sto_birim2_agirlik</td>
+  <td>Float</td>
+  <td>Birim Net A��rl�k (kg)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td>sto_birim2_en</td>
+  <td>Float</td>
+  <td>Birim En (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td>sto_birim2_boy</td>
+  <td>Float</td>
+  <td>Birim Boy (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td>sto_birim2_yukseklik</td>
+  <td>Float</td>
+  <td>Birim Y�kseklik (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td>sto_birim2_dara</td>
+  <td>Float</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td>sto_birim3_ad</td>
+  <td>Nvarchar(10)</td>
+  <td>Birim Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td>sto_birim3_katsayi</td>
+  <td>Float</td>
+  <td>Birim Katsay�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td>sto_birim3_agirlik</td>
+  <td>Float</td>
+  <td>Birim Net A��rl�k (kg)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td>sto_birim3_en</td>
+  <td>Float</td>
+  <td>Birim En (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td>sto_birim3_boy</td>
+  <td>Float</td>
+  <td>Birim Boy (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td>sto_birim3_yukseklik</td>
+  <td>Float</td>
+  <td>Birim Y�kseklik (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>sto_birim3_dara</td>
+  <td>Float</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>sto_birim4_ad</td>
+  <td>Nvarchar(10)</td>
+  <td>Birim Ad�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td>sto_birim4_katsayi</td>
+  <td>Float</td>
+  <td>Birim Katsay�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>sto_birim4_agirlik</td>
+  <td>Float</td>
+  <td>Birim Net A��rl�k (kg)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td>sto_birim4_en</td>
+  <td>Float</td>
+  <td>Birim En (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>sto_birim4_boy</td>
+  <td>Float</td>
+  <td>Birim Boy (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>sto_birim4_yukseklik</td>
+  <td>Float</td>
+  <td>Birim Y�kseklik (mm)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>51</td>
+  <td>sto_birim4_dara</td>
+  <td>Float</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>52</td>
+  <td>sto_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. Hesap Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>53</td>
+  <td>sto_muh_Iade_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. �ade Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>54</td>
+  <td>sto_muh_sat_muh_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>55</td>
+  <td>sto_muh_satIadmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. Sat�� �ade Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td>sto_muh_sat_isk_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. �skonto Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>57</td>
+  <td>sto_muh_aIiskmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. Al�� �skonto Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>58</td>
+  <td>sto_muh_satmalmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. Sat�� Maliyet Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>59</td>
+  <td>sto_yurtdisi_satmuhk</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. Yurt D��� Sat�� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>60</td>
+  <td>sto_ilavemasmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Stok Muh. �lave Masraflar Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>61</td>
+  <td>sto_yatirimtesmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yat�r�m Te�vik Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>62</td>
+  <td>sto_depsatmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td> Depolar Aras� Sat�� Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>63</td>
+  <td>sto_depsatmalmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Depolar Aras� Sat�� Maliyeti Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>64</td>
+  <td>sto_bagortsatmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�lara Sat�� Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>65</td>
+  <td>sto_bagortsatIadmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�lara Sat�� �ade Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>66</td>
+  <td>sto_bagortsatIskmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�lara Sat�� �skonto Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>67</td>
+  <td>sto_satfiyfarksmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Fiyat Fark� Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>68</td>
+  <td>sto_yurtdisisatmalmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yurt D��� Sat�� Maliyeti Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>69</td>
+  <td>sto_bagortsatmalmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�k Sat�� Maliyeti Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>70</td>
+  <td>sto_sifirbedsatmalmuhkod</td>
+  <td>Nvarchar(40)</td>
+  <td>S�f�r Bedelli Sat�� Maliyeti Muh. Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>71</td>
+  <td>sto_karorani</td>
+  <td>Float</td>
+  <td>Kar Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>72</td>
+  <td>sto_min_stok</td>
+  <td>Float</td>
+  <td>Stok Minimum Seviye</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>73</td>
+  <td>sto_siparis_stok</td>
+  <td>Float</td>
+  <td>Stok Sipari� Seviyesi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>74</td>
+  <td>sto_max_stok</td>
+  <td>Float</td>
+  <td>Stok Maksimum Seviye</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>75</td>
+  <td>sto_ver_sip_birim</td>
+  <td>Tinyint</td>
+  <td>Verilen Sipari� Birimi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>76</td>
+  <td>sto_al_sip_birim</td>
+  <td>Tinyint</td>
+  <td>Al�nan Sipari� Birimi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>77</td>
+  <td>sto_siparis_sure</td>
+  <td>Smallint</td>
+  <td>Sipari� S�resi (G�n)</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>78</td>
+  <td>sto_perakende_vergi</td>
+  <td>Tinyint</td>
+  <td>Perakende KDV Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>79</td>
+  <td>sto_toptan_vergi</td>
+  <td>Tinyint</td>
+  <td>Toptan KDV Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>80</td>
+  <td>sto_yer_kod</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Ambar Adresi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>81</td>
+  <td>sto_elk_etk_tipi</td>
+  <td>Tinyint</td>
+  <td width="328">Elektronik Etiket Tipi</td>
+  <td>0:Standart Etiket 1:K���k Etiket 2:Meyve Sebze Etiketi</td>
+  </tr>
+  <tr>
+  <td>82</td>
+  <td>sto_raf_etiketli</td>
+  <td>Tinyint</td>
+  <td width="328">Raf Etiketli</td>
+  <td>0:Yok 1:Var</td>
+  </tr>
+  <tr>
+  <td>83</td>
+  <td>sto_etiket_bas</td>
+  <td>Tinyint</td>
+  <td width="328">Etiket Bas�ls�n M� ?</td>
+  <td>0:Bas�lmas�n 1:Bas�ls�n</td>
+  </tr>
+  <tr>
+  <td>84</td>
+  <td>sto_satis_dursun</td>
+  <td>Tinyint</td>
+  <td>Sat�� Dursun Mu ?</td>
+  <td>0:Durmas�n 1:Dursun</td>
+  </tr>
+  <tr>
+  <td>85</td>
+  <td>sto_siparis_dursun</td>
+  <td>Tinyint</td>
+  <td>Sipari� Dursun Mu ?</td>
+  <td>0:Durmas�n 1:Dursun</td>
+  </tr>
+  <tr>
+  <td>86</td>
+  <td>sto_malkabul_dursun</td>
+  <td>Tinyint</td>
+  <td>Mal Kabul Dursun Mu ?</td>
+  <td>0:Durmas�n 1:Dursun</td>
+  </tr>
+  <tr>
+  <td>87</td>
+  <td>sto_malkabul_gun1</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">Pazartesi</td>
+  </tr>
+  <tr>
+  <td>88</td>
+  <td>sto_malkabul_gun2</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">Sal�</td>
+  </tr>
+  <tr>
+  <td>89</td>
+  <td>sto_malkabul_gun3</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">�ar�amba</td>
+  </tr>
+  <tr>
+  <td>90</td>
+  <td>sto_malkabul_gun4</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">Per�embe</td>
+  </tr>
+  <tr>
+  <td>91</td>
+  <td>sto_malkabul_gun5</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">Cuma</td>
+  </tr>
+  <tr>
+  <td>92</td>
+  <td>sto_malkabul_gun6</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">Cumartesi</td>
+  </tr>
+  <tr>
+  <td>93</td>
+  <td>sto_malkabul_gun7</td>
+  <td>Bit</td>
+  <td>Mal Kabul G�n�</td>
+  <td width="280">Pazar</td>
+  </tr>
+  <tr>
+  <td>94</td>
+  <td>sto_siparis_gun1</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">Pazartesi</td>
+  </tr>
+  <tr>
+  <td>95</td>
+  <td>sto_siparis_gun2</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">Sal�</td>
+  </tr>
+  <tr>
+  <td>96</td>
+  <td>sto_siparis_gun3</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">�ar�amba</td>
+  </tr>
+  <tr>
+  <td>97</td>
+  <td>sto_siparis_gun4</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">Per�embe</td>
+  </tr>
+  <tr>
+  <td>98</td>
+  <td>sto_siparis_gun5</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">Cuma</td>
+  </tr>
+  <tr>
+  <td>99</td>
+  <td>sto_siparis_gun6</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">Cumartesi</td>
+  </tr>
+  <tr>
+  <td>100</td>
+  <td>sto_siparis_gun7</td>
+  <td>Bit</td>
+  <td>Sipari� G�nleri</td>
+  <td width="280">Pazar</td>
+  </tr>
+  <tr>
+  <td>101</td>
+  <td>sto_iskon_yapilamaz</td>
+  <td>Bit</td>
+  <td>�skonto Yap�lamaz ?</td>
+  <td>0:Evet 1:Hay�r</td>
+  </tr>
+  <tr>
+  <td>102</td>
+  <td>sto_tasfiyede</td>
+  <td>Bit</td>
+  <td width="328">Tasfiyede?</td>
+  <td>0:Evet 1:Hay�r</td>
+  </tr>
+  <tr>
+  <td>103</td>
+  <td>sto_alt_grup_no</td>
+  <td>Smallint</td>
+  <td>Alt Grup No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>104</td>
+  <td>sto_kategori_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Kategori Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>105</td>
+  <td>sto_urun_sorkod</td>
+  <td>Nvarchar(25)</td>
+  <td>�r�n Sorumlusu Kodu</td>
+  <td>Bkz. Tablo <a href="personeller-2.html">PERSONELLER</a></td>
+  </tr>
+  <tr>
+  <td>106</td>
+  <td>sto_altgrup_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Alt Grup Kodu</td>
+  <td>Bkz. Tablo <a href="stok_alt_gruplari-2.html">STOK_ALT_GRUPLARI</a></td>
+  </tr>
+  <tr>
+  <td>107</td>
+  <td>sto_anagrup_kod</td>
+  <td>Nvarchar(25)</td>
+  <td>Stok Ana Grup Kodu</td>
+  <td>Bkz. Tablo <a href="stok_ana_gruplari-2.html">STOK_ANA_GRUPLARI</a></td>
+  </tr>
+  <tr>
+  <td>108</td>
+  <td>sto_uretici_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>�retici Kodu</td>
+  <td>Bkz. Tablo <a href="stok_ureticileri-2.html">STOK_URETICILERI</a></td>
+  </tr>
+  <tr>
+  <td>109</td>
+  <td>sto_sektor_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Sekt�r Kodu</td>
+  <td>Bkz. Tablo <a href="stok_sektorleri-2.html">STOK_SEKTORLERI</a></td>
+  </tr>
+  <tr>
+  <td>110</td>
+  <td>sto_reyon_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">Reyon Kodu</td>
+  <td>Bkz. Tablo <a href="stok_reyonlari-2.html">STOK_REYONLARI</a></td>
+  </tr>
+  <tr>
+  <td>111</td>
+  <td>sto_muhgrup_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Muh. Grup Kodu</td>
+  <td>Bkz. Tablo <a href="stok_muhasebe_gruplari-2.html">STOK_MUHASEBE_GRUPLARI</a></td>
+  </tr>
+  <tr>
+  <td>112</td>
+  <td>sto_ambalaj_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Ambalaj Kodu</td>
+  <td>Bkz. Tablo <a href="stok_ambalajlari-2.html">STOK_AMBALAJLARI</a></td>
+  </tr>
+  <tr>
+  <td>113</td>
+  <td>sto_marka_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Marka Kodu</td>
+  <td>Bkz. Tablo <a href="stok_markalari-2.html">STOK_MARKALARI</a></td>
+  </tr>
+  <tr>
+  <td>114</td>
+  <td>sto_beden_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Beden Kodu</td>
+  <td>Bkz. Tablo <a href="stok_beden_tanimlari-2.html">STOK_BEDEN_TANIMLARI</a></td>
+  </tr>
+  <td>115</td>
+  <td>sto_renk_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Renk Kodu</td>
+  <td>Bkz. Tablo <a href="stok_renk_tanimlari-2.html">STOK_RENK_TANIMLARI</a></td>
+  </tr>
+  <tr>
+  <td>116</td>
+  <td>sto_model_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Model Kodu</td>
+  <td>Bkz. Tablo <a href="stok_model_tanimlari-2.html">STOK_MODEL_TANIMLARI</a></td>
+  </tr>
+  <tr>
+  <td>117</td>
+  <td>sto_sezon_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Sezon Kodu</td>
+  <td>Bkz. Tablo <a href="stok_yilsezon_tanimlari-2.html">STOK_YILSEZON_TANIMLARI</a></td>
+  </tr>
+  <tr>
+  <td>118</td>
+  <td>sto_hammadde_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Hammadde Kodu</td>
+  <td>Bkz. Tablo <a href="stok_anahammaddeleri-2.html">STOK_ANAHAMMADDELERI</a></td>
+  </tr>
+  <tr>
+  <td>119</td>
+  <td>sto_prim_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Prim Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>120</td>
+  <td>sto_kalkon_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Kalite Kontrol Kodu</td>
+  <td>Bkz. Tablo <a href="stok_kalite_kontrol_tanimlari-2.html">STOK_KALITE_KONTROL_TANIMLARI</a></td>
+  </tr>
+  <tr>
+  <td>121</td>
+  <td>sto_paket_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Paket Kodu</td>
+  <td>Bkz. Tablo <a href="stok_paket_tanimlari-2.html">STOK_PAKET_TANIMLARI</a></td>
+  </tr>
+  <tr>
+  <td>122</td>
+  <td>sto_pozisyonbayrak_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Pozisyon Bayrak Kodu</td>
+  <td></td>
+  </tr>
+  <tr>
+  <td>123</td>
+  <td>sto_mkod_artik</td>
+  <td>Nvarchar(10)</td>
+  <td>Stok Muhasebe Kod Art�keli</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>124</td>
+  <td>sto_kasa_tarti_fl</td>
+  <td>Bit</td>
+  <td width="328">Kasada Tart�lan Mal M� ?</td>
+  <td>0:Evet 1:Hay�r</td>
+  </tr>
+  <tr>
+  <td>125</td>
+  <td>sto_bedenli_takip</td>
+  <td>Bit</td>
+  <td>Bedenli Detayl� M� ?</td>
+  <td>0:Evet 1:Hay�r</td>
+  </tr>
+  <tr>
+  <td>126</td>
+  <td>sto_renkDetayli</td>
+  <td>Bit</td>
+  <td>Renk Detayl� M� ?</td>
+  <td>0:Evet 1:Hay�r</td>
+  </tr>
+   <tr>
+  <td>127</td>
+  <td>sto_miktarondalikli_fl</td>
+  <td>Bit</td>
+  <td>Ondal�kl� �retebiliyor Mu ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>128</td>
+  <td>sto_pasif_fl</td>
+  <td>Bit</td>
+  <td>Aktif/Pasif</td>
+  <td>0:Pasif 1:Aktif</td>
+  </tr>
+  <tr>
+  <td>129</td>
+  <td>sto_eksiyedusebilir_fl</td>
+  <td>Bit</td>
+  <td>Stok Eksiye D��ebilir Mi ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>130</td>
+  <td>sto_GtipNo</td>
+  <td>Nvarchar(25)</td>
+  <td width="328">G�mr�k Tarifesi �statistik Pozisyon No</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>131</td>
+  <td>sto_puan</td>
+  <td>Float</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>132</td>
+  <td>sto_komisyon_hzmkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Komisyon Hizmet Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>133</td>
+  <td>sto_komisyon_orani</td>
+  <td>Float</td>
+  <td>Komisyon Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>134</td>
+  <td>sto_otvuygulama</td>
+  <td>Tinyint</td>
+  <td>�TV Uygulama</td>
+  <td>0:�TV Yok 1:Al��ta tutardan 2:Al��ta y�zdeyle 3:Sat��ta tutardan 4:Sat��ta y�zdeyle 5:Al��ta ve sat��ta tutardan 6:Al��ta ve sat��ta y�zdeyle</td>
+  </tr>
+  <tr>
+  <td>135</td>
+  <td>sto_otvtutar</td>
+  <td>Float</td>
+  <td>�TV Tutar</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>136</td>
+  <td>sto_otvliste</td>
+  <td>Tinyint</td>
+  <td>�TV Tipi</td>
+  <td>0:Yok 1:�TV1 2:�TV2 3:�TV3 4:�TV4 5:�TV3a 6:�TV3b 7:�TV3c</td>
+  </tr>
+  <tr>
+  <td>137</td>
+  <td>sto_otvbirimi</td>
+  <td>Tinyint</td>
+  <td>Stok �TV Birimi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>138</td>
+  <td>sto_prim_orani</td>
+  <td>Float</td>
+  <td width="328">Prim Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>139</td>
+  <td>sto_garanti_sure</td>
+  <td>Smallint</td>
+  <td width="328">�ng�r�len Garanti S�resi</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>140</td>
+  <td>sto_garanti_sure_tipi</td>
+  <td>Tinyint</td>
+  <td width="328">Garanti S�re Tipi</td>
+  <td>0:Ay 1:G�n 2:Y�l</td>
+  </tr>
+  <tr>
+  <td>141</td>
+  <td>sto_iplik_Ne_no</td>
+  <td>Float</td>
+  <td>�plik Ne Numaras�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>142</td>
+  <td>sto_standartmaliyet</td>
+  <td>Float</td>
+  <td>Standart Maliyet</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>143</td>
+  <td>sto_kanban_kasa_miktari</td>
+  <td>Float</td>
+  <td>Stok Kanban Kasa Miktar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>144</td>
+  <td>sto_oivuygulama</td>
+  <td>Tinyint</td>
+  <td>�zel �leti�im Vergisi Uygulamas� Var M� ?</td>
+  <td>0:Yok 1:Var</td>
+  </tr>
+  <tr>
+  <td>145</td>
+  <td>sto_zraporu_stoku_fl</td>
+  <td>Bit</td>
+  <td>Z Raporu ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>146</td>
+  <td>sto_maxiskonto_orani</td>
+  <td>Float</td>
+  <td>Maksimum �skonto Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>147</td>
+  <td>sto_detay_takibinde_depo_kontrolu_fl</td>
+  <td>Bit</td>
+  <td>Detay Takibinde Depo Kontrol� Var M� ?</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>148</td>
+  <td>sto_tamamlayici_kodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Tamamlay�c� Kodu</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>149</td>
+  <td>sto_oto_barkod_acma_sekli</td>
+  <td>Tinyint</td>
+  <td>Otomatik Barkod A�ma �ekli</td>
+  <td>0:Otomatik Barkod Olu�turulmas�n 1:Detay Takip �ekline G�re Otomatik Barkod Olu�turulsun 2:Her Giri� Kayd� ��in Barkod Olu�turulsun</td>
+  </tr>
+  <tr>
+  <td>150</td>
+  <td>sto_oto_barkod_kod_yapisi</td>
+  <td>dbo.barkod_str</td>
+  <td>Otomatik Barkod Kod Yap�s�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>151</td>
+  <td>sto_KasaIskontoOrani</td>
+  <td>Float</td>
+  <td>Kasa �skonto Oran�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>152</td>
+  <td>sto_KasaIskontoTutari</td>
+  <td>Float</td>
+  <td>Kasa �skonto Tutar�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>153</td>
+  <td>sto_gelirpayi</td>
+  <td>Float</td>
+  <td>Gelir Pay�</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>154</td>
+  <td>sto_oivtutar</td>
+  <td>Float</td>
+  <td>�zet �leti�im Vergisi Tutar�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>155</td>
+  <td>sto_oivturu</td>
+  <td>Tinyint</td>
+  <td>�zet �leti�im Vergisi T�r�</td>
+  <td>0:Yok 1:��V 2:5035 say�l� kanuna g�re ��V</td>
+ </tr>
+ <tr>
+  <td>156</td>
+  <td>sto_giderkodu</td>
+  <td>Nvarchar(25)</td>
+  <td>Gider Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>157</td>
+  <td>sto_oivvergipntr</td>
+  <td>Tinyint</td>
+  <td>��V</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>158</td>
+  <td>sto_Tevkifat_turu</td>
+  <td>Tinyint</td>
+  <td>Tevkifat T�r�</td>
+  <td>0:Yok 1:10'da 3 2:10'da 9 3:21 4:32 5:61 6:45 7:Tam 8:10'da 2 9:10'da 5 10:10'da 7</td>
+ </tr>
+ <tr>
+  <td>159</td>
+  <td>sto_SKT_fl</td>
+  <td>Bit</td>
+  <td>Son Kullanma Tarihi Var M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>160</td>
+  <td>sto_terazi_SKT</td>
+  <td>Smallint</td>
+  <td>Terazi Son Kullanma Tarihi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>161</td>
+  <td>sto_RafOmru</td>
+  <td>Smallint</td>
+  <td>Raf �mr�</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>162</td>
+  <td>sto_KasadaTaksitlenebilir_fl</td>
+  <td>Bit</td>
+  <td>Kasada Taksitlenebilir Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>163</td>
+  <td>sto_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>164</td>
+  <td>sto_iade_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>�ade Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>165</td>
+  <td>sto_yurticisat_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yurt ��i Sat�� Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>166</td>
+  <td>sto_satiade_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� �ade Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>167</td>
+  <td>sto_satisk_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� �skonto Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>168</td>
+  <td>sto_alisk_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Al�� �skonto Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>169</td>
+  <td>sto_satmal_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Maliyeti Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>170</td>
+  <td>sto_yurtdisisat_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yurt D��� Sat�� Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>171</td>
+  <td>sto_ilavemas_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>�lave Masraflar Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>172</td>
+  <td>sto_yatirimtes_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yat�r�m Te�vik Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>173</td>
+  <td>sto_depsat_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Depolar Aras� Sat�� Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>174</td>
+  <td>sto_depsatmal_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Depolar Aras� Sat�� Maliyeti Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>175</td>
+  <td>sto_bagortsat_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�klara Sat�� Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>176</td>
+  <td>sto_bagortsatiade_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�klara Sat�� �ade Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>177</td>
+  <td>sto_bagortsatisk_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�klara Sat�� �skonto Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>178</td>
+  <td>sto_satfiyfark_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Sat�� Fiyat Fark� Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>179</td>
+  <td>sto_yurtdisisatmal_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Yurt D��� Sat�� Maliyeti Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>180</td>
+  <td>sto_bagortsatmal_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>Ba�l� Ortakl�klara Sat�� Maliyeti Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>181</td>
+  <td>sto_sifirbedsatmal_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>S�f�r Bedelli Sat�� Maliyeti Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>182</td>
+  <td>sto_uretimmaliyet_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>�retim Maliyeti Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>183</td>
+  <td>sto_uretimkapasite_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>�retim Kapasite Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>184</td>
+  <td>sto_degerdusuklugu_ufrsfark_kod</td>
+  <td>Nvarchar(40)</td>
+  <td>De�er D���kl��� Ufrs Fark Muh. Kodu</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>185</td>
+  <td>sto_halrusumyudesi</td>
+  <td>Float</td>
+  <td>Hal R�sum Y�zdesi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>186</td>
+  <td>sto_webe_gonderilecek_fl</td>
+  <td>Bit</td>
+  <td>Webe G�nderilecek Mi ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>187</td>
+  <td>sto_min_stok_belirleme_gun</td>
+  <td>Smallint</td>
+  <td>Minimum Seviye Belirleme Operasyonu ��in G�n Bilgisi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>188</td>
+  <td>sto_sip_stok_belirleme_gun</td>
+  <td>Smallint</td>
+  <td>Sipari� Seviye Belirleme Operasyonu ��in G�n Bilgisi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>189</td>
+  <td>sto_max_stok_belirleme_gun</td>
+  <td>Smallint</td>
+  <td>Maksimum Seviye Belirleme Operasyonu ��in G�n Bilgisi</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>190</td>
+  <td>sto_sev_bel_opr_degerlendime_fl</td>
+  <td>Bit</td>
+  <td>Seviye Belirleme Operasyonu De�erlendirmesi Yap�lacak M� ?</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>191</td>
+  <td>sto_otv_tevkifat_turu</td>
+  <td>Tinyint</td>
+  <td>�tv Tevkifat T�r�</td>
+  <td>0:Tevkifat Yok 1:Tevkifat Tam</td>
+ </tr>
+ <tr>
+  <td>192</td>
+  <td>sto_kay_plan_degerlendir</td>
+  <td>Tinyint</td>
+  <td>Kaynak Planlama Operasyonunda De�erlendirilecek Mi ?</td>
+  <td>0:Evet 1:Hay�r</td>
+ </tr>
+ </table>
+<hr><table class="SKey" border="2" bordercolor="white"  cellspacing="0" width="100%">
+<tr class="sRow" align="center"><td colspan=4><b>Indeks Tablosu</b></td></tr>
+<tr>
+<td width="65">
+<b>Indeks</b></td>
+<td width="55">
+<b>�zellik</b></td>
+<td width="250">
+<b>Alanlar</b></td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_02</td>
+<td>CONSTRAINT PRIMARY KEY</td>
+<td>sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_00</td>
+<td>UNIQUE</td>
+<td>sto_Guid</td>
+</tr>
+<td>NDX_STOKLAR_03</td>
+<td></td>
+<td>sto_isim</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_04</td>
+<td></td>
+<td>sto_anagrup_kod, sto_altgrup_kod, sto_sat_cari_kod, sto_kod</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_05</td>
+<td></td>
+<td>sto_urun_sorkod, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_06</td>
+<td></td>
+<td>sto_uretici_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_07</td>
+<td></td>
+<td>sto_reyon_kodu, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_08</td>
+<td></td>
+<td>sto_sektor_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_09</td>
+<td></td>
+<td>sto_marka_kodu, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_10</td>
+<td></td>
+<td>sto_muhgrup_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_11</td>
+<td></td>
+<td>sto_ambalaj_kodu, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_12</td>
+<td></td>
+<td>sto_kalkon_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_13</td>
+<td></td>
+<td>sto_sat_cari_kod, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_14</td>
+<td></td>
+<td>sto_renk_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_15</td>
+<td></td>
+<td>sto_model_kodu, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_16</td>
+<td></td>
+<td>sto_sezon_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_17</td>
+<td></td>
+<td>sto_hammadde_kodu, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_18</td>
+<td></td>
+<td>sto_beden_kodu, sto_kod</td>
+</tr>
+<tr>
+<td>NDX_STOKLAR_19</td>
+<td></td>
+<td>sto_kategori_kodu, sto_kod</td>
+</tr>
+<tr class=sRow >
+<td>NDX_STOKLAR_20</td>
+<td></td>
+<td>sto_prim_kodu, sto_kod</td>
+</tr>
+</table>
+<hr>G�ncellenme Tarihi : 05.01.2018 - Bu dok�man ile ilgili <A href="mailto:info@mye.com.tr?Subject=DB Yap�s�">bize yaz�n</A><br><b>�2018 Mikro Yaz�l�mevi A.�. T�m Haklar� Sakl�d�r.</b></font></body>
+
+</html>

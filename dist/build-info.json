@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "buildDate": "2025-09-28T21:18:46.011Z",
+  "buildNumber": 1759094326,
+  "gitCommit": "0b069a8",
+  "environment": "production",
+  "files": {
+    "total": 1083,
+    "html": 1068,
+    "css": 1,
+    "js": 0,
+    "images": 8
+  },
+  "buildDuration": 508
+}
