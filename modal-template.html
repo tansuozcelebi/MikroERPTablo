@@ -1,0 +1,38 @@
+<!-- About Modal -->
+<div id="aboutModal" class="mye-modal">
+    <div class="mye-modal-content">
+        <div class="mye-modal-header">
+            <h2 class="mye-modal-title">Hakkında</h2>
+            <button class="mye-modal-close" onclick="closeAboutModal()">&times;</button>
+        </div>
+        <div class="mye-modal-body">
+            <h3>🚀 Mikro Fly ERP Veritabanı Yapısı</h3>
+            <p><strong>Geliştirici:</strong> Tansu Özçelebi</p>
+            <p><strong>Web Sitesi:</strong> <a href="https://mikro.fabus.app" target="_blank">mikro.fabus.app</a></p>
+            <p><strong>Versiyon:</strong> 2024</p>
+            <p>Bu dokümantasyon, Mikro Fly ERP sisteminin veritabanı yapısını detaylarıyla açıklamaktadır.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+function openAboutModal() {
+    document.getElementById('aboutModal').classList.add('active');
+}
+
+function closeAboutModal() {
+    document.getElementById('aboutModal').classList.remove('active');
+}
+
+// Modal dışına tıklayınca kapat
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('aboutModal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAboutModal();
+            }
+        });
+    }
+});
+</script>
