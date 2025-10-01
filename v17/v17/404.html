@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 - Sayfa Bulunamadı | Mikro Fly ERP Veritabanı yapısı by Fabus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: white;
+        }
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1;
+        }
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .error-message {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .error-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .error-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .search-box {
+            margin: 30px 0;
+        }
+        .search-input {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 30px;
+            width: 300px;
+            max-width: 100%;
+            font-size: 16px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+        }
+        .search-input::placeholder {
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            .error-title {
+                font-size: 2rem;
+            }
+            .error-message {
+                font-size: 1.1rem;
+            }
+            .error-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .search-input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Sayfa Bulunamadı</h1>
+        <p class="error-message">
+            Aradığınız sayfa mevcut değil veya taşınmış olabilir. 
+            <br>Aşağıdaki bağlantıları kullanarak doğru sayfaya ulaşabilirsiniz.
+        </p>
+        
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Aradığınız içeriği yazın..." id="searchInput">
+        </div>
+        
+        <div class="error-links">
+            <a href="/" class="error-link">🏠 Ana Sayfa</a>
+            <a href="/v16/index.html" class="error-link">📊 v16 Dokümantasyonu</a>
+            <a href="/v17/index.html" class="error-link">🚀 v17 Dokümantasyonu</a>
+        </div>
+    </div>
+
+    <script>
+        // Simple search functionality
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const query = e.target.value.toLowerCase();
+                if (query.includes('v16') || query.includes('16')) {
+                    window.location.href = '/v16/index.html';
+                } else if (query.includes('v17') || query.includes('17')) {
+                    window.location.href = '/v17/index.html';
+                } else if (query.includes('tablo') || query.includes('table')) {
+                    window.location.href = '/v17/mye/blog/MikroV17/tablo.html';
+                } else if (query.includes('sdk')) {
+                    window.location.href = '/v17/mye/blog/MikroV17/MyeDB_SDK.html';
+                } else {
+                    window.location.href = '/';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
